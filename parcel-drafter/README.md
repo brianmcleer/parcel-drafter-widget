@@ -1,0 +1,130 @@
+# Parcel Drafter - ArcGIS Experience Builder widget
+
+Enter metes and bounds descriptions to draft parcels: bearing, distance, and radius
+entry with live drawing, misclose checking, compass rule adjustment, rotation and
+scale, and save to point, line, and polygon feature layers. A port of the Esri Web
+AppBuilder Parcel Drafter widget for ArcGIS Experience Builder.
+
+Original widget Copyright Esri Inc., Apache License 2.0. The surveying math
+(Vincenty geodesics, arc geometry, misclose, compass rule) is a direct translation
+of the original algorithms.
+
+- Esri Community post: (add link after posting)
+- Feedback: open a GitHub issue or comment on the Esri Community post
+
+## Features
+
+- New traverse from a map click or typed coordinates, with live drawing as you type
+- Bearing formats: S20-25-25W, 20-25-25-3, dd.mmss, decimal degrees; the * shortcut
+  copies the previous line and *tb continues tangent to the previous line or curve
+- Boundary and connection line types with a configurable default
+- Misclose bearing, distance, ratio, and calculated area; compass rule applied
+  automatically within the configured snap distance or ratio
+- Rotation and scale by text entry or by dragging on the map around an anchor point
+- Drag or arrow-key reordering of traverse legs
+- Start point and digitize clicks snap to the configured layers within tolerance
+- Edit traverse: closed parcels select by polygon footprint, unclosed by a
+  connectivity walk from the clicked line; saving an edit updates the existing
+  polygon and replaces its lines instead of duplicating features
+- Builder settings: layer pickers with related line and point layers auto-detected,
+  COGO field dropdowns from the layer schema, attribute settings (fixed fields,
+  webmap popup fields, or a custom list with aliases), misclose and snapping config
+- WCAG 2.1 AA accessibility and tooltips throughout, styled with the
+  Calcite-aligned jimu theme tokens
+
+## Requirements
+
+- ArcGIS Experience Builder Developer Edition 1.21 (built and tested on 1.21;
+  manifest exbVersion is 1.21.0)
+- Editable point, line, and polygon feature layers for saving traverses. The default
+  field names match the Esri Parcel Drafter solution schema (Direction, Distance,
+  Radius, ArcLength, LineType, and so on) and are configurable in the settings panel
+- No third-party dependencies. The widget uses only jimu and the ArcGIS Maps SDK
+  modules that ship with Experience Builder, so no per-widget install is required
+
+## Install
+
+1. Download and extract the widget zip.
+2. Copy the `parcel-drafter` folder into your Experience Builder install at
+   `client\your-extensions\widgets\parcel-drafter`.
+
+   The `manifest.json` file must sit directly inside
+   `your-extensions\widgets\parcel-drafter\`, never nested a second level deep
+   (for example `widgets\parcel-drafter\parcel-drafter`). Nesting is the usual
+   cause of a widget not registering.
+3. Start the client as usual (`npm start` in the `client` folder; on a fresh 1.21
+   install, `pnpm ci` first per Esri's setup instructions).
+4. In Builder, add the Parcel Drafter widget to a page that contains a Map widget,
+   then open the widget settings to select the map and the target layers.
+
+## Troubleshooting: `parcel-drafter is duplicated`
+
+Experience Builder registers each widget by the `name` in its `manifest.json` and
+throws this error when the same name is registered more than once. A single,
+correctly placed copy cannot duplicate itself, so a second copy is present
+somewhere. Check in this order:
+
+1. A nested folder: `widgets\parcel-drafter\parcel-drafter`. The manifest must sit
+   directly inside the widget folder.
+2. A leftover folder from an earlier build or version, including any `-copy` folder.
+3. A stale compiled build in `client\dist\widgets`. Stop the client server, delete
+   the matching folder under `dist\widgets`, then start again.
+
+## Using the widget
+
+- **New traverse** → click the map (or type longitude/latitude) to set the start point.
+- Enter **bearing / length / radius** rows. Supported bearing formats are the same as WAB:
+  `dd-mm-ss-[1234]`, `Ndd-mm-ssE`, `Ndd.mmssE`, `dd.mmss`, `dd.dddd`, `dd-mm-ss`, `dd.mmss-[1234]`, `Ndd.ddddE`, `dd.dddd-[1234]`. Type `*` in a field to copy the previous row's value. Lengths accept `m`, `ft`, `usft` suffixes.
+- Positive radius = curve right, negative = curve left; negative length = major arc (same conventions as WAB). Chord vs. arc length entry is controlled in **Plan settings**.
+- **Digitize** mode adds lines by clicking the map (inverse bearing/distance is computed).
+- When boundary lines close, the **misclose panel** shows bearing/distance/ratio/area. Within the configured snap distance or ratio, **compass-rule adjustment** is applied automatically.
+- **Rotation / Scale** transform the drawing; **Anchor** lets you click a traverse node to hold it fixed while rotating/scaling.
+- **Save** writes lines, points, and the closed-boundary polygon to the configured layers with plan info attributes.
+- **Edit traverse** → click existing parcel lines; rows are rebuilt from the stored bearing/distance/radius fields.
+
+## WAB → ExB conversion map
+
+| WAB (Dojo / JS API 3.x) | ExB (React / JS API 4.x) |
+|---|---|
+| `Widget.js` + `Widget.html` (dijit) | `src/runtime/widget.tsx` |
+| `NewTraverse.js` (143 KB: UI + math) | UI → `components/traverse-grid.tsx`; math → `lib/traverse-engine.ts` |
+| `geometryUtils.js` | `lib/geometry-utils.ts` (Vincenty, arcs, chord↔tangent - 1:1 port) |
+| `utils.js` (bearing/unit parsing) | `lib/bearing-utils.ts`, `lib/unit-utils.ts` (same 9 regex formats) |
+| `PlanSettings.js/html` | `components/plan-settings.tsx` |
+| `MiscloseDetails.js/html` | `components/misclose-details.tsx` |
+| `ParcelTools.js/html` | `components/parcel-tools.tsx` |
+| `PlanInfo.js` (save via applyEdits) | `lib/save-utils.ts` (`FeatureLayer.applyEdits`, 4.x) |
+| `setting/Setting.js/html` | `src/setting/setting.tsx` (MapWidgetSelector + DataSourceSelector) |
+| `nls/strings.js` (30+ locales) | `translations/default.ts` (English; add locales as needed) |
+| `esri/geometry/GeometryService.project` | `projectOperator` (SDK 4.31+) with classic `projection` fallback, loaded at runtime via `loadArcGISJSAPIModules` |
+| `dojo/Deferred`, `dojo/_base/array` | Promises / native array methods |
+| GraphicsLayer via map manager | `GraphicsLayer` added through `JimuMapViewComponent` |
+
+## Geometry services across SDK versions
+
+The classic `esri/geometry/projection`, `geometryEngine`, and `webMercatorUtils` APIs were deprecated and removed in newer Maps SDK releases. The widget therefore resolves its geometry services at runtime: it tries the modern operator modules first (`projectOperator`, `simplifyOperator`, `geodeticLengthOperator`, `geodeticAreaOperator`) and falls back to the classic modules on older SDKs. Projection works for any organization spatial reference (Web Mercator, State Plane, national grids, geographic CS) including datum transformations; all surveying math runs in WGS84 internally and geometries are projected at the map/layer boundaries.
+
+## Doc-parity features (closed gaps)
+
+All gaps against the WAB Parcel Drafter doc have been closed:
+`*tb` tangent-curve bearing shortcut; drag-and-keyboard reordering of traverse legs;
+default line type in Builder settings; COGO field pickers driven by the layer schema
+(free-text fallback); automatic detection of related line/point layers when the
+polygon layer is selected; Attribute Settings (legacy fixed inputs, webmap-popup
+fields, or a custom field list with aliases) edited at runtime and saved to the
+parcel; start-point and digitize snapping to the configured layers; interactive
+drag-to-rotate and drag-to-scale around the anchor (works in any spatial reference,
+unlike the WAB Web-Mercator-only version); Edit Traverse saves as an UPDATE - the
+polygon feature is updated in place and its previous lines are replaced (deleted +
+re-added in one applyEdits call); and parcel selection uses the polygon footprint
+for closed parcels or a connectivity walk from the clicked line for unclosed
+boundaries, with lines chained end-to-start into entry order.
+
+Edit-session note: existing node points are left untouched on update (original
+points are not tracked by object id), so points are only created on first save.
+
+## Known differences / follow-ups
+
+- **Locales**: only English strings were carried over; the original's 30+ `nls` locales can be added under `translations/` incrementally.
+- **Per-line-type symbol pickers** (WAB's `SymbolChooserPopup`) are not exposed in Builder - edit symbols in `config.json` defaults or extend the setting page.
+- **Map cursor tooltips** (`MapTooltipHandler.js`) are not implemented; active-tool state is shown in the widget instead.

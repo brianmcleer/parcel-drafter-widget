@@ -1,0 +1,19 @@
+{
+  "name": "parcel-drafter",
+  "version": "1.0.0",
+  "description": "Enter metes and bounds descriptions to draft parcels with misclose checking, compass rule adjustment, and save to feature layers. Port of the WAB Parcel Drafter widget.",
+  "keywords": [
+    "exb-widget",
+    "experience-builder",
+    "exb",
+    "parcel",
+    "cogo",
+    "traverse",
+    "misclose",
+    "surveying",
+    "parcel-drafter"
+  ],
+  "license": "Apache-2.0",
+  "author": "Brian McLeer",
+  "dependencies": {}
+}

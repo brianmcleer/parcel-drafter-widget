@@ -1,0 +1,28 @@
+{
+  "name": "parcel-drafter",
+  "type": "widget",
+  "version": "1.0.0",
+  "exbVersion": "1.21.0",
+  "author": "Ported from Esri Web AppBuilder ParcelDrafter (WAB 2.30)",
+  "label": "Parcel Drafter",
+  "description": "Enter metes-and-bounds descriptions (bearing, distance, radius) to create parcel geometry, review misclose, apply compass-rule adjustment, rotate/scale, and save to feature layers.",
+  "copyright": "Original widget Copyright Esri Inc., Apache 2.0 License",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "canCreateMapView": false,
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "supportInlineEditing": false,
+    "hasMainClass": true
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 380,
+    "height": 560
+  },
+  "dependency": [
+    "jimu-arcgis"
+  ]
+}

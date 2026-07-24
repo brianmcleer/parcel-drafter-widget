@@ -1,0 +1,104 @@
+{
+  "startOrRotationSymbol": {
+    "type": "simple-marker",
+    "style": "circle",
+    "color": [
+      136,
+      136,
+      136,
+      1
+    ],
+    "size": 11.25,
+    "outline": {
+      "color": [
+        29,
+        29,
+        53,
+        1
+      ],
+      "width": 0.75
+    }
+  },
+  "pointSymbol": {
+    "type": "simple-marker",
+    "style": "square",
+    "color": [
+      240,
+      18,
+      69,
+      1
+    ],
+    "size": 15,
+    "outline": {
+      "color": [
+        29,
+        29,
+        53,
+        1
+      ],
+      "width": 0.75
+    }
+  },
+  "lineTypes": [
+    {
+      "type": 1,
+      "isDefault": false,
+      "label": "Boundary Line",
+      "symbol": {
+        "type": "simple-line",
+        "style": "solid",
+        "color": [
+          29,
+          32,
+          23,
+          1
+        ],
+        "width": 2
+      }
+    },
+    {
+      "type": 0,
+      "isDefault": true,
+      "label": "Connection Line",
+      "symbol": {
+        "type": "simple-line",
+        "style": "dash",
+        "color": [
+          255,
+          0,
+          0,
+          1
+        ],
+        "width": 2
+      }
+    }
+  ],
+  "boundaryLineType": 1,
+  "snappingTolerance": 15,
+  "miscloseSnapDistance": 5,
+  "miscloseSnapDistanceUnit": "feet",
+  "miscloseRatioSnap": 5000,
+  "pointLayerDsId": "",
+  "lineLayerDsId": "",
+  "polygonLayerDsId": "",
+  "lineFieldMap": {
+    "bearing": "Direction",
+    "distance": "Distance",
+    "radius": "Radius",
+    "arcLength": "ArcLength",
+    "lineType": "LineType"
+  },
+  "polygonFieldMap": {
+    "name": "Name",
+    "description": "Description",
+    "statedArea": "StatedArea",
+    "miscloseRatio": "MiscloseRatio",
+    "miscloseDistance": "MiscloseDistance",
+    "rotation": "Rotation",
+    "scale": "Scale"
+  },
+  "polygonAttributes": {
+    "mode": "legacy",
+    "fields": []
+  }
+}
