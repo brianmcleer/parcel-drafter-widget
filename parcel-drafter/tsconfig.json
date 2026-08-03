@@ -8,8 +8,7 @@
     ],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
+    "jsx": "react",
     "baseUrl": "../../..",
     "paths": {
       "jimu-*": [

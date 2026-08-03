@@ -5,9 +5,15 @@ entry with live drawing, misclose checking, compass rule adjustment, rotation an
 scale, and save to point, line, and polygon feature layers. A port of the Esri Web
 AppBuilder Parcel Drafter widget for ArcGIS Experience Builder.
 
+Authors: Brian McLeer (City of Grand Junction, CO), Nicholas Cramer
+(Polk County, Oregon), and Eric McAvoy (Polk County, Oregon).
+
 Original widget Copyright Esri Inc., Apache License 2.0. The surveying math
 (Vincenty geodesics, arc geometry, misclose, compass rule) is a direct translation
-of the original algorithms.
+of the original algorithms. Snapping to visible layers, popup coordination, leg
+labels, GeoJSON export, and chains/rods unit support are derived from the
+Traverse widget by Eric McAvoy and Nicholas Cramer, Copyright Polk County,
+Oregon, Apache-2.0 (https://github.com/ncramer11/traverse).
 
 - Esri Community post: (add link after posting)
 - Feedback: open a GitHub issue or comment on the Esri Community post
@@ -17,6 +23,8 @@ of the original algorithms.
 - New traverse from a map click or typed coordinates, with live drawing as you type
 - Bearing formats: S20-25-25W, 20-25-25-3, dd.mmss, decimal degrees; the * shortcut
   copies the previous line and *tb continues tangent to the previous line or curve
+- Distance entry accepts m, ft, usft, ch (chains), and rd (rods) suffixes for
+  mixed-unit deed calls; chains and rods convert to meters on entry
 - Boundary and connection line types with a configurable default
 - Misclose bearing, distance, ratio, and calculated area; compass rule applied
   automatically within the configured snap distance or ratio
@@ -29,6 +37,13 @@ of the original algorithms.
 - Builder settings: layer pickers with related line and point layers auto-detected,
   COGO field dropdowns from the layer schema, attribute settings (fixed fields,
   webmap popup fields, or a custom list with aliases), misclose and snapping config
+- Bearing and distance labels on each traverse line (toggleable), with an optional
+  session color override for the drawing
+- Native snapping to all visible feature layers via SketchViewModel when picking
+  the start point, digitizing, or setting the rotation anchor (toggleable), with
+  identify popups suppressed while a map tool is active
+- GeoJSON export of points, lines, and the closed parcel polygon; curves export
+  as densified geometry
 - WCAG 2.1 AA accessibility and tooltips throughout, styled with the
   Calcite-aligned jimu theme tokens
 

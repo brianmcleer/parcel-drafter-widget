@@ -3,10 +3,10 @@
   "type": "widget",
   "version": "1.0.0",
   "exbVersion": "1.21.0",
-  "author": "Ported from Esri Web AppBuilder ParcelDrafter (WAB 2.30)",
+  "author": "Brian McLeer, Nicholas Cramer, and Eric McAvoy",
   "label": "Parcel Drafter",
   "description": "Enter metes-and-bounds descriptions (bearing, distance, radius) to create parcel geometry, review misclose, apply compass-rule adjustment, rotate/scale, and save to feature layers.",
-  "copyright": "Original widget Copyright Esri Inc., Apache 2.0 License",
+  "copyright": "City of Grand Junction, CO. Portions Copyright Polk County, Oregon and Esri Inc.",
   "license": "http://www.apache.org/licenses/LICENSE-2.0",
   "properties": {
     "canCreateMapView": false,

@@ -95,7 +95,7 @@ export default {
   rotationTip: 'Rotate the whole traverse by this many degrees (positive is clockwise)',
   scaleTip: 'Multiply every distance in the traverse by this factor',
   bearingEntryTip: 'Formats: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Type * to copy the previous line.',
-  lengthEntryTip: 'Distance in the plan units. Add m, ft, or usft to override. Type * to copy the previous line.',
+  lengthEntryTip: 'Distance in the plan units. Add m, ft, usft, ch (chains), or rd (rods) to override. Type * to copy the previous line.',
   radiusEntryTip: 'Leave blank for a straight line. Positive curves right, negative curves left.',
 
   // accessibility
@@ -138,5 +138,16 @@ export default {
   dragScaleTip: 'When on, drag on the map to scale the traverse from the anchor point',
   editingExisting: 'Editing an existing parcel - saving will update it in place and replace its lines',
   attributeFieldTip: 'Attribute saved to the parcel polygon field',
-  updateSuccess: 'Parcel updated: replaced with {lines} lines.'
+  updateSuccess: 'Parcel updated: replaced with {lines} lines.',
+
+  // labels / snapping / export / color
+  legLabels: 'Labels',
+  legLabelsTip: 'Show bearing and distance labels on each traverse line',
+  snapToggle: 'Snap',
+  snapToggleTip: 'Snap map clicks to vertices and edges of all visible feature layers',
+  exportGeoJSON: 'GeoJSON',
+  exportGeoJSONTip: 'Download the traverse as a GeoJSON file with points, lines, and the closed parcel polygon. Curves export as densified geometry.',
+  exportEmpty: 'Add at least one line before exporting.',
+  traverseColor: 'Traverse color',
+  traverseColorTip: 'Override the drawing color for this session. Clear to use the configured symbols.'
 }

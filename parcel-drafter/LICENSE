@@ -181,6 +181,11 @@
    licensed under the Apache License, Version 2.0. Portions of the surveying
    algorithms in this widget are derived from that work.
 
+   Snapping, popup coordination, leg labels, GeoJSON export, and surveyor unit
+   conversions are derived from the Traverse widget by Eric McAvoy and
+   Nicholas Cramer, Copyright Polk County, Oregon, licensed under the
+   Apache License, Version 2.0 (https://github.com/ncramer11/traverse).
+
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at

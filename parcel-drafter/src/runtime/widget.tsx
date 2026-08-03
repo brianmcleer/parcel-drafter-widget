@@ -4,8 +4,9 @@
  */
 /** @jsx jsx */
 import { React, jsx, css, type AllWidgetProps, DataSourceManager } from 'jimu-core'
-import { JimuMapViewComponent, type JimuMapView } from 'jimu-arcgis'
+import { JimuMapViewComponent, type JimuMapView, loadArcGISJSAPIModules } from 'jimu-arcgis'
 import { Button, TextInput, Label, Loading, Tooltip } from 'jimu-ui'
+import { ColorPicker } from 'jimu-ui/basic/color-picker'
 import GraphicsLayer from 'esri/layers/GraphicsLayer'
 import Graphic from 'esri/Graphic'
 import Point from 'esri/geometry/Point'
@@ -83,6 +84,9 @@ interface State {
   page: Page
   mapClickMode: MapClickMode
   dragMode: 'none' | 'rotate' | 'scale'
+  showLabels: boolean
+  snappingEnabled: boolean
+  traverseColor: string
   editSession: EditSession | null
   attributeFields: AttributeFieldRuntime[]
   planAttrs: { [fieldName: string]: any }
@@ -114,6 +118,13 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
   clickHandle: __esri.Handle = null
   linesLayer: GraphicsLayer = null
   pointsLayer: GraphicsLayer = null
+  labelsLayer: GraphicsLayer = null
+  snapScratchLayer: GraphicsLayer = null
+  snapSVM: any = null
+  TextSymbolClass: any = null
+  SketchViewModelClass: any = null
+  CollectionClass: any = null
+  svmModulesLoading = false
   startPoint4326: Point = null // in WGS84
   rotationPointIndex: number = -1 // -1 => start point is the rotation anchor
   lastDrawResult: engine.DrawResult = null
@@ -125,6 +136,9 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
       page: 'home',
       mapClickMode: 'none',
       dragMode: 'none',
+      showLabels: true,
+      snappingEnabled: true,
+      traverseColor: '',
       editSession: null,
       attributeFields: [],
       planAttrs: {},
@@ -162,9 +176,134 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
       geo.preloadProjectionEngine() // support any org spatial reference without first-use lag
       this.linesLayer = new GraphicsLayer({ listMode: 'hide' })
       this.pointsLayer = new GraphicsLayer({ listMode: 'hide' })
-      jimuMapView.view.map.addMany([this.linesLayer, this.pointsLayer])
+      this.labelsLayer = new GraphicsLayer({ listMode: 'hide' })
+      this.snapScratchLayer = new GraphicsLayer({ listMode: 'hide' })
+      jimuMapView.view.map.addMany([this.linesLayer, this.labelsLayer, this.pointsLayer, this.snapScratchLayer])
       this.clickHandle = jimuMapView.view.on('click', this.onMapClick)
       this.dragHandle = jimuMapView.view.on('drag', this.onMapDrag)
+      void this.initSnapSVM()
+    }
+  }
+
+  /** SketchViewModel-based point picking with native snapping to all visible
+   *  feature layers (pattern from the Polk County traverse widget). Falls back
+   *  to the raw click handler + configured-layer query snapping if unavailable. */
+  async initSnapSVM (): Promise<void> {
+    if (this.snapSVM || this.svmModulesLoading) return
+    this.svmModulesLoading = true
+    try {
+      if (!this.SketchViewModelClass) {
+        const mods = await loadArcGISJSAPIModules([
+          'esri/widgets/Sketch/SketchViewModel',
+          'esri/core/Collection',
+          'esri/symbols/TextSymbol'
+        ])
+        this.SketchViewModelClass = mods[0]
+        this.CollectionClass = mods[1]
+        this.TextSymbolClass = mods[2]
+      }
+      const view = this.jimuMapView?.view
+      if (!view || !this.snapScratchLayer) return
+      this.snapSVM = new this.SketchViewModelClass({
+        view,
+        layer: this.snapScratchLayer,
+        snappingOptions: {
+          enabled: this.state.snappingEnabled,
+          featureEnabled: true,
+          selfEnabled: false,
+          distance: this.props.config.snappingTolerance ?? 15,
+          featureSources: new this.CollectionClass()
+        }
+      })
+      this.snapSVM.on('create', (event: any) => { void this.onSvmCreate(event) })
+      this.syncMapMode() // arm if a pick mode is already active
+    } catch (e) {
+      console.warn('ParcelDrafter: SketchViewModel snapping unavailable, using click fallback', e)
+      this.snapSVM = null
+    } finally {
+      this.svmModulesLoading = false
+    }
+  }
+
+  /** Snap targets: every visible feature layer on the map. */
+  applySnapSources (): void {
+    const view = this.jimuMapView?.view
+    if (!view || !this.snapSVM) return
+    const sources: any[] = []
+    view.map.allLayers.forEach((layer: any) => {
+      if (layer?.visible && String(layer.type ?? '').toLowerCase() === 'feature') {
+        sources.push({ layer, enabled: true })
+      }
+    })
+    const fs = this.snapSVM.snappingOptions.featureSources
+    if (fs?.removeAll) { fs.removeAll(); fs.addMany(sources) } else {
+      this.snapSVM.snappingOptions.featureSources = new this.CollectionClass(sources)
+    }
+  }
+
+  /** Popup suppression while a map tool is active (ExB 1.21 click-open API;
+   *  view.popupEnabled no longer exists). Restored when the tool deactivates. */
+  syncPopup (suppress: boolean): void {
+    const jmv = this.jimuMapView
+    if (!jmv) return
+    try {
+      if (suppress) {
+        ;(jmv as any).disableClickOpenPopup?.()
+        ;(jmv as any).closePopup?.()
+      } else {
+        ;(jmv as any).enableClickOpenPopup?.()
+      }
+    } catch (e) { /* older ExB versions lack these methods */ }
+  }
+
+  /** Central sync for map interaction state: SVM arming, cursor, popup suppression. */
+  syncMapMode (): void {
+    const view = this.jimuMapView?.view as any
+    const mode = this.state.mapClickMode
+    const pointPickModes = ['startPoint', 'digitize', 'rotationPoint']
+    // cancel any in-flight SVM create before re-arming
+    if (this.snapSVM && this.snapSVM.state === 'active') {
+      try { this.snapSVM.cancel() } catch (e) { /* ignore */ }
+    }
+    this.snapScratchLayer?.removeAll()
+    if (mode === 'none') {
+      if (view) view.cursor = 'auto'
+      this.syncPopup(false)
+      return
+    }
+    if (view) view.cursor = 'crosshair'
+    this.syncPopup(true)
+    if (this.snapSVM && pointPickModes.includes(mode)) {
+      this.applySnapSources()
+      this.snapSVM.snappingOptions.enabled = this.state.snappingEnabled
+      try { this.snapSVM.create('point') } catch (e) { /* fall back to click */ }
+    }
+  }
+
+  /** SVM point-create handler: routes the snapped point to the active mode. */
+  async onSvmCreate (event: any): Promise<void> {
+    if (event.state === 'cancel') {
+      this.snapScratchLayer?.removeAll()
+      return
+    }
+    if (event.state !== 'complete') return
+    const pt = event.graphic?.geometry
+    this.snapScratchLayer?.removeAll()
+    if (!pt) return
+    const mode = this.state.mapClickMode
+    const clicked4326 = await geo.getProjectedGeometry(pt, WGS84) as Point
+    if (mode === 'startPoint') {
+      this.startPoint4326 = clicked4326
+      this.setState({ startPointSet: true, mapClickMode: 'digitize' }, () => { void this.redraw(true) })
+    } else if (mode === 'digitize') {
+      this.addDigitizedLine(clicked4326)
+      // re-arm for the next vertex (stay in digitize)
+      if (this.state.mapClickMode === 'digitize' && this.snapSVM) {
+        this.applySnapSources()
+        try { this.snapSVM.create('point') } catch (e) { /* ignore */ }
+      }
+    } else if (mode === 'rotationPoint') {
+      this.setRotationPointFromClick(clicked4326)
     }
   }
 
@@ -228,12 +367,21 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     this.clickHandle = null
     this.dragHandle?.remove()
     this.dragHandle = null
+    if (this.snapSVM) {
+      try { this.snapSVM.destroy() } catch (e) { /* ignore */ }
+      this.snapSVM = null
+    }
+    this.syncPopup(false) // never leave popups suppressed
     if (this.jimuMapView?.view) {
       if (this.linesLayer) this.jimuMapView.view.map.remove(this.linesLayer)
       if (this.pointsLayer) this.jimuMapView.view.map.remove(this.pointsLayer)
+      if (this.labelsLayer) this.jimuMapView.view.map.remove(this.labelsLayer)
+      if (this.snapScratchLayer) this.jimuMapView.view.map.remove(this.snapScratchLayer)
     }
     this.linesLayer = null
     this.pointsLayer = null
+    this.labelsLayer = null
+    this.snapScratchLayer = null
   }
 
   componentWillUnmount (): void {
@@ -243,6 +391,9 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
   onMapClick = async (evt: __esri.ViewClickEvent): Promise<void> => {
     const mode = this.state.mapClickMode
     if (mode === 'none') return
+    // startPoint/digitize/rotationPoint are handled by the snapping SketchViewModel
+    // when available; this click path is the fallback for environments without it.
+    if (this.snapSVM && mode !== 'editSelect') return
     const clicked4326 = await geo.getProjectedGeometry(evt.mapPoint, WGS84) as Point
     if (mode === 'startPoint') {
       const snapped = await this.snapToConfiguredLayers(evt.mapPoint)
@@ -545,17 +696,47 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     const mapSR = view.spatialReference
     this.linesLayer.removeAll()
     this.pointsLayer.removeAll()
+    this.labelsLayer?.removeAll()
 
     const lineTypes = this.getLineTypes()
     const config = this.props.config
+    const colorOverride = this.state.traverseColor ? hexToRgba(this.state.traverseColor) : null
 
     for (const line of result.lines) {
-      const symbolJson = lineTypes.find(lt => lt.type === line.item.lineType)?.symbol
+      let symbolJson = lineTypes.find(lt => lt.type === line.item.lineType)?.symbol
+      if (symbolJson && colorOverride) {
+        symbolJson = { ...(symbolJson.asMutable ? symbolJson.asMutable({ deep: true }) : symbolJson), color: colorOverride }
+      }
       const projected = await geo.getProjectedGeometry(line.geometry, mapSR)
       this.linesLayer.add(new Graphic({
         geometry: projected,
         symbol: symbolJson ? symbolJsonUtils.fromJSON(toEsriJsonSymbol(symbolJson)) : undefined
       }))
+      // leg label at the geometry midpoint: bearing over distance, per plan settings
+      if (this.state.showLabels && this.TextSymbolClass) {
+        const midpoint = getPathMidpoint(line.geometry)
+        if (midpoint) {
+          const projectedMid = await geo.getProjectedGeometry(midpoint, mapSR)
+          const ps = this.state.planSettings
+          const bearingText = getBearingForPlanSettings(line.item.bearingConversions, ps)
+          const c = line.item.lengthConversions
+          const distText = c
+            ? (ps.distanceAndLengthUnits === 'meters' ? c.metersRound : ps.distanceAndLengthUnits === 'feet' ? c.feetRound : c.uSSurveyFeetRound)
+            : ''
+          const unitAbbrev = ps.distanceAndLengthUnits === 'meters' ? 'm' : ps.distanceAndLengthUnits === 'feet' ? 'ft' : 'usft'
+          this.labelsLayer.add(new Graphic({
+            geometry: projectedMid,
+            symbol: new this.TextSymbolClass({
+              text: `${bearingText}\n${distText} ${unitAbbrev}`,
+              color: colorOverride ?? [29, 29, 53, 255],
+              haloColor: [255, 255, 255, 220],
+              haloSize: 1.5,
+              font: { size: 9, family: 'sans-serif' },
+              yoffset: 6
+            })
+          }))
+        }
+      }
     }
 
     // node points
@@ -841,10 +1022,87 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     void this.loadAttributeFields()
   }
 
-  componentDidUpdate (prevProps: AllWidgetProps<IMConfig>): void {
+  componentDidUpdate (prevProps: AllWidgetProps<IMConfig>, prevState: State): void {
     if (prevProps.config !== this.props.config) {
       void this.loadAttributeFields()
     }
+    if (prevState.mapClickMode !== this.state.mapClickMode) {
+      this.syncMapMode()
+    }
+    if (prevState.snappingEnabled !== this.state.snappingEnabled && this.snapSVM) {
+      this.snapSVM.snappingOptions.enabled = this.state.snappingEnabled
+    }
+  }
+
+  /** Download the traverse as GeoJSON (WGS84 per spec; our geometry is already
+   *  4326 and arcs are densified, so exported curves actually curve). */
+  exportGeoJSON = (): void => {
+    if (!this.lastDrawResult || this.state.items.length === 0) {
+      this.setState({ message: { text: this.nls('exportEmpty'), type: 'error' } })
+      return
+    }
+    const features: any[] = []
+    const start = this.effectiveStart4326 ?? this.startPoint4326
+    if (start) {
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [start.x, start.y] },
+        properties: { type: 'start' }
+      })
+    }
+    this.lastDrawResult.points.forEach((pt, i) => {
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [pt.x, pt.y] },
+        properties: { type: 'node', index: i + 1 }
+      })
+    })
+    const boundaryPaths: number[][][] = []
+    this.lastDrawResult.lines.forEach((line, i) => {
+      const item = line.item
+      features.push({
+        type: 'Feature',
+        geometry: { type: 'LineString', coordinates: line.geometry.paths[0].map(v => [v[0], v[1]]) },
+        properties: {
+          index: i + 1,
+          bearingNADD: item.bearingConversions.naDD,
+          distanceMeters: item.lengthConversions?.meters ?? null,
+          radiusMeters: item.radiusConversions?.meters ?? null,
+          lineType: item.lineType,
+          isBoundary: line.isBoundary
+        }
+      })
+      if (line.isBoundary) {
+        for (const p of line.geometry.paths) boundaryPaths.push(p as any)
+      }
+    })
+    if (boundaryPaths.length > 0) {
+      const polygon = geo.getPolygonFromPolyLines(boundaryPaths, false, true)
+      if (polygon.rings.length > 0) {
+        features.push({
+          type: 'Feature',
+          geometry: { type: 'Polygon', coordinates: polygon.rings.map(ring => ring.map(v => [v[0], v[1]])) },
+          properties: {
+            type: 'parcel',
+            name: this.state.planName,
+            miscloseRatio: this.state.misclose?.miscloseRatio ?? null,
+            miscloseDistanceMeters: this.state.misclose?.miscloseDistanceMeters ?? null,
+            rotation: this.state.rotation,
+            scale: this.state.scale
+          }
+        })
+      }
+    }
+    const geojson = { type: 'FeatureCollection', features }
+    const blob = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/geo+json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = (this.state.planName ? this.state.planName.replace(/[^\w-]+/g, '_') : 'traverse') + '.geojson'
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
   }
 
   // ------------------------------------------------------------ page actions
@@ -981,6 +1239,30 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                   </Button>
                 </span>
               </Tooltip>
+              <Tooltip title={strings.legLabelsTip}>
+                <Button size='sm' type={state.showLabels ? 'primary' : 'secondary'}
+                  aria-pressed={state.showLabels}
+                  onClick={() => this.setState({ showLabels: !state.showLabels }, () => { void this.redraw() })}>
+                  {strings.legLabels}
+                </Button>
+              </Tooltip>
+              <Tooltip title={strings.snapToggleTip}>
+                <Button size='sm' type={state.snappingEnabled ? 'primary' : 'secondary'}
+                  aria-pressed={state.snappingEnabled}
+                  onClick={() => this.setState({ snappingEnabled: !state.snappingEnabled })}>
+                  {strings.snapToggle}
+                </Button>
+              </Tooltip>
+              <Tooltip title={strings.traverseColorTip}>
+                <span style={{ display: 'inline-flex' }}>
+                  <ColorPicker
+                    color={state.traverseColor || '#000000'}
+                    aria-label={strings.traverseColor}
+                    width={26} height={26}
+                    onChange={(color: string) => this.setState({ traverseColor: color }, () => { void this.redraw() })}
+                  />
+                </span>
+              </Tooltip>
             </div>
 
             {state.showPlanSettings && (
@@ -1062,6 +1344,14 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                       <Button type='primary' disabled={state.items.length === 0 || state.saving}
                         onClick={() => { void this.onSave() }}>
                         {strings.save}
+                      </Button>
+                    </span>
+                  </Tooltip>
+                  <Tooltip title={strings.exportGeoJSONTip}>
+                    <span style={{ display: 'inline-flex' }}>
+                      <Button type='secondary' disabled={state.items.length === 0}
+                        onClick={this.exportGeoJSON}>
+                        {strings.exportGeoJSON}
                       </Button>
                     </span>
                   </Tooltip>
@@ -1155,4 +1445,20 @@ function toEsriJsonSymbol (symbol: any): any {
 
 function capitalize (s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
+/** Midpoint vertex of a polyline's first path (4326). */
+function getPathMidpoint (geometry: __esri.Polyline): Point | null {
+  const path = geometry?.paths?.[0]
+  if (!path || path.length === 0) return null
+  const mid = path[Math.floor(path.length / 2)]
+  return new Point({ x: mid[0], y: mid[1], spatialReference: { wkid: 4326 } })
+}
+
+/** '#rrggbb' to [r,g,b,a] for symbol json. */
+function hexToRgba (hex: string): number[] | null {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex)
+  if (!m) return null
+  const n = parseInt(m[1], 16)
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255, 1]
 }

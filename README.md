@@ -5,6 +5,10 @@ lets users enter metes and bounds descriptions to draft parcels with misclose
 checking, compass rule adjustment, rotation and scale, and save to feature layers.
 It is a port of the Esri Web AppBuilder Parcel Drafter widget.
 
+Authors: Brian McLeer (City of Grand Junction, CO), Nicholas Cramer
+(Polk County, Oregon), and Eric McAvoy (Polk County, Oregon). Portions derived
+from the Polk County Traverse widget (https://github.com/ncramer11/traverse).
+
 - Esri Community post: (add link after posting)
 - Downloadable releases: see the Releases page of this repo
 
@@ -57,4 +61,6 @@ upgrade so it points at the current install.
 
 Apache-2.0. The original ParcelDrafter widget for Web AppBuilder is Copyright
 Esri Inc. under the same license; portions of the surveying algorithms are
-derived from that work.
+derived from that work. Snapping, popup coordination, leg labels, GeoJSON
+export, and surveyor unit conversions are derived from the Traverse widget,
+Copyright Polk County, Oregon, also Apache-2.0.

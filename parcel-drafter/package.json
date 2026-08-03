@@ -14,6 +14,11 @@
     "parcel-drafter"
   ],
   "license": "Apache-2.0",
-  "author": "Brian McLeer",
-  "dependencies": {}
+  "author": "Brian McLeer, Nicholas Cramer, and Eric McAvoy",
+  "dependencies": {},
+  "contributors": [
+    "Brian McLeer (City of Grand Junction, CO)",
+    "Nicholas Cramer (Polk County, Oregon)",
+    "Eric McAvoy (Polk County, Oregon)"
+  ]
 }
