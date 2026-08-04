@@ -112,8 +112,45 @@ export function TraverseGrid (props: Props): React.ReactElement {
     }
   }
 
-  const onKeyDown = (evt: React.KeyboardEvent): void => {
-    if (evt.key === 'Enter') tryAdd()
+  const bearingCellRef = React.useRef<HTMLDivElement>(null)
+  const distanceCellRef = React.useRef<HTMLDivElement>(null)
+  const radiusCellRef = React.useRef<HTMLDivElement>(null)
+
+  const focusCell = (ref: React.RefObject<HTMLDivElement>): void => {
+    const el = ref.current?.querySelector('input')
+    if (el) { el.focus(); el.select() }
+  }
+
+  /** 10-key entry flow (ported from the Polk County traverse widget):
+   *  numpad + or numpad Enter advances bearing -> length and commits from
+   *  length or radius, returning focus to bearing for the next call.
+   *  numpad / jumps from length to radius for curve entry.
+   *  The right hand never has to leave the numpad. */
+  const onEntryKeyDown = (evt: React.KeyboardEvent, field: 'bearing' | 'distance' | 'radius'): void => {
+    const isNumpadEnter = (evt as any).code === 'NumpadEnter'
+    const isNumpadPlus = (evt as any).code === 'NumpadAdd'
+    const isNumpadDivide = (evt as any).code === 'NumpadDivide'
+
+    if ((isNumpadEnter || isNumpadPlus) && field === 'bearing') {
+      evt.preventDefault()
+      focusCell(distanceCellRef)
+      return
+    }
+    if (isNumpadDivide && field === 'distance') {
+      evt.preventDefault()
+      focusCell(radiusCellRef)
+      return
+    }
+    if ((isNumpadEnter || isNumpadPlus) && (field === 'distance' || field === 'radius')) {
+      evt.preventDefault()
+      tryAdd()
+      focusCell(bearingCellRef)
+      return
+    }
+    if (evt.key === 'Enter') {
+      tryAdd()
+      focusCell(bearingCellRef)
+    }
   }
 
   const displayLength = (item: TraverseItem): string => {
@@ -258,28 +295,31 @@ export function TraverseGrid (props: Props): React.ReactElement {
       {/* entry row */}
       <div className='pd-grid-row' role='row'>
         <div role='cell' />
-        <div role='cell'>
+        <div role='cell' ref={bearingCellRef}>
           <TextInput size='sm' placeholder={strings.bearingHint} value={bearing}
             aria-label={`${strings.bearing}, ${strings.newLineEntry}`}
             aria-invalid={!!error || undefined}
             aria-describedby={describedBy}
             title={strings.bearingEntryTip}
-            onChange={evt => setBearing(evt.target.value)} onKeyDown={onKeyDown} />
+            onChange={evt => setBearing(evt.target.value)}
+            onKeyDown={evt => onEntryKeyDown(evt, 'bearing')} />
         </div>
-        <div role='cell'>
+        <div role='cell' ref={distanceCellRef}>
           <TextInput size='sm' placeholder={strings.lengthHint} value={distance}
             aria-label={`${strings.length}, ${strings.newLineEntry}`}
             aria-invalid={!!error || undefined}
             aria-describedby={describedBy}
             title={strings.lengthEntryTip}
-            onChange={evt => setDistance(evt.target.value)} onKeyDown={onKeyDown} />
+            onChange={evt => setDistance(evt.target.value)}
+            onKeyDown={evt => onEntryKeyDown(evt, 'distance')} />
         </div>
-        <div role='cell'>
+        <div role='cell' ref={radiusCellRef}>
           <TextInput size='sm' placeholder={strings.radiusHint} value={radius}
             aria-label={`${strings.radius}, ${strings.newLineEntry}`}
             aria-describedby={describedBy}
             title={strings.radiusEntryTip}
-            onChange={evt => setRadius(evt.target.value)} onKeyDown={onKeyDown} />
+            onChange={evt => setRadius(evt.target.value)}
+            onKeyDown={evt => onEntryKeyDown(evt, 'radius')} />
         </div>
         <div role='cell'>
           <Select size='sm' value={lineType}

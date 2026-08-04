@@ -23,13 +23,22 @@ Oregon, Apache-2.0 (https://github.com/ncramer11/traverse).
 - New traverse from a map click or typed coordinates, with live drawing as you type
 - Bearing formats: S20-25-25W, 20-25-25-3, dd.mmss, decimal degrees; the * shortcut
   copies the previous line and *tb continues tangent to the previous line or curve
-- Distance entry accepts m, ft, usft, ch (chains), and rd (rods) suffixes for
-  mixed-unit deed calls; chains and rods convert to meters on entry
+- Distance entry accepts m, ft, usft, ch (chains), rd (rods), lk (links), and
+  va (varas) suffixes for mixed-unit deed calls (AH 215 Table 2-2 factors);
+  surveyor units convert to meters on entry
+- Bearings paste directly from record documents: degree, minute, and second
+  symbols normalize automatically (N45°30'00"E parses the same as N45-30-00E)
+- Draft metes and bounds legal description export following AH 215 conventions:
+  commencement tie, Point of Beginning, thence courses, curve radius/arc/chord
+  language, and closing acreage statement (draft only, staff review required)
 - Boundary and connection line types with a configurable default
 - Misclose bearing, distance, ratio, and calculated area; compass rule applied
   automatically within the configured snap distance or ratio
 - Rotation and scale by text entry or by dragging on the map around an anchor point
 - Drag or arrow-key reordering of traverse legs
+- 10-key entry flow: numpad + or numpad Enter advances from bearing to length and
+  commits the line from length or radius, numpad / jumps to radius, and focus
+  returns to bearing for the next call
 - Start point and digitize clicks snap to the configured layers within tolerance
 - Edit traverse: closed parcels select by polygon footprint, unclosed by a
   connectivity walk from the clicked line; saving an edit updates the existing

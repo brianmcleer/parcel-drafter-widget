@@ -195,11 +195,36 @@ export function buildBearingConversions (naDD: number, originalInput: string): B
 }
 
 /**
+ * Normalize deed-notation bearings to the widget's dash format so descriptions
+ * can be pasted directly from record documents (AH 215 conventions):
+ *   N45\u00B030'00"E, N. 45\u00B0 30' E., 45\u00B030' -> N45-30-00E / 45-30-00
+ * Degree, minute, and second symbols become dashes, spaces and letter periods
+ * are removed, and missing seconds are padded with 00.
+ */
+export function normalizeBearingInput (raw: string): string {
+  let s = String(raw).trim()
+  if (!/[\u00B0\u00BA\u2032\u2033'".\s]/.test(s)) return s
+  s = s.replace(/\s+/g, '')
+  s = s.replace(/([NSEWnsew])\./g, '$1')   // N. -> N
+  s = s.replace(/[\u00B0\u00BA]/g, '-')    // degree symbols -> dash
+  s = s.replace(/[\u2032']/g, '-')          // minute symbols -> dash
+  s = s.replace(/[\u2033"]/g, '')           // second symbols removed
+  s = s.replace(/-+(?=[EWew]$)/, '')        // trailing dash before quadrant letter
+  s = s.replace(/-+$/, '')                  // trailing dash at end
+  // pad missing seconds: [N]dd-mm[E] -> [N]dd-mm-00[E]
+  const m = /^([NSns])?(\d{1,3})-([0-5]?\d)([EWew])?$/.exec(s)
+  if (m) {
+    s = `${m[1] ?? ''}${m[2]}-${m[3]}-00${m[4] ?? ''}`
+  }
+  return s
+}
+
+/**
  * Parse an entered bearing string using the plan-settings-preferred formats first,
  * then the rest (same two-pass strategy as WAB). Returns null if invalid.
  */
 export function categorizeBearingFormat (bearing: string | number, planSettings: PlanSettings): BearingConversions | null {
-  const value = String(bearing).trim()
+  const value = normalizeBearingInput(String(bearing).trim())
   const formats = getBearingFormatArr()
 
   const tryFormats = (matchType: boolean): BearingConversions | null => {

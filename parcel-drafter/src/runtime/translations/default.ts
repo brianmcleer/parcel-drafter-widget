@@ -94,9 +94,9 @@ export default {
   anchorTip: 'Pick a traverse point on the map to hold fixed while rotating or scaling',
   rotationTip: 'Rotate the whole traverse by this many degrees (positive is clockwise)',
   scaleTip: 'Multiply every distance in the traverse by this factor',
-  bearingEntryTip: 'Formats: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Type * to copy the previous line.',
-  lengthEntryTip: 'Distance in the plan units. Add m, ft, usft, ch (chains), or rd (rods) to override. Type * to copy the previous line.',
-  radiusEntryTip: 'Leave blank for a straight line. Positive curves right, negative curves left.',
+  bearingEntryTip: 'Formats: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Type * to copy the previous line. Numpad + moves to length.',
+  lengthEntryTip: 'Distance in the plan units. Add m, ft, usft, ch (chains), rd (rods), lk (links), or va (varas) to override. Type * to copy the previous line. Numpad + adds the line, numpad / jumps to radius.',
+  radiusEntryTip: 'Leave blank for a straight line. Positive curves right, negative curves left. Numpad + adds the line.',
 
   // accessibility
   traverseGridLabel: 'Traverse lines',
@@ -149,5 +149,7 @@ export default {
   exportGeoJSONTip: 'Download the traverse as a GeoJSON file with points, lines, and the closed parcel polygon. Curves export as densified geometry.',
   exportEmpty: 'Add at least one line before exporting.',
   traverseColor: 'Traverse color',
-  traverseColorTip: 'Override the drawing color for this session. Clear to use the configured symbols.'
+  traverseColorTip: 'Override the drawing color for this session. Clear to use the configured symbols.',
+  legalDescription: 'Legal',
+  legalDescriptionTip: 'Download a draft metes and bounds legal description of the traverse (AH 215 conventions: commencement, Point of Beginning, thence courses, curve radius/arc/chord, acreage). Draft only, review required.'
 }

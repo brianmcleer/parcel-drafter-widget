@@ -22,6 +22,9 @@ export const usSurveyFeetToFeet = (usft: number): number => metersToFeet(usSurve
 // Surveyor's units for historic deed calls (same factors as the Polk County traverse widget)
 export const chainsToMeters = (ch: number): number => Number(ch) * 20.1168
 export const rodsToMeters = (rd: number): number => Number(rd) * 5.0292
+// AH 215 Table 2-2: 1 link = 7.92 inches, 1 vara = 33 inches
+export const linksToMeters = (lk: number): number => Number(lk) * 0.201168
+export const varasToMeters = (va: number): number => Number(va) * 0.8382
 
 export function showFixedPlacesAfterDecimal (num: number, places: number): number {
   return parseFloat(Number(num).toFixed(places))
@@ -39,7 +42,7 @@ export function categorizeLengthFormat (length: string | number, currentUnit: Le
   let unit: LengthUnit = currentUnit
   let numericPart = raw
 
-  const suffixMatch = /^(-?\d*\.?\d+)\s*(m|ft|usft|ch|rd)?$/i.exec(raw)
+  const suffixMatch = /^(-?\d*\.?\d+)\s*(m|ft|usft|ch|rd|lk|va)?$/i.exec(raw)
   if (!suffixMatch) return null
   numericPart = suffixMatch[1]
   let inputOnlyMeters: number | null = null
@@ -49,6 +52,8 @@ export function categorizeLengthFormat (length: string | number, currentUnit: Le
     const s = suffixMatch[2].toLowerCase()
     if (s === 'ch') inputOnlyMeters = chainsToMeters(value)
     else if (s === 'rd') inputOnlyMeters = rodsToMeters(value)
+    else if (s === 'lk') inputOnlyMeters = linksToMeters(value)
+    else if (s === 'va') inputOnlyMeters = varasToMeters(value)
     else unit = s === 'm' ? 'meters' : s === 'ft' ? 'feet' : 'uSSurveyFeet'
   }
 
