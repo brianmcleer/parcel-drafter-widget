@@ -66,6 +66,54 @@ Oregon, Apache-2.0 (https://github.com/ncramer11/traverse).
 - No third-party dependencies. The widget uses only jimu and the ArcGIS Maps SDK
   modules that ship with Experience Builder, so no per-widget install is required
 
+## Creating the layers from scratch
+
+Adapted from the WAB-era setup thread
+(https://community.esri.com/t5/local-government-solutions-users-questions/parcel-drafter-setup-question/td-p/847281),
+with corrections for what this widget actually requires.
+
+Line layer (one feature per traverse leg):
+
+| Field | Type | Stores |
+|---|---|---|
+| Direction (or Bearing) | Double | Bearing as north azimuth decimal degrees |
+| Distance | Double | Line or chord distance in meters |
+| Radius | Double | Curve radius in meters, null or 0 for straight lines |
+| ArcLength | Double | Arc length in meters for curved lines |
+| LineType (or Category) | Short or Long Integer | 1 = boundary, 0 = connection |
+
+Polygon layer (one feature per closed parcel):
+
+| Field | Type | Stores |
+|---|---|---|
+| Name | Text | Plan name |
+| Description | Text | Plan description |
+| StatedArea | Text | Deed or stated area |
+| MiscloseRatio | Text | Computed ratio, for example 1:25000 |
+| MiscloseDistance | Double | Misclose distance in meters |
+| Rotation | Double | Rotation applied to the traverse |
+| Scale | Double | Scale factor applied |
+
+Point layer: no required fields, geometry only.
+
+The original WAB solution schema used Bearing, Category, SequenceID, ChordLength,
+and RelateGuid, and its polygon layer used ClosingRate and ClosingDistance. Layers
+deployed from that solution work directly with this widget: pick them in the
+settings panel and map the fields with the dropdowns. Names are matched
+case-insensitively, so the Oracle lowercase-field issue from the WAB thread does
+not apply here.
+
+Requirements this widget does NOT have (WAB-solution-only plumbing):
+
+- No RelateGuid field, SequenceID field, or relationship class between the
+  polygon and line layers. Edit selection is spatial, not relationship-based.
+- No hosted-versus-referenced publishing constraint. Any editable feature
+  service works. The "invalid foreign key" error from the WAB thread cannot
+  occur with this widget.
+
+Minimum useful setup: a line layer with Direction and Distance. Everything else
+is optional; unmapped fields are skipped on save.
+
 ## Install
 
 1. Download and extract the widget zip.
