@@ -15,7 +15,7 @@ labels, GeoJSON export, and chains/rods unit support are derived from the
 Traverse widget by Eric McAvoy and Nicholas Cramer, Copyright Polk County,
 Oregon, Apache-2.0 (https://github.com/ncramer11/traverse).
 
-- Esri Community post: (add link after posting)
+- Esri Community post: https://community.esri.com/t5/experience-builder-custom-widgets/parcel-drafter-widget/ba-p/1716478
 - Feedback: open a GitHub issue or comment on the Esri Community post
 
 ## Features
