@@ -17,6 +17,10 @@ import { LabelWithTip } from './ui-helpers'
 interface Props {
   items: TraverseItem[]
   lineTypes: LineTypeConfig[]
+  /** Controlled line type for the entry row, shared with the widget toolbar so
+   *  digitized map clicks and typed entries use the same choice (WAB parity). */
+  entryLineType: number
+  onEntryLineTypeChange: (lineType: number) => void
   planSettings: PlanSettings
   onAddItem: (bearing: string, distance: string, radius: string, lineType: number, bearingNaDDOverride?: number) => string | null
   onUpdateItem: (index: number, field: 'bearing' | 'distance' | 'radius', value: string) => string | null
@@ -66,12 +70,11 @@ const ERROR_ID = 'pd-grid-error'
 
 export function TraverseGrid (props: Props): React.ReactElement {
   const { items, lineTypes, planSettings, strings } = props
-  const defaultType = lineTypes.find(lt => lt.isDefault) ?? lineTypes[0]
+  const lineType = props.entryLineType
 
   const [bearing, setBearing] = React.useState('')
   const [distance, setDistance] = React.useState('')
   const [radius, setRadius] = React.useState('')
-  const [lineType, setLineType] = React.useState<number>(defaultType?.type ?? 0)
   const [error, setError] = React.useState<string | null>(null)
   const [dragIndex, setDragIndex] = React.useState<number | null>(null)
   const [dropIndex, setDropIndex] = React.useState<number | null>(null)
@@ -325,7 +328,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
           <Select size='sm' value={lineType}
             aria-label={`${strings.lineType}, ${strings.newLineEntry}`}
             title={strings.lineTypeTip}
-            onChange={evt => setLineType(Number(evt.target.value))}>
+            onChange={evt => props.onEntryLineTypeChange(Number(evt.target.value))}>
             {lineTypes.map(lt => (
               <Option key={lt.type} value={lt.type}>{lt.label}</Option>
             ))}

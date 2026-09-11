@@ -16,7 +16,11 @@
  * radio/checkbox groups are named; focus-visible outlines throughout.
  */
 /** @jsx jsx */
-import { React, jsx, css, Immutable, type UseDataSource, AllDataSourceTypes, DataSourceManager } from 'jimu-core'
+import { React, jsx, css, Immutable, type UseDataSource, DataSourceManager } from 'jimu-core'
+import * as jimuCore from 'jimu-core'
+// AllDataSourceTypes is real in jimu-core but absent from the VS editor shim's
+// typed member list; read it off the namespace so webpack and VS both accept it.
+const AllDataSourceTypes: any = (jimuCore as any).AllDataSourceTypes
 import { MapWidgetSelector, SettingSection, SettingRow } from 'jimu-ui/advanced/setting-components'
 import { DataSourceSelector } from 'jimu-ui/advanced/data-source-selector'
 import { TextInput, NumericInput, Select, Option, Tooltip, Checkbox, Radio, Label, Button } from 'jimu-ui'
@@ -131,7 +135,9 @@ export default class Setting extends React.PureComponent<SettingProps, SettingSt
   // IDE cannot resolve React's class typings through jimu-core.
   declare props: SettingProps
   declare state: SettingState
-  declare setState: (partial: Partial<SettingState> | ((prev: SettingState) => Partial<SettingState>), callback?: () => void) => void
+  // Loose on purpose: must stay assignable to both the real React 19 setState
+  // (webpack build) and the mode B shim's PureComponent.setState (VS check).
+  declare setState: (partial: any, callback?: () => void) => void
 
   constructor (props: SettingProps) {
     super(props)
@@ -214,7 +220,7 @@ export default class Setting extends React.PureComponent<SettingProps, SettingSt
   updateConfig = (key: string, value: any): void => {
     this.props.onSettingChange({
       id: this.props.id,
-      config: this.props.config.set(key, value)
+      config: this.props.config.set(key as any, value)
     })
   }
 

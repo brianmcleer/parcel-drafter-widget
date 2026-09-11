@@ -9,24 +9,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "jsx": "react",
-    "baseUrl": "../../..",
-    "paths": {
-      "jimu-*": [
-        "jimu-*"
-      ],
-      "react": [
-        "node_modules/react"
-      ],
-      "react/*": [
-        "node_modules/react/*"
-      ],
-      "react-dom": [
-        "node_modules/react-dom"
-      ],
-      "react-dom/*": [
-        "node_modules/react-dom/*"
-      ]
-    },
+    "types": [],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,

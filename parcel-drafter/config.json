@@ -42,7 +42,7 @@
   "lineTypes": [
     {
       "type": 1,
-      "isDefault": false,
+      "isDefault": true,
       "label": "Boundary Line",
       "symbol": {
         "type": "simple-line",
@@ -58,7 +58,7 @@
     },
     {
       "type": 0,
-      "isDefault": true,
+      "isDefault": false,
       "label": "Connection Line",
       "symbol": {
         "type": "simple-line",

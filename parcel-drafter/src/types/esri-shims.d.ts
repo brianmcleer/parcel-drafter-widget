@@ -13,6 +13,10 @@ declare module 'esri/*' {
     export default __EsriModuleDefault
 }
 
+// The help guide's CalciteIcon comes through EB's calcite wrapper; the master
+// editor shim does not declare it, so it is declared here (widget-local).
+declare module 'calcite-components'
+
 declare namespace __esri {
     interface Handle { [key: string]: any }
     interface FeatureLayer { [key: string]: any }

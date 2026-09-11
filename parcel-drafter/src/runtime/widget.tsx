@@ -5,7 +5,7 @@
 /** @jsx jsx */
 import { React, jsx, css, type AllWidgetProps, DataSourceManager } from 'jimu-core'
 import { JimuMapViewComponent, type JimuMapView, loadArcGISJSAPIModules } from 'jimu-arcgis'
-import { Button, TextInput, Label, Loading, Tooltip } from 'jimu-ui'
+import { Button, TextInput, Label, Loading, Tooltip, Select, Option } from 'jimu-ui'
 import { ColorPicker } from 'jimu-ui/basic/color-picker'
 import GraphicsLayer from 'esri/layers/GraphicsLayer'
 import Graphic from 'esri/Graphic'
@@ -32,6 +32,10 @@ import { MiscloseDetailsPanel } from './components/misclose-details'
 import { ParcelTools } from './components/parcel-tools'
 import { saveTraverse, type EditSession } from './lib/save-utils'
 import { selectParcelAtPoint } from './lib/edit-utils'
+import { CalciteIcon } from 'calcite-components'
+import HelpPopup from './components/HelpPopup'
+import FirstRunHint from './components/FirstRunHint'
+import { buildHelpSections, type HelpFeatures } from './helpSections'
 
 type Page = 'home' | 'traverse'
 type MapClickMode = 'none' | 'startPoint' | 'digitize' | 'rotationPoint' | 'editSelect'
@@ -102,6 +106,11 @@ interface State {
     statedArea: string
     message: { text: string, type: 'error' | 'success' } | null
     saving: boolean
+    /** Line type applied to newly digitized map clicks and the grid entry row
+     *  (WAB parity: choose Boundary Line vs Connection Line while drawing). */
+    currentLineType: number
+    helpOpen: boolean
+    showFirstRunHint: boolean
 }
 
 export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>, State> {
@@ -109,10 +118,9 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     // IDE cannot resolve React's class typings through jimu-core.
     declare props: AllWidgetProps<IMConfig> & { id: string, useMapWidgetIds?: any }
     declare state: State
-    declare setState: (
-        partial: Partial<State> | ((prev: State) => Partial<State>),
-        callback?: () => void
-    ) => void
+    // Loose on purpose: must stay assignable to both the real React 19 setState
+    // (webpack build) and the mode B shim's PureComponent.setState (VS check).
+    declare setState: (partial: any, callback?: () => void) => void
 
     jimuMapView: JimuMapView = null
     clickHandle: __esri.Handle = null
@@ -159,8 +167,55 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             planDescription: '',
             statedArea: '',
             message: null,
-            saving: false
+            saving: false,
+            currentLineType: this.getDefaultLineTypeCode(props.config),
+            helpOpen: false,
+            showFirstRunHint: !this.readHintDismissed(props.id)
         }
+    }
+
+    // ------------------------------------------------------------ help guide
+
+    /** Dismissal is per browser and namespaced by widget id so two copies of the
+     *  widget in one app do not share it. try/catch: private browsing throws. */
+    hintStorageKey (id: string): string {
+        return `parcelDrafter.helpHintDismissed.${id}`
+    }
+
+    readHintDismissed (id: string): boolean {
+        try { return window.localStorage.getItem(this.hintStorageKey(id)) === 'true' } catch (e) { return false }
+    }
+
+    dismissFirstRunHint = (): void => {
+        try { window.localStorage.setItem(this.hintStorageKey(this.props.id), 'true') } catch (e) { /* not worth breaking the widget over */ }
+        this.setState({ showFirstRunHint: false })
+    }
+
+    /** Opening the guide counts as answering the hint. */
+    openHelp = (): void => {
+        if (this.state.showFirstRunHint) this.dismissFirstRunHint()
+        this.setState({ helpOpen: true })
+    }
+
+    /** Feature flags for the help guide, computed from the same config checks the
+     *  save path uses, so the guide never describes a layer this app cannot save to. */
+    helpFeatures (): HelpFeatures {
+        const config = this.props.config
+        return {
+            pointLayer: !!config.pointLayerDsId,
+            lineLayer: !!config.lineLayerDsId,
+            polygonLayer: !!config.polygonLayerDsId
+        }
+    }
+
+    /** Default line type code from config (the entry marked isDefault, falling back
+     *  to the configured boundary type so saves can always build the polygon). */
+    getDefaultLineTypeCode(config?: IMConfig): number {
+        const cfg = config ?? this.props.config
+        const lineTypes: LineTypeConfig[] = (cfg.lineTypes as any).asMutable
+            ? (cfg.lineTypes as any).asMutable({ deep: true })
+            : cfg.lineTypes as any
+        return lineTypes.find(lt => lt.isDefault)?.type ?? cfg.boundaryLineType ?? lineTypes[0]?.type ?? 0
     }
 
     nls = (id: string): string => {
@@ -586,8 +641,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
         const distText = ps.distanceAndLengthUnits === 'meters'
             ? distConv.metersRound
             : ps.distanceAndLengthUnits === 'feet' ? distConv.feetRound : distConv.uSSurveyFeetRound
-        const defaultType = this.getLineTypes().find(lt => lt.isDefault) ?? this.getLineTypes()[0]
-        const err = this.onAddItem(naDD.toFixed(4), distText, '', defaultType.type)
+        const err = this.onAddItem(naDD.toFixed(4), distText, '', this.state.currentLineType)
         if (err) this.setState({ message: { text: err, type: 'error' } })
     }
 
@@ -931,6 +985,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                 return
             }
             const m = this.state.misclose
+            const hasBoundaryLines = this.lastDrawResult.lines.some(l => l.isBoundary)
             const result = await saveTraverse(
                 { pointLayer, lineLayer, polygonLayer },
                 this.lastDrawResult.lines,
@@ -952,18 +1007,28 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                 this.state.editSession
             )
             const wasEdit = !!this.state.editSession
+            let messageText = this.props.intl.formatMessage(
+                {
+                    id: wasEdit ? 'updateSuccess' : 'saveSuccess',
+                    defaultMessage: (defaultMessages as any)[wasEdit ? 'updateSuccess' : 'saveSuccess']
+                },
+                { lines: result.lineCount, points: result.pointCount })
+            let messageType: 'error' | 'success' = 'success'
+            if (polygonLayer) {
+                if (result.polygonAdded) {
+                    messageText += ' ' + this.nls(wasEdit ? 'polygonUpdated' : 'polygonSaved')
+                } else if (!hasBoundaryLines) {
+                    // WAB parity guard: the polygon is built from Boundary Lines only, so a
+                    // traverse drawn entirely as Connection Lines saves no parcel. Say so
+                    // instead of failing silently.
+                    messageText += ' ' + this.nls('noBoundaryLinesOnSave')
+                    messageType = 'error'
+                }
+            }
             this.setState({
                 saving: false,
                 editSession: null, // a completed edit save ends the session
-                message: {
-                    text: this.props.intl.formatMessage(
-                        {
-                            id: wasEdit ? 'updateSuccess' : 'saveSuccess',
-                            defaultMessage: (defaultMessages as any)[wasEdit ? 'updateSuccess' : 'saveSuccess']
-                        },
-                        { lines: result.lineCount, points: result.pointCount }),
-                    type: 'success'
-                }
+                message: { text: messageText, type: messageType }
             })
         } catch (err) {
             console.error(err)
@@ -1262,7 +1327,8 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             editSession: null,
             dragMode: 'none',
             mapClickMode: 'none',
-            message: null
+            message: null,
+            currentLineType: this.getDefaultLineTypeCode()
         })
     }
 
@@ -1293,7 +1359,23 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
 
                 {state.page === 'home' && (
                     <div>
-                        <h2 className='pd-section-title'>{strings.widgetTitle}</h2>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <h2 className='pd-section-title' style={{ flex: 1 }}>{strings.widgetTitle}</h2>
+                            <Button size='sm' type='tertiary' icon onClick={this.openHelp}
+                                title={strings.helpTitle} aria-label={strings.helpTitle} style={{ flexShrink: 0 }}>
+                                <CalciteIcon icon='question' scale='s' />
+                            </Button>
+                        </div>
+                        {state.showFirstRunHint && (
+                            <FirstRunHint
+                                title={strings.firstRunTitle}
+                                body={strings.firstRunBody}
+                                helpLink={strings.firstRunHelpLink}
+                                dismissLabel={strings.firstRunDismiss}
+                                onOpenHelp={this.openHelp}
+                                onDismiss={this.dismissFirstRunHint}
+                            />
+                        )}
                         <div className='pd-toolbar'>
                             <Tooltip title={strings.newTraverseTip}>
                                 <Button type='primary' onClick={this.startNewTraverse}>{strings.newTraverse}</Button>
@@ -1333,6 +1415,17 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                                     </Button>
                                 </span>
                             </Tooltip>
+                            <Tooltip title={strings.drawLineTypeTip}>
+                                <span style={{ display: 'inline-flex', minWidth: 140 }}>
+                                    <Select size='sm' value={state.currentLineType}
+                                        aria-label={strings.lineType}
+                                        onChange={(evt: any) => this.setState({ currentLineType: Number(evt.target.value) })}>
+                                        {this.getLineTypes().map(lt => (
+                                            <Option key={lt.type} value={lt.type}>{lt.label}</Option>
+                                        ))}
+                                    </Select>
+                                </span>
+                            </Tooltip>
                             <Tooltip title={strings.zoomToTip}>
                                 <span style={{ display: 'inline-flex' }}>
                                     <Button size='sm' type='secondary' disabled={!state.startPointSet}
@@ -1365,6 +1458,11 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                                     />
                                 </span>
                             </Tooltip>
+                            <Button size='sm' type='tertiary' icon onClick={this.openHelp}
+                                title={strings.helpTitle} aria-label={strings.helpTitle}
+                                style={{ marginLeft: 'auto', flexShrink: 0 }}>
+                                <CalciteIcon icon='question' scale='s' />
+                            </Button>
                         </div>
 
                         {state.showPlanSettings && (
@@ -1386,6 +1484,8 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                                 <TraverseGrid
                                     items={state.items}
                                     lineTypes={this.getLineTypes()}
+                                    entryLineType={state.currentLineType}
+                                    onEntryLineTypeChange={lt => this.setState({ currentLineType: lt })}
                                     planSettings={state.planSettings}
                                     onAddItem={this.onAddItem}
                                     onUpdateItem={this.onUpdateItem}
@@ -1486,6 +1586,17 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                         {state.message.text}
                     </div>
                 )}
+
+                <HelpPopup
+                    open={state.helpOpen}
+                    onClose={() => { this.setState({ helpOpen: false }) }}
+                    sections={buildHelpSections(this.nls, this.helpFeatures())}
+                    title={strings.helpTitle}
+                    intro={strings.helpIntro}
+                    searchPlaceholder={strings.helpSearchPlaceholder}
+                    noMatches={strings.helpNoMatches}
+                    closeLabel={strings.close}
+                />
             </div>
         )
     }
