@@ -99,9 +99,16 @@ Point layer: no required fields, geometry only.
 The original WAB solution schema used Bearing, Category, SequenceID, ChordLength,
 and RelateGuid, and its polygon layer used ClosingRate and ClosingDistance. Layers
 deployed from that solution work directly with this widget: pick them in the
-settings panel and map the fields with the dropdowns. Names are matched
-case-insensitively, so the Oracle lowercase-field issue from the WAB thread does
-not apply here.
+settings panel and map the fields with the dropdowns.
+
+Field names are matched without case, on both save and Edit traverse. This
+matters because the same data can present different casing depending on how it
+is served: a hosted feature layer in Portal or ArcGIS Online often lowercases
+field names (Direction becomes direction) while a map service keeps the original
+case. A field mapping configured against one works against the other, and the
+Oracle lowercase-field issue from the WAB thread does not apply here. Spelling
+still has to match: a configured field the layer does not have is skipped, and
+the widget now names those fields in its save and Edit traverse messages.
 
 Requirements this widget does NOT have (WAB-solution-only plumbing):
 

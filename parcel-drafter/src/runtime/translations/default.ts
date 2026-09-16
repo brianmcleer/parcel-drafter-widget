@@ -83,6 +83,8 @@ export default {
   saveFailed: 'Save failed. Check the console and layer permissions.',
   polygonSaved: 'Parcel polygon created.',
   polygonUpdated: 'Parcel polygon updated.',
+  fieldsNotOnLayer: 'These fields are not on the line layer: {fields}. Field names are matched without regard to capital letters, so check the spelling in the widget settings and pick the fields again if the layer changed.',
+  fieldsSkippedOnSave: 'These fields are not on the target layers and were skipped: {fields}. Check the field mapping in the widget settings.',
   noBoundaryLinesOnSave: 'No parcel polygon was created because no lines are marked as Boundary Line. Set the Line type to Boundary Line in the grid or in the toolbar before digitizing, then save again.',
 
   // tooltips
@@ -184,8 +186,9 @@ export default {
   helpDrawTitle: 'Drawing on the map',
   helpDraw1: 'Turn on Digitize, then every map click adds a line from the last point to where you clicked. Pick the Line type in the toolbar first: Boundary Line for the parcel outline, Connection Line to walk in.',
   helpDraw2: 'Snap pulls your clicks to nearby points and lines on the map. Turn it off with the Snap button if it grabs the wrong spot.',
-  helpDraw3: 'Labels shows the bearing and length on each line. The color box changes the drawing color for this session.',
-  helpDraw4: 'Press Escape to stop the map tool.',
+  helpDraw3: 'Labels shows the bearing and length on each line. The color box changes the drawing color until you clear it or close the app.',
+  helpDraw4: 'Zoom to brings the map back to your traverse. Clear removes every line and starts over.',
+  helpDraw5: 'Press Escape to stop the map tool.',
   helpFitTitle: 'Rotate, scale and anchor',
   helpFit1: 'Rotation turns the whole traverse and Scale stretches every length by the same factor. Type numbers, or turn on Rotate or Scale and drag on the map.',
   helpFit2: 'Anchor picks the traverse point that stays put while you rotate or scale.',
@@ -205,6 +208,7 @@ export default {
   helpTroubleNoPolygon: 'No polygon after saving: the lines were saved as Connection Line. Set the Line type to Boundary Line on each parcel leg, or pick Boundary Line in the toolbar before digitizing, then save again.',
   helpTroubleSymbols: 'Saved lines do not draw with the layer colors: the line type code is not in the layer\'s list of values. Ask the app owner to match the widget line types to the layer.',
   helpTroubleSaveFailed: 'Save failed: the layer may not allow edits. Check that you are signed in and the layers are editable, then try again.',
+  helpTroubleFields: 'Saved values come back empty, or Edit traverse finds nothing: the field names in the widget settings do not exist on the layer. Capital letters do not matter, but spelling does, and a hosted layer can use different names than the map service it came from. Open the widget settings and pick the fields again.',
   helpTroubleNoClicks: 'Map clicks add nothing: Digitize is off or there is no start point yet. Set the start point first, then turn on Digitize.',
   helpTroubleContact: 'Still stuck? Contact the GIS Division and mention the Parcel Drafter name and this app.',
   helpTipsTitle: 'Good to know',

@@ -32,6 +32,7 @@ import { MiscloseDetailsPanel } from './components/misclose-details'
 import { ParcelTools } from './components/parcel-tools'
 import { saveTraverse, type EditSession } from './lib/save-utils'
 import { selectParcelAtPoint } from './lib/edit-utils'
+import { readAttribute, getMissingFields } from './lib/field-utils'
 import { CalciteIcon } from 'calcite-components'
 import HelpPopup from './components/HelpPopup'
 import FirstRunHint from './components/FirstRunHint'
@@ -864,11 +865,13 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
         let start: Point | null = null
         for (const f of selection.lineFeatures) {
             const attrs = f.attributes
-            const bearingVal = attrs[fm.bearing]
-            const distVal = attrs[fm.distance]
+            // Field names are read without case: a hosted layer may return
+            // 'direction' where the configuration (and a map service) says 'Direction'.
+            const bearingVal = readAttribute(attrs, fm.bearing)
+            const distVal = readAttribute(attrs, fm.distance)
             if (bearingVal == null || distVal == null) continue
-            const radiusVal = attrs[fm.radius]
-            const lineTypeVal = attrs[fm.lineType] ?? this.props.config.boundaryLineType
+            const radiusVal = readAttribute(attrs, fm.radius)
+            const lineTypeVal = readAttribute(attrs, fm.lineType) ?? this.props.config.boundaryLineType
             const item = this.buildItemFromStoredValues(Number(bearingVal), Number(distVal),
                 radiusVal != null ? Number(radiusVal) : 0, Number(lineTypeVal))
             if (item) {
@@ -882,7 +885,18 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             }
         }
         if (!items.length || !start) {
-            this.setState({ message: { text: this.nls('noFeaturesFound'), type: 'error' } })
+            // Lines were found but none carried usable values: almost always a field
+            // mapping that does not match this layer. Name the fields instead of the
+            // generic "nothing found" so the fix is obvious.
+            const missing = getMissingFields(lineLayer, [fm.bearing, fm.distance, fm.radius, fm.lineType])
+            this.setState({
+                message: {
+                    text: missing.length > 0
+                        ? this.nls('fieldsNotOnLayer').replace('{fields}', missing.join(', '))
+                        : this.nls('noFeaturesFound'),
+                    type: 'error'
+                }
+            })
             return
         }
 
@@ -901,16 +915,15 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             const pfm = this.props.config.polygonFieldMap
             const pAttrs = selection.polygonFeature.attributes
             const read = (field: string): string => {
-                if (!field) return ''
-                const key = Object.keys(pAttrs).find(k => k.toLowerCase() === field.toLowerCase())
-                return key != null && pAttrs[key] != null ? String(pAttrs[key]) : ''
+                const value = readAttribute(pAttrs, field)
+                return value != null ? String(value) : ''
             }
             planName = read(pfm.name)
             planDescription = read(pfm.description)
             statedArea = read(pfm.statedArea)
             for (const af of this.state.attributeFields) {
-                const key = Object.keys(pAttrs).find(k => k.toLowerCase() === af.name.toLowerCase())
-                if (key != null && pAttrs[key] != null) planAttrs[af.name] = pAttrs[key]
+                const value = readAttribute(pAttrs, af.name)
+                if (value != null) planAttrs[af.name] = value
             }
         }
 
@@ -1024,6 +1037,21 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                     messageText += ' ' + this.nls('noBoundaryLinesOnSave')
                     messageType = 'error'
                 }
+            }
+            // Configured fields the target layers do not have are skipped silently by
+            // the edit, which looks like a successful save with empty attributes. Name
+            // them so a field mapping left over from a different service is visible.
+            const fm = this.props.config.lineFieldMap
+            const pfm = this.props.config.polygonFieldMap
+            const missing = [
+                ...getMissingFields(lineLayer, [fm.bearing, fm.distance, fm.radius, fm.arcLength, fm.lineType]),
+                ...getMissingFields(polygonLayer, [
+                    pfm.name, pfm.description, pfm.statedArea,
+                    pfm.miscloseRatio, pfm.miscloseDistance, pfm.rotation, pfm.scale
+                ])
+            ]
+            if (missing.length > 0) {
+                messageText += ' ' + this.nls('fieldsSkippedOnSave').replace('{fields}', missing.join(', '))
             }
             this.setState({
                 saving: false,

@@ -51,7 +51,7 @@ export function buildHelpSections (t: T, f: HelpFeatures): HelpSection[] {
       key: 'draw',
       icon: 'map',
       title: t('helpDrawTitle'),
-      body: [t('helpDraw1'), t('helpDraw2'), t('helpDraw3'), t('helpDraw4')]
+      body: [t('helpDraw1'), t('helpDraw2'), t('helpDraw3'), t('helpDraw4'), t('helpDraw5')]
     },
     {
       key: 'fit',
@@ -79,6 +79,7 @@ export function buildHelpSections (t: T, f: HelpFeatures): HelpSection[] {
       body: [
         ...when(f.polygonLayer, 'helpTroubleNoPolygon'),
         ...when(f.lineLayer, 'helpTroubleSymbols'),
+        ...when(anyLayer, 'helpTroubleFields'),
         ...when(anyLayer, 'helpTroubleSaveFailed'),
         t('helpTroubleNoClicks'),
         t('helpTroubleContact')

@@ -8,6 +8,7 @@ import { type DrawnLine } from './traverse-engine'
 import { type LineFieldMap, type PolygonFieldMap } from '../../config'
 import * as geo from './geometry-utils'
 import { getPolygonFromPolyLines } from './geometry-utils'
+import { resolveFieldName } from './field-utils'
 
 export interface PlanInfoValues {
   name: string
@@ -35,13 +36,13 @@ export interface SaveLayers {
   polygonLayer?: __esri.FeatureLayer
 }
 
+/** Write a value under the layer's own spelling of the configured field. Field
+ *  names are matched without case (hosted layers lowercase them, map services do
+ *  not), and a field the layer does not have is skipped rather than failing the
+ *  edit. */
 function setIfFieldExists (layer: __esri.FeatureLayer, attributes: any, fieldName: string, value: any): void {
-  if (!fieldName) return
-  const exists = layer.fields?.some(f => f.name.toLowerCase() === fieldName.toLowerCase())
-  if (exists) {
-    const actual = layer.fields.find(f => f.name.toLowerCase() === fieldName.toLowerCase())
-    attributes[actual.name] = value
-  }
+  const actual = resolveFieldName(layer, fieldName)
+  if (actual) attributes[actual] = value
 }
 
 /**
