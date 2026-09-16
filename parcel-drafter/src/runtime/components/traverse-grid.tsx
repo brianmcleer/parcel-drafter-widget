@@ -31,13 +31,48 @@ interface Props {
 }
 
 const gridStyle = css`
+  /* The grid is measured against its own width, not the browser window, so the
+     narrow layout below kicks in whenever the widget panel is narrow, wherever
+     the widget is placed. */
+  container-type: inline-size;
+
   .pd-grid-header, .pd-grid-row {
     display: grid;
     grid-template-columns: 20px 2fr 1.6fr 1.3fr 1.6fr 34px;
+    grid-template-areas: "handle bearing length radius type act";
     gap: 4px;
     align-items: center;
     margin-bottom: 4px;
+    min-width: 0;
   }
+  /* Without this the inputs keep their intrinsic width, the row refuses to
+     shrink, and the whole widget has to be made wide to fit one line. */
+  .pd-grid-header > *, .pd-grid-row > * { min-width: 0; }
+  .pd-c-bearing > *, .pd-c-length > *, .pd-c-radius > *, .pd-c-type > * {
+    width: 100%;
+    min-width: 0;
+  }
+  .pd-c-handle { grid-area: handle; }
+  .pd-c-bearing { grid-area: bearing; }
+  .pd-c-length { grid-area: length; }
+  .pd-c-radius { grid-area: radius; }
+  .pd-c-type { grid-area: type; }
+  .pd-c-act { grid-area: act; }
+
+  /* Narrow panel: radius and line type drop to a second line under bearing and
+     length, so the widget fits in a side panel instead of needing a wide one.
+     The drag handle and the delete or add button span both lines. */
+  @container (max-width: 400px) {
+    .pd-grid-header, .pd-grid-row {
+      grid-template-columns: 20px 1fr 1fr 34px;
+      grid-template-areas:
+        "handle bearing length act"
+        "handle radius  type   act";
+      row-gap: 2px;
+      margin-bottom: 8px;
+    }
+  }
+
   .pd-grid-header {
     font-weight: 600;
     font-size: 12px;
@@ -188,14 +223,14 @@ export function TraverseGrid (props: Props): React.ReactElement {
   return (
     <div css={gridStyle} role='table' aria-label={strings.traverseGridLabel}>
       <div className='pd-grid-header' role='row'>
-        <div role='columnheader'><span className='sr-only'>{strings.reorder}</span></div>
-        <div role='columnheader'><LabelWithTip label={strings.bearing} tip={strings.bearingEntryTip} /></div>
-        <div role='columnheader'>
+        <div role='columnheader' className='pd-c-handle'><span className='sr-only'>{strings.reorder}</span></div>
+        <div role='columnheader' className='pd-c-bearing'><LabelWithTip label={strings.bearing} tip={strings.bearingEntryTip} /></div>
+        <div role='columnheader' className='pd-c-length'>
           {planSettings.circularCurveParameters === 'radiusAndArcLength' ? strings.arcLength : strings.length}
         </div>
-        <div role='columnheader'>{strings.radius}</div>
-        <div role='columnheader'><LabelWithTip label={strings.lineType} tip={strings.lineTypeTip} /></div>
-        <div role='columnheader'>
+        <div role='columnheader' className='pd-c-radius'>{strings.radius}</div>
+        <div role='columnheader' className='pd-c-type'><LabelWithTip label={strings.lineType} tip={strings.lineTypeTip} /></div>
+        <div role='columnheader' className='pd-c-act'>
           <span className='sr-only'>{strings.deleteLine}</span>
         </div>
       </div>
@@ -213,7 +248,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
             setDropIndex(null)
           }}
         >
-          <div role='cell'>
+          <div role='cell' className='pd-c-handle'>
             <button
               type='button'
               className='pd-drag-handle'
@@ -229,7 +264,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
               onKeyDown={evt => onHandleKeyDown(evt, index)}
             >≡</button>
           </div>
-          <div role='cell'>
+          <div role='cell' className='pd-c-bearing'>
             <TextInput
               size='sm'
               value={item.bearing}
@@ -243,7 +278,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
               }}
             />
           </div>
-          <div role='cell'>
+          <div role='cell' className='pd-c-length'>
             <TextInput
               size='sm'
               value={item.distance}
@@ -257,7 +292,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
               }}
             />
           </div>
-          <div role='cell'>
+          <div role='cell' className='pd-c-radius'>
             <TextInput
               size='sm'
               value={item.radius}
@@ -271,7 +306,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
               }}
             />
           </div>
-          <div role='cell'>
+          <div role='cell' className='pd-c-type'>
             <Select
               size='sm'
               value={item.lineType}
@@ -284,7 +319,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
               ))}
             </Select>
           </div>
-          <div role='cell'>
+          <div role='cell' className='pd-c-act'>
             <Button size='sm' icon type='tertiary'
               title={`${strings.deleteLine}, ${lineNo(index)}`}
               aria-label={`${strings.deleteLine}, ${lineNo(index)}`}
@@ -297,8 +332,8 @@ export function TraverseGrid (props: Props): React.ReactElement {
 
       {/* entry row */}
       <div className='pd-grid-row' role='row'>
-        <div role='cell' />
-        <div role='cell' ref={bearingCellRef}>
+        <div role='cell' className='pd-c-handle' />
+        <div role='cell' className='pd-c-bearing' ref={bearingCellRef}>
           <TextInput size='sm' placeholder={strings.bearingHint} value={bearing}
             aria-label={`${strings.bearing}, ${strings.newLineEntry}`}
             aria-invalid={!!error || undefined}
@@ -307,7 +342,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
             onChange={evt => setBearing(evt.target.value)}
             onKeyDown={evt => onEntryKeyDown(evt, 'bearing')} />
         </div>
-        <div role='cell' ref={distanceCellRef}>
+        <div role='cell' className='pd-c-length' ref={distanceCellRef}>
           <TextInput size='sm' placeholder={strings.lengthHint} value={distance}
             aria-label={`${strings.length}, ${strings.newLineEntry}`}
             aria-invalid={!!error || undefined}
@@ -316,7 +351,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
             onChange={evt => setDistance(evt.target.value)}
             onKeyDown={evt => onEntryKeyDown(evt, 'distance')} />
         </div>
-        <div role='cell' ref={radiusCellRef}>
+        <div role='cell' className='pd-c-radius' ref={radiusCellRef}>
           <TextInput size='sm' placeholder={strings.radiusHint} value={radius}
             aria-label={`${strings.radius}, ${strings.newLineEntry}`}
             aria-describedby={describedBy}
@@ -324,7 +359,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
             onChange={evt => setRadius(evt.target.value)}
             onKeyDown={evt => onEntryKeyDown(evt, 'radius')} />
         </div>
-        <div role='cell'>
+        <div role='cell' className='pd-c-type'>
           <Select size='sm' value={lineType}
             aria-label={`${strings.lineType}, ${strings.newLineEntry}`}
             title={strings.lineTypeTip}
@@ -334,7 +369,7 @@ export function TraverseGrid (props: Props): React.ReactElement {
             ))}
           </Select>
         </div>
-        <div role='cell'>
+        <div role='cell' className='pd-c-act'>
           <Button size='sm' type='primary' title={strings.addLine}
             aria-label={strings.addLine} onClick={tryAdd}>+</Button>
         </div>
