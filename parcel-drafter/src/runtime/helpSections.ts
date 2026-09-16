@@ -78,6 +78,7 @@ export function buildHelpSections (t: T, f: HelpFeatures): HelpSection[] {
       title: t('helpTroubleTitle'),
       body: [
         ...when(f.polygonLayer, 'helpTroubleNoPolygon'),
+        ...when(f.polygonLayer, 'helpTroubleStackedPolygon'),
         ...when(f.lineLayer, 'helpTroubleSymbols'),
         ...when(anyLayer, 'helpTroubleFields'),
         ...when(anyLayer, 'helpTroubleSaveFailed'),

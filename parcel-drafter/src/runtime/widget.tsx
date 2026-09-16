@@ -923,7 +923,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
         let statedArea = ''
         const planAttrs: { [k: string]: any } = {}
         if (selection.polygonFeature && polygonLayer) {
-            editSession.polygonObjectId = selection.polygonFeature.attributes[polygonLayer.objectIdField]
+            editSession.polygonObjectId = readAttribute(selection.polygonFeature.attributes, polygonLayer.objectIdField)
             const pfm = this.props.config.polygonFieldMap
             const pAttrs = selection.polygonFeature.attributes
             const read = (field: string): string => {
@@ -951,7 +951,14 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             statedArea,
             planAttrs,
             mapClickMode: 'digitize',
-            message: { text: this.nls('editLoaded'), type: 'success' }
+            // No polygon behind these lines means saving adds one rather than
+            // updating, which is worth knowing before the save, not after.
+            message: {
+                text: (polygonLayer && editSession.polygonObjectId == null)
+                    ? this.nls('editLoadedNoPolygon')
+                    : this.nls('editLoaded'),
+                type: 'success'
+            }
         }, () => { void this.redraw(true) })
     }
 
@@ -1039,9 +1046,11 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                 },
                 { lines: result.lineCount, points: result.pointCount })
             let messageType: 'error' | 'success' = 'success'
+            const editedWithoutPolygon = wasEdit && this.state.editSession?.polygonObjectId == null
             if (polygonLayer) {
                 if (result.polygonAdded) {
-                    messageText += ' ' + this.nls(wasEdit ? 'polygonUpdated' : 'polygonSaved')
+                    messageText += ' ' + this.nls(
+                        editedWithoutPolygon ? 'polygonAddedDuringEdit' : wasEdit ? 'polygonUpdated' : 'polygonSaved')
                 } else if (!hasBoundaryLines) {
                     // WAB parity guard: the polygon is built from Boundary Lines only, so a
                     // traverse drawn entirely as Connection Lines saves no parcel. Say so

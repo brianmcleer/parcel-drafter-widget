@@ -89,12 +89,20 @@ export async function selectParcelAtPoint (
     try {
       const pq = polygonLayer.createQuery()
       pq.geometry = clickedMapPoint
+      // The user clicks a boundary line, so the click lands ON the polygon edge
+      // rather than inside it, and services disagree about whether a point exactly
+      // on an edge intersects the polygon: hosted feature layers commonly say no
+      // where a map service says yes. Buffering the click by the same tolerance the
+      // line queries use makes the hit consistent across both. Without it the
+      // polygon is not found, the edit session has no polygon to update, and saving
+      // stacks a second polygon on top of the original.
+      pq.distance = toleranceMapUnits
       pq.spatialRelationship = 'intersects'
       pq.returnGeometry = true
       pq.outFields = ['*']
       const pfs = await polygonLayer.queryFeatures(pq)
       if (pfs.features.length > 0) {
-        result.polygonFeature = pfs.features[0]
+        result.polygonFeature = pickNearestFeature(pfs.features, clickedMapPoint)
         const lq = lineLayer.createQuery()
         lq.geometry = result.polygonFeature.geometry
         lq.spatialRelationship = 'intersects'
@@ -113,7 +121,6 @@ export async function selectParcelAtPoint (
   const seedQuery = lineLayer.createQuery()
   seedQuery.geometry = clickedMapPoint
   seedQuery.distance = toleranceMapUnits
-  seedQuery.units = 'meters'
   seedQuery.spatialRelationship = 'intersects'
   seedQuery.returnGeometry = true
   seedQuery.outFields = ['*']
@@ -136,7 +143,6 @@ export async function selectParcelAtPoint (
       const q = lineLayer.createQuery()
       q.geometry = ep
       q.distance = toleranceMapUnits
-      q.units = 'meters'
       q.spatialRelationship = 'intersects'
       q.returnGeometry = true
       q.outFields = ['*']
@@ -153,5 +159,74 @@ export async function selectParcelAtPoint (
   }
 
   result.lineFeatures = chainLineFeatures(Array.from(collected.values()), toleranceMapUnits)
+
+  // 3) the click did not land on a polygon but the lines did come back. Look the
+  //    polygon up again from inside the boundary they form, so an edit session
+  //    still updates the existing parcel instead of adding a second one over it.
+  if (!result.polygonFeature && polygonLayer && result.lineFeatures.length > 0) {
+    result.polygonFeature = await findPolygonInsideLines(result.lineFeatures, polygonLayer)
+  }
+
   return result
+}
+
+/** The feature whose extent center is closest to `point`. A buffered click can
+ *  return the neighbor parcel as well as the one the user meant. */
+function pickNearestFeature (features: __esri.Graphic[], point: __esri.Point): __esri.Graphic {
+  if (features.length === 1) return features[0]
+  let best = features[0]
+  let bestDist = Infinity
+  for (const f of features) {
+    const ext: any = (f.geometry as any)?.extent
+    if (!ext) continue
+    const cx = (ext.xmin + ext.xmax) / 2
+    const cy = (ext.ymin + ext.ymax) / 2
+    const d = (cx - point.x) ** 2 + (cy - point.y) ** 2
+    if (d < bestDist) { bestDist = d; best = f }
+  }
+  return best
+}
+
+/** Find the parcel polygon that the selected lines enclose, by querying with a
+ *  point inside the boundary rather than on it. The center of the lines' combined
+ *  extent is inside for any ordinary parcel shape, and being off the edge avoids
+ *  the boundary-intersection disagreement between hosted layers and map services. */
+async function findPolygonInsideLines (
+  lineFeatures: __esri.Graphic[],
+  polygonLayer: __esri.FeatureLayer
+): Promise<__esri.Graphic | null> {
+  let xmin = Infinity
+  let ymin = Infinity
+  let xmax = -Infinity
+  let ymax = -Infinity
+  let sr: any = null
+  for (const f of lineFeatures) {
+    const geom: any = f.geometry
+    if (!geom?.paths) continue
+    sr = sr ?? geom.spatialReference
+    for (const path of geom.paths) {
+      for (const v of path) {
+        if (v[0] < xmin) xmin = v[0]
+        if (v[0] > xmax) xmax = v[0]
+        if (v[1] < ymin) ymin = v[1]
+        if (v[1] > ymax) ymax = v[1]
+      }
+    }
+  }
+  if (!sr || xmin === Infinity) return null
+
+  const center = new Point({ x: (xmin + xmax) / 2, y: (ymin + ymax) / 2, spatialReference: sr })
+  try {
+    const q = polygonLayer.createQuery()
+    q.geometry = center
+    q.spatialRelationship = 'intersects'
+    q.returnGeometry = true
+    q.outFields = ['*']
+    const fs = await polygonLayer.queryFeatures(q)
+    if (fs.features.length === 0) return null
+    return pickNearestFeature(fs.features, center)
+  } catch (e) {
+    console.warn('ParcelDrafter: polygon lookup from the selected lines failed', e)
+    return null
+  }
 }
