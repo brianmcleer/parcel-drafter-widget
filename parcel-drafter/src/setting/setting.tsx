@@ -545,6 +545,26 @@ export default class Setting extends React.PureComponent<SettingProps, SettingSt
 
         {this.renderAttributeSettings()}
 
+        <SettingSection title={this.nls('settingLabels')}>
+          <SettingRow flow='wrap'
+            label={this.labelWithTip(this.nls('settingLabelPlacement'), this.nls('settingLabelPlacementTip'))}>
+            <Select size='sm' id='pd-setting-label-placement'
+              value={config.labelPlacement ?? 'beside'}
+              aria-label={this.nls('settingLabelPlacement')}
+              onChange={evt => this.updateConfig('labelPlacement', evt.target.value)}>
+              <Option value='beside'>{this.nls('settingLabelPlacementBeside')}</Option>
+              <Option value='on'>{this.nls('settingLabelPlacementOn')}</Option>
+            </Select>
+          </SettingRow>
+          <SettingRow flow='wrap'
+            label={this.labelWithTip(this.nls('settingLabelOffset'), this.nls('settingLabelOffsetTip'))}>
+            <NumericInput size='sm' id='pd-setting-label-offset'
+              value={config.labelOffset ?? 10}
+              aria-label={this.nls('settingLabelOffset')}
+              onChange={v => this.updateConfig('labelOffset', v ?? 0)} />
+          </SettingRow>
+        </SettingSection>
+
         <SettingSection title={this.nls('settingMisclose')}>
           <SettingRow flow='wrap'
             label={this.labelWithTip(this.nls('settingSnapDistance'), this.nls('settingSnapDistanceTip'))}>

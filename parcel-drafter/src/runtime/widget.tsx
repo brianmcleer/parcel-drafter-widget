@@ -767,11 +767,12 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                 geometry: projected,
                 symbol: symbolJson ? (symbolJsonUtils as any).fromJSON(toEsriJsonSymbol(symbolJson)) : undefined
             }))
-            // leg label at the geometry midpoint: bearing over distance, per plan settings
+            // leg label halfway along the leg: bearing over distance, per plan settings.
+            // Computed from the projected geometry so the perpendicular offset below
+            // is a straight screen-space shift in the map's own coordinates.
             if (this.state.showLabels && this.TextSymbolClass) {
-                const midpoint = getPathMidpoint(line.geometry)
-                if (midpoint) {
-                    const projectedMid = await geo.getProjectedGeometry(midpoint, mapSR)
+                const mid = getPathMidpointAndDirection(projected as any)
+                if (mid) {
                     const ps = this.state.planSettings
                     const bearingText = getBearingForPlanSettings(line.item.bearingConversions, ps)
                     const c = line.item.lengthConversions
@@ -779,15 +780,26 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                         ? (ps.distanceAndLengthUnits === 'meters' ? c.metersRound : ps.distanceAndLengthUnits === 'feet' ? c.feetRound : c.uSSurveyFeetRound)
                         : ''
                     const unitAbbrev = ps.distanceAndLengthUnits === 'meters' ? 'm' : ps.distanceAndLengthUnits === 'feet' ? 'ft' : 'usft'
+                    // 'beside': push the label perpendicular to the leg, so the text clears
+                    // the line and the corner symbols. Map y and TextSymbol yoffset both
+                    // point up, so the map-space perpendicular (-dirY, dirX) is the offset.
+                    // A negative labelOffset puts the labels on the other side.
+                    const beside = (config.labelPlacement ?? 'beside') === 'beside'
+                    const gap = config.labelOffset ?? 10
+                    const xoffset = beside ? -mid.dirY * gap : 0
+                    const yoffset = beside ? mid.dirX * gap : 6
                     this.labelsLayer.add(new Graphic({
-                        geometry: projectedMid,
+                        geometry: mid.point,
                         symbol: new this.TextSymbolClass({
                             text: `${bearingText}\n${distText} ${unitAbbrev}`,
                             color: colorOverride ?? [29, 29, 53, 255],
                             haloColor: [255, 255, 255, 220],
                             haloSize: 1.5,
                             font: { size: 9, family: 'sans-serif' },
-                            yoffset: 6
+                            horizontalAlignment: 'center',
+                            verticalAlignment: beside ? 'middle' : 'baseline',
+                            xoffset,
+                            yoffset
                         })
                     }))
                 }
@@ -1696,12 +1708,54 @@ function capitalize(s: string): string {
     return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-/** Midpoint vertex of a polyline's first path (4326). */
-function getPathMidpoint(geometry: __esri.Polyline): Point | null {
-    const path = geometry?.paths?.[0]
-    if (!path || path.length === 0) return null
-    const mid = path[Math.floor(path.length / 2)]
-    return new Point({ x: mid[0], y: mid[1], spatialReference: { wkid: 4326 } })
+/** The point halfway along a polyline's length, plus the unit direction of the leg
+ *  there. Walking the length matters: a straight leg is stored as two vertices, so
+ *  the middle *vertex* is the end of the leg, which put every label on the corner
+ *  instead of the leg. Densified curves get the true halfway point too, rather than
+ *  the middle vertex. Pass geometry already projected to the map's spatial
+ *  reference: the direction is then usable directly as a screen-space offset. */
+function getPathMidpointAndDirection(geometry: __esri.Polyline):
+    { point: Point, dirX: number, dirY: number } | null {
+    const paths = geometry?.paths
+    if (!paths || paths.length === 0) return null
+    const sr = geometry.spatialReference
+    const pts: number[][] = []
+    for (const path of paths) for (const vertex of path) pts.push(vertex)
+    if (pts.length === 0) return null
+    if (pts.length === 1) {
+        return { point: new Point({ x: pts[0][0], y: pts[0][1], spatialReference: sr }), dirX: 1, dirY: 0 }
+    }
+
+    const segments: number[] = []
+    let total = 0
+    for (let i = 1; i < pts.length; i++) {
+        const d = Math.sqrt((pts[i][0] - pts[i - 1][0]) ** 2 + (pts[i][1] - pts[i - 1][1]) ** 2)
+        segments.push(d)
+        total += d
+    }
+    if (total === 0) {
+        return { point: new Point({ x: pts[0][0], y: pts[0][1], spatialReference: sr }), dirX: 1, dirY: 0 }
+    }
+
+    let remaining = total / 2
+    for (let i = 0; i < segments.length; i++) {
+        const isLast = i === segments.length - 1
+        if (remaining <= segments[i] || isLast) {
+            const span = segments[i] || 1
+            const t = Math.min(1, remaining / span)
+            const ax = pts[i][0]
+            const ay = pts[i][1]
+            const bx = pts[i + 1][0]
+            const by = pts[i + 1][1]
+            return {
+                point: new Point({ x: ax + (bx - ax) * t, y: ay + (by - ay) * t, spatialReference: sr }),
+                dirX: (bx - ax) / span,
+                dirY: (by - ay) / span
+            }
+        }
+        remaining -= segments[i]
+    }
+    return null
 }
 
 /** '#rrggbb' to [r,g,b,a] for symbol json. */

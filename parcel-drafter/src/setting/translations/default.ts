@@ -23,6 +23,11 @@ export default {
   settingSnapDistanceUnit: 'Misclose snap distance unit',
   settingRatioSnap: 'Misclose ratio snap (1:n)',
   settingSnappingTolerance: 'Snapping tolerance (pixels)',
+  settingLabels: 'Leg labels',
+  settingLabelPlacement: 'Label position',
+  settingLabelPlacementBeside: 'Beside the line',
+  settingLabelPlacementOn: 'On the line',
+  settingLabelOffset: 'Label distance from the line (points)',
   feet: 'Feet',
   meters: 'Meters',
   uSSurveyFeet: 'US survey feet',
@@ -48,6 +53,8 @@ export default {
   settingSnapDistanceUnitTip: 'Unit for the misclose snap distance',
   settingRatioSnapTip: 'If the misclose ratio (1:n) meets or exceeds this n, points snap closed and the compass rule is applied',
   settingSnappingToleranceTip: 'Pixel tolerance used when selecting existing parcel lines to edit',
+  settingLabelPlacementTip: 'Where the bearing and distance sit on each leg. Both positions center the label along the leg; beside the line also pushes it clear of the line and the corner symbols',
+  settingLabelOffsetTip: 'How far the label sits from the line when the position is beside the line. Use a negative number to put the labels on the other side',
   fieldMissingNote: 'Fields that do not exist on the layer are skipped on save',
 
   // default line type

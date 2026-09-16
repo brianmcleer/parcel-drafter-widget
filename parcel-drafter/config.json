@@ -75,6 +75,8 @@
   ],
   "boundaryLineType": 1,
   "snappingTolerance": 15,
+  "labelPlacement": "beside",
+  "labelOffset": 10,
   "miscloseSnapDistance": 5,
   "miscloseSnapDistanceUnit": "feet",
   "miscloseRatioSnap": 5000,

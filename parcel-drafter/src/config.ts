@@ -44,6 +44,11 @@ export interface Config {
   lineTypes: LineTypeConfig[]
   boundaryLineType: number
   snappingTolerance: number
+  /** 'beside' draws leg labels centered on the leg and pushed perpendicular to it;
+   *  'on' keeps them centered on the leg itself. */
+  labelPlacement: 'beside' | 'on'
+  /** Perpendicular distance in points for 'beside'. Negative flips to the other side. */
+  labelOffset: number
   miscloseSnapDistance: number
   miscloseSnapDistanceUnit: 'feet' | 'meters' | 'uSSurveyFeet'
   miscloseRatioSnap: number
