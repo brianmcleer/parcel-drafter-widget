@@ -18,13 +18,26 @@ interface Props {
   strings: any
 }
 
+/* Two rows, not one: the inputs and the three toggle buttons on a single flex
+   row pushed the buttons past the panel edge, because the inputs keep their
+   intrinsic width and nothing wrapped. Inputs share the first row and shrink;
+   the buttons sit on their own wrapping row underneath. */
 const style = css`
-  display: flex;
-  gap: 8px;
-  align-items: flex-end;
   margin-top: 8px;
-  .pd-tool { flex: 1; }
+  .pd-tool-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+  .pd-tool { flex: 1 1 0; min-width: 0; }
+  .pd-tool input { width: 100%; min-width: 0; }
   .pd-tool label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 2px; }
+  .pd-tool-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
   :focus-visible {
     outline: 2px solid var(--sys-color-primary-main, #076fe5);
     outline-offset: 1px;
@@ -53,6 +66,7 @@ export function ParcelTools (props: Props): React.ReactElement {
 
   return (
     <div css={style} role='group' aria-label={strings.parcelToolsLabel}>
+      <div className='pd-tool-row'>
       <div className='pd-tool'>
         <Label for='pd-tool-rotation'>
           <LabelWithTip label={strings.rotation} tip={strings.rotationTip} />
@@ -73,6 +87,8 @@ export function ParcelTools (props: Props): React.ReactElement {
           onBlur={commitScale}
           onKeyDown={evt => { if (evt.key === 'Enter') commitScale() }} />
       </div>
+      </div>
+      <div className='pd-tool-buttons'>
       <Tooltip title={strings.anchorTip}>
         <Button size='sm' type={props.updateRotationActive ? 'primary' : 'secondary'}
           aria-label={strings.updateRotationPoint}
@@ -97,6 +113,7 @@ export function ParcelTools (props: Props): React.ReactElement {
           {strings.dragScaleShort}
         </Button>
       </Tooltip>
+      </div>
     </div>
   )
 }
