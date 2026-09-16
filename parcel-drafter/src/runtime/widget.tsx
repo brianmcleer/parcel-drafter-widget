@@ -57,6 +57,19 @@ const widgetStyle = css`
   .pd-toolbar { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
   .pd-hint { font-size: 12px; color: var(--sys-color-surface-paper-text, #6a6a6a); margin-bottom: 8px; }
   .pd-plan-info input { margin-bottom: 6px; }
+  /* Longitude, latitude and Apply. The inputs keep their intrinsic width unless
+     told otherwise, which pushed Apply past the panel edge on a narrow widget.
+     Let the two inputs share the row and shrink, and let Apply drop to its own
+     line when there is no room for it. */
+  .pd-start-entry {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .pd-start-entry > div { flex: 1 1 110px; min-width: 0; }
+  .pd-start-entry > div input { width: 100%; min-width: 0; }
+  .pd-start-entry > button { flex: 0 0 auto; }
   .pd-message {
     display: flex;
     align-items: flex-start;
@@ -1660,7 +1673,7 @@ function StartPointEntry(props: { strings: any, onApply: (x: string, y: string) 
     return (
         <div role='group' aria-label={props.strings.startPointEntryLabel}>
             <InfoNote>{props.strings.clickToSetStartPoint}</InfoNote>
-            <div style={{ display: 'flex', gap: 6, alignItems: 'flex-end' }}>
+            <div className='pd-start-entry'>
                 <div>
                     <Label for='pd-start-lon'>{props.strings.longitude}</Label>
                     <TextInput size='sm' id='pd-start-lon' value={x}
