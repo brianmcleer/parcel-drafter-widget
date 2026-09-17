@@ -124,6 +124,18 @@ is optional; unmapped fields are skipped on save.
 ## Install
 
 1. Download and extract the widget zip.
+
+   The zip is the widget only. The Visual Studio type shims in the repo
+   (`parcel-drafter/src/exb-editor-shims.d.ts` and
+   `parcel-drafter/src/types/esri-shims.d.ts`) are left out on purpose: their
+   ambient `declare module` blocks are not file-scoped and would rewrite the
+   react, jimu and esri types for every other widget in your `your-extensions`
+   folder.
+
+   If you clone the repo instead of using the zip, delete
+   `parcel-drafter/src/exb-editor-shims.d.ts` and
+   `parcel-drafter/src/types/esri-shims.d.ts` before building; nothing else
+   depends on them.
 2. Copy the `parcel-drafter` folder into your Experience Builder install at
    `client\your-extensions\widgets\parcel-drafter`.
 
@@ -207,3 +219,7 @@ points are not tracked by object id), so points are only created on first save.
 - **Locales**: only English strings were carried over; the original's 30+ `nls` locales can be added under `translations/` incrementally.
 - **Per-line-type symbol pickers** (WAB's `SymbolChooserPopup`) are not exposed in Builder - edit symbols in `config.json` defaults or extend the setting page.
 - **Map cursor tooltips** (`MapTooltipHandler.js`) are not implemented; active-tool state is shown in the widget instead.
+
+## Changelog
+
+- **2026-09-17, 1.8.1**: Packaging: the Visual Studio editor shims are no longer in the release zip.

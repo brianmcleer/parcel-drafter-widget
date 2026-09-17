@@ -38,6 +38,14 @@ and the duplicate-name troubleshooting note. Short version: drop the `parcel-dra
 folder into `client\your-extensions\widgets\` so that `manifest.json` sits directly
 inside `widgets\parcel-drafter\`, then start the client as usual.
 
+The release zip is the widget only. The Visual Studio type shims in this repo
+(`parcel-drafter/src/exb-editor-shims.d.ts` and
+`parcel-drafter/src/types/esri-shims.d.ts`) are left out on purpose: their ambient
+`declare module` blocks are not file-scoped and would rewrite the react, jimu and
+esri types for every other widget in your `your-extensions` folder. If you clone
+this repo instead of using the zip, delete those two files before building; nothing
+else depends on them.
+
 ## Publishing updates (maintainer workflow)
 
 After changing the widget in the Experience Builder folder, open a terminal in
@@ -53,9 +61,11 @@ this repo folder and run:
   ```
 
 The script mirrors the widget from the EB install into this repo (skipping
-node_modules and .vs), commits, pushes, and optionally cuts a GitHub release with
-a zip attachment. Edit `$ExbWidgetPath` in `publish.ps1` after any EB version
-upgrade so it points at the current install.
+node_modules, .vs and `Claude outputs`), commits, pushes, and optionally cuts a
+GitHub release with a zip attachment. The zip is built from a staging copy with the
+editor-only files in `$ReleaseOnlyExclude` removed, so the Visual Studio shims stay
+in the repo but never reach a downstream install. Edit `$ExbWidgetPath` in
+`publish.ps1` after any EB version upgrade so it points at the current install.
 
 ## License
 
