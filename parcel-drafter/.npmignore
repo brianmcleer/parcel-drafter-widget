@@ -5,3 +5,7 @@ Thumbs.db
 .DS_Store
 *.user
 *.suo
+
+# Cowork working folder and release zips never ship
+Claude outputs/
+*.zip
