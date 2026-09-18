@@ -1,6 +1,6 @@
 {
   "name": "parcel-drafter",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "Enter metes and bounds descriptions to draft parcels with misclose checking, compass rule adjustment, and save to feature layers. Port of the WAB Parcel Drafter widget.",
   "keywords": [
     "exb-widget",
