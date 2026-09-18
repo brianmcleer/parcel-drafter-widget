@@ -1,7 +1,7 @@
 {
   "name": "parcel-drafter",
   "type": "widget",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "exbVersion": "1.21.0",
   "author": "Brian McLeer, Nicholas Cramer, and Eric McAvoy",
   "label": "Parcel Drafter",

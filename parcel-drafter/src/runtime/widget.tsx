@@ -37,6 +37,8 @@ import { CalciteIcon } from 'calcite-components'
 import HelpPopup from './components/HelpPopup'
 import FirstRunHint from './components/FirstRunHint'
 import { buildHelpSections, type HelpFeatures } from './helpSections'
+import { beacon } from '../shared/beacon'
+import type { BeaconHandle } from '../shared/beacon'
 
 type Page = 'home' | 'traverse'
 type MapClickMode = 'none' | 'startPoint' | 'digitize' | 'rotationPoint' | 'editSelect'
@@ -135,6 +137,8 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     // Loose on purpose: must stay assignable to both the real React 19 setState
     // (webpack build) and the mode B shim's PureComponent.setState (VS check).
     declare setState: (partial: any, callback?: () => void) => void
+
+    private beacon: BeaconHandle | null = null
 
     jimuMapView: JimuMapView = null
     clickHandle: __esri.Handle = null
@@ -1018,6 +1022,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
 
     onSave = async (): Promise<void> => {
         if (!this.lastDrawResult || !this.effectiveStart4326) return
+        this.beacon?.action('save')
         this.setState({ saving: true, message: null })
         try {
             const [pointLayer, lineLayer, polygonLayer] = await Promise.all([
@@ -1093,6 +1098,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                 message: { text: messageText, type: messageType }
             })
         } catch (err) {
+            this.beacon?.error(err, 'save')
             console.error(err)
             this.setState({ saving: false, message: { text: this.nls('saveFailed'), type: 'error' } })
         }
@@ -1148,6 +1154,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     }
 
     componentDidMount(): void {
+        this.beacon = beacon.init(this.props)
         void this.loadAttributeFields()
     }
 
@@ -1170,6 +1177,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             this.setState({ message: { text: this.nls('exportEmpty'), type: 'error' } })
             return
         }
+        this.beacon?.action('export-geojson')
         const features: any[] = []
         const start = this.effectiveStart4326 ?? this.startPoint4326
         if (start) {
@@ -1318,6 +1326,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             this.setState({ message: { text: this.nls('exportEmpty'), type: 'error' } })
             return
         }
+        this.beacon?.action('export-legal')
         const text = this.buildLegalDescription()
         const blob = new Blob([text], { type: 'text/plain' })
         const url = URL.createObjectURL(blob)
@@ -1365,6 +1374,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     }
 
     clearAll = (): void => {
+        this.beacon?.action('clear')
         this.startPoint4326 = null
         this.effectiveStart4326 = null
         this.rotationAnchor4326 = null
