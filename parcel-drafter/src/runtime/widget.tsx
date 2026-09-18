@@ -1433,12 +1433,14 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                     <div>
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <h2 className='pd-section-title' style={{ flex: 1 }}>{strings.widgetTitle}</h2>
-                            <Button size='sm' type='tertiary' icon onClick={this.openHelp}
-                                title={strings.helpTitle} aria-label={strings.helpTitle} style={{ flexShrink: 0 }}>
-                                <CalciteIcon icon='question' scale='s' />
-                            </Button>
+                            {this.props.config?.showHelp !== false && (
+                                <Button size='sm' type='tertiary' icon onClick={this.openHelp}
+                                    title={strings.helpTitle} aria-label={strings.helpTitle} style={{ flexShrink: 0 }}>
+                                    <CalciteIcon icon='question' scale='s' />
+                                </Button>
+                            )}
                         </div>
-                        {state.showFirstRunHint && (
+                        {this.props.config?.showHelp !== false && state.showFirstRunHint && (
                             <FirstRunHint
                                 title={strings.firstRunTitle}
                                 body={strings.firstRunBody}
@@ -1530,11 +1532,13 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
                                     />
                                 </span>
                             </Tooltip>
-                            <Button size='sm' type='tertiary' icon onClick={this.openHelp}
-                                title={strings.helpTitle} aria-label={strings.helpTitle}
-                                style={{ marginLeft: 'auto', flexShrink: 0 }}>
-                                <CalciteIcon icon='question' scale='s' />
-                            </Button>
+                            {this.props.config?.showHelp !== false && (
+                                <Button size='sm' type='tertiary' icon onClick={this.openHelp}
+                                    title={strings.helpTitle} aria-label={strings.helpTitle}
+                                    style={{ marginLeft: 'auto', flexShrink: 0 }}>
+                                    <CalciteIcon icon='question' scale='s' />
+                                </Button>
+                            )}
                         </div>
 
                         {state.showPlanSettings && (
