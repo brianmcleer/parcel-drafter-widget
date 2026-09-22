@@ -1,6 +1,6 @@
 # parcel-drafter-widget
 
-[![License](https://img.shields.io/github/license/brianmcleer/parcel-drafter-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/=tag)](https://github.com/brianmcleer/parcel-drafter-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/parcel-drafter-widget)](https://github.com/brianmcleer/parcel-drafter-widget/issues)
+[![License](https://img.shields.io/github/license/brianmcleer/parcel-drafter-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/parcel-drafter-widget?display_name=tag)](https://github.com/brianmcleer/parcel-drafter-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/parcel-drafter-widget)](https://github.com/brianmcleer/parcel-drafter-widget/issues)
 
 Repo for the Parcel Drafter custom widget for ArcGIS Experience Builder. The widget
 lets users enter metes and bounds descriptions to draft parcels with misclose
@@ -18,19 +18,19 @@ from the Polk County Traverse widget (https://github.com/ncramer11/traverse).
 
 ```
 parcel-drafter-widget/           <- this repo
-â”œâ”€â”€ README.md                    <- this file (GitHub landing page)
-â”œâ”€â”€ LICENSE                      <- Apache-2.0
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ publish.ps1                  <- one-command sync/commit/push/release script
-â””â”€â”€ parcel-drafter/              <- the widget (drops into your-extensions/widgets)
-    â”œâ”€â”€ package.json
-    â”œâ”€â”€ manifest.json
-    â”œâ”€â”€ config.json
-    â”œâ”€â”€ tsconfig.json
-    â”œâ”€â”€ icon.svg
-    â”œâ”€â”€ README.md                <- install steps, schema setup, troubleshooting
-    â”œâ”€â”€ LICENSE
-    â””â”€â”€ src/ ...
+├── README.md                    <- this file (GitHub landing page)
+├── LICENSE                      <- Apache-2.0
+├── .gitignore
+├── publish.ps1                  <- one-command sync/commit/push/release script
+└── parcel-drafter/              <- the widget (drops into your-extensions/widgets)
+    ├── package.json
+    ├── manifest.json
+    ├── config.json
+    ├── tsconfig.json
+    ├── icon.svg
+    ├── README.md                <- install steps, schema setup, troubleshooting
+    ├── LICENSE
+    └── src/ ...
 ```
 
 ## Installing the widget
