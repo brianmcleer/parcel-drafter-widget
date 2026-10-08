@@ -5,6 +5,9 @@
 import { React, jsx, css } from 'jimu-core'
 import { Tooltip, Button } from 'jimu-ui'
 import { InfoOutlined } from 'jimu-icons/outlined/suggested/info'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from '../translations/default';
+
 
 const labelStyle = css`
   display: inline-flex;
@@ -47,6 +50,7 @@ const noteStyle = css`
 
 /** Label text with a focusable info-icon Tooltip (Calcite/builder convention). */
 export function LabelWithTip (props: { label: React.ReactNode, tip: string, ariaLabel?: string }): React.ReactElement {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   return (
     <span css={labelStyle}>
       <span className='pd-label-text'>{props.label}</span>

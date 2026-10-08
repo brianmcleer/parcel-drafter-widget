@@ -75,5 +75,8 @@ export default {
   attributeAliasPlaceholder: 'Alias (optional)',
   attributeNoPolygonLayer: 'Select a polygon layer first to choose its fields',
   fieldPickerFreeText: 'Type a field name',
-  loadingFields: 'Loading layer fields...'
+  loadingFields: 'Loading layer fields...',
+  help: 'Help',
+  showHelpGuide: 'Show help guide',
+  showTheQuestionMarkButtonThat: 'Show the question-mark button that opens the widget help guide'
 }

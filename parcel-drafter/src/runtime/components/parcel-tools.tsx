@@ -5,6 +5,9 @@
 import { React, jsx, css } from 'jimu-core'
 import { TextInput, Label, Button, Tooltip } from 'jimu-ui'
 import { LabelWithTip } from './ui-helpers'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from '../translations/default';
+
 
 interface Props {
   rotation: number
@@ -45,6 +48,7 @@ const style = css`
 `
 
 export function ParcelTools (props: Props): React.ReactElement {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { rotation, scale, strings } = props
   const [rotationText, setRotationText] = React.useState(String(rotation))
   const [scaleText, setScaleText] = React.useState(String(scale))

@@ -599,9 +599,9 @@ export default class Setting extends React.PureComponent<SettingProps, SettingSt
               onChange={v => this.updateConfig('snappingTolerance', v ?? 0)} />
           </SettingRow>
         </SettingSection>
-        <SettingSection title='Help'>
-          <SettingRow tag='label' label='Show help guide'>
-            <Checkbox checked={this.props.config?.showHelp !== false} onChange={(evt) => { this.props.onSettingChange({ id: this.props.id, config: (this.props.config as any).set('showHelp', evt.target.checked) }) }} aria-label='Show the question-mark button that opens the widget help guide' />
+        <SettingSection title={this.nls('help')}>
+          <SettingRow tag='label' label={this.nls('showHelpGuide')}>
+            <Checkbox checked={this.props.config?.showHelp !== false} onChange={(evt) => { this.props.onSettingChange({ id: this.props.id, config: (this.props.config as any).set('showHelp', evt.target.checked) }) }} aria-label={this.nls('showTheQuestionMarkButtonThat')} />
           </SettingRow>
         </SettingSection>
       </div>

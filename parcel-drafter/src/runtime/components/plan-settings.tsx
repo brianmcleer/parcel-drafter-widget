@@ -6,6 +6,9 @@ import { React, jsx, css } from 'jimu-core'
 import { Select, Option, Label } from 'jimu-ui'
 import { LabelWithTip } from './ui-helpers'
 import { type PlanSettings } from '../lib/bearing-utils'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from '../translations/default';
+
 
 interface Props {
   planSettings: PlanSettings
@@ -30,6 +33,7 @@ const style = css`
 `
 
 export function PlanSettingsPanel (props: Props): React.ReactElement {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { planSettings, onChange, strings } = props
   const update = (patch: Partial<PlanSettings>): void => {
     onChange({ ...planSettings, ...patch })

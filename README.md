@@ -69,6 +69,17 @@ editor-only files in `$ReleaseOnlyExclude` removed, so the Visual Studio shims s
 in the repo but never reach a downstream install. Edit `$ExbWidgetPath` in
 `publish.ps1` after any EB version upgrade so it points at the current install.
 
+<!-- exb-i18n:languages -->
+## Languages
+
+The widget follows the Experience Builder app language: the ArcGIS profile language, the browser, `?locale=xx` in the URL, or the Language Switcher widget. Interface text lives in `src/runtime/translations/default.ts` (and `src/setting/translations/default.ts` for the settings panel), with language files for all 39 Experience Builder locales made by [exb-i18n-kit](https://github.com/brianmcleer/exb-i18n-kit).
+
+- Esri's own Experience Builder translations are used first, so shared words match the out-of-the-box widgets.
+- Other strings come from the kit's shared translation memory. Machine translations are marked for review.
+- Anything not translated yet shows in English.
+- Coverage per language: `parcel-drafter/i18n/STATUS.md`.
+- To fix a translation for every widget that uses it, open a pull request on `memory/<locale>.json` in exb-i18n-kit.
+
 ## License
 
 Apache-2.0. The original ParcelDrafter widget for Web AppBuilder is Copyright

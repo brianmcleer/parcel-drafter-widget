@@ -8,6 +8,9 @@ import { LabelWithTip } from './ui-helpers'
 import { type MiscloseDetails } from '../lib/traverse-engine'
 import { type PlanSettings, getBearingForPlanSettings } from '../lib/bearing-utils'
 import { getAbbreviatedUnits, metersToFeet, metersToUSSurveyFeet } from '../lib/unit-utils'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from '../translations/default';
+
 
 interface Props {
   details: MiscloseDetails | null
@@ -39,6 +42,7 @@ const style = css`
 `
 
 export function MiscloseDetailsPanel (props: Props): React.ReactElement | null {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { details, planSettings, strings } = props
   if (!details) return null
 

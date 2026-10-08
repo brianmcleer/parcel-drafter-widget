@@ -13,6 +13,9 @@ import { type LineTypeConfig } from '../../config'
 import { type LengthUnit } from '../lib/unit-utils'
 import { chordBearingToTangentBearing } from '../lib/geometry-utils'
 import { LabelWithTip } from './ui-helpers'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from '../translations/default';
+
 
 interface Props {
   items: TraverseItem[]
@@ -104,6 +107,7 @@ const gridStyle = css`
 const ERROR_ID = 'pd-grid-error'
 
 export function TraverseGrid (props: Props): React.ReactElement {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { items, lineTypes, planSettings, strings } = props
   const lineType = props.entryLineType
 
