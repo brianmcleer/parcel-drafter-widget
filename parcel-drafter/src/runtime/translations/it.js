@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Buono a sapersi",
         helpTips1: "Le impostazioni del piano cambiano come cuscinetti, lunghezze e aree vengono lette e mostrate. Impostarli per abbinare l'atto prima di digitare.",
         helpTips2: "L'area indicata dall'atto viene salvata accanto all'area calcolata, quindi le differenze rimangono visibili.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "il {value}♪ {value2} {unitWord}",
+        unknownError: "errore sconosciuto",
+        unserializableError: "errore non serializzabile"
       })
     }
   }

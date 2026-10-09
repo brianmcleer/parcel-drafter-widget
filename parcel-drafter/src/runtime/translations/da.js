@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Godt at vide",
         helpTips1: "Planindstillinger ændrer hvordan lejer, længder og områder læses og vises. Sæt dem til at matche skødet, før du skriver.",
         helpTips2: "Det angivne område fra skødet gemmes ved siden af det beregnede område, så forskellene forbliver synlige.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "HERAF {value}, {value2} {unitWord}",
+        unknownError: "ukendt fejl",
+        unserializableError: "userialiserbar fejl"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Godt å vite",
         helpTips1: "Planinnstillingene endrer hvordan lager, lengder og områder leses og vises. Sett dem til å matche handlingen før du skriver.",
         helpTips2: "Det angitte området fra handlingen lagres ved siden av det beregnede området, så forskjeller holder seg synlige.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "der {value}, {value2} {unitWord}",
+        unknownError: "ukjent feil",
+        unserializableError: "uiserbar feil"
       })
     }
   }

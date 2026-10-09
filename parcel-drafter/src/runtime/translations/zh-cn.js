@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "很高兴知道",
         helpTips1: "计划设置会改变轴承,长度,以及区域是如何被读取和显示的. 让他们在输入前与契约匹配 。",
         helpTips2: "从契约中声明的区域保存在计算区域旁边,因此差异保持不变。",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "此时 {value}, (中文). {value2} {unitWord}",
+        unknownError: "未知错误",
+        unserializableError: "无序错误"
       })
     }
   }

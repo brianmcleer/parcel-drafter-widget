@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Es bueno saberlo",
         helpTips1: "Los ajustes del plan cambian cómo se leen y muestran los rodamientos, longitudes y áreas. Ponlos para que coincidan con la escritura antes de escribir.",
         helpTips2: "El área declarada de la escritura se guarda al lado del área calculada, por lo que las diferencias permanecen visibles.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Desde entonces {value}, {value2} {unitWord}",
+        unknownError: "error desconocido",
+        unserializableError: "error unserializable"
       })
     }
   }

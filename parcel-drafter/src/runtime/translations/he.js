@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "טוב לדעת",
         helpTips1: "הגדרות התוכנית לשנות את האופן שבו נושאים, אורך, ואזורים נקראים ומוכיחים. הגדר אותם כדי להתאים את הרע לפני הקלדה.",
         helpTips2: "האזור הקבוע מהדה נשמר ליד האזור המחושב, כך שהבדלים נשארים גלויים.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Thence {value}, {value2} {unitWord}",
+        unknownError: "טעות לא ידועה",
+        unserializableError: "טעות בלתי אפשרית"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Dobro je vedeti",
         helpTips1: "Nastavitve načrta spreminjajo, kako se odčitavajo in prikazujejo ležaji, dolžine in področja. Nastavite jih, da se ujemajo z dokumentom pred tipkanjem.",
         helpTips2: "Navedena površina iz listine se shrani poleg izračunanega območja, zato razlike ostanejo vidne.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "od takrat {value}, {value2} {unitWord}",
+        unknownError: "neznana napaka",
+        unserializableError: "Neizvedljiva napaka"
       })
     }
   }

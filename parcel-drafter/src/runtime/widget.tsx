@@ -39,7 +39,7 @@ import FirstRunHint from './components/FirstRunHint'
 import { buildHelpSections, type HelpFeatures } from './helpSections'
 import { beacon } from '../shared/beacon'
 import type { BeaconHandle } from '../shared/beacon'
-import { __setIntl, __t } from './i18n-t'
+import { __m, __setIntl, __t } from './i18n-t'
 
 type Page = 'home' | 'traverse'
 type MapClickMode = 'none' | 'startPoint' | 'digitize' | 'rotationPoint' | 'editSelect'
@@ -1061,7 +1061,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
             let messageText = this.props.intl.formatMessage(
                 {
                     id: wasEdit ? 'updateSuccess' : 'saveSuccess',
-                    defaultMessage: (defaultMessages as any)[wasEdit ? 'updateSuccess' : 'saveSuccess']
+                    defaultMessage: __m[wasEdit ? 'updateSuccess' : 'saveSuccess']
                 },
                 { lines: result.lineCount, points: result.pointCount })
             let messageType: 'error' | 'success' = 'success'

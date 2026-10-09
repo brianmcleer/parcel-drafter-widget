@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Bo saber-ho",
         helpTips1: "L' arranjament del Plan canvia com s' enganxen, longituds i àrees es llegeixen i es mostren. Estableix que coincideixen amb l' acció abans d' escriure.",
         helpTips2: "L'àrea declarat del fet es desa al costat de l'àrea calculada, així que les diferències romandran visibles.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "nce {value}, {value2} {unitWord}",
+        unknownError: "error desconegut",
+        unserializableError: "Error no llegible"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Baik untuk mengetahui",
         helpTips1: "Pengaturan rencana mengubah bagaimana bantalan, panjang, dan daerah dibaca dan ditampilkan. Set mereka untuk mencocokkan akta sebelum mengetik.",
         helpTips2: "Daerah yang dinyatakan dari akta disimpan di samping daerah yang dihitung, jadi perbedaan tetap terlihat.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "THAT {value}, {value2} {unitWord}",
+        unknownError: "galat tak dikenal",
+        unserializableError: "kesalahan tidak serialisasi"
       })
     }
   }

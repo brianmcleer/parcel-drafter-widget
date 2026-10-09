@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "ดีที่ได้รู้",
         helpTips1: "การ วาง แผน เปลี่ยน วิธี ที่ มี การ อ่าน และ แสดง ให้ เห็น. ตั้งให้ตรงกับการกระทําก่อนที่จะพิมพ์",
         helpTips2: "พื้นที่ที่ระบุไว้จากโฉนดได้ถูกบันทึกไว้ ข้างๆ พื้นที่ที่ถูกคํานวณไว้ ดังนั้น ความแตกต่างจึงยังคงมองเห็นได้",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "ตรงนั้น {value}. {value2} {unitWord}",
+        unknownError: "ข้อผิดพลาดไม่ทราบสาเหตุ",
+        unserializableError: "ข้อผิดพลาดที่ไม่สามารถตรวจสอบได้"
       })
     }
   }

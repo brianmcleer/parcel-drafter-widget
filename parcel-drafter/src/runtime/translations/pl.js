@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Dobrze wiedzieć",
         helpTips1: "Ustawienia planu zmieniają sposób odczytywania i wyświetlania łożysk, długości i obszarów. Ustaw, żeby pasowały do aktu przed wpisem.",
         helpTips2: "Podany obszar z aktu jest zapisywany obok obliczonego obszaru, więc różnice pozostają widoczne.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "następnie {value}, {value2} {unitWord}",
+        unknownError: "nieznany błąd",
+        unserializableError: "błąd niezserializowalny"
       })
     }
   }

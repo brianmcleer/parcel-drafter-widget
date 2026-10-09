@@ -204,16 +204,16 @@
       },
       "locales": {
         "ar": {
-          "file": "244384909ea0",
+          "file": "ebb9bf300c46",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -995,20 +995,25 @@
               "t": "The stated area from the deed is save beside the calculated area, so differences stay visible.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "منذ البداية {value}.. {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "bg": {
-          "file": "f820c97cae4b",
+          "file": "15081ee4ff17",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -1790,6 +1795,11 @@
               "t": "Посочената област от акта е запазена до изчислената площ, така че разликите остават видими.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "От там {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
@@ -1808,16 +1818,16 @@
           "entries": {}
         },
         "ca": {
-          "file": "eb53f8888a92",
+          "file": "02b7440f2990",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -2604,20 +2614,25 @@
               "t": "L'àrea declarat del fet es desa al costat de l'àrea calculada, així que les diferències romandran visibles.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "nce {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "cs": {
-          "file": "2d765bf3cd1a",
+          "file": "5a1be19a078e",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -3399,20 +3414,25 @@
               "t": "Zadaná plocha z listiny je uložena vedle vypočítané plochy, takže rozdíly zůstávají viditelné.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "odtud {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "da": {
-          "file": "927cb6226a12",
+          "file": "34463f4e0dbf",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 158,
+            "machine": 159,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -4204,20 +4224,25 @@
               "t": "Det angivne område fra skødet gemmes ved siden af det beregnede område, så forskellene forbliver synlige.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "HERAF {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "de": {
-          "file": "a7eea302a30f",
+          "file": "ee4b05691345",
           "counts": {
-            "esri": 33,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 159,
+            "machine": 160,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -5014,20 +5039,25 @@
               "t": "Der angegebene Bereich aus der Tat wird neben dem berechneten Bereich gespeichert, so dass Unterschiede sichtbar bleiben.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "von {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "el": {
-          "file": "366d3867628b",
+          "file": "d842c64eabff",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -5809,20 +5839,25 @@
               "t": "Η δηλωμένη περιοχή από την πράξη σώζεται δίπλα στην υπολογισμένη περιοχή, οπότε οι διαφορές παραμένουν ορατές.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "από εκεί {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "es": {
-          "file": "f1a151c2f225",
+          "file": "720a87af0579",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -6609,20 +6644,25 @@
               "t": "El área declarada de la escritura se guarda al lado del área calculada, por lo que las diferencias permanecen visibles.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Desde entonces {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "et": {
-          "file": "217805b11a40",
+          "file": "135e50e01090",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -7404,20 +7444,25 @@
               "t": "Teo märgitud ala salvestatakse arvutatud ala kõrval, nii et erinevused jäävad nähtavaks.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "sealt {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "fi": {
-          "file": "03cb1876f442",
+          "file": "3ec84a23ffa0",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -8199,20 +8244,25 @@
               "t": "Teosta ilmoitettu alue tallennetaan lasketun alueen viereen, joten erot pysyvät näkyvissä.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "sieltä {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "fr": {
-          "file": "d0b6a4a40f58",
+          "file": "2abcb8a98062",
           "counts": {
-            "esri": 32,
+            "esri": 34,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 161,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -9014,20 +9064,25 @@
               "t": "La zone indiquée de l'acte est sauvée à côté de la zone calculée, de sorte que les différences restent visibles.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "de là {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "he": {
-          "file": "05b7ad2ef59e",
+          "file": "c5d833c6cb1a",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -9809,6 +9864,11 @@
               "t": "האזור הקבוע מהדה נשמר ליד האזור המחושב, כך שהבדלים נשארים גלויים.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Thence {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
@@ -9827,16 +9887,16 @@
           "entries": {}
         },
         "hu": {
-          "file": "c9250fe56c9d",
+          "file": "63f6252ca915",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -10618,20 +10678,25 @@
               "t": "A megadott terület a tett mentett mellett számított terület, így különbségek maradnak látható.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Innen {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "id": {
-          "file": "08f7cb8e01c3",
+          "file": "eb26333cfa02",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -11418,20 +11483,25 @@
               "t": "Daerah yang dinyatakan dari akta disimpan di samping daerah yang dihitung, jadi perbedaan tetap terlihat.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "THAT {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "it": {
-          "file": "44100e6ac993",
+          "file": "ab051f1b361a",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -12213,20 +12283,25 @@
               "t": "L'area indicata dall'atto viene salvata accanto all'area calcolata, quindi le differenze rimangono visibili.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "il {value}♪ {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "ja": {
-          "file": "a7d20a3c1834",
+          "file": "3719083cc33b",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -13008,20 +13083,25 @@
               "t": "指定されたエリアは、計算されたエリアの横に保存されますので、差は表示されません。",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "ログイン {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "ko": {
-          "file": "bf27026f84ad",
+          "file": "107b6e6c864b",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -13803,20 +13883,25 @@
               "t": "deed의 명시된 영역은 계산 영역 옆에 저장되어 있으므로 차이는 볼 수 있습니다.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "이름 * {value}· {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "lt": {
-          "file": "ff2b8e3b148d",
+          "file": "2e8cca0660a0",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -14598,20 +14683,25 @@
               "t": "Nurodytas plotas nuo veiksmo išsaugomas šalia apskaičiuoto ploto, todėl skirtumai išlieka matomi.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "iš ten {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "lv": {
-          "file": "5c73be12bc0c",
+          "file": "01f9c64d82dc",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -15393,20 +15483,25 @@
               "t": "Norādītais apgabals no akta tiek saglabāts blakus aprēķinātajam laukumam, tāpēc atšķirības paliek redzamas.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "no turienes {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "no": {
-          "file": "663ea472a184",
+          "file": "639a736713ce",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -16193,20 +16288,25 @@
               "t": "Det angitte området fra handlingen lagres ved siden av det beregnede området, så forskjeller holder seg synlige.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "der {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "nl": {
-          "file": "028af99e4be3",
+          "file": "b244b3f3bbe4",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -16993,20 +17093,25 @@
               "t": "Het aangegeven gebied van de akte wordt opgeslagen naast het berekende gebied, zodat verschillen zichtbaar blijven.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Daarna {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "pl": {
-          "file": "308dea1bf4f4",
+          "file": "e5ce799869c8",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -17788,20 +17893,25 @@
               "t": "Podany obszar z aktu jest zapisywany obok obliczonego obszaru, więc różnice pozostają widoczne.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "następnie {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "pt-br": {
-          "file": "27d43269435a",
+          "file": "0b31989ef381",
           "counts": {
-            "esri": 33,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 159,
+            "machine": 160,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -18598,20 +18708,25 @@
               "t": "A área declarada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Então... {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "pt-pt": {
-          "file": "7265adb3e6e9",
+          "file": "1d099aa9d255",
           "counts": {
-            "esri": 33,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 159,
+            "machine": 160,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -19408,20 +19523,25 @@
               "t": "A área indicada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "daí em diante {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "ro": {
-          "file": "5d151ba2b67f",
+          "file": "b4cf54da35fa",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -20203,20 +20323,25 @@
               "t": "Zona declarată de fapt este salvată lângă zona calculată, astfel încât diferențele rămân vizibile.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "De acolo {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "ru": {
-          "file": "0110142f984e",
+          "file": "2ee50dedeac5",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -20998,20 +21123,25 @@
               "t": "Заявленная область действия сохраняется рядом с расчетной областью, поэтому различия остаются видимыми.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "оттуда {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "sk": {
-          "file": "2187ba83634e",
+          "file": "d14ee0977edd",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -21793,20 +21923,25 @@
               "t": "Stanovená plocha z listiny je uložená vedľa vypočítanej plochy, takže rozdiely zostávajú viditeľné.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Z tohto dôvodu {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "sl": {
-          "file": "f9d1602fd733",
+          "file": "eceda62f732c",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -22588,6 +22723,11 @@
               "t": "Navedena površina iz listine se shrani poleg izračunanega območja, zato razlike ostanejo vidne.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "od takrat {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
@@ -22606,16 +22746,16 @@
           "entries": {}
         },
         "sv": {
-          "file": "46f0fc8e7cec",
+          "file": "94d96cc6ad72",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 157,
+            "machine": 158,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -23402,20 +23542,25 @@
               "t": "Det angivna området från gärningen sparas bredvid det beräknade området, så skillnaderna är synliga.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Sedan {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "th": {
-          "file": "042bd7711615",
+          "file": "fd32dc230a69",
           "counts": {
-            "esri": 34,
+            "esri": 36,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -24197,20 +24342,25 @@
               "t": "พื้นที่ที่ระบุไว้จากโฉนดได้ถูกบันทึกไว้ ข้างๆ พื้นที่ที่ถูกคํานวณไว้ ดังนั้น ความแตกต่างจึงยังคงมองเห็นได้",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "ตรงนั้น {value}. {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "tr": {
-          "file": "aeb47675a9bf",
+          "file": "7e3096c600cf",
           "counts": {
-            "esri": 35,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -24992,20 +25142,25 @@
               "t": "Deed'den belirtilen alan hesaplanan alanın yanında kurtarılır, bu yüzden farklılıklar görünür.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Thence {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "zh-cn": {
-          "file": "9747f6ac9607",
+          "file": "485c64a92cc8",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -25787,20 +25942,25 @@
               "t": "从契约中声明的区域保存在计算区域旁边,因此差异保持不变。",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "此时 {value}, (中文). {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "uk": {
-          "file": "9d066d5503b2",
+          "file": "bf2cdc0a9077",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -26582,20 +26742,25 @@
               "t": "Зазначена область відхиляється від розрахункової площі, тому відмінності залишаються видимими.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "з {value}й {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "vi": {
-          "file": "5c674d73a196",
+          "file": "174c65809f61",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -27377,20 +27542,25 @@
               "t": "Khu vực ghi nhận được lưu bên cạnh khu vực tính toán, vì vậy các khác biệt được thấy rõ.",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "Từ đó {value}. {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "zh-hk": {
-          "file": "7d0bafb0d5dd",
+          "file": "ea087d4a48c0",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -28172,20 +28342,25 @@
               "t": "地契上顯示的區域被儲存在計算區域旁, 所以區域不變 。",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "由此 {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         },
         "zh-tw": {
-          "file": "7d0bafb0d5dd",
+          "file": "ea087d4a48c0",
           "counts": {
-            "esri": 36,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 156,
+            "machine": 157,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "widgetTitle": {
@@ -28967,6 +29142,11 @@
               "t": "地契上顯示的區域被儲存在計算區域旁, 所以區域不變 。",
               "src": "machine",
               "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "由此 {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
             }
           }
         }

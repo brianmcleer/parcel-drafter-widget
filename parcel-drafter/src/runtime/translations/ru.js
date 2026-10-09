@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Хорошо знать",
         helpTips1: "Настройки плана изменяют способ чтения и отображения подшипников, длин и областей. Установите их, чтобы соответствовать делу, прежде чем печатать.",
         helpTips2: "Заявленная область действия сохраняется рядом с расчетной областью, поэтому различия остаются видимыми.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "оттуда {value}, {value2} {unitWord}",
+        unknownError: "Неизвестная ошибка",
+        unserializableError: "несериализируемая ошибка"
       })
     }
   }

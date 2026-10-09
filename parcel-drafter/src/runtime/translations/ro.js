@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "E bine de ştiut",
         helpTips1: "Setările planului schimbă modul în care rulmenţii, lungimile şi zonele sunt citite şi prezentate. Setați-le pentru a se potrivi actul înainte de dactilografiere.",
         helpTips2: "Zona declarată de fapt este salvată lângă zona calculată, astfel încât diferențele rămân vizibile.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "De acolo {value}, {value2} {unitWord}",
+        unknownError: "Eroare necunoscută",
+        unserializableError: "eroare inoperabilă"
       })
     }
   }

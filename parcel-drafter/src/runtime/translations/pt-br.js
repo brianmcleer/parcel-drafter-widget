@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Bom saber",
         helpTips1: "As configurações do plano mudam como rolamentos, comprimentos e áreas são lidas e mostradas. Coloque-os para combinar a escritura antes de digitar.",
         helpTips2: "A área declarada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Então... {value}, {value2} {unitWord}",
+        unknownError: "Erro desconhecido",
+        unserializableError: "Erro inserializável"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Dobré vědět",
         helpTips1: "Nastavení plánu mění způsob čtení ložisek, délek a ploch. Nastavte je tak, aby odpovídaly listině před psaním.",
         helpTips2: "Zadaná plocha z listiny je uložena vedle vypočítané plochy, takže rozdíly zůstávají viditelné.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "odtud {value}, {value2} {unitWord}",
+        unknownError: "neznámá chyba",
+        unserializableError: "neserializovatelná chyba"
       })
     }
   }

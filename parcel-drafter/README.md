@@ -227,3 +227,7 @@ points are not tracked by object id), so points are only created on first save.
 ## Changelog
 
 - **2026-09-17, 1.8.1**: Packaging: the Visual Studio editor shims are no longer in the release zip.
+
+## Localization verification
+
+The October 2026 i18n pass connects local UI helpers, messages and metadata to the app locale and uses the app locale for date/number formatting. Existing units, currencies and configured format options are preserved. Translation files use Esri wording, shared memory and English fallbacks; machine translations still need language review. Catalog coverage is separate from UI coverage. Changes were checked with the widget’s Experience Builder webpack build and compared against its existing TypeScript diagnostics. Test runtime, settings, accessibility text and locale switching in your target languages.

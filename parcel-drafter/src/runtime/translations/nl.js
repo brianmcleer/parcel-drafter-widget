@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Goed om te weten",
         helpTips1: "Plan instellingen veranderen hoe lagers, lengtes en gebieden worden gelezen en getoond. Stel ze in op de akte voordat ze typen.",
         helpTips2: "Het aangegeven gebied van de akte wordt opgeslagen naast het berekende gebied, zodat verschillen zichtbaar blijven.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Daarna {value}, {value2} {unitWord}",
+        unknownError: "onbekende fout",
+        unserializableError: "onuitwisbare fout"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Χαίρομαι που το μαθαίνω",
         helpTips1: "Οι ρυθμίσεις του σχεδίου αλλάζουν τον τρόπο ανάγνωσης και προβολής bearingλεμάν, μήκη και περιοχές. Βάλε τους να ταιριάζουν με το συμβόλαιο πριν πληκτρολογήσεις.",
         helpTips2: "Η δηλωμένη περιοχή από την πράξη σώζεται δίπλα στην υπολογισμένη περιοχή, οπότε οι διαφορές παραμένουν ορατές.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "από εκεί {value}, {value2} {unitWord}",
+        unknownError: "άγνωστο σφάλμα",
+        unserializableError: "σφάλμα μη ανιχνεύσιμο"
       })
     }
   }

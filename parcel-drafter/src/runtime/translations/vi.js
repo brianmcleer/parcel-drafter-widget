@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Rất vui được biết",
         helpTips1: "Thiết lập phương pháp thay đổi phương hướng, chiều dài và diện tích. Đặt chúng khớp với văn bản trước khi gõ.",
         helpTips2: "Khu vực ghi nhận được lưu bên cạnh khu vực tính toán, vì vậy các khác biệt được thấy rõ.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Từ đó {value}. {value2} {unitWord}",
+        unknownError: "lỗi không rõ",
+        unserializableError: "Lỗi không thể gửi đi được"
       })
     }
   }

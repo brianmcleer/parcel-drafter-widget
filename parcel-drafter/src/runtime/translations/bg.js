@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Добре е да го знам",
         helpTips1: "Настройките на плана променят начина, по който се четат и показват лагерите, дължините и зоните. Настройте ги да съвпаднат с нотариалния акт преди да напишете.",
         helpTips2: "Посочената област от акта е запазена до изчислената площ, така че разликите остават видими.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "От там {value}, {value2} {unitWord}",
+        unknownError: "неизвестна грешка",
+        unserializableError: "несериозна грешка"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Hea teada",
         helpTips1: "Plaani seadistused muudavad laagrite, pikkuste ja piirkondade lugemist ja näitamist. Seadke need enne kirjutamist vastavaks.",
         helpTips2: "Teo märgitud ala salvestatakse arvutatud ala kõrval, nii et erinevused jäävad nähtavaks.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "sealt {value}, {value2} {unitWord}",
+        unknownError: "tundmatu viga",
+        unserializableError: "seeriaviisiline viga"
       })
     }
   }

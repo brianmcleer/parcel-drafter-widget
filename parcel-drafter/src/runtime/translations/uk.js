@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Добре знати",
         helpTips1: "Настроювання плану змінюють, як підшипники, довжини, і ділянки прочитано і показано. Встановіть їх, щоб відповідати вилученню перед набором.",
         helpTips2: "Зазначена область відхиляється від розрахункової площі, тому відмінності залишаються видимими.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "з {value}й {value2} {unitWord}",
+        unknownError: "Невідома помилка",
+        unserializableError: "несеріалізована помилка"
       })
     }
   }

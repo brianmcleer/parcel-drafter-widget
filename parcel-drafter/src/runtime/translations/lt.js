@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Gera žinoti",
         helpTips1: "Planuoti nustatymai keičia, kaip guoliai, ilgis, ir sritys yra skaityti ir parodyti. Prieš įvesdami nustatykite, kad atitiktų dokumentą.",
         helpTips2: "Nurodytas plotas nuo veiksmo išsaugomas šalia apskaičiuoto ploto, todėl skirtumai išlieka matomi.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "iš ten {value}, {value2} {unitWord}",
+        unknownError: "nežinoma klaida",
+        unserializableError: "nenustatoma klaida"
       })
     }
   }

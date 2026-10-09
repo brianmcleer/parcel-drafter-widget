@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Labi zināt",
         helpTips1: "Plāna iestatījumi maina to, kā tiek nolasīti un parādīti gultņi, garumi un laukumi. Iestatīt, lai tie pirms rakstīšanas atbilstu aktam.",
         helpTips2: "Norādītais apgabals no akta tiek saglabāts blakus aprēķinātajam laukumam, tāpēc atšķirības paliek redzamas.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "no turienes {value}, {value2} {unitWord}",
+        unknownError: "nezināma kļūda",
+        unserializableError: "nepārspējama kļūda"
       })
     }
   }

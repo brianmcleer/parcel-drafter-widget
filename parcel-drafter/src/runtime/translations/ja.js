@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "よく知る",
         helpTips1: "ベアリング、長さ、エリアが読み込まれて表示する方法を計画設定変更します。 それらを設定して、タイピングの前に送り合わせます。",
         helpTips2: "指定されたエリアは、計算されたエリアの横に保存されますので、差は表示されません。",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "ログイン {value}, {value2} {unitWord}",
+        unknownError: "未知のエラー",
+        unserializableError: "unserializable エラー"
       })
     }
   }

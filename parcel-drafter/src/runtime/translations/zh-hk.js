@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "很高興知道",
         helpTips1: "計劃設定會改變轴承、長度和區域的讀取與顯示方式 。 在打字前, 設定它們與契約相符 。",
         helpTips2: "地契上顯示的區域被儲存在計算區域旁, 所以區域不變 。",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "由此 {value}, {value2} {unitWord}",
+        unknownError: "未知的錯誤",
+        unserializableError: "不串連的錯誤"
       })
     }
   }

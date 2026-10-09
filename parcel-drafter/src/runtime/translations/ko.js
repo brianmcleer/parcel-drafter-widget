@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "잘 알고",
         helpTips1: "계획 설정은 베어링, 길이 및 지역이 읽고 표시하는 방법을 변경합니다. 입력하기 전에 deed와 일치하도록 설정하십시오.",
         helpTips2: "deed의 명시된 영역은 계산 영역 옆에 저장되어 있으므로 차이는 볼 수 있습니다.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "이름 * {value}· {value2} {unitWord}",
+        unknownError: "알 수없는 오류",
+        unserializableError: "unserializable 오류"
       })
     }
   }

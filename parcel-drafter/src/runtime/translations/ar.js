@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "من الجيد معرفة",
         helpTips1: "وتُغيِّر خطط التخطيط كيفية قراءة وبيان الملامح والطولات والمجالات. اجعلهم يطابقون العمل قبل أن يرسموا",
         helpTips2: "The stated area from the deed is save beside the calculated area, so differences stay visible.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "منذ البداية {value}.. {value2} {unitWord}",
+        unknownError: "خطأ مجهول",
+        unserializableError: "خطأ غير معقول"
       })
     }
   }

@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Gut zu wissen",
         helpTips1: "Planeinstellungen ändern, wie Lager, Längen und Bereiche gelesen und angezeigt werden. Stellen Sie sie so ein, dass sie der Tat entsprechen, bevor Sie tippen.",
         helpTips2: "Der angegebene Bereich aus der Tat wird neben dem berechneten Bereich gespeichert, so dass Unterschiede sichtbar bleiben.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "von {value}, {value2} {unitWord}",
+        unknownError: "Unbekannter Fehler",
+        unserializableError: "nichtialisierbarer Fehler"
       })
     }
   }

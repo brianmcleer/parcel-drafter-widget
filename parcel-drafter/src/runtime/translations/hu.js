@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Jó tudni",
         helpTips1: "A tervbeállítások megváltoztatják a csapágyak, hosszok és területek olvasását és megjelenítését. Állítsuk össze őket, mielőtt gépelnénk.",
         helpTips2: "A megadott terület a tett mentett mellett számított terület, így különbségek maradnak látható.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Innen {value}, {value2} {unitWord}",
+        unknownError: "ismeretlen hiba",
+        unserializableError: "nem sorozható hiba"
       })
     }
   }

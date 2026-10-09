@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Bon à savoir",
         helpTips1: "Les paramètres du plan changent la façon dont les roulements, les longueurs et les zones sont lus et montrés. Définissez-les pour correspondre à l'acte avant de taper.",
         helpTips2: "La zone indiquée de l'acte est sauvée à côté de la zone calculée, de sorte que les différences restent visibles.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "de là {value}, {value2} {unitWord}",
+        unknownError: "erreur inconnue",
+        unserializableError: "Erreur non sérialisable"
       })
     }
   }

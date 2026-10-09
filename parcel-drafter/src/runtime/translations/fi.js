@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "Hyvä tietää",
         helpTips1: "Suunnitelman asetukset muuttavat laakerien, pituuksien ja alueiden lukemista ja näyttämistä. Aseta ne vastaamaan kauppakirjaa ennen kirjoittamista.",
         helpTips2: "Teosta ilmoitettu alue tallennetaan lasketun alueen viereen, joten erot pysyvät näkyvissä.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "sieltä {value}, {value2} {unitWord}",
+        unknownError: "tuntematon virhe",
+        unserializableError: "epätavallinen virhe"
       })
     }
   }

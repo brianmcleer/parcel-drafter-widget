@@ -195,9 +195,9 @@ System.register([], function (e) {
         helpTipsTitle: "İyi bilmek",
         helpTips1: "Plan ayarları, taşıyıcılar, uzunluklar ve alanlar nasıl okunur ve gösterilir. Onları yazımdan önce delegele eşleştirin.",
         helpTips2: "Deed'den belirtilen alan hesaplanan alanın yanında kurtarılır, bu yüzden farklılıklar görünür.",
-        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thenceValueValue2UnitWord: "Thence {value}, {value2} {unitWord}",
+        unknownError: "Bilinmeyen hata",
+        unserializableError: "Başarısız olmayan hata"
       })
     }
   }
