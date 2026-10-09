@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Caută ghidul (încercați \"legat\" sau \"salvare\")",
         helpNoMatches: "Nimic din ghid nu se potriveşte cu acest cuvânt. Încearcă altul, sau deschide secţiunile de mai sus.",
         helpAnd: "și",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nou aici?",
         firstRunBody: "Faceți clic pe New traverse, setați un punct de pornire, apoi tastați sau desenați fiecare linie de frontieră și faceți clic pe Salvați.",
         firstRunHelpLink: "Deschide ghidul.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Liber",
         helpStartTitle: "Începe aici: trei pași",
         helpStart1: "Faceți clic pe New traverse, apoi faceți clic pe hartă pentru a seta punctul de pornire, sau tastați longitudinea și latitudinea și faceți clic pe Aplicați.",
         helpStart2: "Tip fiecare linie: rulment (ca N45-30-00E), lungime, și o rază pentru curbe, apoi apăsați Enter. Sau activați Digitize și faceți clic pe hartă pentru a trage.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Valorile salvate revin goale, sau Edit Crosse nu găsește nimic: numele câmpului din setările widget nu există pe strat. Scrisorile de capital nu contează, dar ortografia face, și un strat găzduit poate folosi nume diferite decât serviciul hartă a venit de la. Deschide setările widget și alege câmpurile din nou.",
         helpTroubleNoClicks: "Clicurile pe hartă nu adaugă nimic: Digitize este oprit sau nu există nici un punct de pornire încă. Setați punctul de pornire mai întâi, apoi porniți Digitize.",
         helpTroubleContact: "Încă blocat? Contactați divizia GIS și menționați numele parcelului și această aplicație.",
-        helpTipsTitle: "E bine de ştiut.",
+        helpTipsTitle: "E bine de ştiut",
         helpTips1: "Setările planului schimbă modul în care rulmenţii, lungimile şi zonele sunt citite şi prezentate. Setați-le pentru a se potrivi actul înainte de dactilografiere.",
-        helpTips2: "Zona declarată de fapt este salvată lângă zona calculată, astfel încât diferențele rămân vizibile."
+        helpTips2: "Zona declarată de fapt este salvată lângă zona calculată, astfel încât diferențele rămân vizibile.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

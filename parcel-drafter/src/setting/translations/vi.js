@@ -32,7 +32,7 @@ System.register([], function (e) {
         settingLabelPlacementBeside: "♪ Bên kia vạch ♪",
         settingLabelPlacementOn: "Trên đường",
         settingLabelOffset: "Khoảng cách nhãn từ dòng (điểm)",
-        feet: "Feet",
+        feet: "Bộ",
         meters: "Mét",
         uSSurveyFeet: "Bàn chân khảo sát Mỹ",
         settingSelectMapTip: "Các ô điều khiển sơ đồ này hoạt động chống lại trình nháp Parcel",

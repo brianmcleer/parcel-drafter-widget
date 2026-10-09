@@ -38,7 +38,7 @@ System.register([], function (e) {
         feet: "Fot",
         uSSurveyFeet: "Amerikanske undersøkelsesfot",
         areaUnits: "Områdeenheter",
-        acres: "Acres",
+        acres: "Acre",
         squareMeters: "Kvadratmeter",
         squareFeet: "Kvadratfot",
         squareUSSurveyFeet: "Square amerikanske undersøkelsesfot",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Søk i guiden (prøv \" internasjonal\" eller \" lagre\")",
         helpNoMatches: "Ingenting i guiden stemmer med det ordet. Prøv en annen, eller åpne seksjonene ovenfor.",
         helpAnd: "og",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Ny her?",
         firstRunBody: "Klikk på Ny traverse, angi et startpunkt, skriv eller tegne hver grenselinje og klikk Lagre.",
         firstRunHelpLink: "Åpne guiden.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Utsettelse",
         helpStartTitle: "Start her: 3 trinn",
         helpStart1: "Klikk på Ny travers, og klikk deretter kartet for å angi startpunktet, eller skriv lengdegraden og breddegraden og klikk på Bruk.",
         helpStart2: "Skriv inn hver linje: lager (som N45-30-00E), lengde og en radius for kurver, og trykk deretter Enter. Eller slå på Digitaliser og klikk kartet for å tegne.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Fortsatt fast? Kontakt GIS Division og nevne Parcel Drafter navn og denne appen.",
         helpTipsTitle: "Godt å vite",
         helpTips1: "Planinnstillingene endrer hvordan lager, lengder og områder leses og vises. Sett dem til å matche handlingen før du skriver.",
-        helpTips2: "Det angitte området fra handlingen lagres ved siden av det beregnede området, så forskjeller holder seg synlige."
+        helpTips2: "Det angitte området fra handlingen lagres ved siden av det beregnede området, så forskjeller holder seg synlige.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

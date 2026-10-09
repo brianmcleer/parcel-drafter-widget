@@ -38,7 +38,7 @@ System.register([], function (e) {
         feet: "Pés",
         uSSurveyFeet: "Os pés dos EUA",
         areaUnits: "Unidades de área.",
-        acres: "Acres",
+        acres: "Acres.",
         squareMeters: "Metros quadrados",
         squareFeet: "Pés quadrados",
         squareUSSurveyFeet: "Quadrados pés de pesquisa dos EUA",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Procure no guia.",
         helpNoMatches: "Nada no guia combina com essa palavra. Tente outro, ou abra as seções acima.",
         helpAnd: "e",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nova aqui?",
         firstRunBody: "Clique em Nova travessia, definir um ponto de partida, então digite ou desenhe cada linha limite e clique em Salvar.",
         firstRunHelpLink: "Abra o guia.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Dispensar",
         helpStartTitle: "Comece aqui: três passos",
         helpStart1: "Clique em Nova travessia, em seguida, clique no mapa para definir o ponto de partida, ou digite a longitude e latitude e clique em Aplicar.",
         helpStart2: "Digite cada linha: rolamento (como N45-30-00E), comprimento, e um raio para curvas, em seguida, pressione Enter. Ou ligue a Digitalização e clique no mapa para desenhar.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Valores salvos voltam vazios, ou o Edit transversal não encontra nada: os nomes dos campos nas configurações do widget não existem na camada. As letras maiúsculas não importam, mas a ortografia importa, e uma camada hospedada pode usar nomes diferentes do serviço de mapas de onde veio. Abra as configurações do widget e escolha os campos novamente.",
         helpTroubleNoClicks: "Os cliques do mapa não acrescentam nada, a digitalização está desligada ou ainda não há ponto de partida. Defina o ponto de partida primeiro, depois ligue o Digitize.",
         helpTroubleContact: "Ainda preso? Entre em contato com a Divisão GIS e mencione o nome do Recrutador de Peças e este aplicativo.",
-        helpTipsTitle: "Bom saber.",
+        helpTipsTitle: "Bom saber",
         helpTips1: "As configurações do plano mudam como rolamentos, comprimentos e áreas são lidas e mostradas. Coloque-os para combinar a escritura antes de digitar.",
-        helpTips2: "A área declarada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis."
+        helpTips2: "A área declarada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "ابحثي عن الدليل (مجرّد \"مبتدئ\" أو \"منقذ\"",
         helpNoMatches: "لا شيء في الدليل يطابق تلك الكلمة جرّبْ آخر، أَو يَفْتحُ الأقسامَ أعلاه.",
         helpAnd: "و",
-        firstRunTitle: "New here?",
+        firstRunTitle: "جديد هنا؟",
         firstRunBody: "اضغطي على المقطع الجديد، اضبطي نقطة البداية، ثم اطبعي أو ارسمي كل خط حدودي ونقر الإنقاذ.",
-        firstRunHelpLink: "افتح الدليل",
-        firstRunDismiss: "Dismiss",
+        firstRunHelpLink: "افتح الدليل.",
+        firstRunDismiss: "الانصراف",
         helpStartTitle: "ابدأ هنا: ثلاث خطوات",
         helpStart1: "اضغط على المقطع الجديد، ثم انقر الخريطة لتحديد نقطة البداية، أو طباعة خط الطول والعرض ونقر التطبيق.",
         helpStart2: "Type each line: bearing (like N45-30-00E), length, and a radius for curves, then press Enter. أو تشغيل الرقم القياسي ونقر الخريطة لرسم.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "لا تزال عالقة؟ اتصل بشعبة نظام المعلومات الجغرافية وتذكر اسم شركة بارسيل و هذا التطبيق.",
         helpTipsTitle: "من الجيد معرفة",
         helpTips1: "وتُغيِّر خطط التخطيط كيفية قراءة وبيان الملامح والطولات والمجالات. اجعلهم يطابقون العمل قبل أن يرسموا",
-        helpTips2: "The stated area from the deed is save beside the calculated area, so differences stay visible."
+        helpTips2: "The stated area from the deed is save beside the calculated area, so differences stay visible.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

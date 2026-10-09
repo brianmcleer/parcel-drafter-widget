@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Rehberi arayın (ya da \"save\")",
         helpNoMatches: "Rehberde hiçbir şey bu kelimeyi maçları. Başka bir deneyin veya yukarıdaki bölümleri açın.",
         helpAnd: "ve",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Yeni burada?",
         firstRunBody: "Yeni bir traverse'e tıklayın, bir başlangıç noktası oluşturun, sonra tipi veya her sınır hattı çizin ve Kaydet'e tıklayın.",
         firstRunHelpLink: "Rehberi açın.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Başarısızlık",
         helpStartTitle: "Buraya başlayın: Üç adım",
         helpStart1: "Yeni traverse'e tıklayın, sonra başlangıç noktasını ayarlamak için haritayı tıklayın veya uzunluk ve entitude yazın.",
         helpStart2: "Her satır: N45-30-00E gibi, uzun ve eğriler için bir yarı, sonra basın girin. Ya da Digitize'ye dönün ve haritayı çizmek için tıklayın.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Hala sıkıştı? GIS Bölüm ile iletişime geçin ve Parcel Taslak adı ve bu uygulamadan bahsedin.",
         helpTipsTitle: "İyi bilmek",
         helpTips1: "Plan ayarları, taşıyıcılar, uzunluklar ve alanlar nasıl okunur ve gösterilir. Onları yazımdan önce delegele eşleştirin.",
-        helpTips2: "Deed'den belirtilen alan hesaplanan alanın yanında kurtarılır, bu yüzden farklılıklar görünür."
+        helpTips2: "Deed'den belirtilen alan hesaplanan alanın yanında kurtarılır, bu yüzden farklılıklar görünür.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

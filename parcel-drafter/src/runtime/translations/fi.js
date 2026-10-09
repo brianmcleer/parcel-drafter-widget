@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Etsi opasta (yritä \"rajallista\" tai \"tallenna\")",
         helpNoMatches: "Mikään oppaassa ei vastaa tuota sanaa. Kokeile toista, tai avaa kohdat yllä.",
         helpAnd: "ja",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Uusi täällä?",
         firstRunBody: "Napsauta Uusi traverse, aseta aloituspiste, kirjoita tai piirrä jokainen rajaviiva ja napsauta Tallenna.",
         firstRunHelpLink: "Avaa opas.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Poistu",
         helpStartTitle: "Aloita tästä: kolme vaihetta",
         helpStart1: "Napsauta Uutta matkaa, sitten napsauta karttaa asettaaksesi aloituspisteen, tai kirjoita pituus- ja leveyspiiri ja napsauta Käytä.",
         helpStart2: "Kirjoita jokainen rivi: laakeri (kuten N45-30-00E), pituus ja kaarien säde, paina Enter. Tai käynnistä Digitize ja klikkaa karttaa piirtää.",
@@ -184,7 +184,7 @@ System.register([], function (e) {
         helpExportTitle: "Viedään",
         helpExportGeoJSON: "GeoJSON lataa transversumin tiedostona, jossa on pisteitä, linjoja ja suljettu paketti monikulmio.",
         helpExportLegal: "Lataa meteoideja ja rajoja kuvaus. Se on vain luonnos, jota on tarkistettava ennen käyttöä.",
-        helpTroubleTitle: "Jos jokin näyttää väärältä.",
+        helpTroubleTitle: "Jos jokin näyttää väärältä",
         helpTroubleNoPolygon: "Ei monikulmiota tallennuksen jälkeen: rivit tallennettiin yhteyslinjana. Aseta Line tyyppi Boundary Line kunkin lohkon jalan, tai valitse Boundary Line työkalurivillä ennen digitointia, sitten tallentaa uudelleen.",
         helpTroubleSymbols: "Tallennetut viivat eivät vedä kerroksen väreillä: rivityyppikoodia ei ole kerroksen arvoluettelossa. Pyydä sovelluksen omistajaa vastaamaan widget-rivityyppejä kerrokseen.",
         helpTroubleSaveFailed: "Tallennus epäonnistui: kerros ei ehkä salli muokkauksia. Tarkista, että olet kirjautunut sisään ja kerrokset ovat muokattavissa, sitten yritä uudelleen.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Oletko yhä jumissa? Ota yhteyttä GIS-jaostoon ja mainitse Parcel-suunnittelijan nimi ja tämä sovellus.",
         helpTipsTitle: "Hyvä tietää",
         helpTips1: "Suunnitelman asetukset muuttavat laakerien, pituuksien ja alueiden lukemista ja näyttämistä. Aseta ne vastaamaan kauppakirjaa ennen kirjoittamista.",
-        helpTips2: "Teosta ilmoitettu alue tallennetaan lasketun alueen viereen, joten erot pysyvät näkyvissä."
+        helpTips2: "Teosta ilmoitettu alue tallennetaan lasketun alueen viereen, joten erot pysyvät näkyvissä.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

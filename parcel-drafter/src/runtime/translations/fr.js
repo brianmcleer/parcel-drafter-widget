@@ -38,7 +38,7 @@ System.register([], function (e) {
         feet: "Pieds",
         uSSurveyFeet: "Pieds de levé américains",
         areaUnits: "Unités de surface",
-        acres: "Acres",
+        acres: "Acres anglo-saxonnes",
         squareMeters: "Mètres carrés",
         squareFeet: "Pieds carrés",
         squareUSSurveyFeet: "Pieds d'arpentage carrés américains",
@@ -57,7 +57,7 @@ System.register([], function (e) {
         rotationPointShort: "Ancrage",
         planInfo: "Informations sur le plan",
         planName: "Nom",
-        planDescription: "Description",
+        planDescription: "Désignation des marchandises",
         statedArea: "Zone déclarée",
         clickToSetStartPoint: "Cliquez sur la carte pour définir le point de départ ou entrez les coordonnées ci-dessous.",
         clickToSelectParcel: "Cliquez sur une ligne de colis sur la carte pour charger sa traversée pour la modifier.",
@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "Afficher les étiquettes de roulement et de distance sur chaque ligne de traversée",
         snapToggle: "Snap",
         snapToggleTip: "Snap carte clique sur les sommets et les bords de toutes les couches de caractéristiques visibles",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "GéoJSON",
         exportGeoJSONTip: "Télécharger la traversée comme un fichier GeoJSON avec des points, des lignes et le polygone de colis fermé. Les courbes exportent comme géométrie densifiée.",
         exportEmpty: "Ajouter au moins une ligne avant d'exporter.",
         traverseColor: "Couleur transversale",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Chercher dans le guide (essayer \"boundary\" ou \"save\")",
         helpNoMatches: "Rien dans le guide ne correspond à ce mot. Essayez un autre, ou ouvrez les sections ci-dessus.",
         helpAnd: "et",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nouveau ici ?",
         firstRunBody: "Cliquez sur Nouvelle traversée, définissez un point de départ, puis tapez ou dessinez chaque ligne limite et cliquez sur Enregistrer.",
         firstRunHelpLink: "Ouvrez le guide.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Rejet",
         helpStartTitle: "Commencez ici: trois étapes",
         helpStart1: "Cliquez sur Nouvelle traversée, puis cliquez sur la carte pour définir le point de départ, ou tapez la longitude et la latitude et cliquez sur Appliquer.",
         helpStart2: "Tapez chaque ligne: roulement (comme N45-30-00E), longueur, et un rayon pour les courbes, puis appuyez sur Entrée. Ou allumez Digitize et cliquez sur la carte à dessiner.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Toujours coincé ? Communiquez avec la Division du SIG et mentionnez le nom du rédacteur de la parcelle et cette application.",
         helpTipsTitle: "Bon à savoir",
         helpTips1: "Les paramètres du plan changent la façon dont les roulements, les longueurs et les zones sont lus et montrés. Définissez-les pour correspondre à l'acte avant de taper.",
-        helpTips2: "La zone indiquée de l'acte est sauvée à côté de la zone calculée, de sorte que les différences restent visibles."
+        helpTips2: "La zone indiquée de l'acte est sauvée à côté de la zone calculée, de sorte que les différences restent visibles.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

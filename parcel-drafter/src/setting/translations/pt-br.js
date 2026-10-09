@@ -73,8 +73,8 @@ System.register([], function (e) {
         fieldPickerFreeText: "Digite um nome de campo.",
         loadingFields: "Carregando campos de camadas...",
         help: "Ajuda",
-        showHelpGuide: "Mostre guia de ajuda.",
-        showTheQuestionMarkButtonThat: "Mostre o botão de ponto de interrogação que abre o guia de ajuda do widget."
+        showHelpGuide: "Mostre guia de ajuda",
+        showTheQuestionMarkButtonThat: "Mostre o botão de ponto de interrogação que abre o guia de ajuda do widget"
       })
     }
   }

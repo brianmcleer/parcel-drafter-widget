@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Busca la guía (tratar \"frontera\" o \"salvar\")",
         helpNoMatches: "Nada en la guía coincide con esa palabra. Pruebe otro, o abra las secciones anteriores.",
         helpAnd: "y",
-        firstRunTitle: "New here?",
+        firstRunTitle: "¿Eres nuevo aquí?",
         firstRunBody: "Haga clic en Nueva travesía, establecer un punto de inicio, luego escriba o dibuje cada línea de límite y haga clic en Guardar.",
         firstRunHelpLink: "Abre el guía.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Desestimación",
         helpStartTitle: "Empieza aquí: tres pasos",
         helpStart1: "Haga clic en Nueva travesía, luego haga clic en el mapa para establecer el punto de inicio, o escriba la longitud y latitud y haga clic en Aplicar.",
         helpStart2: "Escriba cada línea: cojinete (como N45-30-00E), longitud y un radio para curvas, luego pulse Enter. O encienda Digitize y haga clic en el mapa para dibujar.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Los valores guardados vuelven vacíos, o Editar transversal no encuentra nada: los nombres de campo en la configuración del widget no existen en la capa. Las letras mayúsculas no importan, pero la ortografía lo hace, y una capa anfitriona puede usar diferentes nombres que el servicio del mapa de que vino. Abra la configuración del widget y elija los campos de nuevo.",
         helpTroubleNoClicks: "Los clics del mapa no añaden nada: Digitize está apagado o no hay punto de inicio todavía. Establecer el punto de inicio primero, luego encender Digitize.",
         helpTroubleContact: "¿Sigues atrapado? Contacte con la División GIS y mencione el nombre de Parcel Drafter y esta aplicación.",
-        helpTipsTitle: "Es bueno saberlo.",
+        helpTipsTitle: "Es bueno saberlo",
         helpTips1: "Los ajustes del plan cambian cómo se leen y muestran los rodamientos, longitudes y áreas. Ponlos para que coincidan con la escritura antes de escribir.",
-        helpTips2: "El área declarada de la escritura se guarda al lado del área calculada, por lo que las diferencias permanecen visibles."
+        helpTips2: "El área declarada de la escritura se guarda al lado del área calculada, por lo que las diferencias permanecen visibles.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

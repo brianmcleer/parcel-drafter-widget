@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Hledat průvodce (zkuste \"hranice\" nebo \"uložit\")",
         helpNoMatches: "Nic v průvodci neodpovídá tomu slovu. Zkuste jiný, nebo otevřete sekce výše.",
         helpAnd: "A",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nový tady?",
         firstRunBody: "Klikněte na Nový traverz, nastavte počáteční bod, pak napište nebo nakreslte každou hranici a klikněte na Uložit.",
         firstRunHelpLink: "Otevři průvodce.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Rozpustit",
         helpStartTitle: "Začněte zde: tři kroky",
         helpStart1: "Klikněte na Nový traverz, pak klikněte na mapu a nastavte počáteční bod, nebo zadejte délku a šířku a klepněte na tlačítko Aplikovat.",
         helpStart2: "Typ každé řady: ložisko (jako N45-30-00E), délka, a poloměr pro křivky, pak stiskněte Enter. Nebo zapnout Digitizovat a klikněte na mapu kreslit.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Uložené hodnoty se vrací prázdné, nebo Upravit traverse nic nenajde: názvy polí v nastavení widget neexistují na vrstvě. Na velkých dopisech nezáleží, ale pravopis ano, a hostitelská vrstva může používat různá jména než mapový servis, ze kterého pochází. Otevřete nastavení widget a vyberte pole znovu.",
         helpTroubleNoClicks: "Mapové kliknutí nepřidává nic: Digitalizace je vypnutá nebo zatím není žádný výchozí bod. Nastavte počáteční bod, pak zapněte Digitizaci.",
         helpTroubleContact: "Pořád se zasekl? Kontaktujte GIS Division a zmiňte jméno Parcel Drafter a tuto aplikaci.",
-        helpTipsTitle: "Dobré vědět.",
+        helpTipsTitle: "Dobré vědět",
         helpTips1: "Nastavení plánu mění způsob čtení ložisek, délek a ploch. Nastavte je tak, aby odpovídaly listině před psaním.",
-        helpTips2: "Zadaná plocha z listiny je uložena vedle vypočítané plochy, takže rozdíly zůstávají viditelné."
+        helpTips2: "Zadaná plocha z listiny je uložena vedle vypočítané plochy, takže rozdíly zůstávají viditelné.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

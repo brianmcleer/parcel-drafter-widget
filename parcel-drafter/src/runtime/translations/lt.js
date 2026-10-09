@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Ieškoti vadovo (pabandykite \"riba\" arba \"įrašyti\")",
         helpNoMatches: "Vadove nėra nieko, kas atitiktų šį žodį. Pabandykite kitą, arba atidaryti skyrių aukščiau.",
         helpAnd: "ir",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Čia nauja?",
         firstRunBody: "Spustelėkite Naujas Traverse, nustatyti pradžios tašką, tada įveskite arba piešti kiekvieną ribą linija ir spustelėkite Įrašyti.",
         firstRunHelpLink: "Atidaryk gidą.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Nutraukti",
         helpStartTitle: "Pradėti čia: trys žingsniai",
         helpStart1: "Spauskite Naujas Traverse, tada spustelėkite žemėlapį nustatyti pradžios tašką, arba įveskite ilgumą ir platumą ir spustelėkite Taikyti.",
         helpStart2: "Įveskite kiekvieną eilutę: guolis (kaip N45- 30- 00E), ilgis ir spindulys kreivių, tada paspauskite Enter. Arba įjungti Digitize ir spustelėkite žemėlapį atkreipti.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Vis dar įstrigęs? Susisiekite su GIS skyriumi ir nurodykite Parcel Drave vardą ir šią programą.",
         helpTipsTitle: "Gera žinoti",
         helpTips1: "Planuoti nustatymai keičia, kaip guoliai, ilgis, ir sritys yra skaityti ir parodyti. Prieš įvesdami nustatykite, kad atitiktų dokumentą.",
-        helpTips2: "Nurodytas plotas nuo veiksmo išsaugomas šalia apskaičiuoto ploto, todėl skirtumai išlieka matomi."
+        helpTips2: "Nurodytas plotas nuo veiksmo išsaugomas šalia apskaičiuoto ploto, todėl skirtumai išlieka matomi.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

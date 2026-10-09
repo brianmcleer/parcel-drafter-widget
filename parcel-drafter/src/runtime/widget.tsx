@@ -39,6 +39,7 @@ import FirstRunHint from './components/FirstRunHint'
 import { buildHelpSections, type HelpFeatures } from './helpSections'
 import { beacon } from '../shared/beacon'
 import type { BeaconHandle } from '../shared/beacon'
+import { __setIntl, __t } from './i18n-t'
 
 type Page = 'home' | 'traverse'
 type MapClickMode = 'none' | 'startPoint' | 'digitize' | 'rotationPoint' | 'editSelect'
@@ -1271,7 +1272,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
         const courseText = (item: TraverseItem): string => {
             const hasRadius = !(item.radius === '' || item.radius === '0' || Number(item.radius) === 0) && item.radiusConversions
             if (!hasRadius) {
-                return `thence ${bearingWords(item.bearingConversions.qb3DMS)}, ${distOf(item.lengthConversions)} ${unitWord}`
+                return __t("thenceValueValue2UnitWord", { value: bearingWords(item.bearingConversions.qb3DMS), value2: distOf(item.lengthConversions), unitWord: unitWord })
             }
             const radiusM = Math.abs(item.radiusConversions.meters)
             const chordM = item.chordLengthConversions ? item.chordLengthConversions.meters : 0
@@ -1417,6 +1418,7 @@ export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>
     }
 
     render(): React.ReactElement {
+    __setIntl((this.props as any).intl)
         const strings = new Proxy({}, { get: (_t, key: string) => this.nls(key) }) as any
         const { state } = this
         const useMapWidgetId = this.props.useMapWidgetIds?.[0]

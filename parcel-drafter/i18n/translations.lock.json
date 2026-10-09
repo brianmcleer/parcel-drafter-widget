@@ -3,8 +3,8 @@
   "generator": "exb-i18n-kit",
   "parts": {
     "runtime": {
-      "en": "fcc81a0ecf25",
-      "keys": 192,
+      "en": "d725e64c0abb",
+      "keys": 195,
       "hashes": {
         "widgetTitle": "b1baa8e86826",
         "selectMapWidget": "1e6d20c31d62",
@@ -197,20 +197,23 @@
         "helpTroubleContact": "c836a77c1872",
         "helpTipsTitle": "79fc372dc790",
         "helpTips1": "fa186e444cda",
-        "helpTips2": "2430b6810c60"
+        "helpTips2": "2430b6810c60",
+        "thenceValueValue2UnitWord": "2e5325cc29c5",
+        "unknownError": "af6321ca7a8b",
+        "unserializableError": "76e73551597a"
       },
       "locales": {
         "ar": {
-          "file": "3f9688a9bef6",
+          "file": "244384909ea0",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -748,6 +751,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "تُحمّلُ المقطعَ كa ملف GeoJSON مَع النقاطِ، الخطوط، وبوليغونِ الببغاءِ المُغلقِ. تحظر تصديرها كمجرد من الهندسة.",
               "src": "machine",
@@ -788,25 +796,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "لا شيء في الدليل يطابق تلك الكلمة جرّبْ آخر، أَو يَفْتحُ الأقسامَ أعلاه.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "اضغطي على المقطع الجديد، اضبطي نقطة البداية، ثم اطبعي أو ارسمي كل خط حدودي ونقر الإنقاذ.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "افتح الدليل",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "ابدأ هنا: ثلاث خطوات",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "اضغط على المقطع الجديد، ثم انقر الخريطة لتحديد نقطة البداية، أو طباعة خط الطول والعرض ونقر التطبيق.",
@@ -958,11 +951,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "إذا كان هناك شيء ما يبدو خاطئا",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "لم يتم إنقاذ البوليجون بعد الادخار تم إنقاذ الخطوط كخط اتصال وضع خط الخط إلى خط الحدود على كل ساق أو اختيار خط الحدود في حاجز الأدوات قبل الرقمنة، ثم إنقاذ مرة أخرى.",
               "src": "machine",
@@ -998,11 +986,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "من الجيد معرفة",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "وتُغيِّر خطط التخطيط كيفية قراءة وبيان الملامح والطولات والمجالات. اجعلهم يطابقون العمل قبل أن يرسموا",
               "src": "machine",
@@ -1016,16 +999,16 @@
           }
         },
         "bg": {
-          "file": "ead2cf61186d",
+          "file": "f820c97cae4b",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -1563,6 +1546,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Изтегляне на преминаването като файл GeoJSON с точки, линии, и затворен парцел многоъгълник. Кривите се изнасят като вдлъбната геометрия.",
               "src": "machine",
@@ -1603,25 +1591,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Нищо в ръководството не съвпада с тази дума. Опитайте друг, или отвори секциите по-горе.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Кликнете върху нов кръстовището, задайте начална точка, след това въведете или начертайте всяка гранична линия и кликнете Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Отвори гидът.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Започнете от тук: три стъпки",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Кликнете върху нов кръстовището, след това кликнете върху картата, за да зададете началната точка, или въведете географската дължина и ширината и кликнете Нанесете.",
@@ -1773,11 +1746,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ако нещо не е наред",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Няма многоъгълник след запис: линиите са записани като линия за свързване. Задаване на типа Line да Boundary Line на всеки пакет крак, или изберете Boundary Line в лентата с инструменти преди дигитализиране, след което запишете отново.",
               "src": "machine",
@@ -1813,11 +1781,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Добре е да го знам.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Настройките на плана променят начина, по който се четат и показват лагерите, дължините и зоните. Настройте ги да съвпаднат с нотариалния акт преди да напишете.",
               "src": "machine",
@@ -1831,30 +1794,30 @@
           }
         },
         "bs": {
-          "file": "55a9f3164d35",
+          "file": "41f61c51c506",
           "counts": {
-            "esri": 32,
+            "esri": 29,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 160
+            "missing": 166
           },
           "entries": {}
         },
         "ca": {
-          "file": "195ba512b817",
+          "file": "eb53f8888a92",
           "counts": {
-            "esri": 32,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -1961,6 +1924,11 @@
               "t": "Unitats d' àrea",
               "src": "machine",
               "h": "525546c203c3"
+            },
+            "acres": {
+              "t": "Acresstar name",
+              "src": "machine",
+              "h": "1ed6f226bdc8"
             },
             "squareUSSurveyFeet": {
               "t": "peus d' enquesta dels EUA quadrats",
@@ -2392,6 +2360,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Descarrega el creuat com un fitxer GeoJSON amb punts, línies i el polígon de parcel tancat. Corbes exportades com a geometria a part.",
               "src": "machine",
@@ -2432,25 +2405,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Res en la guia coincideix amb aquesta paraula. Proveu-ne una altra, o obriu les seccions de dalt.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Cliqueu Nova creuada, establiu un punt d' inici, llavors escriviu o dibuixeu cada línia límit i cliqueu Desa.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Obre la guia.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Comença aquí: tres passes",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Cliqueu Nova creuada, llavors cliqueu el mapa per establir el punt d' inici, o escriviu la longitud i la latitud i cliqueu Aplica.",
@@ -2602,11 +2560,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Si alguna cosa sembla malament",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "No hi ha cap polígon després de desar: les línies s' han desat com a línia de connexió. Estableix el tipus de línia a la línia límit de cada línia de paquet, o escolliu la línia límit de la barra d' eines abans de digitalitzar, i després torneu a desar.",
               "src": "machine",
@@ -2642,11 +2595,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Bo saber-ho",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "L' arranjament del Plan canvia com s' enganxen, longituds i àrees es llegeixen i es mostren. Estableix que coincideixen amb l' acció abans d' escriure.",
               "src": "machine",
@@ -2660,16 +2608,16 @@
           }
         },
         "cs": {
-          "file": "b2acd3bb1e18",
+          "file": "2d765bf3cd1a",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -3207,6 +3155,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Stáhnout traverzu jako GeoJSON soubor s body, řádky, a uzavřený balíček polygon. Křivky export jako hubená geometrie.",
               "src": "machine",
@@ -3247,25 +3200,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nic v průvodci neodpovídá tomu slovu. Zkuste jiný, nebo otevřete sekce výše.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klikněte na Nový traverz, nastavte počáteční bod, pak napište nebo nakreslte každou hranici a klikněte na Uložit.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otevři průvodce.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Začněte zde: tři kroky",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klikněte na Nový traverz, pak klikněte na mapu a nastavte počáteční bod, nebo zadejte délku a šířku a klepněte na tlačítko Aplikovat.",
@@ -3417,11 +3355,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Pokud něco vypadá špatně",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Žádný polygon po uložení: linky byly uloženy jako spojovací linka. Nastavte typ linky na ohraničenou čáru na každou část balíku, nebo v nástrojové liště před digitalizací vyberte ohraničenou linku a poté znovu uložte.",
               "src": "machine",
@@ -3457,11 +3390,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobré vědět.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Nastavení plánu mění způsob čtení ložisek, délek a ploch. Nastavte je tak, aby odpovídaly listině před psaním.",
               "src": "machine",
@@ -3475,16 +3403,16 @@
           }
         },
         "da": {
-          "file": "b0a7d4073bc3",
+          "file": "927cb6226a12",
           "counts": {
-            "esri": 32,
+            "esri": 34,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 158,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -3526,6 +3454,11 @@
               "t": "Arc længde",
               "src": "machine",
               "h": "a3852745d964"
+            },
+            "radius": {
+              "t": "Radius",
+              "src": "machine",
+              "h": "e5aaeaac2e19"
             },
             "lineType": {
               "t": "Linjetype",
@@ -3641,6 +3574,11 @@
               "t": "Kompas regel justering anvendt",
               "src": "machine",
               "h": "7f9fe38ffe1b"
+            },
+            "rotation": {
+              "t": "Rotation",
+              "src": "machine",
+              "h": "906fe5068823"
             },
             "updateRotationPoint": {
               "t": "Klik på et traverspunkt på kortet for at indstille omdrejningsanker",
@@ -4022,6 +3960,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Download traversen som en GeoJSON fil med punkter, linjer og den lukkede pakke polygon. Kurver eksporterer som densificeret geometri.",
               "src": "machine",
@@ -4062,25 +4005,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Intet i guiden matcher det ord. Prøv en anden, eller åbn afsnittene ovenfor.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klik på Ny traverse, sæt et startpunkt, skriv eller træk derefter hver grænse linje og klik på Gem.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Åbn guiden.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Start her: tre trin",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klik på Ny travers, og klik derefter på kortet for at indstille startpunktet, eller skriv længdegrad og breddegrad og klik på Anvend.",
@@ -4232,11 +4160,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Hvis noget ser forkert ud",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Ingen polygon efter lagring: linjerne blev gemt som forbindelseslinje. Sæt linjetypen til grænse linje på hvert parcel ben, eller vælg grænse linje i værktøjslinjen før digitalisering, og gem derefter igen.",
               "src": "machine",
@@ -4272,11 +4195,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Godt at vide",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Planindstillinger ændrer hvordan lejer, længder og områder læses og vises. Sæt dem til at matche skødet, før du skriver.",
               "src": "machine",
@@ -4290,16 +4208,16 @@
           }
         },
         "de": {
-          "file": "d62462c8a20f",
+          "file": "a7eea302a30f",
           "counts": {
-            "esri": 32,
+            "esri": 33,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 159,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -4341,6 +4259,11 @@
               "t": "Bogenlänge",
               "src": "machine",
               "h": "a3852745d964"
+            },
+            "radius": {
+              "t": "Radius",
+              "src": "machine",
+              "h": "e5aaeaac2e19"
             },
             "lineType": {
               "t": "Streckentyp",
@@ -4407,6 +4330,11 @@
               "src": "machine",
               "h": "525546c203c3"
             },
+            "acres": {
+              "t": "Acres",
+              "src": "machine",
+              "h": "1ed6f226bdc8"
+            },
             "squareUSSurveyFeet": {
               "t": "Square US Survey Füße",
               "src": "machine",
@@ -4471,6 +4399,11 @@
               "t": "Planinformationen",
               "src": "machine",
               "h": "2c4885e1ee55"
+            },
+            "planName": {
+              "t": "Name",
+              "src": "machine",
+              "h": "709a23220f2c"
             },
             "statedArea": {
               "t": "Staatliches Gebiet",
@@ -4837,6 +4770,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Laden Sie die Traverse als GeoJSON-Datei mit Punkten, Linien und dem geschlossenen Paketpolygon herunter. Kurven exportieren als verdichtete Geometrie.",
               "src": "machine",
@@ -4877,25 +4815,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nichts im Guide passt zu diesem Wort. Versuchen Sie es mit einem anderen oder öffnen Sie die obigen Abschnitte.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klicken Sie auf Neue Traverse, legen Sie einen Startpunkt fest, tippen oder zeichnen Sie dann jede Begrenzungslinie und klicken Sie auf Speichern.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Öffne den Guide.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Beginnen Sie hier: drei Schritte",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klicken Sie auf Neue Traverse, klicken Sie dann auf die Karte, um den Startpunkt festzulegen, oder geben Sie Längen- und Breitengrad ein und klicken Sie auf Apply.",
@@ -5047,11 +4970,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Wenn etwas falsch aussieht",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Kein Polygon nach dem Speichern: Die Leitungen wurden als Connection Line gespeichert. Legen Sie den Linientyp auf Boundary Line für jedes Paketbein fest oder wählen Sie Boundary Line in der Symbolleiste vor der Digitalisierung und speichern Sie dann erneut.",
               "src": "machine",
@@ -5087,11 +5005,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Gut zu wissen",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Planeinstellungen ändern, wie Lager, Längen und Bereiche gelesen und angezeigt werden. Stellen Sie sie so ein, dass sie der Tat entsprechen, bevor Sie tippen.",
               "src": "machine",
@@ -5105,16 +5018,16 @@
           }
         },
         "el": {
-          "file": "f8d8d0f91a57",
+          "file": "366d3867628b",
           "counts": {
-            "esri": 30,
+            "esri": 34,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -5652,6 +5565,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "ΓεωJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Κατεβάστε το τραβέρσα ως ένα αρχείο GeoJSON με σημεία, γραμμές, και το κλειστό πολύγωνο δέματος. Οι καμπύλες εξάγουν ως πυκνωμένη γεωμετρία.",
               "src": "machine",
@@ -5692,25 +5610,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Τίποτα στον οδηγό δεν ταιριάζει με αυτή τη λέξη. Δοκιμάστε ένα άλλο, ή ανοίξτε τα τμήματα παραπάνω.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Κάντε κλικ στο Νέο πέρασμα, ρυθμίστε ένα σημείο εκκίνησης, στη συνέχεια, πληκτρολογήστε ή σχεδιάστε κάθε γραμμή ορίου και κάντε κλικ στο Αποθήκευση.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Άνοιξε τον οδηγό.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Εκκίνηση εδώ: τρία βήματα",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Κάντε κλικ στο Νέο πέρασμα, κάντε κλικ στο χάρτη για να ορίσετε το σημείο εκκίνησης, ή πληκτρολογήστε το γεωγραφικό μήκος και το γεωγραφικό πλάτος και κάντε κλικ στο Εφαρμογή.",
@@ -5862,11 +5765,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Αν κάτι φαίνεται λάθος",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Κανένα πολύγωνο μετά την αποθήκευση: οι γραμμές αποθηκεύτηκαν ως Γραμμή Σύνδεσης. Ορισμός του τύπου γραμμής στη γραμμή ορίων σε κάθε πόδι πακέτου, ή επιλέξτε γραμμή ορίου στη γραμμή εργαλείων πριν την ψηφιοποίηση, στη συνέχεια αποθηκεύστε ξανά.",
               "src": "machine",
@@ -5902,11 +5800,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Χαίρομαι που το μαθαίνω.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Οι ρυθμίσεις του σχεδίου αλλάζουν τον τρόπο ανάγνωσης και προβολής bearingλεμάν, μήκη και περιοχές. Βάλε τους να ταιριάζουν με το συμβόλαιο πριν πληκτρολογήσεις.",
               "src": "machine",
@@ -5920,16 +5813,16 @@
           }
         },
         "es": {
-          "file": "d296b517ea9b",
+          "file": "f1a151c2f225",
           "counts": {
-            "esri": 32,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -6036,6 +5929,11 @@
               "t": "Unidades de zona",
               "src": "machine",
               "h": "525546c203c3"
+            },
+            "acres": {
+              "t": "Acres",
+              "src": "machine",
+              "h": "1ed6f226bdc8"
             },
             "squareUSSurveyFeet": {
               "t": "Pies de encuesta de Estados Unidos",
@@ -6467,6 +6365,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Descargue el cruce como un archivo GeoJSON con puntos, líneas y el polígono de paquete cerrado. Las curvas exportan como geometría densificada.",
               "src": "machine",
@@ -6507,25 +6410,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nada en la guía coincide con esa palabra. Pruebe otro, o abra las secciones anteriores.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Haga clic en Nueva travesía, establecer un punto de inicio, luego escriba o dibuje cada línea de límite y haga clic en Guardar.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Abre el guía.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Empieza aquí: tres pasos",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Haga clic en Nueva travesía, luego haga clic en el mapa para establecer el punto de inicio, o escriba la longitud y latitud y haga clic en Aplicar.",
@@ -6677,11 +6565,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Si algo se ve mal",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "No hay polígono después de guardar: las líneas se guardaron como Línea de Conexión. Establezca el tipo de Línea a Boundary Line en cada pierna de paquete, o seleccione Boundary Line en la barra de herramientas antes de digitalizar, ahorre de nuevo.",
               "src": "machine",
@@ -6717,11 +6600,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Es bueno saberlo.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Los ajustes del plan cambian cómo se leen y muestran los rodamientos, longitudes y áreas. Ponlos para que coincidan con la escritura antes de escribir.",
               "src": "machine",
@@ -6735,16 +6613,16 @@
           }
         },
         "et": {
-          "file": "7b929197f8b1",
+          "file": "217805b11a40",
           "counts": {
-            "esri": 30,
+            "esri": 34,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -7282,6 +7160,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJson",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Laadige läbisõit alla GeoJSON-failina koos punktide, joonte ja suletud paki hulknurgaga. Kõverad ekspordivad tihendatud geomeetriana.",
               "src": "machine",
@@ -7322,25 +7205,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Mitte miski juhendis ei klapi selle sõnaga. Proovige teist või avage ülaltoodud lõigud.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klõpsa nupule Uus läbisõit, määra alguspunkt, kirjuta või joonista iga piirjoon ja klõpsa nupule Salvesta.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Tee teejuht lahti.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Alusta siit: kolm sammu",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klõpsa nupule Uus läbisõit, seejärel klõpsa kaardil, et määrata alguspunkt, või kirjuta pikkus- ja laiuskraad ning klõpsa nupule Rakenda.",
@@ -7492,11 +7360,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Kui midagi on valesti",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Pärast salvestamist ei ole hulknurka: read salvestati ühendusliinina. Määra igale paki poolele reatüübi piirjoon või vali enne digiteerimist tööriistaribal piirjoon, seejärel salvesta uuesti.",
               "src": "machine",
@@ -7532,11 +7395,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Hea teada",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Plaani seadistused muudavad laagrite, pikkuste ja piirkondade lugemist ja näitamist. Seadke need enne kirjutamist vastavaks.",
               "src": "machine",
@@ -7550,16 +7408,16 @@
           }
         },
         "fi": {
-          "file": "e1e78cf5c6ab",
+          "file": "03cb1876f442",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -8097,6 +7955,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Lataa traverse GeoJSON-tiedostona pisteitä, linjoja ja suljettu paketti monikulmio. Kaarevat maastaviennissä, kuten desifisoitu geometria.",
               "src": "machine",
@@ -8137,25 +8000,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Mikään oppaassa ei vastaa tuota sanaa. Kokeile toista, tai avaa kohdat yllä.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Napsauta Uusi traverse, aseta aloituspiste, kirjoita tai piirrä jokainen rajaviiva ja napsauta Tallenna.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Avaa opas.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Aloita tästä: kolme vaihetta",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Napsauta Uutta matkaa, sitten napsauta karttaa asettaaksesi aloituspisteen, tai kirjoita pituus- ja leveyspiiri ja napsauta Käytä.",
@@ -8307,11 +8155,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Jos jokin näyttää väärältä.",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Ei monikulmiota tallennuksen jälkeen: rivit tallennettiin yhteyslinjana. Aseta Line tyyppi Boundary Line kunkin lohkon jalan, tai valitse Boundary Line työkalurivillä ennen digitointia, sitten tallentaa uudelleen.",
               "src": "machine",
@@ -8347,11 +8190,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Hyvä tietää",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Suunnitelman asetukset muuttavat laakerien, pituuksien ja alueiden lukemista ja näyttämistä. Aseta ne vastaamaan kauppakirjaa ennen kirjoittamista.",
               "src": "machine",
@@ -8365,7 +8203,7 @@
           }
         },
         "fr": {
-          "file": "e718d2908dbc",
+          "file": "d0b6a4a40f58",
           "counts": {
             "esri": 32,
             "esri-check": 0,
@@ -8374,7 +8212,7 @@
             "existing": 0,
             "machine": 160,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -8406,6 +8244,16 @@
               "t": "Numérisez",
               "src": "machine",
               "h": "647559bda53c"
+            },
+            "longitude": {
+              "t": "Longitude",
+              "src": "machine",
+              "h": "6f9f011c5d36"
+            },
+            "latitude": {
+              "t": "Latitude",
+              "src": "machine",
+              "h": "ced3905ec822"
             },
             "bearing": {
               "t": "Roulement",
@@ -8532,6 +8380,11 @@
               "src": "machine",
               "h": "7f9fe38ffe1b"
             },
+            "rotation": {
+              "t": "Rotation",
+              "src": "machine",
+              "h": "906fe5068823"
+            },
             "updateRotationPoint": {
               "t": "Cliquez sur un point de passage sur la carte pour régler l'ancre de rotation",
               "src": "machine",
@@ -8546,6 +8399,11 @@
               "t": "Informations sur le plan",
               "src": "machine",
               "h": "2c4885e1ee55"
+            },
+            "planDescription": {
+              "t": "Désignation des marchandises",
+              "src": "machine",
+              "h": "55f8ebc805e6"
             },
             "statedArea": {
               "t": "Zone déclarée",
@@ -8912,6 +8770,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GéoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Télécharger la traversée comme un fichier GeoJSON avec des points, des lignes et le polygone de colis fermé. Les courbes exportent comme géométrie densifiée.",
               "src": "machine",
@@ -8952,25 +8815,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Rien dans le guide ne correspond à ce mot. Essayez un autre, ou ouvrez les sections ci-dessus.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Cliquez sur Nouvelle traversée, définissez un point de départ, puis tapez ou dessinez chaque ligne limite et cliquez sur Enregistrer.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Ouvrez le guide.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Commencez ici: trois étapes",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Cliquez sur Nouvelle traversée, puis cliquez sur la carte pour définir le point de départ, ou tapez la longitude et la latitude et cliquez sur Appliquer.",
@@ -9122,11 +8970,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Si quelque chose ne va pas",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Pas de polygone après l'enregistrement : les lignes ont été enregistrées en tant que ligne de connexion. Définissez le type de ligne à Boundary Line sur chaque jambe de colis, ou choisissez Boundary Line dans la barre d'outils avant de numériser, puis enregistrez à nouveau.",
               "src": "machine",
@@ -9162,11 +9005,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Bon à savoir",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Les paramètres du plan changent la façon dont les roulements, les longueurs et les zones sont lus et montrés. Définissez-les pour correspondre à l'acte avant de taper.",
               "src": "machine",
@@ -9180,16 +9018,16 @@
           }
         },
         "he": {
-          "file": "35795952f670",
+          "file": "05b7ad2ef59e",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -9727,6 +9565,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "ג'קסון",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "הורד את המעבר כקובץ GeoJSON עם נקודות, קווים, ואת החבילה סגורה פוליגון. הקרבס ייצוא כגאומטריה מלוכדת.",
               "src": "machine",
@@ -9767,25 +9610,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "שום דבר במדריך לא מתאים למילה הזאת. נסה עוד, או לפתוח את החלקים לעיל.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "לחץ על מעבר חדש, להגדיר נקודת התחלה, ולאחר מכן הקלד או לצייר כל קו גבול ולחץ על Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "פתח את המדריך",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "התחל כאן: שלושה צעדים",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "לחץ על מעבר חדש, ולאחר מכן לחץ על המפה כדי להגדיר את נקודת ההתחלה, או להקליד את הגעגועים והגישה ולחץ החל.",
@@ -9937,11 +9765,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "אם משהו נראה לא בסדר",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "אין פוליגון לאחר שהציל: הקווים ניצלו כקווי חיבור. הגדר את סוג הקו לקו Boundary על כל רגל חבילה, או לבחור קו Boundary בסרגל הכלים לפני דיגיטציה, ולאחר מכן לשמור שוב.",
               "src": "machine",
@@ -9977,11 +9800,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "טוב לדעת",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "הגדרות התוכנית לשנות את האופן שבו נושאים, אורך, ואזורים נקראים ומוכיחים. הגדר אותם כדי להתאים את הרע לפני הקלדה.",
               "src": "machine",
@@ -9995,30 +9813,30 @@
           }
         },
         "hr": {
-          "file": "55a9f3164d35",
+          "file": "41f61c51c506",
           "counts": {
-            "esri": 32,
+            "esri": 29,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 160
+            "missing": 166
           },
           "entries": {}
         },
         "hu": {
-          "file": "6fe76fcf620b",
+          "file": "c9250fe56c9d",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -10556,6 +10374,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Töltse le a traverse, mint egy GeoJSON fájlt pontokat, vonalakat, és a zárt csomag sokszög. Öböl export sűrűn geometria.",
               "src": "machine",
@@ -10596,25 +10419,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "A kalauzban semmi sem egyezik ezzel a szóval. Próbálja meg egy másik, vagy nyissa ki a fenti szakaszok.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Kattintson az Új traverse gombra, állítsa be a startpontot, majd írja be vagy rajzolja le az egyes határvonalakat, és kattintson a Mentés gombra.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Nyisd ki az útmutatót.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Kezdjük itt: három lépés",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kattintson az Új kereszteződésre, majd kattintson a térképre a kiindulási pont beállításához, vagy írja be a hosszúságot és a szélességet, majd kattintson az Alkalmazás gombra.",
@@ -10766,11 +10574,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ha valami nem stimmel",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nincs sokszög mentés után: a vonalak mentett Connection Line. Állítsa be a vonal típusát a Boundary Line-ra minden egyes csomaglábon, vagy válassza a Boundary Line-t az eszköztárba digitalizálás előtt, majd mentse újra.",
               "src": "machine",
@@ -10806,11 +10609,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Jó tudni.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "A tervbeállítások megváltoztatják a csapágyak, hosszok és területek olvasását és megjelenítését. Állítsuk össze őket, mielőtt gépelnénk.",
               "src": "machine",
@@ -10824,16 +10622,16 @@
           }
         },
         "id": {
-          "file": "c003d7ff9008",
+          "file": "08f7cb8e01c3",
           "counts": {
-            "esri": 30,
-            "esri-check": 2,
+            "esri": 34,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -10875,6 +10673,11 @@
               "t": "Panjang arc",
               "src": "machine",
               "h": "a3852745d964"
+            },
+            "radius": {
+              "t": "Radius",
+              "src": "machine",
+              "h": "e5aaeaac2e19"
             },
             "lineType": {
               "t": "Tipe garis",
@@ -11371,6 +11174,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Unduh traverse sebagai file GeoJSON dengan titik, garis, dan polygon paket tertutup. Mengukir ekspor sebagai geometri densified.",
               "src": "machine",
@@ -11411,25 +11219,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Tidak ada dalam panduan cocok kata itu. Coba yang lain, atau buka bagian di atas.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klik traverse Baru, atur titik awal, lalu ketikkan atau gambar setiap baris batas dan klik Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Buka panduannya.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Mulai dari sini: tiga langkah",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klik garis lintang baru, kemudian klik peta untuk menata titik awal, atau ketikkan bujur dan lintang dan klik Terapkan.",
@@ -11581,11 +11374,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Jika ada sesuatu yang salah",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Tidak ada poligon setelah menyimpan: baris disimpan sebagai Garis Koneksi. Atur tipe Baris ke Garis Batas pada setiap kaki bingkisan, atau pilih Garis Batas di toolbar sebelum digital, kemudian simpan lagi.",
               "src": "machine",
@@ -11621,11 +11409,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Baik untuk mengetahui",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Pengaturan rencana mengubah bagaimana bantalan, panjang, dan daerah dibaca dan ditampilkan. Set mereka untuk mencocokkan akta sebelum mengetik.",
               "src": "machine",
@@ -11639,16 +11422,16 @@
           }
         },
         "it": {
-          "file": "b009e53a2d57",
+          "file": "44100e6ac993",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -12186,6 +11969,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Scarica il traverso come file GeoJSON con punti, linee e poligono chiuso. Le curve esportano come geometria densificata.",
               "src": "machine",
@@ -12226,25 +12014,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Niente nella guida corrisponde a quella parola. Prova un altro, o apri le sezioni sopra.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Fare clic su Nuovo traverso, impostare un punto di partenza, quindi digitare o disegnare ogni linea di confine e fare clic su Salva.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Apri la guida.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Inizia qui: tre passi",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Fare clic su Nuova traversa, quindi fare clic sulla mappa per impostare il punto di partenza, o digitare la longitudine e latitudine e fare clic su Applica.",
@@ -12396,11 +12169,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Se qualcosa sembra sbagliato",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nessun poligono dopo il salvataggio: le linee sono state salvate come Connection Line. Impostare il tipo di linea per la linea di boundary su ogni gamba del pacco, o selezionare la linea di boundary nella barra degli strumenti prima di digitalizzare, quindi salvare di nuovo.",
               "src": "machine",
@@ -12436,11 +12204,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Buono a sapersi",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Le impostazioni del piano cambiano come cuscinetti, lunghezze e aree vengono lette e mostrate. Impostarli per abbinare l'atto prima di digitare.",
               "src": "machine",
@@ -12454,16 +12217,16 @@
           }
         },
         "ja": {
-          "file": "4f57b91d374e",
+          "file": "a7d20a3c1834",
           "counts": {
-            "esri": 30,
+            "esri": 34,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -13001,6 +12764,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "ジオジェソン",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "ポイント、ライン、クローズドパーセルポリゴンのGeoJSONファイルとして横断をダウンロードしてください。 曲線は、変形したジオメトリとしてエクスポートします。",
               "src": "machine",
@@ -13041,25 +12809,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "ガイドがその単語と一致するわけではありません。 別のセクションを試し、または上記のセクションを開きます。",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "新規のトラバースをクリックし、スタートポイントを設定し、各境界線をタイプまたは描画し、[保存]をクリックします。",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "ガイドを開きます。",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "ここから: 3 つのステップ",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "新規のトラバースをクリックし、マップをクリックしてスタートポイントを設定したり、経度と緯度を入力して「適用」をクリックします。",
@@ -13211,11 +12964,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "何かが間違っている",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "保存後のポリゴンなし:接続ラインとして保存されました。 各小包の足の境界線にライン タイプを置くか、またはデジタル化する前にツールバーの境界線を選ぶか、再度保存して下さい。",
               "src": "machine",
@@ -13251,11 +12999,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "よく知る",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "ベアリング、長さ、エリアが読み込まれて表示する方法を計画設定変更します。 それらを設定して、タイピングの前に送り合わせます。",
               "src": "machine",
@@ -13269,16 +13012,16 @@
           }
         },
         "ko": {
-          "file": "75d7fe2e8d15",
+          "file": "bf27026f84ad",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -13816,6 +13559,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "사이트맵",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "포인트, 라인, 닫힌 소포 polygon을 가진 GeoJSON 파일로 traverse를 다운로드하십시오. densified 기하학으로 곡선 수출.",
               "src": "machine",
@@ -13856,25 +13604,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "가이드의 아무것도 그 단어 일치. 다른 시도, 또는 위의 섹션을 엽니 다.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "새로운 횡단을 클릭하고 시작점을 설정한 다음 각 경계선을 입력하거나 저장을 클릭합니다.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "자주 묻는 질문",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "여기에 시작: 세 단계",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "새로운 횡단을 클릭 한 다음 시작 지점을 설정할지도를 클릭하거나 경도와 위도를 입력하고 Apply를 클릭합니다.",
@@ -14026,11 +13759,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "뭔가 잘못되었는지",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "저장 후에 다각형 없음: 선은 연결 선으로 저장되었습니다. 각 소포 다리에 경계선에 선 유형을 놓거나, 손가락으로 튀김 전에 도구 모음에 있는 경계선을, 그 후에 다시 저장하십시오.",
               "src": "machine",
@@ -14066,11 +13794,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "잘 알고",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "계획 설정은 베어링, 길이 및 지역이 읽고 표시하는 방법을 변경합니다. 입력하기 전에 deed와 일치하도록 설정하십시오.",
               "src": "machine",
@@ -14084,16 +13807,16 @@
           }
         },
         "lt": {
-          "file": "8290e766efa6",
+          "file": "ff2b8e3b148d",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -14631,6 +14354,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Parsisiųsti traverse kaip GeoJSON failą su punktais, linijos, ir uždarytas sklypo poligon. Curves eksportas kaip denzifikuota geometrija.",
               "src": "machine",
@@ -14671,25 +14399,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Vadove nėra nieko, kas atitiktų šį žodį. Pabandykite kitą, arba atidaryti skyrių aukščiau.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Spustelėkite Naujas Traverse, nustatyti pradžios tašką, tada įveskite arba piešti kiekvieną ribą linija ir spustelėkite Įrašyti.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Atidaryk gidą.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Pradėti čia: trys žingsniai",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Spauskite Naujas Traverse, tada spustelėkite žemėlapį nustatyti pradžios tašką, arba įveskite ilgumą ir platumą ir spustelėkite Taikyti.",
@@ -14841,11 +14554,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Jei kas nors atrodo blogai",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Išsaugojus daugiakampio nėra: linijos išsaugotos kaip ryšio linija. @ info: whatsthis",
               "src": "machine",
@@ -14881,11 +14589,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Gera žinoti",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Planuoti nustatymai keičia, kaip guoliai, ilgis, ir sritys yra skaityti ir parodyti. Prieš įvesdami nustatykite, kad atitiktų dokumentą.",
               "src": "machine",
@@ -14899,16 +14602,16 @@
           }
         },
         "lv": {
-          "file": "e780abec051d",
+          "file": "5c73be12bc0c",
           "counts": {
-            "esri": 30,
+            "esri": 34,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -15446,6 +15149,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Lejupielādēt traverss kā GeoJSON failu ar punktiem, līnijas, un slēgts paku daudzstūris. Līknes eksportēt kā densificētu ģeometriju.",
               "src": "machine",
@@ -15486,25 +15194,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nekas ceļvedī neatbilst šim vārdam. Mēģiniet citu, vai atvērt sadaļas iepriekš.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Noklikšķiniet uz Jauna traverss, iestatiet sākuma punktu, tad ierakstiet vai izdarīt katru robežu līniju un noklikšķiniet uz Saglabāt.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Atveriet ceļvedi.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Sākt šeit: trīs soļi",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Noklikšķiniet uz Jauna traverss, tad noklikšķiniet uz kartes, lai noteiktu sākuma punktu, vai ierakstiet garuma un platuma un noklikšķiniet uz Pieteikties.",
@@ -15656,11 +15349,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ja kaut kas izskatās nepareizi",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nav daudzstūris pēc saglabāšanas: līnijas tika saglabātas kā savienojumu līnija. Pirms digitalizēšanas iestatiet rindas tipu uz Boundary Line katrā pakā kājā, vai izvēlieties Boundary Line rīkjoslā, pēc tam saglabājiet vēlreiz.",
               "src": "machine",
@@ -15696,11 +15384,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Labi zināt",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Plāna iestatījumi maina to, kā tiek nolasīti un parādīti gultņi, garumi un laukumi. Iestatīt, lai tie pirms rakstīšanas atbilstu aktam.",
               "src": "machine",
@@ -15714,16 +15397,16 @@
           }
         },
         "no": {
-          "file": "d16b68a16932",
+          "file": "663ea472a184",
           "counts": {
-            "esri": 32,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -15765,6 +15448,11 @@
               "t": "Arc lengde",
               "src": "machine",
               "h": "a3852745d964"
+            },
+            "radius": {
+              "t": "Radius",
+              "src": "machine",
+              "h": "e5aaeaac2e19"
             },
             "lineType": {
               "t": "Linjetype",
@@ -16261,6 +15949,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Last ned traversen som en GeoJSON-fil med punkt, linjer og den lukkede pakke polygon. Kurver eksport som densifisert geometri.",
               "src": "machine",
@@ -16301,25 +15994,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ingenting i guiden stemmer med det ordet. Prøv en annen, eller åpne seksjonene ovenfor.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klikk på Ny traverse, angi et startpunkt, skriv eller tegne hver grenselinje og klikk Lagre.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Åpne guiden.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Start her: 3 trinn",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klikk på Ny travers, og klikk deretter kartet for å angi startpunktet, eller skriv lengdegraden og breddegraden og klikk på Bruk.",
@@ -16471,11 +16149,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Hvis noe ser galt ut",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Ingen polygon etter lagring: linjene ble lagret som Connection Line. Sett linjetypen til grenselinjen på hvert pakkebein, eller velg grenselinjen i verktøylinjen før digitalisering, og lagre deretter igjen.",
               "src": "machine",
@@ -16511,11 +16184,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Godt å vite",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Planinnstillingene endrer hvordan lager, lengder og områder leses og vises. Sett dem til å matche handlingen før du skriver.",
               "src": "machine",
@@ -16529,16 +16197,16 @@
           }
         },
         "nl": {
-          "file": "914aec6e2e6a",
+          "file": "028af99e4be3",
           "counts": {
-            "esri": 32,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -17061,6 +16729,11 @@
               "src": "machine",
               "h": "b66ad9e2f726"
             },
+            "legLabels": {
+              "t": "Etiketten",
+              "src": "machine",
+              "h": "2228985493d9"
+            },
             "legLabelsTip": {
               "t": "Toon lager- en afstandslabels op elke lijn",
               "src": "machine",
@@ -17075,6 +16748,11 @@
               "t": "Klik op kaart naar hoekpunten en randen van alle zichtbare lagen",
               "src": "machine",
               "h": "2ea668142414"
+            },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
             },
             "exportGeoJSONTip": {
               "t": "Download de traverse als een GeoJSON-bestand met punten, lijnen en de gesloten veelhoek. Curves exporteren als verdichte geometrie.",
@@ -17116,25 +16794,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Niets in de gids komt overeen met dat woord. Probeer een andere, of open de bovenstaande secties.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klik op Nieuwe traverse, stel een startpunt in, typ of teken elke grenslijn en klik op Opslaan.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Open de gids.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Begin hier: drie stappen",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klik op Nieuwe traverse, klik vervolgens op de kaart om het startpunt in te stellen, of typ de lengte- en breedtegraad en klik op Toepassen.",
@@ -17286,11 +16949,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Als er iets mis lijkt.",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Geen veelhoek na het opslaan: de regels werden opgeslagen als verbindingslijn. Stel het regeltype in op de grenslijn op elk pakketbeen, of kies de grenslijn in de werkbalk alvorens te digitaliseren, en sla dan opnieuw op.",
               "src": "machine",
@@ -17326,11 +16984,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Goed om te weten",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Plan instellingen veranderen hoe lagers, lengtes en gebieden worden gelezen en getoond. Stel ze in op de akte voordat ze typen.",
               "src": "machine",
@@ -17344,16 +16997,16 @@
           }
         },
         "pl": {
-          "file": "a6070bccd616",
+          "file": "308dea1bf4f4",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -17891,6 +17544,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Pobierz traverse jako plik GeoJSON z punktów, linii i zamkniętej paczki wielokąt. Krzywe eksportują jako gęsta geometria.",
               "src": "machine",
@@ -17931,25 +17589,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nic w przewodniku nie pasuje do tego słowa. Spróbuj innego, albo otwórz powyższe sekcje.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Kliknij Nowy trawers, ustaw punkt startowy, a następnie wpisz lub napisz każdą linię graniczną i kliknij Zapisz.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otwórz przewodnik.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Zacznij tutaj: trzy kroki",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknij Nowy trawers, a następnie kliknij mapę, aby ustawić punkt startowy, lub wpisz długość i szerokość geograficzną i kliknij Zastosuj.",
@@ -18101,11 +17744,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Jeśli coś wygląda źle",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nie ma wielokąta po zapisaniu: linie zostały zapisane jako linia połączenia. Ustaw typ linii na linię boundary na każdej części działki lub wybierz linię boundary na pasku narzędzi przed digitalizacją, a następnie zapisz ponownie.",
               "src": "machine",
@@ -18141,11 +17779,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobrze wiedzieć.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Ustawienia planu zmieniają sposób odczytywania i wyświetlania łożysk, długości i obszarów. Ustaw, żeby pasowały do aktu przed wpisem.",
               "src": "machine",
@@ -18159,16 +17792,16 @@
           }
         },
         "pt-br": {
-          "file": "bf4d90f378b7",
+          "file": "27d43269435a",
           "counts": {
-            "esri": 32,
+            "esri": 33,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 159,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -18200,6 +17833,16 @@
               "t": "Digitizar",
               "src": "machine",
               "h": "647559bda53c"
+            },
+            "longitude": {
+              "t": "Longitude",
+              "src": "machine",
+              "h": "6f9f011c5d36"
+            },
+            "latitude": {
+              "t": "Latitude",
+              "src": "machine",
+              "h": "ced3905ec822"
             },
             "bearing": {
               "t": "Rolamento",
@@ -18275,6 +17918,11 @@
               "t": "Unidades de área.",
               "src": "machine",
               "h": "525546c203c3"
+            },
+            "acres": {
+              "t": "Acres.",
+              "src": "machine",
+              "h": "1ed6f226bdc8"
             },
             "squareUSSurveyFeet": {
               "t": "Quadrados pés de pesquisa dos EUA",
@@ -18706,6 +18354,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Baixe a passagem como um arquivo GeoJSON com pontos, linhas e o polígono de parcelas fechadas. Curvas exportam como geometria densificada.",
               "src": "machine",
@@ -18746,25 +18399,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nada no guia combina com essa palavra. Tente outro, ou abra as seções acima.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Clique em Nova travessia, definir um ponto de partida, então digite ou desenhe cada linha limite e clique em Salvar.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Abra o guia.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Comece aqui: três passos",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Clique em Nova travessia, em seguida, clique no mapa para definir o ponto de partida, ou digite a longitude e latitude e clique em Aplicar.",
@@ -18916,11 +18554,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Se algo parecer errado",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nenhum polígono após salvar: as linhas foram salvas como Linha de Conexão. Defina o tipo de linha para Linha Fronteira em cada perna do pacote, ou escolha Linha Fronteira na barra de ferramentas antes de digitalizar, então salve novamente.",
               "src": "machine",
@@ -18956,11 +18589,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Bom saber.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "As configurações do plano mudam como rolamentos, comprimentos e áreas são lidas e mostradas. Coloque-os para combinar a escritura antes de digitar.",
               "src": "machine",
@@ -18974,16 +18602,16 @@
           }
         },
         "pt-pt": {
-          "file": "c6cfe52663cf",
+          "file": "7265adb3e6e9",
           "counts": {
-            "esri": 32,
+            "esri": 33,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 159,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -19015,6 +18643,16 @@
               "t": "Digitalizar",
               "src": "machine",
               "h": "647559bda53c"
+            },
+            "longitude": {
+              "t": "Longitude",
+              "src": "machine",
+              "h": "6f9f011c5d36"
+            },
+            "latitude": {
+              "t": "Latitude",
+              "src": "machine",
+              "h": "ced3905ec822"
             },
             "bearing": {
               "t": "Rolamento",
@@ -19090,6 +18728,11 @@
               "t": "Unidades de área",
               "src": "machine",
               "h": "525546c203c3"
+            },
+            "acres": {
+              "t": "Acres",
+              "src": "machine",
+              "h": "1ed6f226bdc8"
             },
             "squareUSSurveyFeet": {
               "t": "Quadrados pés de pesquisa dos EUA",
@@ -19521,6 +19164,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Baixe a passagem como um arquivo GeoJSON com pontos, linhas e o polígono de parcelas fechadas. As curvas exportam como geometria densificada.",
               "src": "machine",
@@ -19561,25 +19209,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nada no guia corresponde a essa palavra. Tente outro, ou abra as seções acima.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Clique em Nova passagem, defina um ponto de partida, então digite ou desenhe cada linha de limite e clique em Salvar.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Abra o guia.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Comece aqui: três passos",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Clique em Nova travessia, em seguida, clique no mapa para definir o ponto de início, ou digite a longitude e latitude e clique em Aplicar.",
@@ -19731,11 +19364,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Se algo parecer errado",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nenhum polígono após salvar: as linhas foram salvas como Linha de Conexão. Defina o tipo de linha como Linha de limite em cada perna de pacote, ou escolha Linha de limite na barra de ferramentas antes de digitalizar e, em seguida, salve novamente.",
               "src": "machine",
@@ -19771,11 +19399,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "É bom saber.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "As configurações do plano alteram como os rolamentos, comprimentos e áreas são lidos e mostrados. Configure- os para corresponder à escritura antes de digitar.",
               "src": "machine",
@@ -19789,16 +19412,16 @@
           }
         },
         "ro": {
-          "file": "b177c01eac05",
+          "file": "5d151ba2b67f",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -20336,6 +19959,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Descărcați traversa ca un fișier GeoJSON cu puncte, linii, și poligon pachet închis. Curbele exportă ca geometrie densificată.",
               "src": "machine",
@@ -20376,25 +20004,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nimic din ghid nu se potriveşte cu acest cuvânt. Încearcă altul, sau deschide secţiunile de mai sus.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Faceți clic pe New traverse, setați un punct de pornire, apoi tastați sau desenați fiecare linie de frontieră și faceți clic pe Salvați.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Deschide ghidul.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Începe aici: trei pași",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Faceți clic pe New traverse, apoi faceți clic pe hartă pentru a seta punctul de pornire, sau tastați longitudinea și latitudinea și faceți clic pe Aplicați.",
@@ -20546,11 +20159,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Dacă ceva nu arată bine",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nu poligon după economisire: liniile au fost salvate ca Connection Line. Setați tipul de linie pentru a Boundary Line pe fiecare picior de colet, sau alegeți linia de frontieră în bara de instrumente înainte de digitizare, apoi salvați din nou.",
               "src": "machine",
@@ -20586,11 +20194,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "E bine de ştiut.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Setările planului schimbă modul în care rulmenţii, lungimile şi zonele sunt citite şi prezentate. Setați-le pentru a se potrivi actul înainte de dactilografiere.",
               "src": "machine",
@@ -20604,16 +20207,16 @@
           }
         },
         "ru": {
-          "file": "b9fb3c1657ec",
+          "file": "0110142f984e",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -21151,6 +20754,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "ГеоДжон",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Загрузите прохождение в виде файла GeoJSON с точками, линиями и закрытым многоугольником. Экспорт кривых в виде уплотненной геометрии.",
               "src": "machine",
@@ -21191,25 +20799,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ничто в руководстве не соответствует этому слову. Попробуйте другой или откройте разделы выше.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Нажмите Новый переход, установите начальную точку, затем введите или нажмите каждую пограничную линию и нажмите Сохранить.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Откройте проводник.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Начните здесь: три шага",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Нажмите Новый проход, затем нажмите на карту, чтобы установить точку начала, или введите долготу и широту и нажмите Применить.",
@@ -21361,11 +20954,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Если что-то выглядит неправильно",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Нет полигона после сохранения: линии были сохранены как линия соединения. Установите тип линии на пограничную линию на каждой ножке посылки или выберите пограничную линию на панели инструментов перед оцифровкой, а затем снова сохраните.",
               "src": "machine",
@@ -21401,11 +20989,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Хорошо знать",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Настройки плана изменяют способ чтения и отображения подшипников, длин и областей. Установите их, чтобы соответствовать делу, прежде чем печатать.",
               "src": "machine",
@@ -21419,16 +21002,16 @@
           }
         },
         "sk": {
-          "file": "7463dc5abd9d",
+          "file": "2187ba83634e",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -21966,6 +21549,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Stiahnite si traverse ako súbor GeoJSON s bodmi, linkami a uzavretým polygónom. Curves export ako zhustená geometria.",
               "src": "machine",
@@ -22006,25 +21594,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nič v sprievodcovi nezodpovedá tomu slovu. Skúste iné, alebo otvoriť časti vyššie.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Kliknite na nový traverse, nastavte štartový bod, potom napíšte alebo nakreslite každú hranicu a kliknite na položku Uložiť.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otvorte sprievodcu.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Začnite tu: tri kroky",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknite na nový traverse, potom kliknite na mapu pre nastavenie štartového bodu, alebo zadajte zemepisnú dĺžku a zemepisnú šírku a kliknite Aplikujte.",
@@ -22176,11 +21749,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ak niečo vyzerá zle",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Žiadny polygón po uložení: riadky boli uložené ako Pripojenie linky. Nastavte typ čiary na ohraničenú čiaru na každej časti balíka, alebo si v paneli nástrojov vyberte hranicu pred digitalizáciou a potom znovu uložte.",
               "src": "machine",
@@ -22216,11 +21784,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobré vedieť",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Nastavenie plánu mení spôsob čítania a zobrazovania ložísk, dĺžok a plôch. Nastavte ich tak, aby zodpovedali listine pred písaním.",
               "src": "machine",
@@ -22234,16 +21797,16 @@
           }
         },
         "sl": {
-          "file": "caf9648b2850",
+          "file": "f9d1602fd733",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -22781,6 +22344,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Prenesite traverzo kot datoteko GeoJSON s točkami, vrsticami in zaprtim poljem. Krivulje izvažajo kot zgoščeno geometrijo.",
               "src": "machine",
@@ -22821,25 +22389,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Nič v vodiču se ne ujema s to besedo. Poskusite drugo ali pa odprite zgornje oddelke.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Kliknite nov prehod, nastavite začetno točko, nato vnesite ali potegnite vsako mejno črto in kliknite Shrani.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Odpri vodič.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Začnite tukaj: trije koraki",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknite nov prehod, nato pa kliknite na zemljevid, da nastavite začetno točko, ali vnesite dolžino in zemljepisno širino in kliknite Uveljavi.",
@@ -22991,11 +22544,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Če je kaj narobe.",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Ni mnogokotnika po shranjevanju: vrstice so bile shranjene kot vezna črta. Na vsako stran paketa nastavite vrsto vrstice na mejo ali pa pred digitalizacijo v orodni vrstici izberite Mejo.",
               "src": "machine",
@@ -23031,11 +22579,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobro je vedeti.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Nastavitve načrta spreminjajo, kako se odčitavajo in prikazujejo ležaji, dolžine in področja. Nastavite jih, da se ujemajo z dokumentom pred tipkanjem.",
               "src": "machine",
@@ -23049,30 +22592,30 @@
           }
         },
         "sr": {
-          "file": "c0b57d56c030",
+          "file": "2ce2d49aee30",
           "counts": {
-            "esri": 31,
+            "esri": 28,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 160
+            "missing": 166
           },
           "entries": {}
         },
         "sv": {
-          "file": "8358f26c612f",
+          "file": "46f0fc8e7cec",
           "counts": {
-            "esri": 32,
+            "esri": 35,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 157,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -23229,6 +22772,11 @@
               "t": "Kompass regeljustering tillämpad",
               "src": "machine",
               "h": "7f9fe38ffe1b"
+            },
+            "rotation": {
+              "t": "Rotation",
+              "src": "machine",
+              "h": "906fe5068823"
             },
             "updateRotationPoint": {
               "t": "Klicka på en traverspunkt på kartan för att ställa in rotationsankaret",
@@ -23610,6 +23158,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJson",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Ladda ner traversen som en GeoJSON-fil med poäng, linjer och den slutna paketpolygonen. Curves export som densifierad geometri.",
               "src": "machine",
@@ -23650,25 +23203,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ingenting i guiden matchar det ordet. Prova en annan, eller öppna avsnitten ovan.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Klicka på Ny korsning, ange en startpunkt, skriv sedan eller dra varje gränslinje och klicka på Spara.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Öppna guiden.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Börja här: tre steg",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Klicka på Ny korsning, klicka sedan på kartan för att ställa in startpunkten, eller skriv longitud och latitud och klicka på Applicera.",
@@ -23820,11 +23358,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Om något ser fel",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Ingen polygon efter besparing: linjerna sparades som Connection Line. Ställ in Line-typen till gränslinje på varje paketben eller välj Boundary Line i verktygsfältet innan du digitaliserar, spara sedan igen.",
               "src": "machine",
@@ -23860,11 +23393,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Bra att veta",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Planinställningar ändrar hur lager, längder och områden läses och visas. Ställ in dem för att matcha gärningen innan du skriver.",
               "src": "machine",
@@ -23878,16 +23406,16 @@
           }
         },
         "th": {
-          "file": "1fed9bfe3e54",
+          "file": "042bd7711615",
           "counts": {
-            "esri": 30,
+            "esri": 34,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -24425,6 +23953,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "จี เจ สัน",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "ดาวน์โหลดเส้นทางเป็นไฟล์ GoJson กับจุด, บรรทัด, และกล่องรูปหลายเหลี่ยมปิด การส่งออกแบบเส้นโค้งเป็นเรขาคณิตที่ปฏิเสธไม่ได้",
               "src": "machine",
@@ -24465,25 +23998,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "ไม่มีอะไรในคู่มือที่ตรงกับคํานั้น ลอง เปิด อีก ส่วน หนึ่ง ข้าง บน.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "คลิกใหม่, ตั้งจุดเริ่มต้น, แล้วพิมพ์ หรือวาดแต่ละเส้นขอบเขต แล้วคลิกที่ บันทึก",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "เปิดคู่มือ",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "เริ่มที่นี่: สามขั้นตอน",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "คลิกใหม่ แล้วคลิกบนแผนที่เพื่อตั้งค่าจุดเริ่มต้น หรือพิมพ์เส้นแวงและเส้นรุ้ง แล้วคลิกที่ตําแหน่ง",
@@ -24635,11 +24153,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "ถ้ามีอะไรผิดปกติ",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "ไม่มีรูปหลายเหลี่ยมหลังจากการบันทึก: บรรทัดได้ถูกบันทึกเป็นบรรทัดเชื่อมต่อ ตั้งค่าประเภทของบรรทัดที่จะจํากัดให้อยู่ในบรรทัดแต่ละบรรทัดบนแต่ละพาเนล หรือเลือกบรรทัดขอบเขตในแถบเครื่องมือ ก่อนที่จะทําการแปลงเป็นรูปแบบดิจิทัล แล้วบันทึกอีกครั้ง",
               "src": "machine",
@@ -24675,11 +24188,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "ดีที่ได้รู้",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "การ วาง แผน เปลี่ยน วิธี ที่ มี การ อ่าน และ แสดง ให้ เห็น. ตั้งให้ตรงกับการกระทําก่อนที่จะพิมพ์",
               "src": "machine",
@@ -24693,16 +24201,16 @@
           }
         },
         "tr": {
-          "file": "4f0aeb6eb958",
+          "file": "aeb47675a9bf",
           "counts": {
-            "esri": 31,
+            "esri": 35,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -25240,6 +24748,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Bir GeoJSON dosyasını puanlar, çizgiler ve kapalı parcel poligon olarak indirin. Meraklı geometri olarak ihraç edilir.",
               "src": "machine",
@@ -25280,25 +24793,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Rehberde hiçbir şey bu kelimeyi maçları. Başka bir deneyin veya yukarıdaki bölümleri açın.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Yeni bir traverse'e tıklayın, bir başlangıç noktası oluşturun, sonra tipi veya her sınır hattı çizin ve Kaydet'e tıklayın.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Rehberi açın.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Buraya başlayın: Üç adım",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Yeni traverse'e tıklayın, sonra başlangıç noktasını ayarlamak için haritayı tıklayın veya uzunluk ve entitude yazın.",
@@ -25450,11 +24948,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Bir şey yanlış görünüyorsa",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Tasarrufdan sonra poligon yok: çizgiler Bağlantı Hattı olarak kurtarıldı. Line tipini her parcel bacağında Boundary Line'a ayarlayın veya sayısallaştırmadan önce araç çubuğunda Boundary Line'ı seçin, sonra tekrar tasarruf edin.",
               "src": "machine",
@@ -25490,11 +24983,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "İyi bilmek",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Plan ayarları, taşıyıcılar, uzunluklar ve alanlar nasıl okunur ve gösterilir. Onları yazımdan önce delegele eşleştirin.",
               "src": "machine",
@@ -25508,16 +24996,16 @@
           }
         },
         "zh-cn": {
-          "file": "07fb489e656c",
+          "file": "9747f6ac9607",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -26055,6 +25543,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "地理通讯",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "以 GeoJSON 文件的形式下载 Transversion , 并带有点, 线条, 以及关闭的包裹多边形 。 曲线导出为密度几何 。",
               "src": "machine",
@@ -26095,25 +25588,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "指南中没有任何内容与这个词相符。 尝试另一个,或者打开上面的部分。",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "单击新横线,设置起点,然后键入或绘制每个边界线,然后单击“保存”。",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "开导.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "从这里开始: 三步",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "点击新路口,然后点击地图设定起始点,或者键入经度和纬度并单击应用。",
@@ -26265,11 +25743,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "如果有什么不对劲",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "保存后没有多边形: 线路被保存为连接线 。 在每个包裹段设置线型到边界线,或在工具栏中选择边界线,然后数字化,然后再次保存。",
               "src": "machine",
@@ -26305,11 +25778,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "很高兴知道",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "计划设置会改变轴承,长度,以及区域是如何被读取和显示的. 让他们在输入前与契约匹配 。",
               "src": "machine",
@@ -26323,16 +25791,16 @@
           }
         },
         "uk": {
-          "file": "781128d2fc91",
+          "file": "9d066d5503b2",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -26870,6 +26338,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "ГеоДжсон",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Завантажте файл GeoJSON з точками, лініями та замкненим полігоном. Експорт курей як пошкоджена геометрія.",
               "src": "machine",
@@ -26910,25 +26383,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ніщо в інструкції відповідає словом. Спробуйте ще одну або відкрийте розділи вище.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Клацніть новий зворотний зв'язок, встановіть точку запуску, потім введіть або введіть кожну граничну лінію і натисніть кнопку Зберегти.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Відкрийте посібник.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Почати тут: три кроки",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Клацніть новий переворот, потім натисніть на карті, щоб встановити точку старту, або введіть довгота і широта і натисніть кнопку застосувати.",
@@ -27080,11 +26538,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Якщо щось виглядає неправильно",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Немає полігону після збереження: лінії були збережені в якості лінії підключення. Встановити лінійний тип до нижньої лінії на кожну ногу посилки, або забрати лінію в панелі інструментів перед оцифровуванням, потім знову зберегти.",
               "src": "machine",
@@ -27120,11 +26573,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Добре знати",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Настроювання плану змінюють, як підшипники, довжини, і ділянки прочитано і показано. Встановіть їх, щоб відповідати вилученню перед набором.",
               "src": "machine",
@@ -27138,16 +26586,16 @@
           }
         },
         "vi": {
-          "file": "4d62b03dd937",
+          "file": "5c674d73a196",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -27685,6 +27133,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "Tải về các địa danh như một tập tin GeoJSON với các điểm, các dòng, và các bưu kiện đóng kín. Các đường cong xuất ra như hình học bị cấm.",
               "src": "machine",
@@ -27725,25 +27178,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Không có gì phù hợp với từ đó. Thử cái khác, hoặc mở phần trên.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "Ấn nút mới xuyên qua, đặt một điểm đầu, rồi gõ hoặc vẽ mỗi đường biên và nhấn Lưu.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Mở sách hướng dẫn ra.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "Bắt đầu ở đây: ba bước",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Ấn nút mới xuyên qua, sau đó nhấn vào bản đồ để đặt điểm bắt đầu, hoặc gõ kinh độ và vĩ độ và nhấn Áp dụng.",
@@ -27895,11 +27333,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Nếu có gì không ổn",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Không có đa giác sau khi lưu: các dòng đã được lưu dạng Dòng Kết nối. Đặt kiểu Dòng để Kết nối dòng trên mỗi chân gói, hoặc chọn Kết nối trên thanh công cụ trước khi số hoá, rồi lưu lại.",
               "src": "machine",
@@ -27935,11 +27368,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Rất vui được biết",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Thiết lập phương pháp thay đổi phương hướng, chiều dài và diện tích. Đặt chúng khớp với văn bản trước khi gõ.",
               "src": "machine",
@@ -27953,16 +27381,16 @@
           }
         },
         "zh-hk": {
-          "file": "1eb20e503662",
+          "file": "7d0bafb0d5dd",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -28500,6 +27928,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "地理",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "以 GeoJSON 檔案下載 。 曲線匯出為密度几何 。",
               "src": "machine",
@@ -28540,25 +27973,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "向导裡沒有什麼能符合這個詞的 再試一次,或者打開上面的區域",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "點擊 新的過程, 設定起始點, 然后輸入或畫出每個邊界線並點擊 Save 。",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "打開向导",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "從這裡開始: 三步",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "點擊 New transferverse, 然后點擊地圖以設定起始點, 或是輸入經度和經度並點擊套用 。",
@@ -28710,11 +28128,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "如果有什麼不對勁",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "儲存後沒有多邊形: 列被儲存為連接線 。 將線類型設定在每個包裹腿上, 或是在工具列中選取邊界線後再數字化, 然後再次儲存 。",
               "src": "machine",
@@ -28749,11 +28162,6 @@
               "t": "仍然卡住了? 聯系GIS分部,提到Parcel Draver的名字和這個應用程式。",
               "src": "machine",
               "h": "c836a77c1872"
-            },
-            "helpTipsTitle": {
-              "t": "很高興知道",
-              "src": "machine",
-              "h": "79fc372dc790"
             },
             "helpTips1": {
               "t": "計劃設定會改變轴承、長度和區域的讀取與顯示方式 。 在打字前, 設定它們與契約相符 。",
@@ -28768,16 +28176,16 @@
           }
         },
         "zh-tw": {
-          "file": "1eb20e503662",
+          "file": "7d0bafb0d5dd",
           "counts": {
-            "esri": 32,
+            "esri": 36,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 160,
+            "machine": 156,
             "stale": 0,
-            "missing": 0
+            "missing": 3
           },
           "entries": {
             "widgetTitle": {
@@ -29315,6 +28723,11 @@
               "src": "machine",
               "h": "2ea668142414"
             },
+            "exportGeoJSON": {
+              "t": "地理",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
             "exportGeoJSONTip": {
               "t": "以 GeoJSON 檔案下載 。 曲線匯出為密度几何 。",
               "src": "machine",
@@ -29355,25 +28768,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "向导裡沒有什麼能符合這個詞的 再試一次,或者打開上面的區域",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
             "firstRunBody": {
               "t": "點擊 新的過程, 設定起始點, 然后輸入或畫出每個邊界線並點擊 Save 。",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "打開向导",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "helpStartTitle": {
-              "t": "從這裡開始: 三步",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "點擊 New transferverse, 然后點擊地圖以設定起始點, 或是輸入經度和經度並點擊套用 。",
@@ -29525,11 +28923,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "如果有什麼不對勁",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "儲存後沒有多邊形: 列被儲存為連接線 。 將線類型設定在每個包裹腿上, 或是在工具列中選取邊界線後再數字化, 然後再次儲存 。",
               "src": "machine",
@@ -29564,11 +28957,6 @@
               "t": "仍然卡住了? 聯系GIS分部,提到Parcel Draver的名字和這個應用程式。",
               "src": "machine",
               "h": "c836a77c1872"
-            },
-            "helpTipsTitle": {
-              "t": "很高興知道",
-              "src": "machine",
-              "h": "79fc372dc790"
             },
             "helpTips1": {
               "t": "計劃設定會改變轴承、長度和區域的讀取與顯示方式 。 在打字前, 設定它們與契約相符 。",
@@ -29665,12 +29053,12 @@
         "ar": {
           "file": "4e0e7e005577",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -30004,28 +29392,18 @@
               "t": "حقول طبقة الضغط...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "دليل المساعدة",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "اظهر زر التساؤل الذي يفتح المرشد",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "bg": {
           "file": "52ddee201a3d",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -30359,16 +29737,6 @@
               "t": "Зареждане на пластовите полета...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Показване на ръководство за помощ",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Показване на бутона въпрос-марка, която отваря джаджа помощ ръководство",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
@@ -30389,12 +29757,12 @@
         "ca": {
           "file": "5aec1c435447",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -30728,28 +30096,18 @@
               "t": "S' estan carregant els camps de la capa...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Mostra la guia d' ajuda",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Mostra el botó Pregunta- marca que obre la guia d' ajuda de l' estri",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "cs": {
           "file": "91edfc26efc3",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -31083,28 +30441,18 @@
               "t": "Nahrávám vrstvená pole...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Zobrazit nápovědu",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Zobrazit tlačítko question- mark, které otevře nápovědu widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "da": {
           "file": "a520cbc27108",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -31438,28 +30786,18 @@
               "t": "Indlæser lag felter...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Vis hjælpeguide",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Vis spørgsmåls- markerings- knappen der åbner kontrolhjælpevejledningen",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "de": {
           "file": "a48dbf56f81d",
           "counts": {
-            "esri": 4,
+            "esri": 5,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 67,
             "stale": 0,
             "missing": 0
           },
@@ -31798,23 +31136,18 @@
               "t": "Show Help Guide",
               "src": "machine",
               "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Zeigen Sie die Fragezeichentaste an, die das Widget-Hilfehandbuch öffnet",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "el": {
           "file": "ea18bb0b3db5",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -32148,28 +31481,18 @@
               "t": "Φόρτωση πεδίων στρώματος...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Εμφάνιση οδηγού βοήθειας",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Εμφάνιση του κουμπιού ερωτηματολογίου που ανοίγει τον οδηγό βοήθειας widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "es": {
           "file": "2cd5ce36db41",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -32503,28 +31826,18 @@
               "t": "Cargando campos de capa...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Mostrar guía de ayuda",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Mostrar el botón de la marca de preguntas que abre el widget guía de ayuda",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "et": {
           "file": "76c748efe4ea",
           "counts": {
-            "esri": 2,
+            "esri": 4,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -32858,28 +32171,18 @@
               "t": "Kihiväljade laadimine...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Abijuhendi näitamine",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Küsimusemärgi nupu näitamine, mis avab vidina abi juhendi",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "fi": {
           "file": "98b7b66c8c01",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -33213,28 +32516,18 @@
               "t": "Ladataan kerroskenttiä...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Näytä ohje",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Näytä kysymys-merkki-painike, joka avaa widget ohjeen",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "fr": {
           "file": "51eace3855d2",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -33568,28 +32861,18 @@
               "t": "Chargement des champs de calques...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Afficher le guide d'aide",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Afficher le bouton question-marque qui ouvre le guide d'aide du widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "he": {
           "file": "de0aca24aa17",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -33923,16 +33206,6 @@
               "t": "לטעון שדות שכבתיים...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "מדריך עזרה",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "הצג את לחצן סימן שאלה פותח את מדריך העזרה widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
@@ -33953,12 +33226,12 @@
         "hu": {
           "file": "a3d44744e77f",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -34292,28 +33565,18 @@
               "t": "Rétegmezők betöltése...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Segítőútmutató megjelenítése",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Megjeleníti a kérdőjel gombot, amely megnyitja a widget súgó útmutatót",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "id": {
           "file": "8826e053b516",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -34647,28 +33910,18 @@
               "t": "Memuat ruas lapis...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Tampilkan panduan bantuan",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Tampilkan tombol tanya-tandai yang membuka panduan bantuan widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "it": {
           "file": "dcbad03fdc78",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -35002,28 +34255,18 @@
               "t": "Caricamento dei campi...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Mostra la guida",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Mostra il pulsante di punto interrogativo che apre la guida di aiuto widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "ja": {
           "file": "13c280a5995b",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -35357,28 +34600,18 @@
               "t": "レイヤーフィールドの読み込み",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "ヘルプガイドを表示",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "ウィジェットヘルプガイドを開く質問のボタンを表示する",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "ko": {
           "file": "7b610b3395d3",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -35712,28 +34945,18 @@
               "t": "적재 층 필드 ...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "공지사항",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "위젯 도움말 가이드를 열 수있는 질문 표시 버튼",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "lt": {
           "file": "67c807ab0122",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -36067,28 +35290,18 @@
               "t": "Įkeliami sluoksniai laukai...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Rodyti pagalbos vadovą",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Rodyti klausimų žymėjimo mygtuką, kuris atveria valdikliui skirtą pagalbos vadovą",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "lv": {
           "file": "e9e7e813343c",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -36422,28 +35635,18 @@
               "t": "Ielādē slāni...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Rādīt palīdzības ceļvedi",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Rādīt jautājumu zīmes pogu, kas atver logdaļu palīdzības rokasgrāmatu",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "no": {
           "file": "d339ebddaf4c",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -36777,28 +35980,18 @@
               "t": "Laster inn lagfelt...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Vis hjelpguide",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Vis spørsmålsmerkeknappen som åpner widget-hjelpeguiden",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "nl": {
-          "file": "ecfa662a3b03",
+          "file": "012127318545",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -37132,28 +36325,18 @@
               "t": "Laagvelden worden geladen...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Hulplijn tonen",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "De knop met het vraagteken tonen die de hulplijn widget opent",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "pl": {
           "file": "cf9f08f28933",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -37487,28 +36670,18 @@
               "t": "Wczytywanie pól warstw...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Pokaż przewodnik pomocy",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Pokaż przycisk question- mark, który otwiera przewodnik pomocy widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "pt-br": {
-          "file": "98d12c13b751",
+          "file": "b2d7b1c7fc1a",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -37842,28 +37015,18 @@
               "t": "Carregando campos de camadas...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Mostre guia de ajuda.",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Mostre o botão de ponto de interrogação que abre o guia de ajuda do widget.",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "pt-pt": {
           "file": "2a9803e5eb00",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -38197,28 +37360,18 @@
               "t": "Carregando campos de camadas...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Mostrar guia de ajuda",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Mostrar o botão de marca de perguntas que abre o guia de ajuda do elemento",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "ro": {
           "file": "268ef21ecda6",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -38552,28 +37705,18 @@
               "t": "Încărcare câmpuri strat...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Arată ghidul de ajutor",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Arată butonul semn de întrebare care deschide ghidul de ajutor widget",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "ru": {
           "file": "3a8ac7071d2e",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -38907,28 +38050,18 @@
               "t": "Загрузка полей слоя...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Показать справочник",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Покажите кнопку вопрос-марка, которая открывает руководство по помощи виджета",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "sk": {
           "file": "06c770f378a7",
           "counts": {
-            "esri": 3,
+            "esri": 5,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -39262,28 +38395,18 @@
               "t": "Načítavam vrstvy...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Zobraziť návod na pomoc",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Zobraziť tlačidlo otázniku, ktoré otvorí sprievodcu pomocníkom",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "sl": {
           "file": "c1d3c12d226b",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -39617,16 +38740,6 @@
               "t": "Nalaganje polj plasti...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Prikaži vodnik za pomoč",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Prikaži gumb z vprašanji, ki odpre widget pomoč vodnik",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
@@ -39647,12 +38760,12 @@
         "sv": {
           "file": "83b1073fe7ba",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -39986,28 +39099,18 @@
               "t": "Ledande lagerfält...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Visa hjälp guide",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Visa frågemärke knappen som öppnar widget hjälp guide",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "th": {
           "file": "385c41c6f8dc",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -40341,28 +39444,18 @@
               "t": "กําลังโหลดช่องข้อมูลเลเยอร์...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "แสดงคําแนะนํา",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "แสดงปุ่ม เครื่องหมายคําถามที่เปิดวิดเจ็ตคําแนะนํา",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "tr": {
-          "file": "b15efd4b0d1b",
+          "file": "0bb600cca9e6",
           "counts": {
-            "esri": 4,
+            "esri": 5,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 67,
             "stale": 0,
             "missing": 0
           },
@@ -40701,23 +39794,18 @@
               "t": "Show help guide",
               "src": "machine",
               "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "widget'ı açan soru işaret düğmesine göster",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "zh-cn": {
           "file": "1039aed8b9fa",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -41051,28 +40139,18 @@
               "t": "正在装入层字段...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "显示帮助指南",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "显示打开部件帮助指南的问题标记按钮",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "uk": {
           "file": "dd06a05e4362",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -41406,28 +40484,18 @@
               "t": "Навантаження шарів полів ...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Показати посібник",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Показати натис-mark, який відкриває посібник з підтримки віджету",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "vi": {
-          "file": "6731decad187",
+          "file": "7096ea8483c2",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -41761,28 +40829,18 @@
               "t": "Đang nạp trường lớp...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Hiện hướng dẫn trợ giúp",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Hiển thị nút đánh dấu câu hỏi để mở hướng dẫn trợ giúp ô điều khiển",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "zh-hk": {
           "file": "8290e32ab9a4",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -42116,28 +41174,18 @@
               "t": "正在載入層域...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "顯示說明指南",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "顯示開啟元件說明指導的問題標鍵",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
         "zh-tw": {
           "file": "8290e32ab9a4",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -42471,16 +41519,6 @@
               "t": "正在載入層域...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "顯示說明指南",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "顯示開啟元件說明指導的問題標鍵",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         }

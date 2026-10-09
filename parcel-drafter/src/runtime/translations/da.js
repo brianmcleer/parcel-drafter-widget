@@ -38,7 +38,7 @@ System.register([], function (e) {
         feet: "Fod",
         uSSurveyFeet: "US undersøgelse fods",
         areaUnits: "Areal enheder",
-        acres: "Acres",
+        acres: "Acre",
         squareMeters: "Kvadratmeter",
         squareFeet: "Kvadratfod",
         squareUSSurveyFeet: "Firkantede amerikanske undersøgelsesfødder",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Søg i guiden (prøv \"grænse\" eller \"gem\")",
         helpNoMatches: "Intet i guiden matcher det ord. Prøv en anden, eller åbn afsnittene ovenfor.",
         helpAnd: "og",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Ny her?",
         firstRunBody: "Klik på Ny traverse, sæt et startpunkt, skriv eller træk derefter hver grænse linje og klik på Gem.",
         firstRunHelpLink: "Åbn guiden.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Frafald",
         helpStartTitle: "Start her: tre trin",
         helpStart1: "Klik på Ny travers, og klik derefter på kortet for at indstille startpunktet, eller skriv længdegrad og breddegrad og klik på Anvend.",
         helpStart2: "Skriv hver linje: leje (ligesom N45- 30- 00E), længde og en radius for kurver, og tryk derefter på Enter. Eller slå Digitize til og klik på kortet for at tegne.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Sidder du stadig fast? Kontakt GIS Division og nævne Parcel Drafter navn og denne app.",
         helpTipsTitle: "Godt at vide",
         helpTips1: "Planindstillinger ændrer hvordan lejer, længder og områder læses og vises. Sæt dem til at matche skødet, før du skriver.",
-        helpTips2: "Det angivne område fra skødet gemmes ved siden af det beregnede område, så forskellene forbliver synlige."
+        helpTips2: "Det angivne område fra skødet gemmes ved siden af det beregnede område, så forskellene forbliver synlige.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

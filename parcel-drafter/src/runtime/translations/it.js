@@ -147,11 +147,11 @@ System.register([], function (e) {
         helpIntro: "Parcel Drafter trasforma i cuscinetti e le distanze su un deed o un piatto in linee, punti e un poligono di pacco sulla mappa.",
         helpSearchPlaceholder: "Cercare la guida (prova \"abbondante\" o \"salvata\")",
         helpNoMatches: "Niente nella guida corrisponde a quella parola. Prova un altro, o apri le sezioni sopra.",
-        helpAnd: "and",
-        firstRunTitle: "New here?",
+        helpAnd: "And",
+        firstRunTitle: "Nuovo qui?",
         firstRunBody: "Fare clic su Nuovo traverso, impostare un punto di partenza, quindi digitare o disegnare ogni linea di confine e fare clic su Salva.",
         firstRunHelpLink: "Apri la guida.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Oggetto",
         helpStartTitle: "Inizia qui: tre passi",
         helpStart1: "Fare clic su Nuova traversa, quindi fare clic sulla mappa per impostare il punto di partenza, o digitare la longitudine e latitudine e fare clic su Applica.",
         helpStart2: "Digitare ogni linea: cuscinetto (come N45-30-00E), lunghezza e un raggio per curve, quindi premere Invio. Oppure accendere Digitize e fare clic sulla mappa per disegnare.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Ancora bloccata? Contatta la Divisione GIS e menziona il nome di Parcel Drafter e questa app.",
         helpTipsTitle: "Buono a sapersi",
         helpTips1: "Le impostazioni del piano cambiano come cuscinetti, lunghezze e aree vengono lette e mostrate. Impostarli per abbinare l'atto prima di digitare.",
-        helpTips2: "L'area indicata dall'atto viene salvata accanto all'area calcolata, quindi le differenze rimangono visibili."
+        helpTips2: "L'area indicata dall'atto viene salvata accanto all'area calcolata, quindi le differenze rimangono visibili.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

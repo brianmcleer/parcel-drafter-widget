@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Cari panduan (coba \"batas\" atau \"simpan\")",
         helpNoMatches: "Tidak ada dalam panduan cocok kata itu. Coba yang lain, atau buka bagian di atas.",
         helpAnd: "dan",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Baru di sini?",
         firstRunBody: "Klik traverse Baru, atur titik awal, lalu ketikkan atau gambar setiap baris batas dan klik Save.",
         firstRunHelpLink: "Buka panduannya.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Bubarkan",
         helpStartTitle: "Mulai dari sini: tiga langkah",
         helpStart1: "Klik garis lintang baru, kemudian klik peta untuk menata titik awal, atau ketikkan bujur dan lintang dan klik Terapkan.",
         helpStart2: "Ketik setiap baris: bantalan (seperti N45-30-00E), panjang, dan sebuah radius untuk kurva, lalu tekan Enter. Atau nyalakan Digitize dan klik peta untuk menggambar.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Masih terjebak? Hubungi Divisi GIS dan sebutkan nama Parcel Drafter dan aplikasi ini.",
         helpTipsTitle: "Baik untuk mengetahui",
         helpTips1: "Pengaturan rencana mengubah bagaimana bantalan, panjang, dan daerah dibaca dan ditampilkan. Set mereka untuk mencocokkan akta sebelum mengetik.",
-        helpTips2: "Daerah yang dinyatakan dari akta disimpan di samping daerah yang dihitung, jadi perbedaan tetap terlihat."
+        helpTips2: "Daerah yang dinyatakan dari akta disimpan di samping daerah yang dihitung, jadi perbedaan tetap terlihat.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

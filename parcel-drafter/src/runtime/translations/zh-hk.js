@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "在每條穿過的線上顯示方向和距離標籤",
         snapToggle: "同步",
         snapToggleTip: "勾擊地圖到所有可见特征層的頂點和邊緣",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "地理",
         exportGeoJSONTip: "以 GeoJSON 檔案下載 。 曲線匯出為密度几何 。",
         exportEmpty: "匯出前至少增加一行 。",
         traverseColor: "曲線顏色",
@@ -146,12 +146,12 @@ System.register([], function (e) {
         close: "關閉",
         helpIntro: "Parcel Drawer 把地契或紙板上的轴承和距離轉換成線、點和地圖上的包裹多边形。",
         helpSearchPlaceholder: "搜尋導覽( 試著「 邊界 」 或「 拯救 」 )",
-        helpNoMatches: "向导裡沒有什麼能符合這個詞的 再試一次,或者打開上面的區域",
+        helpNoMatches: "向导裡沒有什麼能符合這個詞的 再試一次,或者打開上面的區域.",
         helpAnd: "和",
-        firstRunTitle: "New here?",
+        firstRunTitle: "新來的?",
         firstRunBody: "點擊 新的過程, 設定起始點, 然后輸入或畫出每個邊界線並點擊 Save 。",
-        firstRunHelpLink: "打開向导",
-        firstRunDismiss: "Dismiss",
+        firstRunHelpLink: "打開向导.",
+        firstRunDismiss: "解散",
         helpStartTitle: "從這裡開始: 三步",
         helpStart1: "點擊 New transferverse, 然后點擊地圖以設定起始點, 或是輸入經度和經度並點擊套用 。",
         helpStart2: "輸入每行 : 轴承( 如 N45- 30- 00E) , 長度, 以及曲線的半徑, 然后按 Enter 。 或啟動數字化並點擊地圖來繪圖 。",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "仍然卡住了? 聯系GIS分部,提到Parcel Draver的名字和這個應用程式。",
         helpTipsTitle: "很高興知道",
         helpTips1: "計劃設定會改變轴承、長度和區域的讀取與顯示方式 。 在打字前, 設定它們與契約相符 。",
-        helpTips2: "地契上顯示的區域被儲存在計算區域旁, 所以區域不變 。"
+        helpTips2: "地契上顯示的區域被儲存在計算區域旁, 所以區域不變 。",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

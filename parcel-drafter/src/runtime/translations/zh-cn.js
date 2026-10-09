@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "在每个横线上显示轴承和距离标签",
         snapToggle: "坐标",
         snapToggleTip: "同步地图点击所有可见特征层的顶点和边缘",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "地理通讯",
         exportGeoJSONTip: "以 GeoJSON 文件的形式下载 Transversion , 并带有点, 线条, 以及关闭的包裹多边形 。 曲线导出为密度几何 。",
         exportEmpty: "导出前至少添加一行 。",
         traverseColor: "曲折颜色",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "搜索指南(尝试\"边界\"或\"保存\")",
         helpNoMatches: "指南中没有任何内容与这个词相符。 尝试另一个,或者打开上面的部分。",
         helpAnd: "和",
-        firstRunTitle: "New here?",
+        firstRunTitle: "新来的?",
         firstRunBody: "单击新横线,设置起点,然后键入或绘制每个边界线,然后单击“保存”。",
         firstRunHelpLink: "开导.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "开除",
         helpStartTitle: "从这里开始: 三步",
         helpStart1: "点击新路口,然后点击地图设定起始点,或者键入经度和纬度并单击应用。",
         helpStart2: "每行键入:轴承(如N45-30-00E),长度,以及曲线半径,然后按Enter. 或者打开数字化并点击地图绘制.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "还卡住了? 联系GIS分部,并提及Parcel Draper名称和这个应用程序.",
         helpTipsTitle: "很高兴知道",
         helpTips1: "计划设置会改变轴承,长度,以及区域是如何被读取和显示的. 让他们在输入前与契约匹配 。",
-        helpTips2: "从契约中声明的区域保存在计算区域旁边,因此差异保持不变。"
+        helpTips2: "从契约中声明的区域保存在计算区域旁边,因此差异保持不变。",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Pesquisar no guia (tentar \"liminar\" ou \"salvar\")",
         helpNoMatches: "Nada no guia corresponde a essa palavra. Tente outro, ou abra as seções acima.",
         helpAnd: "E",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nova aqui?",
         firstRunBody: "Clique em Nova passagem, defina um ponto de partida, então digite ou desenhe cada linha de limite e clique em Salvar.",
         firstRunHelpLink: "Abra o guia.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Demitir",
         helpStartTitle: "Comece aqui: três passos",
         helpStart1: "Clique em Nova travessia, em seguida, clique no mapa para definir o ponto de início, ou digite a longitude e latitude e clique em Aplicar.",
         helpStart2: "Digite cada linha: rolamento (como N45-30-00E), comprimento, e um raio para curvas, em seguida, pressione Enter. Ou ligue o Digitalizar e clique no mapa para desenhar.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Os valores salvos voltam vazios, ou o Edit transversal não encontra nada: os nomes dos campos nas configurações do widget não existem na camada. Letras maiúsculas não importam, mas a ortografia importa, e uma camada hospedada pode usar nomes diferentes do serviço de mapa de onde veio. Abra as configurações do widget e escolha os campos novamente.",
         helpTroubleNoClicks: "Os cliques do mapa não adicionam nada: A digitalização está desligada ou ainda não há nenhum ponto de partida. Defina o ponto de início primeiro e, em seguida, ligue o Digitize.",
         helpTroubleContact: "Ainda preso? Entre em contato com a Divisão GIS e mencione o nome do Rascunho de Parcel e esta aplicação.",
-        helpTipsTitle: "É bom saber.",
+        helpTipsTitle: "É bom saber",
         helpTips1: "As configurações do plano alteram como os rolamentos, comprimentos e áreas são lidos e mostrados. Configure- os para corresponder à escritura antes de digitar.",
-        helpTips2: "A área indicada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis."
+        helpTips2: "A área indicada da escritura é salva ao lado da área calculada, então as diferenças permanecem visíveis.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

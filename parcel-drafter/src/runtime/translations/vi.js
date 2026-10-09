@@ -35,7 +35,7 @@ System.register([], function (e) {
         degreeMinuteSeconds: "Độ phút giây",
         distanceAndLengthUnits: "Khoảng cách và chiều dài đơn vị",
         meters: "Mét",
-        feet: "Feet",
+        feet: "Bộ",
         uSSurveyFeet: "Bàn chân khảo sát Mỹ",
         areaUnits: "Đơn vị vùng",
         acres: "Acre",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Tìm hướng dẫn",
         helpNoMatches: "Không có gì phù hợp với từ đó. Thử cái khác, hoặc mở phần trên.",
         helpAnd: "và",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Mới đến à?",
         firstRunBody: "Ấn nút mới xuyên qua, đặt một điểm đầu, rồi gõ hoặc vẽ mỗi đường biên và nhấn Lưu.",
         firstRunHelpLink: "Mở sách hướng dẫn ra.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Giải tán!",
         helpStartTitle: "Bắt đầu ở đây: ba bước",
         helpStart1: "Ấn nút mới xuyên qua, sau đó nhấn vào bản đồ để đặt điểm bắt đầu, hoặc gõ kinh độ và vĩ độ và nhấn Áp dụng.",
         helpStart2: "Gõ vào mỗi dòng: hướng (như N45-30-00E), chiều dài, và bán kính cho đường cong, rồi nhấn Enter. Hoặc bật Dimitize và nhấp vào bản đồ để vẽ.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Vẫn kẹt à? Liên lạc với đơn vị GIS và đề cập đến tên người chọn Parcel và ứng dụng này.",
         helpTipsTitle: "Rất vui được biết",
         helpTips1: "Thiết lập phương pháp thay đổi phương hướng, chiều dài và diện tích. Đặt chúng khớp với văn bản trước khi gõ.",
-        helpTips2: "Khu vực ghi nhận được lưu bên cạnh khu vực tính toán, vì vậy các khác biệt được thấy rõ."
+        helpTips2: "Khu vực ghi nhận được lưu bên cạnh khu vực tính toán, vì vậy các khác biệt được thấy rõ.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "הצגת תוויות נושאות ומרחק בכל קו חוצה",
         snapToggle: "Snap Snap",
         snapToggleTip: "Snapmap לוחץ על vertices ו הקצוות של כל שכבות תכונה גלויות",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "ג'קסון",
         exportGeoJSONTip: "הורד את המעבר כקובץ GeoJSON עם נקודות, קווים, ואת החבילה סגורה פוליגון. הקרבס ייצוא כגאומטריה מלוכדת.",
         exportEmpty: "הוסף לפחות קו אחד לפני הייצוא.",
         traverseColor: "צבע הפוך",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "חפש את המדריך (נסו \"מקור\" או \"save\")",
         helpNoMatches: "שום דבר במדריך לא מתאים למילה הזאת. נסה עוד, או לפתוח את החלקים לעיל.",
         helpAnd: "וגם",
-        firstRunTitle: "New here?",
+        firstRunTitle: "חדש כאן?",
         firstRunBody: "לחץ על מעבר חדש, להגדיר נקודת התחלה, ולאחר מכן הקלד או לצייר כל קו גבול ולחץ על Save.",
-        firstRunHelpLink: "פתח את המדריך",
-        firstRunDismiss: "Dismiss",
+        firstRunHelpLink: "פתח את המדריך.",
+        firstRunDismiss: "משמעת",
         helpStartTitle: "התחל כאן: שלושה צעדים",
         helpStart1: "לחץ על מעבר חדש, ולאחר מכן לחץ על המפה כדי להגדיר את נקודת ההתחלה, או להקליד את הגעגועים והגישה ולחץ החל.",
         helpStart2: "הקלד כל קו: נושא (כמו N45-30-00E), אורך ורדיוס עבור עקומות, ולאחר מכן הקש Enter. או להפעיל את Digitize ולחץ על המפה כדי לצייר.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "עדיין תקוע? צור קשר עם מחלקת GIS ולהזכיר את השם Parcel Dr After ואת היישום הזה.",
         helpTipsTitle: "טוב לדעת",
         helpTips1: "הגדרות התוכנית לשנות את האופן שבו נושאים, אורך, ואזורים נקראים ומוכיחים. הגדר אותם כדי להתאים את הרע לפני הקלדה.",
-        helpTips2: "האזור הקבוע מהדה נשמר ליד האזור המחושב, כך שהבדלים נשארים גלויים."
+        helpTips2: "האזור הקבוע מהדה נשמר ליד האזור המחושב, כך שהבדלים נשארים גלויים.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

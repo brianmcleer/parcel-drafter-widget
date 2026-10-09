@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Hľadať sprievodcu (skúste \"zákazník\" alebo \"uložiť\")",
         helpNoMatches: "Nič v sprievodcovi nezodpovedá tomu slovu. Skúste iné, alebo otvoriť časti vyššie.",
         helpAnd: "a",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Tu nový?",
         firstRunBody: "Kliknite na nový traverse, nastavte štartový bod, potom napíšte alebo nakreslite každú hranicu a kliknite na položku Uložiť.",
         firstRunHelpLink: "Otvorte sprievodcu.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Odchod",
         helpStartTitle: "Začnite tu: tri kroky",
         helpStart1: "Kliknite na nový traverse, potom kliknite na mapu pre nastavenie štartového bodu, alebo zadajte zemepisnú dĺžku a zemepisnú šírku a kliknite Aplikujte.",
         helpStart2: "Zadajte každú čiaru: ložisko (ako N45-30-00E), dĺžka a polomer oblúkov, potom stlačte Enter. Alebo zapnite Digitalizovať a kliknite na mapu kresliť.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Stále zaseknutý? Kontaktujte Divíziu GIS a uveďte meno Parcel Kresliaci a túto aplikáciu.",
         helpTipsTitle: "Dobré vedieť",
         helpTips1: "Nastavenie plánu mení spôsob čítania a zobrazovania ložísk, dĺžok a plôch. Nastavte ich tak, aby zodpovedali listine pred písaním.",
-        helpTips2: "Stanovená plocha z listiny je uložená vedľa vypočítanej plochy, takže rozdiely zostávajú viditeľné."
+        helpTips2: "Stanovená plocha z listiny je uložená vedľa vypočítanej plochy, takže rozdiely zostávajú viditeľné.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

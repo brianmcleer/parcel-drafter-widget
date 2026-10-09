@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Szukaj przewodnika (spróbuj \"granica\" lub \"zapisać\")",
         helpNoMatches: "Nic w przewodniku nie pasuje do tego słowa. Spróbuj innego, albo otwórz powyższe sekcje.",
         helpAnd: "i aplikacja",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nowy?",
         firstRunBody: "Kliknij Nowy trawers, ustaw punkt startowy, a następnie wpisz lub napisz każdą linię graniczną i kliknij Zapisz.",
         firstRunHelpLink: "Otwórz przewodnik.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Rozejść się",
         helpStartTitle: "Zacznij tutaj: trzy kroki",
         helpStart1: "Kliknij Nowy trawers, a następnie kliknij mapę, aby ustawić punkt startowy, lub wpisz długość i szerokość geograficzną i kliknij Zastosuj.",
         helpStart2: "Wpisz każdą linię: łożysko (jak N45- 30- 00E), długość i promień krzywych, a następnie naciśnij Enter. Lub włączyć Digitize i kliknij mapę, aby narysować.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Zapisane wartości wracają puste, lub Edycja traverse nic nie znajduje: nazwy pola w ustawieniach widget nie istnieją na warstwie. Duże litery nie mają znaczenia, ale pisownia ma znaczenie, a hostowana warstwa może używać różnych nazw niż usługa mapy, z której pochodzi. Otwórz ustawienia widgetu i wybierz ponownie pola.",
         helpTroubleNoClicks: "Mapa kliknięć nic nie dodaje: Digitize jest wyłączone lub nie ma jeszcze punktu startowego. Najpierw ustaw punkt startowy, a potem włącz Digitize.",
         helpTroubleContact: "Nadal utknąłeś? Skontaktuj się z GIS Division i podaj nazwę Parcel Drafter i tę aplikację.",
-        helpTipsTitle: "Dobrze wiedzieć.",
+        helpTipsTitle: "Dobrze wiedzieć",
         helpTips1: "Ustawienia planu zmieniają sposób odczytywania i wyświetlania łożysk, długości i obszarów. Ustaw, żeby pasowały do aktu przed wpisem.",
-        helpTips2: "Podany obszar z aktu jest zapisywany obok obliczonego obszaru, więc różnice pozostają widoczne."
+        helpTips2: "Podany obszar z aktu jest zapisywany obok obliczonego obszaru, więc różnice pozostają widoczne.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "Visa lager och distansetiketter på varje tvärlinje",
         snapToggle: "Snap",
         snapToggleTip: "Snap map klickar på vertiker och kanter av alla synliga funktionsskikt",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "GeoJson",
         exportGeoJSONTip: "Ladda ner traversen som en GeoJSON-fil med poäng, linjer och den slutna paketpolygonen. Curves export som densifierad geometri.",
         exportEmpty: "Lägg till minst en linje före export.",
         traverseColor: "Traverse färg",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Sök guiden (försök \"gräns\" eller \"spara\")",
         helpNoMatches: "Ingenting i guiden matchar det ordet. Prova en annan, eller öppna avsnitten ovan.",
         helpAnd: "och",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Ny här?",
         firstRunBody: "Klicka på Ny korsning, ange en startpunkt, skriv sedan eller dra varje gränslinje och klicka på Spara.",
         firstRunHelpLink: "Öppna guiden.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Avfärda",
         helpStartTitle: "Börja här: tre steg",
         helpStart1: "Klicka på Ny korsning, klicka sedan på kartan för att ställa in startpunkten, eller skriv longitud och latitud och klicka på Applicera.",
         helpStart2: "Skriv varje rad: bär (som N45-30-00E), längd och en radie för kurvor, tryck sedan på Enter. Eller slå på Digitize och klicka på kartan för att dra.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Fortfarande fast? Kontakta GIS-avdelningen och nämna Parcel Drafter-namnet och den här appen.",
         helpTipsTitle: "Bra att veta",
         helpTips1: "Planinställningar ändrar hur lager, längder och områden läses och visas. Ställ in dem för att matcha gärningen innan du skriver.",
-        helpTips2: "Det angivna området från gärningen sparas bredvid det beräknade området, så skillnaderna är synliga."
+        helpTips2: "Det angivna området från gärningen sparas bredvid det beräknade området, så skillnaderna är synliga.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

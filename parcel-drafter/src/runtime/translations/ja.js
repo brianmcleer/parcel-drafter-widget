@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "各横断線の軸受けおよび間隔のラベルを表示して下さい",
         snapToggle: "スナップ",
         snapToggleTip: "スナップマップは、すべての可視機能レイヤーの頂点とエッジをクリックします",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "ジオジェソン",
         exportGeoJSONTip: "ポイント、ライン、クローズドパーセルポリゴンのGeoJSONファイルとして横断をダウンロードしてください。 曲線は、変形したジオメトリとしてエクスポートします。",
         exportEmpty: "エクスポートする前に、少なくとも1行を追加します。",
         traverseColor: "トラバースカラー",
@@ -147,11 +147,11 @@ System.register([], function (e) {
         helpIntro: "Parcel Drafter は、地図上の行、ポイント、および小包のポリゴンに送り出されたか、またはプレート上のベアリングと距離を回します。",
         helpSearchPlaceholder: "ガイドを検索(「境界」または「保存」)",
         helpNoMatches: "ガイドがその単語と一致するわけではありません。 別のセクションを試し、または上記のセクションを開きます。",
-        helpAnd: "and",
-        firstRunTitle: "New here?",
+        helpAnd: "および",
+        firstRunTitle: "詳しくはこちら",
         firstRunBody: "新規のトラバースをクリックし、スタートポイントを設定し、各境界線をタイプまたは描画し、[保存]をクリックします。",
         firstRunHelpLink: "ガイドを開きます。",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "免責事項",
         helpStartTitle: "ここから: 3 つのステップ",
         helpStart1: "新規のトラバースをクリックし、マップをクリックしてスタートポイントを設定したり、経度と緯度を入力して「適用」をクリックします。",
         helpStart2: "各ラインをタイプして下さい:軸受け(N45-30-00Eのような)、長さおよびカーブのための半径は、それから Enterを押します。 または、マップをクリックして描画します。",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "まだ立ち往生? GIS部門に連絡し、Parcel Drafter名とこのアプリに言及してください。",
         helpTipsTitle: "よく知る",
         helpTips1: "ベアリング、長さ、エリアが読み込まれて表示する方法を計画設定変更します。 それらを設定して、タイピングの前に送り合わせます。",
-        helpTips2: "指定されたエリアは、計算されたエリアの横に保存されますので、差は表示されません。"
+        helpTips2: "指定されたエリアは、計算されたエリアの横に保存されますので、差は表示されません。",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

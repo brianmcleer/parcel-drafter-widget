@@ -38,7 +38,7 @@ System.register([], function (e) {
         feet: "Peus",
         uSSurveyFeet: "Peus d' enquesta dels EUA",
         areaUnits: "Unitats d' àrea",
-        acres: "Acres",
+        acres: "Acresstar name",
         squareMeters: "Metres quadrats",
         squareFeet: "Peus quadrats",
         squareUSSurveyFeet: "peus d' enquesta dels EUA quadrats",
@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Cerca la guia (l' hivernal \" o \" save\")",
         helpNoMatches: "Res en la guia coincideix amb aquesta paraula. Proveu-ne una altra, o obriu les seccions de dalt.",
         helpAnd: "i",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nova aquí?",
         firstRunBody: "Cliqueu Nova creuada, establiu un punt d' inici, llavors escriviu o dibuixeu cada línia límit i cliqueu Desa.",
         firstRunHelpLink: "Obre la guia.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Descarta",
         helpStartTitle: "Comença aquí: tres passes",
         helpStart1: "Cliqueu Nova creuada, llavors cliqueu el mapa per establir el punt d' inici, o escriviu la longitud i la latitud i cliqueu Aplica.",
         helpStart2: "Introduïu cada línia: al costat (com N45- 30- 00E), longitud i radi de corbes, llavors premeu Intro. O encendre el dígit i clicar el mapa a dibuixar.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Encara està atrapat? Com contactar amb la Divisió GIS i esmentar el nom del Parceller i aquesta aplicació.",
         helpTipsTitle: "Bo saber-ho",
         helpTips1: "L' arranjament del Plan canvia com s' enganxen, longituds i àrees es llegeixen i es mostren. Estableix que coincideixen amb l' acció abans d' escriure.",
-        helpTips2: "L'àrea declarat del fet es desa al costat de l'àrea calculada, així que les diferències romandran visibles."
+        helpTips2: "L'àrea declarat del fet es desa al costat de l'àrea calculada, així que les diferències romandran visibles.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

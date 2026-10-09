@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "각 traverse 선에 방위와 거리 상표를 보여주십시오",
         snapToggle: "기본 정보",
         snapToggleTip: "Snap map은 모든 눈에 보이는 기능 레이어의 vertices와 가장자리를 클릭",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "사이트맵",
         exportGeoJSONTip: "포인트, 라인, 닫힌 소포 polygon을 가진 GeoJSON 파일로 traverse를 다운로드하십시오. densified 기하학으로 곡선 수출.",
         exportEmpty: "수출의 앞에 적어도 1개의 선을 추가하십시오.",
         traverseColor: "가로 색상",
@@ -147,11 +147,11 @@ System.register([], function (e) {
         helpIntro: "Parcel Drafter는 선, 점 및 지도에 소포 다각형으로 deed 또는 plat에 방위 그리고 거리를 켭니다.",
         helpSearchPlaceholder: "가이드 검색 (try \"boundary\"또는 \"save\")",
         helpNoMatches: "가이드의 아무것도 그 단어 일치. 다른 시도, 또는 위의 섹션을 엽니 다.",
-        helpAnd: "and",
-        firstRunTitle: "New here?",
+        helpAnd: "및",
+        firstRunTitle: "여기에 새로운?",
         firstRunBody: "새로운 횡단을 클릭하고 시작점을 설정한 다음 각 경계선을 입력하거나 저장을 클릭합니다.",
-        firstRunHelpLink: "자주 묻는 질문",
-        firstRunDismiss: "Dismiss",
+        firstRunHelpLink: "자주 묻는 질문.",
+        firstRunDismiss: "뚱 베어",
         helpStartTitle: "여기에 시작: 세 단계",
         helpStart1: "새로운 횡단을 클릭 한 다음 시작 지점을 설정할지도를 클릭하거나 경도와 위도를 입력하고 Apply를 클릭합니다.",
         helpStart2: "각 선을 타자를 치십시오: 방위 (N45-30-00E 같이), 길이 및 곡선을 위한 반경, 그 후에 Enter를 누르십시오. 또는 Digitize를 켜고지도를 클릭하여 그리기합니다.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "아직도 붙어? GIS 부서에 연락하고 Parcel Drafter 이름과이 앱을 언급하십시오.",
         helpTipsTitle: "잘 알고",
         helpTips1: "계획 설정은 베어링, 길이 및 지역이 읽고 표시하는 방법을 변경합니다. 입력하기 전에 deed와 일치하도록 설정하십시오.",
-        helpTips2: "deed의 명시된 영역은 계산 영역 옆에 저장되어 있으므로 차이는 볼 수 있습니다."
+        helpTips2: "deed의 명시된 영역은 계산 영역 옆에 저장되어 있으므로 차이는 볼 수 있습니다.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

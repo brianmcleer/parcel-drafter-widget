@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Meklēt ceļvedi (try \"boundary\" vai \"Save\")",
         helpNoMatches: "Nekas ceļvedī neatbilst šim vārdam. Mēģiniet citu, vai atvērt sadaļas iepriekš.",
         helpAnd: "un",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Jauna šeit?",
         firstRunBody: "Noklikšķiniet uz Jauna traverss, iestatiet sākuma punktu, tad ierakstiet vai izdarīt katru robežu līniju un noklikšķiniet uz Saglabāt.",
         firstRunHelpLink: "Atveriet ceļvedi.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Noņemt",
         helpStartTitle: "Sākt šeit: trīs soļi",
         helpStart1: "Noklikšķiniet uz Jauna traverss, tad noklikšķiniet uz kartes, lai noteiktu sākuma punktu, vai ierakstiet garuma un platuma un noklikšķiniet uz Pieteikties.",
         helpStart2: "Ierakstiet katru rindu: gultnis (piemēram, N45-30-00E), garums un līkņu rādiuss, tad nospiediet Enter. Vai ieslēdziet Ciparu un noklikšķiniet uz kartes, lai zīmētu.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Joprojām iestrēdzis? Sazinieties ar ĢIS nodaļu un miniet Parcel drafta nosaukumu un šo lietotni.",
         helpTipsTitle: "Labi zināt",
         helpTips1: "Plāna iestatījumi maina to, kā tiek nolasīti un parādīti gultņi, garumi un laukumi. Iestatīt, lai tie pirms rakstīšanas atbilstu aktam.",
-        helpTips2: "Norādītais apgabals no akta tiek saglabāts blakus aprēķinātajam laukumam, tāpēc atšķirības paliek redzamas."
+        helpTips2: "Norādītais apgabals no akta tiek saglabāts blakus aprēķinātajam laukumam, tāpēc atšķirības paliek redzamas.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

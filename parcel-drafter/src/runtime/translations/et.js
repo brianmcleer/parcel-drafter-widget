@@ -135,7 +135,7 @@ System.register([], function (e) {
         legLabelsTip: "Laagrite ja kaugusmärkide näitamine igal ristjoonel",
         snapToggle: "Snap",
         snapToggleTip: "Klõpsates kõigi nähtavate tunnuste kihtide tippudele ja servadele",
-        exportGeoJSON: "GeoJSON",
+        exportGeoJSON: "GeoJson",
         exportGeoJSONTip: "Laadige läbisõit alla GeoJSON-failina koos punktide, joonte ja suletud paki hulknurgaga. Kõverad ekspordivad tihendatud geomeetriana.",
         exportEmpty: "Lisage vähemalt üks rida enne eksportimist.",
         traverseColor: "Läbiv värv",
@@ -147,11 +147,11 @@ System.register([], function (e) {
         helpIntro: "Pakiprojekteerija pöörab laagrid ja vahemaad aktil või plaadil joonteks, punktideks ja kaardil olevaks paki hulknurgaks.",
         helpSearchPlaceholder: "Otsige juhendist (proovige \"piir\" või \"salvesta\")",
         helpNoMatches: "Mitte miski juhendis ei klapi selle sõnaga. Proovige teist või avage ülaltoodud lõigud.",
-        helpAnd: "and",
-        firstRunTitle: "New here?",
+        helpAnd: "ja",
+        firstRunTitle: "Uus siin?",
         firstRunBody: "Klõpsa nupule Uus läbisõit, määra alguspunkt, kirjuta või joonista iga piirjoon ja klõpsa nupule Salvesta.",
         firstRunHelpLink: "Tee teejuht lahti.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Tühistage",
         helpStartTitle: "Alusta siit: kolm sammu",
         helpStart1: "Klõpsa nupule Uus läbisõit, seejärel klõpsa kaardil, et määrata alguspunkt, või kirjuta pikkus- ja laiuskraad ning klõpsa nupule Rakenda.",
         helpStart2: "Kirjutage iga rida: laager (nagu N45-30-00E), pikkus ja raadius kõverate jaoks, seejärel vajutage Enter. Või lülitage sisse Digitize ja klõpsake kaarti joonistamiseks.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Ikka veel kinni? Võtke ühendust GIS-i osakonnaga ja mainige Parceli koostaja nimi ja see rakendus.",
         helpTipsTitle: "Hea teada",
         helpTips1: "Plaani seadistused muudavad laagrite, pikkuste ja piirkondade lugemist ja näitamist. Seadke need enne kirjutamist vastavaks.",
-        helpTips2: "Teo märgitud ala salvestatakse arvutatud ala kõrval, nii et erinevused jäävad nähtavaks."
+        helpTips2: "Teo märgitud ala salvestatakse arvutatud ala kõrval, nii et erinevused jäävad nähtavaks.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

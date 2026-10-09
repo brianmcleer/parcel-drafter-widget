@@ -72,7 +72,7 @@ System.register([], function (e) {
         attributeNoPolygonLayer: "Selecteer eerst een veelhoeklaag om de velden te selecteren",
         fieldPickerFreeText: "Typ een veldnaam",
         loadingFields: "Laagvelden worden geladen...",
-        help: "Help",
+        help: "Hulp",
         showHelpGuide: "Hulplijn tonen",
         showTheQuestionMarkButtonThat: "De knop met het vraagteken tonen die de hulplijn widget opent"
       })

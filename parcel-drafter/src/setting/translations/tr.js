@@ -74,7 +74,7 @@ System.register([], function (e) {
         loadingFields: "Yükleme tabaka alanları...",
         help: "Yardım",
         showHelpGuide: "Show help guide",
-        showTheQuestionMarkButtonThat: "widget'ı açan soru işaret düğmesine göster"
+        showTheQuestionMarkButtonThat: "Widget'ı açan soru işaret düğmesine göster"
       })
     }
   }

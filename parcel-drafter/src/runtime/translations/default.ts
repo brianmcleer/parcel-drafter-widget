@@ -216,5 +216,8 @@ export default {
   helpTroubleContact: 'Still stuck? Contact the GIS Division and mention the Parcel Drafter name and this app.',
   helpTipsTitle: 'Good to know',
   helpTips1: 'Plan settings change how bearings, lengths, and areas are read and shown. Set them to match the deed before typing.',
-  helpTips2: 'The stated area from the deed is saved beside the calculated area, so differences stay visible.'
+  helpTips2: 'The stated area from the deed is saved beside the calculated area, so differences stay visible.',
+  thenceValueValue2UnitWord: 'thence {value}, {value2} {unitWord}',
+  unknownError: 'unknown error',
+  unserializableError: 'unserializable error'
 }

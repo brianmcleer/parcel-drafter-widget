@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Durchsuchen Sie den Guide (versuchen Sie \"boundary\" oder \"save\")",
         helpNoMatches: "Nichts im Guide passt zu diesem Wort. Versuchen Sie es mit einem anderen oder öffnen Sie die obigen Abschnitte.",
         helpAnd: "und",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Neu hier?",
         firstRunBody: "Klicken Sie auf Neue Traverse, legen Sie einen Startpunkt fest, tippen oder zeichnen Sie dann jede Begrenzungslinie und klicken Sie auf Speichern.",
         firstRunHelpLink: "Öffne den Guide.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Entlassung",
         helpStartTitle: "Beginnen Sie hier: drei Schritte",
         helpStart1: "Klicken Sie auf Neue Traverse, klicken Sie dann auf die Karte, um den Startpunkt festzulegen, oder geben Sie Längen- und Breitengrad ein und klicken Sie auf Apply.",
         helpStart2: "Geben Sie jede Zeile ein: Lager (wie N45-30-00E), Länge und Radius für Kurven, dann drücken Sie Enter. Oder schalten Sie Digitize ein und klicken Sie auf die Karte, um zu zeichnen.",
@@ -194,7 +194,10 @@ System.register([], function (e) {
         helpTroubleContact: "Immer noch stecken? Kontaktieren Sie die GIS-Abteilung und erwähnen Sie den Namen des Paketentwurfs und diese App.",
         helpTipsTitle: "Gut zu wissen",
         helpTips1: "Planeinstellungen ändern, wie Lager, Längen und Bereiche gelesen und angezeigt werden. Stellen Sie sie so ein, dass sie der Tat entsprechen, bevor Sie tippen.",
-        helpTips2: "Der angegebene Bereich aus der Tat wird neben dem berechneten Bereich gespeichert, so dass Unterschiede sichtbar bleiben."
+        helpTips2: "Der angegebene Bereich aus der Tat wird neben dem berechneten Bereich gespeichert, so dass Unterschiede sichtbar bleiben.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

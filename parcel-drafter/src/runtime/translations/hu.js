@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Keresés az útmutató (próbálja \"határ\" vagy \"mentés\")",
         helpNoMatches: "A kalauzban semmi sem egyezik ezzel a szóval. Próbálja meg egy másik, vagy nyissa ki a fenti szakaszok.",
         helpAnd: "és",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Új itt?",
         firstRunBody: "Kattintson az Új traverse gombra, állítsa be a startpontot, majd írja be vagy rajzolja le az egyes határvonalakat, és kattintson a Mentés gombra.",
         firstRunHelpLink: "Nyisd ki az útmutatót.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Elutasítás",
         helpStartTitle: "Kezdjük itt: három lépés",
         helpStart1: "Kattintson az Új kereszteződésre, majd kattintson a térképre a kiindulási pont beállításához, vagy írja be a hosszúságot és a szélességet, majd kattintson az Alkalmazás gombra.",
         helpStart2: "Írja be az egyes sorokat: csapágy (mint az N45-30-00E), hossz, és egy sugár görbék, majd nyomja meg az Enter. Vagy kapcsolja be Digitize és kattintson a térkép rajzolni.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "A megtakarított értékek üresen jönnek vissza, vagy a Traverse szerkesztése nem talál semmit: a widget beállításokban a mezőnevek nem léteznek a rétegen. A nagybetűk nem számítanak, de a helyesírás igen, és a házigazda réteg más neveket is használhat, mint a térképek szolgáltatása. Nyissa meg a widget beállításokat és válassza ki újra a mezőket.",
         helpTroubleNoClicks: "A térkép kattintás nem ad hozzá semmit: A Digitize ki van kapcsolva, vagy még nincs kiindulópont. Először állítsa be a kiindulási pontot, majd kapcsolja be a Digitize-t.",
         helpTroubleContact: "Még mindig? Lépjen kapcsolatba a FIS Division, és említse a Parcel Drafter nevét és ezt az alkalmazást.",
-        helpTipsTitle: "Jó tudni.",
+        helpTipsTitle: "Jó tudni",
         helpTips1: "A tervbeállítások megváltoztatják a csapágyak, hosszok és területek olvasását és megjelenítését. Állítsuk össze őket, mielőtt gépelnénk.",
-        helpTips2: "A megadott terület a tett mentett mellett számított terület, így különbségek maradnak látható."
+        helpTips2: "A megadott terület a tett mentett mellett számított terület, így különbségek maradnak látható.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

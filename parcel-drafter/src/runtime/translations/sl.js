@@ -148,10 +148,10 @@ System.register([], function (e) {
         helpSearchPlaceholder: "Iskanje vodnika (poskusite \"boundary\" ali \"save\")",
         helpNoMatches: "Nič v vodiču se ne ujema s to besedo. Poskusite drugo ali pa odprite zgornje oddelke.",
         helpAnd: "in",
-        firstRunTitle: "New here?",
+        firstRunTitle: "Nova tukaj?",
         firstRunBody: "Kliknite nov prehod, nastavite začetno točko, nato vnesite ali potegnite vsako mejno črto in kliknite Shrani.",
         firstRunHelpLink: "Odpri vodič.",
-        firstRunDismiss: "Dismiss",
+        firstRunDismiss: "Prosto",
         helpStartTitle: "Začnite tukaj: trije koraki",
         helpStart1: "Kliknite nov prehod, nato pa kliknite na zemljevid, da nastavite začetno točko, ali vnesite dolžino in zemljepisno širino in kliknite Uveljavi.",
         helpStart2: "Vnesite vsako vrstico: ležaj (kot N45-30-00E), dolžina in polmer za krivulje, nato pa pritisnite Enter. Ali vklopite Digitize in kliknite zemljevid za risanje.",
@@ -184,7 +184,7 @@ System.register([], function (e) {
         helpExportTitle: "Izvoz",
         helpExportGeoJSON: "GeoJSON prenese traverzo kot datoteko s točkami, vrsticami in zaprtim mnogokotnikom parcele.",
         helpExportLegal: "Pravno prenese osnutek metes in vezan opis. Je samo osnutek in ga je treba pred uporabo pregledati.",
-        helpTroubleTitle: "Če je kaj narobe.",
+        helpTroubleTitle: "Če je kaj narobe",
         helpTroubleNoPolygon: "Ni mnogokotnika po shranjevanju: vrstice so bile shranjene kot vezna črta. Na vsako stran paketa nastavite vrsto vrstice na mejo ali pa pred digitalizacijo v orodni vrstici izberite Mejo.",
         helpTroubleSymbols: "Shranjene črte ne rišejo z barvami sloja: koda vrste vrstice ni na seznamu vrednosti sloja. Vprašajte lastnika aplikacije, da se ujemajo vrste widget vrstic s plastjo.",
         helpTroubleSaveFailed: "Shrani ni uspelo: plast morda ne omogoča urejanja. Preverite, da ste prijavljeni in da so plasti nastavljive, nato poskusite znova.",
@@ -192,9 +192,12 @@ System.register([], function (e) {
         helpTroubleFields: "Shranjene vrednosti se vrnejo prazne, ali pa Edit traverse ne najde ničesar: imena polj v nastavitvah widget ne obstajajo na plasteh. Velike črke niso pomembne, črkovanje pa, in gostujoči sloj lahko uporablja različna imena kot storitev zemljevida, iz katere je prišel. Odprite nastavitve gradnika in ponovno izberite polja.",
         helpTroubleNoClicks: "Klik na zemljevid ne doda ničesar: Digitalizacija je izključena ali pa še ni začetne točke. Najprej nastavite začetno točko in nato vklopite Digitize.",
         helpTroubleContact: "Še vedno obtičal? Kontaktirajte oddelek GIS in omenite ime in to aplikacijo.",
-        helpTipsTitle: "Dobro je vedeti.",
+        helpTipsTitle: "Dobro je vedeti",
         helpTips1: "Nastavitve načrta spreminjajo, kako se odčitavajo in prikazujejo ležaji, dolžine in področja. Nastavite jih, da se ujemajo z dokumentom pred tipkanjem.",
-        helpTips2: "Navedena površina iz listine se shrani poleg izračunanega območja, zato razlike ostanejo vidne."
+        helpTips2: "Navedena površina iz listine se shrani poleg izračunanega območja, zato razlike ostanejo vidne.",
+        thenceValueValue2UnitWord: "thence {value}, {value2} {unitWord}",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }
