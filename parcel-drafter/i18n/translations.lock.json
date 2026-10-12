@@ -1804,18 +1804,844 @@
           }
         },
         "bs": {
-          "file": "41f61c51c506",
+          "file": "d4350b72120e",
           "counts": {
             "esri": 29,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 165,
             "stale": 0,
-            "missing": 166
+            "missing": 1
           },
-          "entries": {}
+          "entries": {
+            "widgetTitle": {
+              "t": "Paket Drafter",
+              "src": "machine",
+              "h": "b1baa8e86826"
+            },
+            "selectMapWidget": {
+              "t": "Izaberite grafički element za mapu u postavkama grafičkog elementa za početak.",
+              "src": "machine",
+              "h": "1e6d20c31d62"
+            },
+            "newTraverse": {
+              "t": "Nova traverza",
+              "src": "machine",
+              "h": "8dd5534df7ef"
+            },
+            "editTraverse": {
+              "t": "Izmijeni traverse",
+              "src": "machine",
+              "h": "6bced51c2ecc"
+            },
+            "planSettings": {
+              "t": "Podešavanja plana",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "digitize": {
+              "t": "Digitaliziraj",
+              "src": "machine",
+              "h": "647559bda53c"
+            },
+            "bearing": {
+              "t": "Pravac",
+              "src": "machine",
+              "h": "b157f9096488"
+            },
+            "arcLength": {
+              "t": "Dužina luka",
+              "src": "machine",
+              "h": "a3852745d964"
+            },
+            "lineType": {
+              "t": "Tip linije",
+              "src": "machine",
+              "h": "5ccd6d2767d7"
+            },
+            "addLine": {
+              "t": "Dodaj liniju",
+              "src": "machine",
+              "h": "a147e4e01e58"
+            },
+            "deleteLine": {
+              "t": "Obriši liniju",
+              "src": "machine",
+              "h": "2204bf1a2e99"
+            },
+            "bearingHint": {
+              "t": "npr. N45-30-00E",
+              "src": "machine",
+              "h": "5a19be829dd1"
+            },
+            "lengthHint": {
+              "t": "npr. 100",
+              "src": "machine",
+              "h": "f48d8391a96c"
+            },
+            "directionOrAngleType": {
+              "t": "Smjer ili ugaoni tip",
+              "src": "machine",
+              "h": "250acaa65def"
+            },
+            "northAzimuth": {
+              "t": "Sjeverni Azimut",
+              "src": "machine",
+              "h": "15f9305cb2cd"
+            },
+            "southAzimuth": {
+              "t": "Južni Azimut",
+              "src": "machine",
+              "h": "0fe57d2ae5b5"
+            },
+            "quadrantBearing": {
+              "t": "Smjer kvadranta",
+              "src": "machine",
+              "h": "b1cbcfdc781a"
+            },
+            "directionOrAngleUnits": {
+              "t": "Smjer ili ugaone jedinice",
+              "src": "machine",
+              "h": "98a0db5beb48"
+            },
+            "distanceAndLengthUnits": {
+              "t": "Jedinice za udaljenost i dužinu",
+              "src": "machine",
+              "h": "2eb63f08470d"
+            },
+            "uSSurveyFeet": {
+              "t": "Američka stopa istraživanja",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "areaUnits": {
+              "t": "Jedinice za područje",
+              "src": "machine",
+              "h": "525546c203c3"
+            },
+            "squareUSSurveyFeet": {
+              "t": "Kvadratna američka stopa istraživanja",
+              "src": "machine",
+              "h": "71261f5fc9d9"
+            },
+            "circularCurveParameters": {
+              "t": "Kružni parametri krivulje",
+              "src": "machine",
+              "h": "47192fa46655"
+            },
+            "radiusAndChordLength": {
+              "t": "Radijus i dužina akorda",
+              "src": "machine",
+              "h": "fcdc9d7b7162"
+            },
+            "radiusAndArcLength": {
+              "t": "Duljina polumjera i luka",
+              "src": "machine",
+              "h": "4883192aa1c5"
+            },
+            "miscloseBearing": {
+              "t": "Misteriozni kurs",
+              "src": "machine",
+              "h": "ac79739adc72"
+            },
+            "miscloseDistance": {
+              "t": "Neispravna udaljenost",
+              "src": "machine",
+              "h": "3e3cff4cc351"
+            },
+            "miscloseRatio": {
+              "t": "Omjer pogrešnog zatvaranja",
+              "src": "machine",
+              "h": "cf3b24e39807"
+            },
+            "calculatedArea": {
+              "t": "Područje izračunavanja",
+              "src": "machine",
+              "h": "d19e6c96553c"
+            },
+            "highAccuracy": {
+              "t": "Visoka preciznost",
+              "src": "machine",
+              "h": "12fd86eec38b"
+            },
+            "compassRuleApplied": {
+              "t": "Primjenjeno podešavanje pravila kompasa",
+              "src": "machine",
+              "h": "7f9fe38ffe1b"
+            },
+            "updateRotationPoint": {
+              "t": "Kliknite tras tačku na karti da postavite sidro za rotaciju",
+              "src": "machine",
+              "h": "d5703dcb7f5c"
+            },
+            "rotationPointShort": {
+              "t": "Sidro",
+              "src": "machine",
+              "h": "8f8c77e7404c"
+            },
+            "planInfo": {
+              "t": "Podaci o planu",
+              "src": "machine",
+              "h": "2c4885e1ee55"
+            },
+            "statedArea": {
+              "t": "Stanje",
+              "src": "machine",
+              "h": "695fbe564baa"
+            },
+            "clickToSetStartPoint": {
+              "t": "Kliknite na mapu da postavite početnu tačku ili unesite koordinate ispod.",
+              "src": "machine",
+              "h": "ea4c578f8149"
+            },
+            "clickToSelectParcel": {
+              "t": "Kliknite na liniju paketa na karti da učitate njen trasor za izmjenu.",
+              "src": "machine",
+              "h": "3832a6f0743a"
+            },
+            "noStartPoint": {
+              "t": "Postavi početnu tačku prije dodavanja linija.",
+              "src": "machine",
+              "h": "2340b4c9cc25"
+            },
+            "invalidBearing": {
+              "t": "Neispravan kurs.",
+              "src": "machine",
+              "h": "222f645a53b0"
+            },
+            "invalidLength": {
+              "t": "Neispravna dužina.",
+              "src": "machine",
+              "h": "6f54c8bfd4a7"
+            },
+            "invalidRadius": {
+              "t": "Neispravan radijus.",
+              "src": "machine",
+              "h": "513222f394d2"
+            },
+            "invalidLengthRadiusProportion": {
+              "t": "Dužina ne može biti veća od dvostrukog radijusa.",
+              "src": "machine",
+              "h": "db8835c97822"
+            },
+            "invalidXY": {
+              "t": "Nevažeće koordinate.",
+              "src": "machine",
+              "h": "b46684408456"
+            },
+            "noLineLayer": {
+              "t": "Nijedan linijski sloj nije podešen za izmjenu.",
+              "src": "machine",
+              "h": "33144f422472"
+            },
+            "noFeaturesFound": {
+              "t": "Na toj lokaciji nisu pronađene linije paketa sa konfiguriranim poljima.",
+              "src": "machine",
+              "h": "0bf84e7a2fab"
+            },
+            "editLoaded": {
+              "t": "Preusmjeri učitano iz izabranih linija paketa.",
+              "src": "machine",
+              "h": "890969cc1ad5"
+            },
+            "editLoadedNoPolygon": {
+              "t": "Trasiranje učitano, ali nije pronađen postojeći poligon parcele ovdje. Snimanje će dodati novi poligon umjesto ažuriranja jednog.",
+              "src": "machine",
+              "h": "28a1bf46f9ec"
+            },
+            "noLayersConfigured": {
+              "t": "Podesite najmanje jedan ciljni sloj u postavkama grafičkog elementa prije snimanja.",
+              "src": "machine",
+              "h": "c941a17a711d"
+            },
+            "saveSuccess": {
+              "t": "Snimljene {lines} linije i {points} tačke.",
+              "src": "machine",
+              "h": "aa47053172fb"
+            },
+            "saveFailed": {
+              "t": "Neuspjelo snimanje. Provjerite dozvole za konzolu i slojeve.",
+              "src": "machine",
+              "h": "36040bdea9dc"
+            },
+            "polygonSaved": {
+              "t": "Napravljen poligon paketa.",
+              "src": "machine",
+              "h": "98159c9e9f0e"
+            },
+            "polygonUpdated": {
+              "t": "Poligon paketa ažuriran.",
+              "src": "machine",
+              "h": "c86ae223e636"
+            },
+            "polygonAddedDuringEdit": {
+              "t": "Dodan je novi poligon parcele jer nije pronađen postojeći poligon kada je učitana trasa.",
+              "src": "machine",
+              "h": "e1cc32d956c2"
+            },
+            "fieldsNotOnLayer": {
+              "t": "Ova polja nisu na linijskom sloju: {fields}. Imena polja se poklapaju bez obzira na velika slova, pa provjerite pravopis u postavkama grafičkog elementa i izaberite polja ponovo ako se sloj promijeni.",
+              "src": "machine",
+              "h": "2d46419f8c68"
+            },
+            "fieldsSkippedOnSave": {
+              "t": "Ova polja nisu na ciljanim slojevima i preskočena su: {fields}. Provjerite mapiranje polja u postavkama grafičkog elementa.",
+              "src": "machine",
+              "h": "63b2e5084012"
+            },
+            "noBoundaryLinesOnSave": {
+              "t": "Nijedan poligon parcele nije napravljen zato što linije nisu označene kao Granična linija. Postavite tip linije na Graničnu liniju u mreži ili u traci s alatima prije digitaliziranja, a zatim snimite ponovo.",
+              "src": "machine",
+              "h": "8f7db21fa7c5"
+            },
+            "newTraverseTip": {
+              "t": "Započnite novi prelazak tako što ćete postaviti početnu tačku i ući u ležajeve i daljine",
+              "src": "machine",
+              "h": "c762bc3e94d3"
+            },
+            "editTraverseTip": {
+              "t": "Učitaj postojeću parcelu iz mape da je pregledaš ili promijeniš",
+              "src": "machine",
+              "h": "b6cbd43dd2e7"
+            },
+            "backTip": {
+              "t": "Vrati se na početni ekran i očisti trenutni prijelaz",
+              "src": "machine",
+              "h": "05b7b55769a2"
+            },
+            "planSettingsTip": {
+              "t": "Promijeni tip smjera, ugao, udaljenost i jedinice područja i način unosa krivulje",
+              "src": "machine",
+              "h": "01738775e42c"
+            },
+            "digitizeTip": {
+              "t": "Kada je uključeno, klikom na kartu se dodaje linija od zadnje tačke do lokacije sa klikom",
+              "src": "machine",
+              "h": "06724f1a6b9e"
+            },
+            "drawLineTypeTip": {
+              "t": "Tip linije za nove linije, digitaliziran na mapi ili utipkano u mreži. Granične linije ocrtavaju paket i grade snimljeni poligon; linije konekcije ulaze samo iz referentne tačke.",
+              "src": "machine",
+              "h": "cd3fb442516d"
+            },
+            "zoomToTip": {
+              "t": "Uvećaj kartu do početne tačke za prelazak",
+              "src": "machine",
+              "h": "acc816e59387"
+            },
+            "saveTip": {
+              "t": "Snimi transverzne linije, tačke i zatvoren poligon parcele u konfigurisane slojeve",
+              "src": "machine",
+              "h": "3bafeaa737e3"
+            },
+            "clearAllTip": {
+              "t": "Ukloni sve unesene linije i počni ispočetka",
+              "src": "machine",
+              "h": "5eb76e5d1685"
+            },
+            "anchorTip": {
+              "t": "Izaberite tras tačku na mapi koja će se držati fiksna pri okretanju ili skaliranju",
+              "src": "machine",
+              "h": "9a259de2d397"
+            },
+            "rotationTip": {
+              "t": "Rotiraj cijelim ovim stupnjevima (pozitivan je u smjeru kazaljke na satu)",
+              "src": "machine",
+              "h": "f15d244e6bb8"
+            },
+            "scaleTip": {
+              "t": "Pomnožite svaku udaljenost u traversu ovim faktorom",
+              "src": "machine",
+              "h": "5d491a2a02d1"
+            },
+            "bearingEntryTip": {
+              "t": "Formati: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Tip * za kopiranje prethodne linije. Numpad + prelazi na dužinu.",
+              "src": "machine",
+              "h": "fab2b8ba8b83"
+            },
+            "lengthEntryTip": {
+              "t": "Udaljenost u planskim jedinicama. Dodaj m, ft, usft, ch (lanci), rd (rodovi), lk (linkovi), ili va (varas) za premošćivanje. Upišite * za kopiranje prethodne linije. Numpad + dodaje liniju, numpad / skače u radijus.",
+              "src": "machine",
+              "h": "020b1c8abe8c"
+            },
+            "radiusEntryTip": {
+              "t": "Ostavite prazno za ravnu liniju. Pozitivne krivulje desno, negativne krivulje lijevo. Numpad + dodaje liniju.",
+              "src": "machine",
+              "h": "ffb5271a043d"
+            },
+            "traverseGridLabel": {
+              "t": "Transverzne linije",
+              "src": "machine",
+              "h": "373b97e66948"
+            },
+            "newLineEntry": {
+              "t": "novi unos u liniju",
+              "src": "machine",
+              "h": "34db82892d71"
+            },
+            "miscloseRegionLabel": {
+              "t": "Nevažeći detalji",
+              "src": "machine",
+              "h": "f3df155f4060"
+            },
+            "parcelToolsLabel": {
+              "t": "Alati za rotaciju i skalu",
+              "src": "machine",
+              "h": "3de9fea03db0"
+            },
+            "planSettingsLabel": {
+              "t": "Podešavanja plana",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "startPointEntryLabel": {
+              "t": "Koordinate početne tačke",
+              "src": "machine",
+              "h": "bd602caa2315"
+            },
+            "directionOrAngleTypeTip": {
+              "t": "Kako se ležajevi u izvornom dokumentu referiraju: sa sjevera (sjeverni azimut), sa juga (južni azimut), ili kvadrantom (npr. N45E)",
+              "src": "machine",
+              "h": "ab48faae4237"
+            },
+            "directionOrAngleUnitsTip": {
+              "t": "Da li će uglovi biti zapisani kao decimalni stepeni (45,5) ili stepeni-minuti-sekundi (45-30-00)",
+              "src": "machine",
+              "h": "1fc8a3c9012f"
+            },
+            "distanceAndLengthUnitsTip": {
+              "t": "Jedinica za svaku udaljenost, dužinu i radijus u koji ulazite",
+              "src": "machine",
+              "h": "b195ea78b1ba"
+            },
+            "areaUnitsTip": {
+              "t": "Jedinica koja se koristi za prijavu izračunate površine paketa",
+              "src": "machine",
+              "h": "805def3ed02a"
+            },
+            "circularCurveParametersTip": {
+              "t": "Za krivulje, da li je dužina u koju ulazite akord (pravo-linija) udaljenost ili lučna udaljenost",
+              "src": "machine",
+              "h": "ffb3a158f059"
+            },
+            "lineTypeTip": {
+              "t": "Granične linije definiraju parcelu i koriste se za misclose; linije veza samo vezuju startnu tačku do tačke početka",
+              "src": "machine",
+              "h": "38fa0c4e69aa"
+            },
+            "miscloseBearingTip": {
+              "t": "Smjer jaza između mjesta gdje se granica završava i mjesta gdje je započela",
+              "src": "machine",
+              "h": "5345caddc95e"
+            },
+            "miscloseDistanceTip": {
+              "t": "Veličina razmaka između granične krajnje tačke i početne tačke; nula znači savršeno zatvaranje",
+              "src": "machine",
+              "h": "a4b635aa49e8"
+            },
+            "miscloseRatioTip": {
+              "t": "Preciznost zatvaranja kao 1:n - greška u odnosu na ukupnu graničnu dužinu; viša n je bolja",
+              "src": "machine",
+              "h": "2304cbbb482f"
+            },
+            "calculatedAreaTip": {
+              "t": "Geodetska oblast zatvorenog graničnog poligona",
+              "src": "machine",
+              "h": "5d769326a024"
+            },
+            "compassRuleTip": {
+              "t": "Greška zatvaranja je raspoređena proporcionalno duž svake granične linije (pravilo Bowditch kompasa); vaše unesene vrijednosti se čuvaju kao evidencije",
+              "src": "machine",
+              "h": "f9f81a04ae95"
+            },
+            "planNameTip": {
+              "t": "Ime zapisano na poligonu snimljenog paketa",
+              "src": "machine",
+              "h": "f151a39a4e69"
+            },
+            "planDescriptionTip": {
+              "t": "Opis zapisan na snimljenom poligonu parcele",
+              "src": "machine",
+              "h": "bec730aa77cd"
+            },
+            "statedAreaTip": {
+              "t": "Područje kao što je navedeno na djelu ili dokumentu za zapis, snimljeno uz izračunatu površinu",
+              "src": "machine",
+              "h": "7c1279838eb2"
+            },
+            "longitudeTip": {
+              "t": "WGS84 decimalni stepeni; negativne vrijednosti su zapadne",
+              "src": "machine",
+              "h": "5389547b61cb"
+            },
+            "latitudeTip": {
+              "t": "WGS84 decimalni stepeni; negativne vrijednosti su južno",
+              "src": "machine",
+              "h": "57dd5348cf12"
+            },
+            "escToExitTip": {
+              "t": "Pritisnite Escape da biste završili trenutni alat za mapu",
+              "src": "machine",
+              "h": "11279da444fa"
+            },
+            "reorder": {
+              "t": "Promjeni redoslijed",
+              "src": "machine",
+              "h": "33d9978c4477"
+            },
+            "reorderTip": {
+              "t": "Povucite da preuredite ovu liniju ili se fokusirajte i koristite tipke sa strelicama",
+              "src": "machine",
+              "h": "2821f28ae577"
+            },
+            "dragRotate": {
+              "t": "Povuci da bi se rotirao",
+              "src": "machine",
+              "h": "1bfe69fafb2c"
+            },
+            "dragRotateTip": {
+              "t": "Kada je uključeno, povucite na mapi da rotirate trasiranje oko tačke sidra",
+              "src": "machine",
+              "h": "718545709356"
+            },
+            "dragScale": {
+              "t": "Povuci na skalu",
+              "src": "machine",
+              "h": "4d4ba980872c"
+            },
+            "dragScaleTip": {
+              "t": "Kada je uključeno, povucite na mapi da pređete sa tačke sidra.",
+              "src": "machine",
+              "h": "ec18ea5f042f"
+            },
+            "editingExisting": {
+              "t": "Uređivanje postojećeg paketa - spremanje će ga ažurirati na mjestu i zamijeniti njegove linije",
+              "src": "machine",
+              "h": "030f090aea03"
+            },
+            "attributeFieldTip": {
+              "t": "Atributi koji su snimljeni u poligonskom polju paketa",
+              "src": "machine",
+              "h": "e05042e2707a"
+            },
+            "updateSuccess": {
+              "t": "Osvježeno pakiranje: zamijenjeno {lines} linijama.",
+              "src": "machine",
+              "h": "b66ad9e2f726"
+            },
+            "legLabelsTip": {
+              "t": "Prikaži oznake nosivosti i udaljenosti na svakoj traverznoj liniji",
+              "src": "machine",
+              "h": "4f0de8d49c6a"
+            },
+            "snapToggle": {
+              "t": "Snap",
+              "src": "machine",
+              "h": "455673bbb8a0"
+            },
+            "snapToggleTip": {
+              "t": "Postavi kartu klikova na vrhove i rubove svih vidljivih slojeva osobina",
+              "src": "machine",
+              "h": "2ea668142414"
+            },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
+            "exportGeoJSONTip": {
+              "t": "Preuzmite putanju kao GeoJSON datoteku sa tačkama, linijama i zatvorenim poligonom parcele. Krivulje izvoze kao denzificiranu geometriju.",
+              "src": "machine",
+              "h": "bdc631d2005d"
+            },
+            "exportEmpty": {
+              "t": "Dodajte barem jednu liniju prije izvoza.",
+              "src": "machine",
+              "h": "5cfd2161e0db"
+            },
+            "traverseColor": {
+              "t": "Usmjeri boju",
+              "src": "machine",
+              "h": "02681fe8c53e"
+            },
+            "traverseColorTip": {
+              "t": "Premosti boju crtanja za ovu sesiju. Očistite za korištenje podešenih simbola.",
+              "src": "machine",
+              "h": "14b164f63010"
+            },
+            "legalDescription": {
+              "t": "Legalno",
+              "src": "machine",
+              "h": "902c91d94e0f"
+            },
+            "legalDescriptionTip": {
+              "t": "Preuzimanje nacrta meta i ograničava pravni opis puta (AH 215 konvencije: početak, točka početka, zatim kursevi, radijus krivulje/arc/chord, acreage). Nacrt samo, pregled potreban.",
+              "src": "machine",
+              "h": "086ba392ad2c"
+            },
+            "helpIntro": {
+              "t": "Paket Drafter pretvara ležajeve i udaljenosti na delu ili platu u linije, tačke i parcelni poligon na mapi.",
+              "src": "machine",
+              "h": "1dc61747fde3"
+            },
+            "helpSearchPlaceholder": {
+              "t": "Traži vodič (pokušajobično ilispasi",
+              "src": "machine",
+              "h": "d13d8bf95448"
+            },
+            "helpNoMatches": {
+              "t": "Ništa u vodiču ne odgovara toj riječi.",
+              "src": "machine",
+              "h": "3fe179f75330"
+            },
+            "firstRunTitle": {
+              "t": "Novi ovdje?",
+              "src": "machine",
+              "h": "b81f2e17e001"
+            },
+            "firstRunBody": {
+              "t": "Kliknite New traverse, postavite startnu točku, zatim unesite ili iscrtajte svaku graničnu liniju i kliknite Save.",
+              "src": "machine",
+              "h": "100f0167edc4"
+            },
+            "firstRunHelpLink": {
+              "t": "Otvori vodič.",
+              "src": "machine",
+              "h": "2447dd6134ea"
+            },
+            "firstRunDismiss": {
+              "t": "Otpust",
+              "src": "machine",
+              "h": "70afe9eff3f2"
+            },
+            "helpStartTitle": {
+              "t": "Počnite ovdje: tri koraka",
+              "src": "machine",
+              "h": "789320b4831d"
+            },
+            "helpStart1": {
+              "t": "Kliknite New traverse, zatim kliknite na kartu da postavite startnu točku ili unesite geografsku dužinu i širinu i kliknite Primijeni.",
+              "src": "machine",
+              "h": "4c0d2a781be9"
+            },
+            "helpStart2": {
+              "t": "Upišite svaku liniju: ležaj (kao N45-30-00E), dužinu i radijus za krivine, zatim pritisnite Enter. Ili uključite Digitalizu i kliknite na kartu da crtate.",
+              "src": "machine",
+              "h": "0a34aa31f1c1"
+            },
+            "helpStart3": {
+              "t": "Kada se granica zatvara do početka, provjerite misclose brojeve, zatim kliknite Save.",
+              "src": "machine",
+              "h": "784ea8f7acb3"
+            },
+            "helpEnterTitle": {
+              "t": "Ulazim u linije",
+              "src": "machine",
+              "h": "5bd668054062"
+            },
+            "helpEnterIntro": {
+              "t": "Svakoj liniji je potreban ležaj i dužina, a polumjer je samo za krivine.",
+              "src": "machine",
+              "h": "009619ed5441"
+            },
+            "helpEnterFormats": {
+              "t": "Formati kursa: N45-30-00E, 45-30-00-1, ili 45.3000. Promjena formata i jedinica u okviru postavki Plana.",
+              "src": "machine",
+              "h": "078e275788e9"
+            },
+            "helpEnterShortcuts": {
+              "t": "Upišite * u okvir za kopiranje vrijednosti iz gornje linije. Upišite *tb u kućištu za ležaj da nastavite tangentu na prethodnu krivulju.",
+              "src": "machine",
+              "h": "08aa99a0b6ad"
+            },
+            "helpEnterNumpad": {
+              "t": "Kratice za numpad: + pomiče se iz ležaja u dužinu i dodaje liniju iz dužine ili radijusa. / skače iz dužine u radijus.",
+              "src": "machine",
+              "h": "a394c5d41b98"
+            },
+            "helpEnterLineType": {
+              "t": "Tip linije je važan: Noge granične linije ocrtavaju parcelu i grade spašeni poligon. Noge veze ulaze samo od referentne tačke, kao ugao sekcije, do prave tačke početka.",
+              "src": "machine",
+              "h": "89ec25ded908"
+            },
+            "helpEnterRows": {
+              "t": "Promijenite liniju bilo kada: izmijenite njene kutije, izaberite neki drugi tip linije u njegovom redu, povucite ručku na drugi redoslijed ili koristite dugme za smeće da je uklonite.",
+              "src": "machine",
+              "h": "a84a2406e20b"
+            },
+            "helpDrawTitle": {
+              "t": "Crtanje na mapi",
+              "src": "machine",
+              "h": "1ce1a8628f6c"
+            },
+            "helpDraw1": {
+              "t": "Uključi Digitize, zatim svaki klik na kartu dodaje liniju od zadnje točke do mjesta gdje ste kliknuli. Prvo izaberite tip linije u traci s alatima: Granična linija za obruč paketa, linija za povezivanje koja će se ušetati.",
+              "src": "machine",
+              "h": "64c75e4d93f0"
+            },
+            "helpDraw2": {
+              "t": "Snap povlači vaše klikove do obližnjih tačaka i linija na karti. Isključite ga dugmetom Snap ako uhvati pogrešno mjesto.",
+              "src": "machine",
+              "h": "4e3e94e292ca"
+            },
+            "helpDraw3": {
+              "t": "Naljepnice prikazuju kursor i dužinu na svakoj liniji. Kutija boja mijenja boju crtanja dok je ne očistite ili zatvorite aplikaciju.",
+              "src": "machine",
+              "h": "285a90c0c061"
+            },
+            "helpDraw4": {
+              "t": "Zoom će vratiti mapu na vašu traverzu. Očistite svaku liniju i počnite ispočetka.",
+              "src": "machine",
+              "h": "20b3174d1465"
+            },
+            "helpDraw5": {
+              "t": "Pritisnite Escape da zaustavite alat za mapu.",
+              "src": "machine",
+              "h": "597aeb0976c5"
+            },
+            "helpFitTitle": {
+              "t": "Rotiraj, mjerilo i sidro",
+              "src": "machine",
+              "h": "4a17943c1964"
+            },
+            "helpFit1": {
+              "t": "Rotacija okreće cijelu putanju i skalu proteže svaku dužinu istim faktorom. Ukucajte brojeve, ili uključite rotaciju ili skalu i povucite na karti.",
+              "src": "machine",
+              "h": "54ad906d5cbb"
+            },
+            "helpFit2": {
+              "t": "Sidro bira prelaznu tačku koja ostaje postavljena dok se rotirate ili mjerite.",
+              "src": "machine",
+              "h": "9b3d7531b7f5"
+            },
+            "helpCloseTitle": {
+              "t": "Zatvaranje i misclose",
+              "src": "machine",
+              "h": "c375d9c85097"
+            },
+            "helpClose1": {
+              "t": "Brojevi se pojavljuju kada se vaše granice završe tamo gdje su i počele.",
+              "src": "machine",
+              "h": "a16d9fc4045b"
+            },
+            "helpClose2": {
+              "t": "Misclose udaljenost je veličina jaza. Misclose omjer je preciznost kao 1:n, a viši je bolji.",
+              "src": "machine",
+              "h": "ccc4f5b75d9f"
+            },
+            "helpClose3": {
+              "t": "Kada je praznina mala, grafički element zatvara granicu i širi grešku duž linija (pravilo compass). VaĹe utipkane vrijednosti se drĹľe kao zapis.",
+              "src": "machine",
+              "h": "9f962ab8183d"
+            },
+            "helpSaveTitle": {
+              "t": "Snimam i izmjenjujem",
+              "src": "machine",
+              "h": "bf4f500eba0c"
+            },
+            "helpSaveLines": {
+              "t": "Sačuvaj svaku liniju, sa svojim ležajem, dužinom, radijusom, i tipom linije, do linijskog sloja.",
+              "src": "machine",
+              "h": "4d4067c9e985"
+            },
+            "helpSavePoints": {
+              "t": "Save također piše početnu tačku i svaki ugao do tačke sloja.",
+              "src": "machine",
+              "h": "186d20f8f8ee"
+            },
+            "helpSavePolygon": {
+              "t": "Poligon parcele je izgrađen samo od graničnih linija, zatim je snimljen sa imenom, opisom i navedenim područjem. Ako linija nije označena kao granična linija, ne stvara se poligon.",
+              "src": "machine",
+              "h": "ca8b209bffda"
+            },
+            "helpSaveEdit": {
+              "t": "Izmijeni traverse učitava postojeću parcelu sa mape. Uređuje zatim ažurira tu parcelu na mjestu i zamjenjuje linije.",
+              "src": "machine",
+              "h": "dc22e420a7ac"
+            },
+            "helpExportGeoJSON": {
+              "t": "GeoJSON preuzima put kao fajl sa tačkama, linijama i zatvorenim poligonom parcele.",
+              "src": "machine",
+              "h": "593a48c8cf6f"
+            },
+            "helpExportLegal": {
+              "t": "Pravni preuzima nacrt meta i ograničava opis. To je samo nacrt i treba ga pregledati prije upotrebe.",
+              "src": "machine",
+              "h": "4234b630de0e"
+            },
+            "helpTroubleTitle": {
+              "t": "Ako nešto nije u redu",
+              "src": "machine",
+              "h": "6f7fec3ff1e0"
+            },
+            "helpTroubleNoPolygon": {
+              "t": "Nema poligona nakon snimanja: linije su snimljene kao linija za povezivanje. Postavi tip linije na graničnu liniju na svaku nogu paketa ili izaberi graničnu liniju u traci s alatima prije digitaliziranja, a zatim snimi ponovo.",
+              "src": "machine",
+              "h": "bf3e662a0f35"
+            },
+            "helpTroubleSymbols": {
+              "t": "Sačuvane linije ne crtaju sa bojama sloja: kod tipa linije nije u listi vrijednosti sloja. Pitajte vlasnika aplikacije da poklopi tipove linija grafičkog elementa sa slojem.",
+              "src": "machine",
+              "h": "99a249283aaf"
+            },
+            "helpTroubleSaveFailed": {
+              "t": "Neuspjelo snimanje: sloj ne može dopustiti izmjene. Provjerite da li ste se prijavili i da li se slojevi mogu mijenjati, a zatim pokušajte ponovo.",
+              "src": "machine",
+              "h": "ab164afdcd44"
+            },
+            "helpTroubleStackedPolygon": {
+              "t": "Uređivanje paketa ostavlja drugi poligon na vrhu starog: grafički element nije pronašao postojeći poligon pri učitavanju trase, pa je dodao jedan. Poruka prilikom učitavanja trase kaže da li je pronađen poligon. Klikni bliže graničnoj liniji parcele i učitaj ga ponovo.",
+              "src": "machine",
+              "h": "092510486d8a"
+            },
+            "helpTroubleFields": {
+              "t": "Snimljene vrijednosti se vraćaju prazne ili Izmjene traverse ne nalaze ništa: imena polja u postavkama grafičkog elementa ne postoje na sloju. Kapitalna slova nisu bitna, ali pravopis da, i sloj domaćina može koristiti različita imena od servisa mape iz kojeg je došao. Otvorite postavke grafičkog elementa i izaberite polja ponovo.",
+              "src": "machine",
+              "h": "0a7e45095441"
+            },
+            "helpTroubleNoClicks": {
+              "t": "Klikovi na karti dodajte ništa: Digitizacija je isključena ili još nema početne tačke. Postavi startnu tačku prvo, a zatim uključi Digitize.",
+              "src": "machine",
+              "h": "02b9df2312f8"
+            },
+            "helpTroubleContact": {
+              "t": "Kontaktirajte odjel GIS-a i spomenite ime paketa Drofter i ovu aplikaciju.",
+              "src": "machine",
+              "h": "c836a77c1872"
+            },
+            "helpTipsTitle": {
+              "t": "Dobro je znati.",
+              "src": "machine",
+              "h": "79fc372dc790"
+            },
+            "helpTips1": {
+              "t": "Postavke plana mijenjaju smjerove, dužine i područja koja su pročitana i prikazana. Postavite ih da odgovaraju djelu prije tipkanja.",
+              "src": "machine",
+              "h": "fa186e444cda"
+            },
+            "helpTips2": {
+              "t": "Navedeno područje iz djela se čuva pored izračunatog područja, tako da razlike ostaju vidljive.",
+              "src": "machine",
+              "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "tence {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            }
+          }
         },
         "ca": {
           "file": "02b7440f2990",
@@ -9873,18 +10699,849 @@
           }
         },
         "hr": {
-          "file": "41f61c51c506",
+          "file": "116415d4d641",
           "counts": {
             "esri": 29,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 166,
             "stale": 0,
-            "missing": 166
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "widgetTitle": {
+              "t": "Paket Drafter",
+              "src": "machine",
+              "h": "b1baa8e86826"
+            },
+            "selectMapWidget": {
+              "t": "Odaberite grafički element mape u postavkama widgeta za početak.",
+              "src": "machine",
+              "h": "1e6d20c31d62"
+            },
+            "newTraverse": {
+              "t": "Nova traverza",
+              "src": "machine",
+              "h": "8dd5534df7ef"
+            },
+            "editTraverse": {
+              "t": "Uredi traverse",
+              "src": "machine",
+              "h": "6bced51c2ecc"
+            },
+            "planSettings": {
+              "t": "Postavke plana",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "digitize": {
+              "t": "Digitaliziraj",
+              "src": "machine",
+              "h": "647559bda53c"
+            },
+            "bearing": {
+              "t": "Smjer",
+              "src": "machine",
+              "h": "b157f9096488"
+            },
+            "arcLength": {
+              "t": "Duljina luka",
+              "src": "machine",
+              "h": "a3852745d964"
+            },
+            "lineType": {
+              "t": "Tip linije",
+              "src": "machine",
+              "h": "5ccd6d2767d7"
+            },
+            "addLine": {
+              "t": "Dodaj liniju",
+              "src": "machine",
+              "h": "a147e4e01e58"
+            },
+            "deleteLine": {
+              "t": "Obriši liniju",
+              "src": "machine",
+              "h": "2204bf1a2e99"
+            },
+            "bearingHint": {
+              "t": "N45-30-00E",
+              "src": "machine",
+              "h": "5a19be829dd1"
+            },
+            "lengthHint": {
+              "t": "Npr. 100",
+              "src": "machine",
+              "h": "f48d8391a96c"
+            },
+            "directionOrAngleType": {
+              "t": "Smjer ili kutni tip",
+              "src": "machine",
+              "h": "250acaa65def"
+            },
+            "northAzimuth": {
+              "t": "Sjeverni azimut",
+              "src": "machine",
+              "h": "15f9305cb2cd"
+            },
+            "southAzimuth": {
+              "t": "Južni azimut",
+              "src": "machine",
+              "h": "0fe57d2ae5b5"
+            },
+            "quadrantBearing": {
+              "t": "Smjer kvadranta",
+              "src": "machine",
+              "h": "b1cbcfdc781a"
+            },
+            "directionOrAngleUnits": {
+              "t": "Usmjeravanje ili kutne jedinice",
+              "src": "machine",
+              "h": "98a0db5beb48"
+            },
+            "distanceAndLengthUnits": {
+              "t": "Jedinice za udaljenost i duljinu",
+              "src": "machine",
+              "h": "2eb63f08470d"
+            },
+            "uSSurveyFeet": {
+              "t": "Stopala američkog nadzora",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "areaUnits": {
+              "t": "Jedinice za područje",
+              "src": "machine",
+              "h": "525546c203c3"
+            },
+            "squareUSSurveyFeet": {
+              "t": "Kvadratni američki pregled stopala",
+              "src": "machine",
+              "h": "71261f5fc9d9"
+            },
+            "circularCurveParameters": {
+              "t": "Okružni parametri krivulje",
+              "src": "machine",
+              "h": "47192fa46655"
+            },
+            "radiusAndChordLength": {
+              "t": "Duljina polumjera i akorda",
+              "src": "machine",
+              "h": "fcdc9d7b7162"
+            },
+            "radiusAndArcLength": {
+              "t": "Duljina polumjera i luka",
+              "src": "machine",
+              "h": "4883192aa1c5"
+            },
+            "miscloseBearing": {
+              "t": "Izobličeni ležajevi",
+              "src": "machine",
+              "h": "ac79739adc72"
+            },
+            "miscloseDistance": {
+              "t": "Neizmjerna udaljenost",
+              "src": "machine",
+              "h": "3e3cff4cc351"
+            },
+            "miscloseRatio": {
+              "t": "Omjer pogrešnog zatvaranja",
+              "src": "machine",
+              "h": "cf3b24e39807"
+            },
+            "calculatedArea": {
+              "t": "Izračunato područje",
+              "src": "machine",
+              "h": "d19e6c96553c"
+            },
+            "highAccuracy": {
+              "t": "Visoka točnost",
+              "src": "machine",
+              "h": "12fd86eec38b"
+            },
+            "compassRuleApplied": {
+              "t": "Primjenjena prilagodba pravila kompasa",
+              "src": "machine",
+              "h": "7f9fe38ffe1b"
+            },
+            "updateRotationPoint": {
+              "t": "Kliknite traverznu točku na karti da postavite sidro za rotaciju",
+              "src": "machine",
+              "h": "d5703dcb7f5c"
+            },
+            "rotationPointShort": {
+              "t": "Sidro",
+              "src": "machine",
+              "h": "8f8c77e7404c"
+            },
+            "planInfo": {
+              "t": "Informacije o planu",
+              "src": "machine",
+              "h": "2c4885e1ee55"
+            },
+            "statedArea": {
+              "t": "Područje stanja",
+              "src": "machine",
+              "h": "695fbe564baa"
+            },
+            "clickToSetStartPoint": {
+              "t": "Kliknite na kartu da postavite početnu točku, ili unesite koordinate ispod.",
+              "src": "machine",
+              "h": "ea4c578f8149"
+            },
+            "clickToSelectParcel": {
+              "t": "Kliknite na liniju parcele na karti kako biste učitali njenu putanju za uređivanje.",
+              "src": "machine",
+              "h": "3832a6f0743a"
+            },
+            "noStartPoint": {
+              "t": "Postavi početnu točku prije dodavanja linija.",
+              "src": "machine",
+              "h": "2340b4c9cc25"
+            },
+            "invalidBearing": {
+              "t": "Neispravan smjer.",
+              "src": "machine",
+              "h": "222f645a53b0"
+            },
+            "invalidLength": {
+              "t": "Neispravna duljina.",
+              "src": "machine",
+              "h": "6f54c8bfd4a7"
+            },
+            "invalidRadius": {
+              "t": "Neispravan radijus.",
+              "src": "machine",
+              "h": "513222f394d2"
+            },
+            "invalidLengthRadiusProportion": {
+              "t": "Duljina ne može biti veća od dvostrukog radijusa.",
+              "src": "machine",
+              "h": "db8835c97822"
+            },
+            "invalidXY": {
+              "t": "Neispravne koordinate.",
+              "src": "machine",
+              "h": "b46684408456"
+            },
+            "noLineLayer": {
+              "t": "Nijedan linijski sloj nije podešen za uređivanje.",
+              "src": "machine",
+              "h": "33144f422472"
+            },
+            "noFeaturesFound": {
+              "t": "Na toj lokaciji nisu pronađene linije paketa s konfiguriranim poljima.",
+              "src": "machine",
+              "h": "0bf84e7a2fab"
+            },
+            "editLoaded": {
+              "t": "Preusmjeri učitano iz odabranih linija paketa.",
+              "src": "machine",
+              "h": "890969cc1ad5"
+            },
+            "editLoadedNoPolygon": {
+              "t": "Travers učitan, ali nije pronađen postojeći poligon paketa. Ušteda će dodati novi poligon umjesto ažuriranja jednog.",
+              "src": "machine",
+              "h": "28a1bf46f9ec"
+            },
+            "noLayersConfigured": {
+              "t": "Podesite barem jedan ciljni sloj u postavkama widgeta prije spremanja.",
+              "src": "machine",
+              "h": "c941a17a711d"
+            },
+            "saveSuccess": {
+              "t": "Snimljeno {lines} linije i {points} točke.",
+              "src": "machine",
+              "h": "aa47053172fb"
+            },
+            "saveFailed": {
+              "t": "Neuspjelo spremanje. Provjerite dozvole konzole i sloja.",
+              "src": "machine",
+              "h": "36040bdea9dc"
+            },
+            "polygonSaved": {
+              "t": "Poligon za pakiranje je stvoren.",
+              "src": "machine",
+              "h": "98159c9e9f0e"
+            },
+            "polygonUpdated": {
+              "t": "Poligon za pakiranje ažuriran.",
+              "src": "machine",
+              "h": "c86ae223e636"
+            },
+            "polygonAddedDuringEdit": {
+              "t": "Dodan je novi poligon paketa jer nije pronađen postojeći poligon kada je učitan.",
+              "src": "machine",
+              "h": "e1cc32d956c2"
+            },
+            "fieldsNotOnLayer": {
+              "t": "Ova polja nisu na linijskom sloju: {fields}. Nazivi polja se podudaraju bez obzira na velika slova, pa provjerite pravopis u postavkama widgeta i izaberite polja opet ako se sloj promijenio.",
+              "src": "machine",
+              "h": "2d46419f8c68"
+            },
+            "fieldsSkippedOnSave": {
+              "t": "Ova polja nisu na ciljnim slojevima i preskočena su: {fields}. Provjerite kartiranje polja u postavkama widgeta.",
+              "src": "machine",
+              "h": "63b2e5084012"
+            },
+            "noBoundaryLinesOnSave": {
+              "t": "Nije stvoren poligon parcele jer linije nisu označene kao granična linija. Postavite tip linije na graničnu liniju u mreži ili u alatnoj traci prije digitalizacije, a zatim ponovno spremite.",
+              "src": "machine",
+              "h": "8f7db21fa7c5"
+            },
+            "newTraverseTip": {
+              "t": "Započnite novi prijelaz postavljanjem početne točke i ulaskom u ležajeve i udaljenosti",
+              "src": "machine",
+              "h": "c762bc3e94d3"
+            },
+            "editTraverseTip": {
+              "t": "Učitajte postojeću parcelu s karte kako biste je pregledali ili promijenili.",
+              "src": "machine",
+              "h": "b6cbd43dd2e7"
+            },
+            "backTip": {
+              "t": "Vrati se na početni zaslon i očisti trenutni prijelaz",
+              "src": "machine",
+              "h": "05b7b55769a2"
+            },
+            "planSettingsTip": {
+              "t": "Promjena vrste smjera, kuta, udaljenosti i jedinica područja, i način unosa krivulje",
+              "src": "machine",
+              "h": "01738775e42c"
+            },
+            "digitizeTip": {
+              "t": "Kada je uključeno, klikom na kartu dodaje se linija od posljednje točke do lokacije na koju se klikne",
+              "src": "machine",
+              "h": "06724f1a6b9e"
+            },
+            "drawLineTypeTip": {
+              "t": "Vrsta linije za nove linije, digitalizirana na karti ili utipkana u mreži. Granične linije ocrtavaju parcelu i grade spašeni poligon; linije povezivanja ulaze samo iz referentne točke.",
+              "src": "machine",
+              "h": "cd3fb442516d"
+            },
+            "zoomToTip": {
+              "t": "Zumiraj kartu do točke starta",
+              "src": "machine",
+              "h": "acc816e59387"
+            },
+            "saveTip": {
+              "t": "Spremi traverzne linije, točke i zatvoren poligon parcele u konfigurirane slojeve",
+              "src": "machine",
+              "h": "3bafeaa737e3"
+            },
+            "clearAllTip": {
+              "t": "Ukloni sve unesene linije i počni ispočetka",
+              "src": "machine",
+              "h": "5eb76e5d1685"
+            },
+            "anchorTip": {
+              "t": "Odaberite traverznu točku na mapi za držanje fiksne pri okretanju ili skaliranju",
+              "src": "machine",
+              "h": "9a259de2d397"
+            },
+            "rotationTip": {
+              "t": "Rotiraj cijeli put ovim mnogim stupnjevima (pozitivan je u smjeru kazaljke na satu)",
+              "src": "machine",
+              "h": "f15d244e6bb8"
+            },
+            "scaleTip": {
+              "t": "Pomnožite svaku udaljenost u traversu ovim faktorom",
+              "src": "machine",
+              "h": "5d491a2a02d1"
+            },
+            "bearingEntryTip": {
+              "t": "Formati: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Tip * za kopiranje prethodne linije. Numpad + pomiče na duljinu.",
+              "src": "machine",
+              "h": "fab2b8ba8b83"
+            },
+            "lengthEntryTip": {
+              "t": "Udaljenost u planskim jedinicama. Dodaj m, ft, usft, ch (lanci), rd (rodovi), lk (linkovi), ili va (varas) za premošćivanje. Tip * za kopiranje prethodne linije. Numpad + dodaje liniju, numpad / skokova u radijus.",
+              "src": "machine",
+              "h": "020b1c8abe8c"
+            },
+            "radiusEntryTip": {
+              "t": "Ostavite prazno za ravnu liniju. Pozitivne krivulje desno, negativne krivulje lijevo. Numpad + dodaje liniju.",
+              "src": "machine",
+              "h": "ffb5271a043d"
+            },
+            "traverseGridLabel": {
+              "t": "Traverzne linije",
+              "src": "machine",
+              "h": "373b97e66948"
+            },
+            "lineNumber": {
+              "t": "linija {number}",
+              "src": "machine",
+              "h": "cd8815c668ac"
+            },
+            "newLineEntry": {
+              "t": "novi unos linije",
+              "src": "machine",
+              "h": "34db82892d71"
+            },
+            "miscloseRegionLabel": {
+              "t": "Razni detalji",
+              "src": "machine",
+              "h": "f3df155f4060"
+            },
+            "parcelToolsLabel": {
+              "t": "Alati za rotaciju i vagu",
+              "src": "machine",
+              "h": "3de9fea03db0"
+            },
+            "planSettingsLabel": {
+              "t": "Postavke plana",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "startPointEntryLabel": {
+              "t": "Koordinate početne točke",
+              "src": "machine",
+              "h": "bd602caa2315"
+            },
+            "directionOrAngleTypeTip": {
+              "t": "Kako se odnose ležajevi u izvornom dokumentu: sa sjevera (sjeverni azimut), sa juga (južni azimut), ili kvadrantom (npr. N45E)",
+              "src": "machine",
+              "h": "ab48faae4237"
+            },
+            "directionOrAngleUnitsTip": {
+              "t": "Da li su kutovi napisani kao decimalni stupnjevi (45,5) ili stupnjevi-minuti-sekunde (45-30-00)",
+              "src": "machine",
+              "h": "1fc8a3c9012f"
+            },
+            "distanceAndLengthUnitsTip": {
+              "t": "Jedinica za svaku udaljenost, dužinu i radijus u koji uđete",
+              "src": "machine",
+              "h": "b195ea78b1ba"
+            },
+            "areaUnitsTip": {
+              "t": "Jedinica koja se koristi za izvješćivanje o izračunanom području paketa",
+              "src": "machine",
+              "h": "805def3ed02a"
+            },
+            "circularCurveParametersTip": {
+              "t": "Za krivulje, da li je duljina u koju ulazite akord (pravo-linija) udaljenost ili lučna udaljenost",
+              "src": "machine",
+              "h": "ffb3a158f059"
+            },
+            "lineTypeTip": {
+              "t": "Granične linije definiraju parcelu i koriste se za misclose; veze linije samo vezati početnu točku do točke početka",
+              "src": "machine",
+              "h": "38fa0c4e69aa"
+            },
+            "miscloseBearingTip": {
+              "t": "Smjer jaza između mjesta gdje granica završava i gdje je započela",
+              "src": "machine",
+              "h": "5345caddc95e"
+            },
+            "miscloseDistanceTip": {
+              "t": "Veličina jaza između granične krajnje točke i početne točke; nula znači savršeno zatvaranje",
+              "src": "machine",
+              "h": "a4b635aa49e8"
+            },
+            "miscloseRatioTip": {
+              "t": "Preciznost zatvaranja kao 1:n - pogreška u odnosu na ukupnu graničnu duljinu; viša n je bolja",
+              "src": "machine",
+              "h": "2304cbbb482f"
+            },
+            "calculatedAreaTip": {
+              "t": "Geodetsko područje zatvorenog graničnog poligona",
+              "src": "machine",
+              "h": "5d769326a024"
+            },
+            "compassRuleTip": {
+              "t": "Greška zatvaranja distribuirana je proporcionalno uz svaku graničnu liniju (pravilo Bowditch kompasa); vaše unesene vrijednosti se čuvaju kao zapisi",
+              "src": "machine",
+              "h": "f9f81a04ae95"
+            },
+            "planNameTip": {
+              "t": "Ime zabilježeno na spremljenom poligonu paketa",
+              "src": "machine",
+              "h": "f151a39a4e69"
+            },
+            "planDescriptionTip": {
+              "t": "Opis zabilježen na ušteđenom poligonu parcele",
+              "src": "machine",
+              "h": "bec730aa77cd"
+            },
+            "statedAreaTip": {
+              "t": "Područje kako je navedeno na djelu ili dokumentu zapisa, sačuvano uz izračunato područje",
+              "src": "machine",
+              "h": "7c1279838eb2"
+            },
+            "longitudeTip": {
+              "t": "WGS84 decimalni stupnjevi; negativne vrijednosti su zapadno",
+              "src": "machine",
+              "h": "5389547b61cb"
+            },
+            "latitudeTip": {
+              "t": "WGS84 decimalni stupnjevi; negativne vrijednosti su jug",
+              "src": "machine",
+              "h": "57dd5348cf12"
+            },
+            "escToExitTip": {
+              "t": "Pritisnite Escape kako biste izašli iz trenutnog alata mape",
+              "src": "machine",
+              "h": "11279da444fa"
+            },
+            "reorder": {
+              "t": "_Preimenuj",
+              "src": "machine",
+              "h": "33d9978c4477"
+            },
+            "reorderTip": {
+              "t": "Povucite za preuređivanje ove linije, ili fokusirajte i koristite tipke sa strelicama",
+              "src": "machine",
+              "h": "2821f28ae577"
+            },
+            "dragRotate": {
+              "t": "Povuci za okretanje",
+              "src": "machine",
+              "h": "1bfe69fafb2c"
+            },
+            "dragRotateTip": {
+              "t": "Kada je uključeno, povucite kartu kako biste zakrenuli putanju oko točke sidra",
+              "src": "machine",
+              "h": "718545709356"
+            },
+            "dragScale": {
+              "t": "Povuci na skalu",
+              "src": "machine",
+              "h": "4d4ba980872c"
+            },
+            "dragScaleTip": {
+              "t": "Kada je uključeno, povucite na karti kako bi se prevalili iz točke sidra",
+              "src": "machine",
+              "h": "ec18ea5f042f"
+            },
+            "editingExisting": {
+              "t": "Uređivanje postojećeg paketa - ušteda će ga ažurirati na mjestu i zamijeniti njegove linije",
+              "src": "machine",
+              "h": "030f090aea03"
+            },
+            "attributeFieldTip": {
+              "t": "Atribut spremljen na poligonsko polje paketa",
+              "src": "machine",
+              "h": "e05042e2707a"
+            },
+            "updateSuccess": {
+              "t": "Ažurirano pakiranje: zamijenjeno {lines} linijama.",
+              "src": "machine",
+              "h": "b66ad9e2f726"
+            },
+            "legLabelsTip": {
+              "t": "Prikaži naljepnice za držanje i udaljenost na svakoj traverznoj liniji",
+              "src": "machine",
+              "h": "4f0de8d49c6a"
+            },
+            "snapToggle": {
+              "t": "Snap",
+              "src": "machine",
+              "h": "455673bbb8a0"
+            },
+            "snapToggleTip": {
+              "t": "Puštanje karte klikova na vertices i rubove svih vidljivih značajki slojeva",
+              "src": "machine",
+              "h": "2ea668142414"
+            },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
+            "exportGeoJSONTip": {
+              "t": "Preuzmite traverse kao GeoJSON datoteka s točkama, linijama, i zatvorene parcele poligon. Krivulje izvoz kao denzificirana geometrija.",
+              "src": "machine",
+              "h": "bdc631d2005d"
+            },
+            "exportEmpty": {
+              "t": "Dodajte barem jednu liniju prije izvoza.",
+              "src": "machine",
+              "h": "5cfd2161e0db"
+            },
+            "traverseColor": {
+              "t": "Boja trasiranja",
+              "src": "machine",
+              "h": "02681fe8c53e"
+            },
+            "traverseColorTip": {
+              "t": "Premostite boju crtanja za ovu sesiju. Očistite za korištenje podešenih simbola.",
+              "src": "machine",
+              "h": "14b164f63010"
+            },
+            "legalDescription": {
+              "t": "Pravno",
+              "src": "machine",
+              "h": "902c91d94e0f"
+            },
+            "legalDescriptionTip": {
+              "t": "Preuzmite nacrt meta i ograničava pravni opis puta (AH 215 konvencije: početak, točka početka, zatim tečajevi, krivulje radijus/arc/chord, acreage). Nacrt samo, pregled potrebno.",
+              "src": "machine",
+              "h": "086ba392ad2c"
+            },
+            "helpIntro": {
+              "t": "Paket Drafter pretvara ležajeve i udaljenosti na tapiju ili plat u linije, točke, i parcela poligon na karti.",
+              "src": "machine",
+              "h": "1dc61747fde3"
+            },
+            "helpSearchPlaceholder": {
+              "t": "Pretraži vodič (pokušajboundary ilispasi",
+              "src": "machine",
+              "h": "d13d8bf95448"
+            },
+            "helpNoMatches": {
+              "t": "Ništa u vodiču ne odgovara toj riječi. Pokušajte drugi, ili otvorite dijelove iznad.",
+              "src": "machine",
+              "h": "3fe179f75330"
+            },
+            "firstRunTitle": {
+              "t": "Novi ovdje?",
+              "src": "machine",
+              "h": "b81f2e17e001"
+            },
+            "firstRunBody": {
+              "t": "Kliknite New traverse, postavite startnu točku, zatim upišite ili nacrtajte svaku graničnu liniju i kliknite Save.",
+              "src": "machine",
+              "h": "100f0167edc4"
+            },
+            "firstRunHelpLink": {
+              "t": "Otvori vodič.",
+              "src": "machine",
+              "h": "2447dd6134ea"
+            },
+            "firstRunDismiss": {
+              "t": "Otpust",
+              "src": "machine",
+              "h": "70afe9eff3f2"
+            },
+            "helpStartTitle": {
+              "t": "Počnite ovdje: tri koraka",
+              "src": "machine",
+              "h": "789320b4831d"
+            },
+            "helpStart1": {
+              "t": "Kliknite New traverse, a zatim kliknite na kartu postaviti startnu točku, ili utipkati geografsku dužinu i zemljopisnu širinu i kliknite Primijeniti.",
+              "src": "machine",
+              "h": "4c0d2a781be9"
+            },
+            "helpStart2": {
+              "t": "Upišite svaku liniju: ležaj (kao N45-30-00E), duljinu, i radijus za krivulje, zatim pritisnite Enter. Ili uključite Digitize i kliknite na kartu za crtanje.",
+              "src": "machine",
+              "h": "0a34aa31f1c1"
+            },
+            "helpStart3": {
+              "t": "Kada se granica zatvara natrag na početak, provjerite misclose brojeve, a zatim kliknite Save.",
+              "src": "machine",
+              "h": "784ea8f7acb3"
+            },
+            "helpEnterTitle": {
+              "t": "Unosim linije",
+              "src": "machine",
+              "h": "5bd668054062"
+            },
+            "helpEnterIntro": {
+              "t": "Svaka linija treba ležaj i dužinu. Radijus je samo za krivulje.",
+              "src": "machine",
+              "h": "009619ed5441"
+            },
+            "helpEnterFormats": {
+              "t": "Smjer formata: N45-30-00E, 45-30-00-1, ili 45.3000. Promjena formata i jedinica prema postavkama plana.",
+              "src": "machine",
+              "h": "078e275788e9"
+            },
+            "helpEnterShortcuts": {
+              "t": "Upišite * u kutiju za kopiranje vrijednosti iz gornje linije. Upišite *tb u nosivu kutiju kako biste nastavili tangentu na prethodnu krivulju.",
+              "src": "machine",
+              "h": "08aa99a0b6ad"
+            },
+            "helpEnterNumpad": {
+              "t": "Numpad prečice: + kreće se od nosivosti do duljine i dodaje liniju iz dužine ili radijusa. / skokovi iz duljine do radijusa.",
+              "src": "machine",
+              "h": "a394c5d41b98"
+            },
+            "helpEnterLineType": {
+              "t": "Line tip stvari: Granica Line noge ocrtati paket i izgraditi spašeni poligon. Veza Line noge hodaju samo od referentne točke, kao dio kutu, do prave točke početka.",
+              "src": "machine",
+              "h": "89ec25ded908"
+            },
+            "helpEnterRows": {
+              "t": "Promijenite liniju u bilo koje vrijeme: uredite njegove kutije, izaberite drugi tip linije u svom redu, povucite ručku na red, ili koristite gumb za smeće kako biste ga uklonili.",
+              "src": "machine",
+              "h": "a84a2406e20b"
+            },
+            "helpDrawTitle": {
+              "t": "Crtanje na karti",
+              "src": "machine",
+              "h": "1ce1a8628f6c"
+            },
+            "helpDraw1": {
+              "t": "Uključite Digitize, zatim svaki klik na kartu dodaje liniju od posljednje točke do mjesta gdje ste kliknuli. Odaberite tip linije u alatnoj traci prvi: Granica linija za obrise paketa, Veza linija za hodanje u.",
+              "src": "machine",
+              "h": "64c75e4d93f0"
+            },
+            "helpDraw2": {
+              "t": "Snap povlači vaše klikove na obližnje točke i linije na karti. Isključite ga s gumbom Snap ako zgrabite krivu točku.",
+              "src": "machine",
+              "h": "4e3e94e292ca"
+            },
+            "helpDraw3": {
+              "t": "Naljepnice prikazuju ležaj i duljinu na svakoj liniji. Boje mijenjaju boju crteža dok ga ne očistite ili zatvorite aplikaciju.",
+              "src": "machine",
+              "h": "285a90c0c061"
+            },
+            "helpDraw4": {
+              "t": "Zumiraj kako bi vratio kartu na svoj put. Očisti uklanja svaku liniju i počinje ispočetka.",
+              "src": "machine",
+              "h": "20b3174d1465"
+            },
+            "helpDraw5": {
+              "t": "Pritisnite Escape zaustaviti alat za kartu.",
+              "src": "machine",
+              "h": "597aeb0976c5"
+            },
+            "helpFitTitle": {
+              "t": "Rotiraj, mjerilo i sidro",
+              "src": "machine",
+              "h": "4a17943c1964"
+            },
+            "helpFit1": {
+              "t": "Rotacija okreće cijeli traverz i skala se proteže svaku dužinu po istom faktoru. Upišite brojeve, ili uključite Rotate ili Scale i povucite na karti.",
+              "src": "machine",
+              "h": "54ad906d5cbb"
+            },
+            "helpFit2": {
+              "t": "Sidro odabire traverznu točku koja ostaje postavljena dok se rotirate ili mjerite.",
+              "src": "machine",
+              "h": "9b3d7531b7f5"
+            },
+            "helpCloseTitle": {
+              "t": "Zatvaranje i misclose",
+              "src": "machine",
+              "h": "c375d9c85097"
+            },
+            "helpClose1": {
+              "t": "Misclose brojevi pojavljuju jednom vaše granične linije završiti natrag gdje su počeli.",
+              "src": "machine",
+              "h": "a16d9fc4045b"
+            },
+            "helpClose2": {
+              "t": "Misclose udaljenost je veličina jaza. Misclose omjer je preciznost kao 1:n, a više je bolje.",
+              "src": "machine",
+              "h": "ccc4f5b75d9f"
+            },
+            "helpClose3": {
+              "t": "Kada je praznina mala, widget prekida granicu zatvorenu i širi grešku duž linija (compass pravilo). Vaše ukucane vrijednosti se čuvaju kao zapis.",
+              "src": "machine",
+              "h": "9f962ab8183d"
+            },
+            "helpSaveTitle": {
+              "t": "Spremanje i uređivanje",
+              "src": "machine",
+              "h": "bf4f500eba0c"
+            },
+            "helpSaveLines": {
+              "t": "Save piše svaku liniju, sa svojim ležajem, duljinom, radijus, i tip linije, na sloj linije.",
+              "src": "machine",
+              "h": "4d4067c9e985"
+            },
+            "helpSavePoints": {
+              "t": "Spremi također piše početna točka i svaki kut do točke sloja.",
+              "src": "machine",
+              "h": "186d20f8f8ee"
+            },
+            "helpSavePolygon": {
+              "t": "Poligon parcele izgrađen je samo od graničnih linija, a zatim spremljen s imenom, opisom i navedenim područjem. Ako linija nije označena graničnom linijom, ne stvara se poligon.",
+              "src": "machine",
+              "h": "ca8b209bffda"
+            },
+            "helpSaveEdit": {
+              "t": "Uredi traverse učitava postojeću parcelu s karte. Uređivanje zatim ažurira tu parcelu na mjestu i zamjenjuje svoje linije.",
+              "src": "machine",
+              "h": "dc22e420a7ac"
+            },
+            "helpExportGeoJSON": {
+              "t": "GeoJSON preuzima traverzu kao datoteku s točkama, linijama i zatvorenim parcela poligon.",
+              "src": "machine",
+              "h": "593a48c8cf6f"
+            },
+            "helpExportLegal": {
+              "t": "Pravni preuzima nacrt meta i ograničava opis. To je nacrt samo i treba pregled prije uporabe.",
+              "src": "machine",
+              "h": "4234b630de0e"
+            },
+            "helpTroubleTitle": {
+              "t": "Ako nešto izgleda loše",
+              "src": "machine",
+              "h": "6f7fec3ff1e0"
+            },
+            "helpTroubleNoPolygon": {
+              "t": "Nema poligona nakon spremanja: linije su spremljene kao linija povezivanja. Postavite tip linije na graničnu liniju na svaku nogu paketa, ili odaberite graničnu liniju u alatnoj traci prije digitalizacije, a zatim ponovno spremite.",
+              "src": "machine",
+              "h": "bf3e662a0f35"
+            },
+            "helpTroubleSymbols": {
+              "t": "Snimljene linije ne crtaju sa bojama sloja: kod tipa linije nije u listi vrijednosti sloja. Pitajte vlasnika aplikacije da uskladi tipove linija widgeta sa slojem.",
+              "src": "machine",
+              "h": "99a249283aaf"
+            },
+            "helpTroubleSaveFailed": {
+              "t": "Neuspjelo spremanje: sloj ne može dopustiti uređivanje. Provjerite da li ste se prijavili i slojevi su uređivati, a zatim pokušajte ponovno.",
+              "src": "machine",
+              "h": "ab164afdcd44"
+            },
+            "helpTroubleStackedPolygon": {
+              "t": "Uređivanje paketa ostavlja drugi poligon na vrhu starog: widget nije pronašao postojeći poligon kada je prelazak učitan, tako da je dodao jedan. Poruka kada učitate traverse kaže da li je poligon pronađen. Kliknite bliže graničnoj liniji parcele i učitajte ga opet.",
+              "src": "machine",
+              "h": "092510486d8a"
+            },
+            "helpTroubleFields": {
+              "t": "Ušteđene vrijednosti se vraćaju prazne, ili Uredi traverse ne nalazi ništa: imena polja u postavkama widgeta ne postoje na sloju. Kapitalna slova nisu bitna, ali pravopis da, i hostes sloj može koristiti različita imena od servisa mape iz kojeg je došao. Otvorite postavke widgeta i ponovno odaberite polja.",
+              "src": "machine",
+              "h": "0a7e45095441"
+            },
+            "helpTroubleNoClicks": {
+              "t": "Klikovi mape dodajte ništa: Digitaliziranje je isključen ili još nema početne točke. Postavite početnu točku prvo, a zatim uključite Digitalize.",
+              "src": "machine",
+              "h": "02b9df2312f8"
+            },
+            "helpTroubleContact": {
+              "t": "Još uvijek zaglavi? Kontaktirajte GIS Division i spomenuti ime paketa Drofter i ovu aplikaciju.",
+              "src": "machine",
+              "h": "c836a77c1872"
+            },
+            "helpTipsTitle": {
+              "t": "Dobro je znati.",
+              "src": "machine",
+              "h": "79fc372dc790"
+            },
+            "helpTips1": {
+              "t": "Postavke plana mijenjaju kako se ležajevi, duljine i područja čitaju i prikazuju. Postavite ih da odgovaraju djelu prije tipkanja.",
+              "src": "machine",
+              "h": "fa186e444cda"
+            },
+            "helpTips2": {
+              "t": "Navedeno područje iz djela čuva se pored izračunatog područja, tako da razlike ostaju vidljive.",
+              "src": "machine",
+              "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "tence {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            }
+          }
         },
         "hu": {
           "file": "63f6252ca915",
@@ -22732,18 +24389,849 @@
           }
         },
         "sr": {
-          "file": "2ce2d49aee30",
+          "file": "a0e7f389aa4e",
           "counts": {
             "esri": 28,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 166,
             "stale": 0,
-            "missing": 166
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "widgetTitle": {
+              "t": "Paket Drafter",
+              "src": "machine",
+              "h": "b1baa8e86826"
+            },
+            "selectMapWidget": {
+              "t": "Odaberite grafički element mape u postavkama grafičkog elementa za početak.",
+              "src": "machine",
+              "h": "1e6d20c31d62"
+            },
+            "newTraverse": {
+              "t": "Нова транскрипција@ info: whatsthis",
+              "src": "machine",
+              "h": "8dd5534df7ef"
+            },
+            "editTraverse": {
+              "t": "Uredi traverse",
+              "src": "machine",
+              "h": "6bced51c2ecc"
+            },
+            "planSettings": {
+              "t": "Поставке планаQShortcut",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "digitize": {
+              "t": "Digitalizuj.",
+              "src": "machine",
+              "h": "647559bda53c"
+            },
+            "bearing": {
+              "t": "Pravac",
+              "src": "machine",
+              "h": "b157f9096488"
+            },
+            "arcLength": {
+              "t": "Dužina luka",
+              "src": "machine",
+              "h": "a3852745d964"
+            },
+            "lineType": {
+              "t": "Tip linije",
+              "src": "machine",
+              "h": "5ccd6d2767d7"
+            },
+            "addLine": {
+              "t": "Dodaj liniju",
+              "src": "machine",
+              "h": "a147e4e01e58"
+            },
+            "deleteLine": {
+              "t": "Избриши линијуQShortcut",
+              "src": "machine",
+              "h": "2204bf1a2e99"
+            },
+            "bearingHint": {
+              "t": "N45-30-00E",
+              "src": "machine",
+              "h": "5a19be829dd1"
+            },
+            "lengthHint": {
+              "t": "Npr. 100.",
+              "src": "machine",
+              "h": "f48d8391a96c"
+            },
+            "directionOrAngleType": {
+              "t": "Pravac ili ugaoni tip",
+              "src": "machine",
+              "h": "250acaa65def"
+            },
+            "northAzimuth": {
+              "t": "Severni azimut",
+              "src": "machine",
+              "h": "15f9305cb2cd"
+            },
+            "southAzimuth": {
+              "t": "Južni azimut",
+              "src": "machine",
+              "h": "0fe57d2ae5b5"
+            },
+            "quadrantBearing": {
+              "t": "U pravcu kvadranta.",
+              "src": "machine",
+              "h": "b1cbcfdc781a"
+            },
+            "directionOrAngleUnits": {
+              "t": "Pravac ili ugaone jedinice",
+              "src": "machine",
+              "h": "98a0db5beb48"
+            },
+            "distanceAndLengthUnits": {
+              "t": "Jedinice za udaljenost i dužinu",
+              "src": "machine",
+              "h": "2eb63f08470d"
+            },
+            "uSSurveyFeet": {
+              "t": "Amerièka stopala za istraživanje.",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "areaUnits": {
+              "t": "Jedinice za oblast",
+              "src": "machine",
+              "h": "525546c203c3"
+            },
+            "squareUSSurveyFeet": {
+              "t": "Kvadrat amerièkih stopa istraživanja",
+              "src": "machine",
+              "h": "71261f5fc9d9"
+            },
+            "circularCurveParameters": {
+              "t": "Okružni parametri krivulje",
+              "src": "machine",
+              "h": "47192fa46655"
+            },
+            "radiusAndChordLength": {
+              "t": "Polumjer i dužina akorda",
+              "src": "machine",
+              "h": "fcdc9d7b7162"
+            },
+            "radiusAndArcLength": {
+              "t": "Duljina polumjera i luka",
+              "src": "machine",
+              "h": "4883192aa1c5"
+            },
+            "miscloseBearing": {
+              "t": "Izokrenuto kretanje.",
+              "src": "machine",
+              "h": "ac79739adc72"
+            },
+            "miscloseDistance": {
+              "t": "Misclose distance",
+              "src": "machine",
+              "h": "3e3cff4cc351"
+            },
+            "miscloseRatio": {
+              "t": "Misclose odnos",
+              "src": "machine",
+              "h": "cf3b24e39807"
+            },
+            "calculatedArea": {
+              "t": "Izraèunato podruèje",
+              "src": "machine",
+              "h": "d19e6c96553c"
+            },
+            "highAccuracy": {
+              "t": "Visoka preciznost",
+              "src": "machine",
+              "h": "12fd86eec38b"
+            },
+            "compassRuleApplied": {
+              "t": "Primenjeno prilagođavanje pravila kompasa",
+              "src": "machine",
+              "h": "7f9fe38ffe1b"
+            },
+            "updateRotationPoint": {
+              "t": "Kliknite na tačku prelaska na mapi da postavite sidro za rotaciju",
+              "src": "machine",
+              "h": "d5703dcb7f5c"
+            },
+            "rotationPointShort": {
+              "t": "Sidro.",
+              "src": "machine",
+              "h": "8f8c77e7404c"
+            },
+            "planInfo": {
+              "t": "Informacije o planu",
+              "src": "machine",
+              "h": "2c4885e1ee55"
+            },
+            "statedArea": {
+              "t": "Podruèje sa stanjem",
+              "src": "machine",
+              "h": "695fbe564baa"
+            },
+            "clickToSetStartPoint": {
+              "t": "Kliknite na mapu da postavite startnu taèku, ili unesite koordinate ispod.",
+              "src": "machine",
+              "h": "ea4c578f8149"
+            },
+            "clickToSelectParcel": {
+              "t": "Kliknite na liniju paketa na mapi da biste učitali njenu putanju za uređivanje.",
+              "src": "machine",
+              "h": "3832a6f0743a"
+            },
+            "noStartPoint": {
+              "t": "Postavi startnu tačku pre dodavanja linija.",
+              "src": "machine",
+              "h": "2340b4c9cc25"
+            },
+            "invalidBearing": {
+              "t": "Nevažeæi kurs.",
+              "src": "machine",
+              "h": "222f645a53b0"
+            },
+            "invalidLength": {
+              "t": "Neispravna dužina.",
+              "src": "machine",
+              "h": "6f54c8bfd4a7"
+            },
+            "invalidRadius": {
+              "t": "Neispravan radijus.",
+              "src": "machine",
+              "h": "513222f394d2"
+            },
+            "invalidLengthRadiusProportion": {
+              "t": "Dužina ne može biti više od dvostrukog radijusa.",
+              "src": "machine",
+              "h": "db8835c97822"
+            },
+            "invalidXY": {
+              "t": "Nevažeæe koordinate.",
+              "src": "machine",
+              "h": "b46684408456"
+            },
+            "noLineLayer": {
+              "t": "Nijedan linijski sloj nije podešen za uređivanje.",
+              "src": "machine",
+              "h": "33144f422472"
+            },
+            "noFeaturesFound": {
+              "t": "Na toj lokaciji nisu pronaðene linije paketa sa konfigurisanim poljima.",
+              "src": "machine",
+              "h": "0bf84e7a2fab"
+            },
+            "editLoaded": {
+              "t": "Trasiranje ukrcano sa odabranih linija paketa.",
+              "src": "machine",
+              "h": "890969cc1ad5"
+            },
+            "editLoadedNoPolygon": {
+              "t": "Transverzno učitan, ali nije pronađen postojeći poligon paketa. Ušteda će dodati novi poligon umesto ažuriranja jednog.",
+              "src": "machine",
+              "h": "28a1bf46f9ec"
+            },
+            "noLayersConfigured": {
+              "t": "Podesite najmanje jedan ciljni sloj u podešavanjima grafičkog elementa pre spremanja.",
+              "src": "machine",
+              "h": "c941a17a711d"
+            },
+            "saveSuccess": {
+              "t": "Sačuvane {lines} linije i {points} tačke.",
+              "src": "machine",
+              "h": "aa47053172fb"
+            },
+            "saveFailed": {
+              "t": "Neuspjelo spremanje. Provjerite dozvole konzole i sloja.",
+              "src": "machine",
+              "h": "36040bdea9dc"
+            },
+            "polygonSaved": {
+              "t": "Poligon za pakovanje stvoren.",
+              "src": "machine",
+              "h": "98159c9e9f0e"
+            },
+            "polygonUpdated": {
+              "t": "Poligon za pakete ažuriran.",
+              "src": "machine",
+              "h": "c86ae223e636"
+            },
+            "polygonAddedDuringEdit": {
+              "t": "Dodat je novi poligon parcele jer nije pronaðen postojeći poligon kada je put bio učitan.",
+              "src": "machine",
+              "h": "e1cc32d956c2"
+            },
+            "fieldsNotOnLayer": {
+              "t": "Ova polja nisu na linijskom sloju: {fields}. Nazivi polja se podudaraju bez obzira na velika slova, pa proverite pravopis u postavkama vidžeta i izaberite polja ponovo ako se sloj promeni.",
+              "src": "machine",
+              "h": "2d46419f8c68"
+            },
+            "fieldsSkippedOnSave": {
+              "t": "Ova polja nisu na ciljnim slojevima i preskočena su: {fields}. Provjerite mapiranje polja u postavkama grafičkog elementa.",
+              "src": "machine",
+              "h": "63b2e5084012"
+            },
+            "noBoundaryLinesOnSave": {
+              "t": "Ni jedan poligon parcele nije kreiran jer linije nisu označene kao granična linija. Postavite tip linije na graničnu liniju u mreži ili u alatnoj traci pre digitalizacije, a zatim ponovo spremite.",
+              "src": "machine",
+              "h": "8f7db21fa7c5"
+            },
+            "newTraverseTip": {
+              "t": "Zapoènite novi put tako što æete postaviti startnu taèku i uæi u ležajeve i daljine.",
+              "src": "machine",
+              "h": "c762bc3e94d3"
+            },
+            "editTraverseTip": {
+              "t": "Učitaj postojeću parcelu sa mape da je pregledaš ili izmeniš.",
+              "src": "machine",
+              "h": "b6cbd43dd2e7"
+            },
+            "backTip": {
+              "t": "Vratite se na početni ekran i očistite trenutni prelaz",
+              "src": "machine",
+              "h": "05b7b55769a2"
+            },
+            "planSettingsTip": {
+              "t": "Promenite vrstu smera, ugao, udaljenost, i jedinice za oblast, i način ulaska krivine.",
+              "src": "machine",
+              "h": "01738775e42c"
+            },
+            "digitizeTip": {
+              "t": "Kada je uključeno, klikom na mapu dodaje se linija od poslednje tačke do lokacije sa klikom",
+              "src": "machine",
+              "h": "06724f1a6b9e"
+            },
+            "drawLineTypeTip": {
+              "t": "Tip linije za nove linije, digitaliziran na mapi ili utipkan u mreži. Granične linije ocrtavaju paket i grade spašeni poligon; linije veze ulaze samo sa referentne tačke.",
+              "src": "machine",
+              "h": "cd3fb442516d"
+            },
+            "zoomToTip": {
+              "t": "Zumiraj mapu do prelazne startne tačke",
+              "src": "machine",
+              "h": "acc816e59387"
+            },
+            "saveTip": {
+              "t": "Spremi traverzne linije, tačke i zatvoren poligon parcele u konfigurisane slojeve",
+              "src": "machine",
+              "h": "3bafeaa737e3"
+            },
+            "clearAllTip": {
+              "t": "Uklonite sve unesene linije i poènite ispoèetka.",
+              "src": "machine",
+              "h": "5eb76e5d1685"
+            },
+            "anchorTip": {
+              "t": "Odaberite traverznu tačku na mapi da držite fiksnu dok rotirate ili skalirate",
+              "src": "machine",
+              "h": "9a259de2d397"
+            },
+            "rotationTip": {
+              "t": "Rotiraj ceo krug sa ovoliko stepeni (pozitivan je u smeru kazaljke na satu)",
+              "src": "machine",
+              "h": "f15d244e6bb8"
+            },
+            "scaleTip": {
+              "t": "Pomnožite svaku razdaljinu u prolazu ovim faktorom.",
+              "src": "machine",
+              "h": "5d491a2a02d1"
+            },
+            "bearingEntryTip": {
+              "t": "Формати: N45-30-00E, 45-30-00-1, 45.3000, 123.45. Тип * за копирање претходне линије. Numpad + прелази на дужину.",
+              "src": "machine",
+              "h": "fab2b8ba8b83"
+            },
+            "lengthEntryTip": {
+              "t": "Udaljenost u planskim jedinicama. Dodajte m, ft, usft, ch (lanci), rd (rodovi), lk (linkovi), ili va (varas) za premošćivanje. Upišite * za kopiranje prethodne linije. Numpad + dodaje liniju, numpad / skače u radijus.",
+              "src": "machine",
+              "h": "020b1c8abe8c"
+            },
+            "radiusEntryTip": {
+              "t": "Ostavi prazninu na pravoj liniji, pozitivne krivine desno, negativne krivulje levo, numpad + dodaje liniju.",
+              "src": "machine",
+              "h": "ffb5271a043d"
+            },
+            "traverseGridLabel": {
+              "t": "Траверзне линијеQShortcut",
+              "src": "machine",
+              "h": "373b97e66948"
+            },
+            "lineNumber": {
+              "t": "ред {number}",
+              "src": "machine",
+              "h": "cd8815c668ac"
+            },
+            "newLineEntry": {
+              "t": "novi unos linije",
+              "src": "machine",
+              "h": "34db82892d71"
+            },
+            "miscloseRegionLabel": {
+              "t": "Misclase details",
+              "src": "machine",
+              "h": "f3df155f4060"
+            },
+            "parcelToolsLabel": {
+              "t": "Rotacija i vaga alati",
+              "src": "machine",
+              "h": "3de9fea03db0"
+            },
+            "planSettingsLabel": {
+              "t": "Поставке планаQShortcut",
+              "src": "machine",
+              "h": "23c47c50cc6d"
+            },
+            "startPointEntryLabel": {
+              "t": "Koordinate startne taèke.",
+              "src": "machine",
+              "h": "bd602caa2315"
+            },
+            "directionOrAngleTypeTip": {
+              "t": "Kako su ležajevi u izvornom dokumentu referisani: sa severa (sjeverni azimut), sa juga (južni azimut), ili kvadrantom (npr. N45E)",
+              "src": "machine",
+              "h": "ab48faae4237"
+            },
+            "directionOrAngleUnitsTip": {
+              "t": "Да ли су углови написани као децимални степени (45,5) или степени-минут-секунде (45-30-00)",
+              "src": "machine",
+              "h": "1fc8a3c9012f"
+            },
+            "distanceAndLengthUnitsTip": {
+              "t": "Jedinica za svako rastojanje, dužinu i radijus u koji ulazite.",
+              "src": "machine",
+              "h": "b195ea78b1ba"
+            },
+            "areaUnitsTip": {
+              "t": "Jedinica koja je prijavila proraèunatu površinu paketa.",
+              "src": "machine",
+              "h": "805def3ed02a"
+            },
+            "circularCurveParametersTip": {
+              "t": "Za krivulje, da li je dužina u koju ulazite akord (pravo-linija) udaljenost ili lučno rastojanje",
+              "src": "machine",
+              "h": "ffb3a158f059"
+            },
+            "lineTypeTip": {
+              "t": "Granične linije definišu paket i koriste se za misclose; linije veza samo vezuju startnu tačku do tačke početka",
+              "src": "machine",
+              "h": "38fa0c4e69aa"
+            },
+            "miscloseBearingTip": {
+              "t": "Usmerenje jaza izmeðu mesta gde se granica završava i mesta gde je poèela.",
+              "src": "machine",
+              "h": "5345caddc95e"
+            },
+            "miscloseDistanceTip": {
+              "t": "Veličina jaza između granične krajnje tačke i startne tačke; nula znači savršeno zatvaranje",
+              "src": "machine",
+              "h": "a4b635aa49e8"
+            },
+            "miscloseRatioTip": {
+              "t": "Preciznost zatvaranja kao 1:n - greška u odnosu na ukupnu graničnu dužinu; viša n je bolja",
+              "src": "machine",
+              "h": "2304cbbb482f"
+            },
+            "calculatedAreaTip": {
+              "t": "Geodetska oblast zatvorenog graničnog poligona",
+              "src": "machine",
+              "h": "5d769326a024"
+            },
+            "compassRuleTip": {
+              "t": "Greška zatvaranja je raspodeljena proporcionalno duž svake granične linije (pravilo Bowditch kompasa); vaše unesene vrednosti se čuvaju kao evidencije",
+              "src": "machine",
+              "h": "f9f81a04ae95"
+            },
+            "planNameTip": {
+              "t": "Ime zabeleženo na spašenom poligonu paketa",
+              "src": "machine",
+              "h": "f151a39a4e69"
+            },
+            "planDescriptionTip": {
+              "t": "Opis zabeležen na spašenom poligonu paketa",
+              "src": "machine",
+              "h": "bec730aa77cd"
+            },
+            "statedAreaTip": {
+              "t": "Područje kao što je navedeno na tapiji ili dokumentu zapisa, sačuvano uz izračunatu oblast",
+              "src": "machine",
+              "h": "7c1279838eb2"
+            },
+            "longitudeTip": {
+              "t": "WGS84 decimalni stepen; negativne vrednosti su zapadne",
+              "src": "machine",
+              "h": "5389547b61cb"
+            },
+            "latitudeTip": {
+              "t": "WGS84 decimalni stepen; negativne vrednosti su na jugu",
+              "src": "machine",
+              "h": "57dd5348cf12"
+            },
+            "escToExitTip": {
+              "t": "Pritisnite Escape da biste izašli iz trenutnog alata mape",
+              "src": "machine",
+              "h": "11279da444fa"
+            },
+            "reorder": {
+              "t": "Redoslijed:",
+              "src": "machine",
+              "h": "33d9978c4477"
+            },
+            "reorderTip": {
+              "t": "Povucite da preuredite ovu liniju, ili se fokusirajte i koristite tipke sa strelicama",
+              "src": "machine",
+              "h": "2821f28ae577"
+            },
+            "dragRotate": {
+              "t": "Povucite da rotirate",
+              "src": "machine",
+              "h": "1bfe69fafb2c"
+            },
+            "dragRotateTip": {
+              "t": "Kada krenete, povucite mapu da zakrenete putanju oko taèke sidra.",
+              "src": "machine",
+              "h": "718545709356"
+            },
+            "dragScale": {
+              "t": "Povuci na vagu",
+              "src": "machine",
+              "h": "4d4ba980872c"
+            },
+            "dragScaleTip": {
+              "t": "Kada krenete, povucite mapu da prevalite putanju sa taèke sidra.",
+              "src": "machine",
+              "h": "ec18ea5f042f"
+            },
+            "editingExisting": {
+              "t": "Uređivanje postojećeg paketa - ušteda će ga ažurirati na mestu i zameniti njegove linije",
+              "src": "machine",
+              "h": "030f090aea03"
+            },
+            "attributeFieldTip": {
+              "t": "Атрибут сачуван на пољу парцеле polygon",
+              "src": "machine",
+              "h": "e05042e2707a"
+            },
+            "updateSuccess": {
+              "t": "Paket ažuriran: zamenjen sa {lines} linijama.",
+              "src": "machine",
+              "h": "b66ad9e2f726"
+            },
+            "legLabelsTip": {
+              "t": "Prikaži na svakoj traverznoj liniji nosivosti i udaljenosti",
+              "src": "machine",
+              "h": "4f0de8d49c6a"
+            },
+            "snapToggle": {
+              "t": "Snap",
+              "src": "machine",
+              "h": "455673bbb8a0"
+            },
+            "snapToggleTip": {
+              "t": "Puštanje mape klikova na vertices i ivice svih vidljivih slojeva osobina",
+              "src": "machine",
+              "h": "2ea668142414"
+            },
+            "exportGeoJSON": {
+              "t": "GeoJSON",
+              "src": "machine",
+              "h": "97eeda258d4d"
+            },
+            "exportGeoJSONTip": {
+              "t": "Preuzmite prolaz kao GeoJSON fajl sa taèkama, linijama i zatvorenim poligonom parcele.",
+              "src": "machine",
+              "h": "bdc631d2005d"
+            },
+            "exportEmpty": {
+              "t": "Dodaj bar jednu liniju pre izvoza.",
+              "src": "machine",
+              "h": "5cfd2161e0db"
+            },
+            "traverseColor": {
+              "t": "Траверзна бојаQShortcut",
+              "src": "machine",
+              "h": "02681fe8c53e"
+            },
+            "traverseColorTip": {
+              "t": "Premostite boju crteža za ovu sesiju. Očistite da koristite konfigurisane simbole.",
+              "src": "machine",
+              "h": "14b164f63010"
+            },
+            "legalDescription": {
+              "t": "Legalno.",
+              "src": "machine",
+              "h": "902c91d94e0f"
+            },
+            "legalDescriptionTip": {
+              "t": "Download a draft metes and lines legal description of the traverse (AH 215 conventions: start, Point of start, thence cours, curve radius/arc/chord, acreage). нацрт само, рецензија потребна.",
+              "src": "machine",
+              "h": "086ba392ad2c"
+            },
+            "helpIntro": {
+              "t": "Paket Drafter pretvara ležajeve i udaljenosti na delu ili platu u linije, taèke, i parcelu poligona na mapi.",
+              "src": "machine",
+              "h": "1dc61747fde3"
+            },
+            "helpSearchPlaceholder": {
+              "t": "Pretraži vodiè (pokušajboundary ilispasi",
+              "src": "machine",
+              "h": "d13d8bf95448"
+            },
+            "helpNoMatches": {
+              "t": "Ništa u vodièu ne odgovara toj reèi.",
+              "src": "machine",
+              "h": "3fe179f75330"
+            },
+            "firstRunTitle": {
+              "t": "Novi ovde?",
+              "src": "machine",
+              "h": "b81f2e17e001"
+            },
+            "firstRunBody": {
+              "t": "Kliknite New traverse, postavite startnu tačku, zatim upišite ili nacrtajte svaku graničnu liniju i kliknite Save.",
+              "src": "machine",
+              "h": "100f0167edc4"
+            },
+            "firstRunHelpLink": {
+              "t": "Otvori vodiè.",
+              "src": "machine",
+              "h": "2447dd6134ea"
+            },
+            "firstRunDismiss": {
+              "t": "Otpust.",
+              "src": "machine",
+              "h": "70afe9eff3f2"
+            },
+            "helpStartTitle": {
+              "t": "Poènite ovde: tri koraka.",
+              "src": "machine",
+              "h": "789320b4831d"
+            },
+            "helpStart1": {
+              "t": "Kliknite New traverse, zatim kliknite na mapu da postavite startnu tačku, ili ukucajte geografsku dužinu i geografsku širinu i kliknite Primenite.",
+              "src": "machine",
+              "h": "4c0d2a781be9"
+            },
+            "helpStart2": {
+              "t": "Upišite svaku liniju: ležaj (kao N45-30-00E), dužinu, i radijus za krivine, zatim pritisnite Enter. Ili uključite Digitalizu i kliknite na mapu da nacrtate.",
+              "src": "machine",
+              "h": "0a34aa31f1c1"
+            },
+            "helpStart3": {
+              "t": "Kada se granica zatvori do početka, proveri misclose brojeve, a zatim klikni Save.",
+              "src": "machine",
+              "h": "784ea8f7acb3"
+            },
+            "helpEnterTitle": {
+              "t": "Ulazim u linije",
+              "src": "machine",
+              "h": "5bd668054062"
+            },
+            "helpEnterIntro": {
+              "t": "Svakoj liniji je potreban pravac i dužina, a polumjer je samo za krivine.",
+              "src": "machine",
+              "h": "009619ed5441"
+            },
+            "helpEnterFormats": {
+              "t": "Formati kretanja: N45-30-00E, 45-30-00-1, ili 45.3000. Promena formata i jedinica u okviru Plan postavki.",
+              "src": "machine",
+              "h": "078e275788e9"
+            },
+            "helpEnterShortcuts": {
+              "t": "Ukucaj * u kutiju da kopiraš vrednost iz linije iznad. Ukucaj *tb u nosivu kutiju da bi nastavio tangentu na prethodnu krivulju.",
+              "src": "machine",
+              "h": "08aa99a0b6ad"
+            },
+            "helpEnterNumpad": {
+              "t": "Numpad prečice: + se kreće od ležaja do dužine i dodaje liniju iz dužine ili radijusa. / skače iz dužine u radijus.",
+              "src": "machine",
+              "h": "a394c5d41b98"
+            },
+            "helpEnterLineType": {
+              "t": "Linija je bitna: Noge granične linije ocrtavaju parcelu i grade spašeni poligon. Noge veze ulaze samo od referentne tačke, kao ugao sekcije, do prave tačke početka.",
+              "src": "machine",
+              "h": "89ec25ded908"
+            },
+            "helpEnterRows": {
+              "t": "Promenite liniju bilo kada: uredite njene kutije, odaberite drugi tip linije u njegovom redu, povucite ručku na red, ili koristite dugme za smeće da je uklonite.",
+              "src": "machine",
+              "h": "a84a2406e20b"
+            },
+            "helpDrawTitle": {
+              "t": "Crtanje na mapi",
+              "src": "machine",
+              "h": "1ce1a8628f6c"
+            },
+            "helpDraw1": {
+              "t": "Uključite Digitize, onda svaki klik na mapu dodaje liniju od poslednje tačke do mesta gde ste kliknuli. Odaberite tip linije u alatnoj traci prvo: Granica linija za obrise paketa, linija veze da uđete.",
+              "src": "machine",
+              "h": "64c75e4d93f0"
+            },
+            "helpDraw2": {
+              "t": "Snep povlači vaše klikove do obližnjih tačaka i linija na mapi. Isključite ga sa dugmetom Snap ako uhvati pogrešno mesto.",
+              "src": "machine",
+              "h": "4e3e94e292ca"
+            },
+            "helpDraw3": {
+              "t": "Oznake pokazuju kurs i dužinu na svakoj liniji. Kutija boja menja boju crteža dok je ne očistite ili zatvorite aplikaciju.",
+              "src": "machine",
+              "h": "285a90c0c061"
+            },
+            "helpDraw4": {
+              "t": "Zoom æe vam vratiti mapu na put, oèistite svaku liniju i poènite ispoèetka.",
+              "src": "machine",
+              "h": "20b3174d1465"
+            },
+            "helpDraw5": {
+              "t": "Pritisnite bekstvo da zaustavite alat za mapu.",
+              "src": "machine",
+              "h": "597aeb0976c5"
+            },
+            "helpFitTitle": {
+              "t": "Rotiraj, skaliraj i sidruj.",
+              "src": "machine",
+              "h": "4a17943c1964"
+            },
+            "helpFit1": {
+              "t": "Rotacija okreæe celu putanju i Skala se iste dužine proteže za isti faktor. Ukucajte brojeve, ili uključite Rotate ili Skalu i povucite na mapi.",
+              "src": "machine",
+              "h": "54ad906d5cbb"
+            },
+            "helpFit2": {
+              "t": "Sidro bira prelaznu taèku koja ostaje na mestu dok se rotirate ili skalirate.",
+              "src": "machine",
+              "h": "9b3d7531b7f5"
+            },
+            "helpCloseTitle": {
+              "t": "Zatvaranje i misclose",
+              "src": "machine",
+              "h": "c375d9c85097"
+            },
+            "helpClose1": {
+              "t": "Brojevi se pojavljuju kada se granice završe tamo gde su i poèele.",
+              "src": "machine",
+              "h": "a16d9fc4045b"
+            },
+            "helpClose2": {
+              "t": "Misclose distance je velièina jaza. Misclose odnos je preciznost kao 1:n, a viši je bolji.",
+              "src": "machine",
+              "h": "ccc4f5b75d9f"
+            },
+            "helpClose3": {
+              "t": "Kada je praznina mala, grafički element prekida granicu zatvorenu i širi grešku duž linija (pravilo compass). Vaše ukucane vrednosti se drže kao zapis.",
+              "src": "machine",
+              "h": "9f962ab8183d"
+            },
+            "helpSaveTitle": {
+              "t": "Snimanje i montaža",
+              "src": "machine",
+              "h": "bf4f500eba0c"
+            },
+            "helpSaveLines": {
+              "t": "Saèuvajte svaku liniju, sa svojim ležajem, dužinom, radijusom, i tipom linije, do sloja linije.",
+              "src": "machine",
+              "h": "4d4067c9e985"
+            },
+            "helpSavePoints": {
+              "t": "Save takođe piše startnu tačku i svaki ugao do tačke sloja.",
+              "src": "machine",
+              "h": "186d20f8f8ee"
+            },
+            "helpSavePolygon": {
+              "t": "Poligon parcele se gradi samo od graničnih linija, a zatim se sprema sa imenom, opisom i navedenom oblasti.",
+              "src": "machine",
+              "h": "ca8b209bffda"
+            },
+            "helpSaveEdit": {
+              "t": "Uredi traverse učitava postojeću parcelu sa mape. Sačuvaj zatim ažuriraj tu parcelu na mestu i zameni njene linije.",
+              "src": "machine",
+              "h": "dc22e420a7ac"
+            },
+            "helpExportGeoJSON": {
+              "t": "GeoJSON preuzima put kao fajl sa taèkama, linijama i zatvorenim poligonom paketa.",
+              "src": "machine",
+              "h": "593a48c8cf6f"
+            },
+            "helpExportLegal": {
+              "t": "Pravni preuzima nacrt meta i ogranièava opis. To je nacrt samo i treba ga pregledati pre upotrebe.",
+              "src": "machine",
+              "h": "4234b630de0e"
+            },
+            "helpTroubleTitle": {
+              "t": "Ako nešto nije u redu",
+              "src": "machine",
+              "h": "6f7fec3ff1e0"
+            },
+            "helpTroubleNoPolygon": {
+              "t": "Nema poligona nakon spremanja: linije su spremljene kao linija za povezivanje. Postavite tip linije na graničnu liniju na svaku nogu paketa, ili izaberite graničnu liniju u alatnoj traci pre digitalizacije, a zatim ponovo spremite.",
+              "src": "machine",
+              "h": "bf3e662a0f35"
+            },
+            "helpTroubleSymbols": {
+              "t": "Sačuvane linije ne crtaju sa bojama sloja: kod tipa linije nije u listi vrednosti sloja. Zamolite vlasnika aplikacije da uporedi tipove linija vidžeta sa slojem.",
+              "src": "machine",
+              "h": "99a249283aaf"
+            },
+            "helpTroubleSaveFailed": {
+              "t": "Neuspjelo spremanje: sloj ne dozvoljava uređivanje. Provjerite da li ste se prijavili i slojevi se mogu uređivati, a zatim pokušajte ponovo.",
+              "src": "machine",
+              "h": "ab164afdcd44"
+            },
+            "helpTroubleStackedPolygon": {
+              "t": "Uređivanje paketa ostavlja drugi poligon na vrhu starog: grafički element nije našao postojeći poligon kada je prelazak učitan, pa je dodao jedan. Poruka kada učitate tras govori da li je pronađen poligon. Klikni bliže graničnoj liniji parcele i učitaj ga ponovo.",
+              "src": "machine",
+              "h": "092510486d8a"
+            },
+            "helpTroubleFields": {
+              "t": "Ušteđene vrednosti se vraćaju prazne, ili Edit traverse ne nalazi ništa: imena polja u postavkama grafičkog elementa ne postoje na sloju. Kapitalna slova nisu bitna, ali pravopis da, i hosting sloj može da koristi različita imena od servisa mape iz kojeg je došao. Otvorite postavke vidžeta i izaberite polja ponovo.",
+              "src": "machine",
+              "h": "0a7e45095441"
+            },
+            "helpTroubleNoClicks": {
+              "t": "Klikovi na mapi ne dodaju ništa: Digitizacija je isključena ili još nema startne tačke. Postavi startnu tačku prvo, a zatim uključi Digitize.",
+              "src": "machine",
+              "h": "02b9df2312f8"
+            },
+            "helpTroubleContact": {
+              "t": "Kontaktirajte GIS odjel i spomenite ime paketa Drofter i ovu aplikaciju.",
+              "src": "machine",
+              "h": "c836a77c1872"
+            },
+            "helpTipsTitle": {
+              "t": "Dobro je znati.",
+              "src": "machine",
+              "h": "79fc372dc790"
+            },
+            "helpTips1": {
+              "t": "Podešavanja plana menjaju kako su ležajevi, dužine i oblasti pročitane i prikazane. Postavite ih da odgovaraju delu pre kucanja.",
+              "src": "machine",
+              "h": "fa186e444cda"
+            },
+            "helpTips2": {
+              "t": "Navedena oblast iz dela se čuva pored proračunate oblasti, tako da razlike ostaju vidljive.",
+              "src": "machine",
+              "h": "2430b6810c60"
+            },
+            "thenceValueValue2UnitWord": {
+              "t": "thence {value}, {value2} {unitWord}",
+              "src": "machine",
+              "h": "2e5325cc29c5"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            }
+          }
         },
         "sv": {
           "file": "94d96cc6ad72",
@@ -29921,18 +32409,359 @@
           }
         },
         "bs": {
-          "file": "682446378c99",
+          "file": "da3d01373eb8",
           "counts": {
             "esri": 4,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 68,
             "stale": 0,
-            "missing": 68
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "settingLayers": {
+              "t": "Ciljni slojevi",
+              "src": "machine",
+              "h": "61c8cf26c9c0"
+            },
+            "settingPointLayer": {
+              "t": "Tačkasti sloj (dodatni ishodi)",
+              "src": "machine",
+              "h": "2438917d7906"
+            },
+            "settingLineLayer": {
+              "t": "Linijski sloj (traverzne linije)",
+              "src": "machine",
+              "h": "0f0d1482c50f"
+            },
+            "settingPolygonLayer": {
+              "t": "Poligonski sloj (zatvorene parcele)",
+              "src": "machine",
+              "h": "258f9b478575"
+            },
+            "settingLineFields": {
+              "t": "Imena polja za linijske slojeve",
+              "src": "machine",
+              "h": "e13f6922ad80"
+            },
+            "settingPolygonFields": {
+              "t": "Nazivi polja za poligonske slojeve",
+              "src": "machine",
+              "h": "b0693869b0b7"
+            },
+            "settingField_bearing": {
+              "t": "Polje za držanje",
+              "src": "machine",
+              "h": "0dcb3bb512c9"
+            },
+            "settingField_distance": {
+              "t": "Polje za razdaljinu",
+              "src": "machine",
+              "h": "4176c03b38fe"
+            },
+            "settingField_radius": {
+              "t": "Polje polumjera",
+              "src": "machine",
+              "h": "0d44e40f8185"
+            },
+            "settingField_arcLength": {
+              "t": "Polje za dužinu luka",
+              "src": "machine",
+              "h": "95ab7c94d315"
+            },
+            "settingField_lineType": {
+              "t": "Polje tipa linije",
+              "src": "machine",
+              "h": "4d84da8ff1cc"
+            },
+            "settingField_name": {
+              "t": "Polje",
+              "src": "machine",
+              "h": "b737ba63a448"
+            },
+            "settingField_description": {
+              "t": "Polje za opis",
+              "src": "machine",
+              "h": "d211f7c77200"
+            },
+            "settingField_statedArea": {
+              "t": "Stanje područnog polja",
+              "src": "machine",
+              "h": "efdc9062e991"
+            },
+            "settingField_miscloseRatio": {
+              "t": "Polje omjera pogrešnog",
+              "src": "machine",
+              "h": "11013bdd3800"
+            },
+            "settingField_miscloseDistance": {
+              "t": "Polje za Misclose daljinu",
+              "src": "machine",
+              "h": "d0af5d9cf27f"
+            },
+            "settingField_rotation": {
+              "t": "Rotacijsko polje",
+              "src": "machine",
+              "h": "29f935cdbec5"
+            },
+            "settingField_scale": {
+              "t": "Polje sraza",
+              "src": "machine",
+              "h": "9c8854eaff5b"
+            },
+            "settingMisclose": {
+              "t": "Mizzly i snapping",
+              "src": "machine",
+              "h": "8391fb1995bf"
+            },
+            "settingSnapDistance": {
+              "t": "Misclose snap distance",
+              "src": "machine",
+              "h": "529345cea33b"
+            },
+            "settingSnapDistanceUnit": {
+              "t": "Jedinica za Misclose snap daljinu",
+              "src": "machine",
+              "h": "b86dd84b0d8f"
+            },
+            "settingRatioSnap": {
+              "t": "Otkrivanje omjera pogrešnog (1:n)",
+              "src": "machine",
+              "h": "d53d0edb849e"
+            },
+            "settingSnappingTolerance": {
+              "t": "Tolerancija snappinga (piksela)",
+              "src": "machine",
+              "h": "7cf6b7baf4d6"
+            },
+            "settingLabels": {
+              "t": "Oznake nogu",
+              "src": "machine",
+              "h": "3380487ab88b"
+            },
+            "settingLabelPlacement": {
+              "t": "Pozicija oznake",
+              "src": "machine",
+              "h": "738531ae5b1b"
+            },
+            "settingLabelPlacementBeside": {
+              "t": "Pored linije",
+              "src": "machine",
+              "h": "e331c4fcce13"
+            },
+            "settingLabelPlacementOn": {
+              "t": "Na liniju.",
+              "src": "machine",
+              "h": "faf9c7fbdac6"
+            },
+            "settingLabelOffset": {
+              "t": "Označi udaljenost od linije (točke)",
+              "src": "machine",
+              "h": "85b505f69e79"
+            },
+            "uSSurveyFeet": {
+              "t": "Američka stopa istraživanja",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "settingSelectMapTip": {
+              "t": "Grafički element mape protiv kojeg ovaj paket Drafter radi",
+              "src": "machine",
+              "h": "24a5d8c08725"
+            },
+            "settingPointLayerTip": {
+              "t": "Izmjenljiv sloj osobina tačke koji prima prijelazne početne i završne tačke pri snimanju",
+              "src": "machine",
+              "h": "7a3aa67ebc64"
+            },
+            "settingLineLayerTip": {
+              "t": "Uređivi sloj osobina linije koji prima svaku traverznu liniju pri snimanju, i upitan je pri uređivanju postojećeg traversa",
+              "src": "machine",
+              "h": "b54fac36780f"
+            },
+            "settingPolygonLayerTip": {
+              "t": "Izmjenljiv poligonski sloj osobine koji prima zatvorenu granicu parcele pri snimanju",
+              "src": "machine",
+              "h": "1ebff3c5fc89"
+            },
+            "settingField_bearing_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje ležaj kao decimalne stepene sjeverne azimute",
+              "src": "machine",
+              "h": "b7f74bf0225c"
+            },
+            "settingField_distance_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje liniju ili udaljenost akorda u metrima",
+              "src": "machine",
+              "h": "5fbe026219ef"
+            },
+            "settingField_radius_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje radijus krivulje u metrima (prazno ili 0 za ravne linije)",
+              "src": "machine",
+              "h": "ac60ba4dcf5b"
+            },
+            "settingField_arcLength_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje lučnu dužinu u metrima za zakrivljene linije",
+              "src": "machine",
+              "h": "39fb5273180f"
+            },
+            "settingField_lineType_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje kod tipa linije (boundary vs connection)",
+              "src": "machine",
+              "h": "066d37c29e6c"
+            },
+            "settingField_name_tip": {
+              "t": "Polje poligonskog sloja za ime plana upisano pri snimanju",
+              "src": "machine",
+              "h": "cf16edf02753"
+            },
+            "settingField_description_tip": {
+              "t": "Polje poligonskog sloja za opis plana",
+              "src": "machine",
+              "h": "714daf2ec5df"
+            },
+            "settingField_statedArea_tip": {
+              "t": "Polje poligonskog sloja za navedeno (deed) područje",
+              "src": "machine",
+              "h": "608b4598657d"
+            },
+            "settingField_miscloseRatio_tip": {
+              "t": "Polje poligonskog sloja za izračunati misclose omjer (npr. 1:25000)",
+              "src": "machine",
+              "h": "8454ea4c26d5"
+            },
+            "settingField_miscloseDistance_tip": {
+              "t": "Polje poligonskog sloja za misclose udaljenost u metrima",
+              "src": "machine",
+              "h": "38479dab5196"
+            },
+            "settingField_rotation_tip": {
+              "t": "Polje poligonskog sloja za rotaciju koje se primjenjuje na putanju",
+              "src": "machine",
+              "h": "8a3b338d409d"
+            },
+            "settingField_scale_tip": {
+              "t": "Polje poligonskog sloja za faktor skale koji se primjenjuje na traverzni",
+              "src": "machine",
+              "h": "8ac870d7694b"
+            },
+            "settingSnapDistanceTip": {
+              "t": "Ako je granica misclose udaljenost na ili ispod ove vrijednosti, tačke se zatvaraju i primjenjuje se pravilo kompasa",
+              "src": "machine",
+              "h": "a6e91fdff39c"
+            },
+            "settingSnapDistanceUnitTip": {
+              "t": "Jedinica za misclase daljinu",
+              "src": "machine",
+              "h": "83409bc242af"
+            },
+            "settingRatioSnapTip": {
+              "t": "Ako se misclose omjer (1:n) susreće ili prelazi ovaj n, tačke se zatvaraju i primjenjuje se pravilo kompasa",
+              "src": "machine",
+              "h": "7a3330e45a60"
+            },
+            "settingSnappingToleranceTip": {
+              "t": "Tolerancija piksli koja se koristi pri izboru postojećih linija paketa za izmjenu",
+              "src": "machine",
+              "h": "e81cf04f9000"
+            },
+            "settingLabelPlacementTip": {
+              "t": "Gdje ležaj i udaljenost sjede na svakoj nozi. Obje pozicije su usmjerene prema nozi, a pored linije je istiskuju iz linije i simboli u uglu.",
+              "src": "machine",
+              "h": "80e79278c1e3"
+            },
+            "settingLabelOffsetTip": {
+              "t": "Koliko je oznaka udaljena od linije kada je pozicija pored linije. Koristi negativni broj za postavljanje oznaka na drugu stranu",
+              "src": "machine",
+              "h": "6eea2949accf"
+            },
+            "fieldMissingNote": {
+              "t": "Polja koja ne postoje na sloju su preskočena prilikom snimanja",
+              "src": "machine",
+              "h": "f23089aa517d"
+            },
+            "settingDefaultLineType": {
+              "t": "Uobičajeni tip linije",
+              "src": "machine",
+              "h": "f849a20b9fff"
+            },
+            "settingDefaultLineTypeTip": {
+              "t": "Tip linije je unaprijed izabran za nove traverzne noge (uobičajeno je da je doc linija konekcije; mnogi radni tokovi preferiraju graničnu liniju)",
+              "src": "machine",
+              "h": "f6ad2694b156"
+            },
+            "relatedLayersDetected": {
+              "t": "Povezani slojevi iz istog servisa su automatski izabrani - podesi ako je potrebno",
+              "src": "machine",
+              "h": "1b84cc7b9eb2"
+            },
+            "settingAttributes": {
+              "t": "Postavke atributa",
+              "src": "machine",
+              "h": "fb36b4447292"
+            },
+            "settingAttributeMode": {
+              "t": "Polja atributa",
+              "src": "machine",
+              "h": "c757cf49074d"
+            },
+            "settingAttributeModeTip": {
+              "t": "Koji poligon atributi korisnici mogu ući u vrijeme pokretanja: fiksni naziv/opis/stated-područje ulaza, polja sa skočnog sloja, ili prilagođeni spisak",
+              "src": "machine",
+              "h": "e27807188b4d"
+            },
+            "attributeModeLegacy": {
+              "t": "Ime, opis i navedeno područje",
+              "src": "machine",
+              "h": "1e1a98cb025d"
+            },
+            "attributeModePopup": {
+              "t": "Webmap popup postavke",
+              "src": "machine",
+              "h": "a524d4a9ad3a"
+            },
+            "attributeModeCustom": {
+              "t": "Osobne postavke",
+              "src": "machine",
+              "h": "0923f615faf2"
+            },
+            "attributeFieldsHeader": {
+              "t": "Polja koja će se prikazati i mijenjati u vrijeme pokretanja",
+              "src": "machine",
+              "h": "7a6f7c6f9f81"
+            },
+            "attributeAliasPlaceholder": {
+              "t": "Alias (opcionalno)",
+              "src": "machine",
+              "h": "b985557d78f5"
+            },
+            "attributeNoPolygonLayer": {
+              "t": "Izaberite prvo poligonski sloj da izaberete njegova polja",
+              "src": "machine",
+              "h": "b7257f5e512b"
+            },
+            "fieldPickerFreeText": {
+              "t": "Unesi ime polja",
+              "src": "machine",
+              "h": "a63908c6f047"
+            },
+            "loadingFields": {
+              "t": "Učitavam polja slojeva...",
+              "src": "machine",
+              "h": "e5f6873c0942"
+            },
+            "showHelpGuide": {
+              "t": "Pokaži vodič za pomoć",
+              "src": "machine",
+              "h": "03e9f0b81336"
+            },
+            "showTheQuestionMarkButtonThat": {
+              "t": "Pokaži dugme sa znakom pitanja koje otvara vodič za pomoć grafičkog elementa",
+              "src": "machine",
+              "h": "62c4e81a84ca"
+            }
+          }
         },
         "ca": {
           "file": "5aec1c435447",
@@ -33390,18 +36219,359 @@
           }
         },
         "hr": {
-          "file": "682446378c99",
+          "file": "4365af33c313",
           "counts": {
             "esri": 4,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 68,
             "stale": 0,
-            "missing": 68
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "settingLayers": {
+              "t": "Ciljni slojevi",
+              "src": "machine",
+              "h": "61c8cf26c9c0"
+            },
+            "settingPointLayer": {
+              "t": "Točkasti sloj (konačni ishodi)",
+              "src": "machine",
+              "h": "2438917d7906"
+            },
+            "settingLineLayer": {
+              "t": "Linijski sloj (traverzne linije)",
+              "src": "machine",
+              "h": "0f0d1482c50f"
+            },
+            "settingPolygonLayer": {
+              "t": "Poligonski sloj (zatvorene parcele)",
+              "src": "machine",
+              "h": "258f9b478575"
+            },
+            "settingLineFields": {
+              "t": "Naziv polja sloja",
+              "src": "machine",
+              "h": "e13f6922ad80"
+            },
+            "settingPolygonFields": {
+              "t": "Nazivi polja poligonskog sloja",
+              "src": "machine",
+              "h": "b0693869b0b7"
+            },
+            "settingField_bearing": {
+              "t": "Polje za držanje",
+              "src": "machine",
+              "h": "0dcb3bb512c9"
+            },
+            "settingField_distance": {
+              "t": "Polje za udaljenost",
+              "src": "machine",
+              "h": "4176c03b38fe"
+            },
+            "settingField_radius": {
+              "t": "Polje polumjera",
+              "src": "machine",
+              "h": "0d44e40f8185"
+            },
+            "settingField_arcLength": {
+              "t": "Polje duljine luka",
+              "src": "machine",
+              "h": "95ab7c94d315"
+            },
+            "settingField_lineType": {
+              "t": "Polje tipa linije",
+              "src": "machine",
+              "h": "4d84da8ff1cc"
+            },
+            "settingField_name": {
+              "t": "Polje imena",
+              "src": "machine",
+              "h": "b737ba63a448"
+            },
+            "settingField_description": {
+              "t": "Polje opisa",
+              "src": "machine",
+              "h": "d211f7c77200"
+            },
+            "settingField_statedArea": {
+              "t": "Državno područje polje",
+              "src": "machine",
+              "h": "efdc9062e991"
+            },
+            "settingField_miscloseRatio": {
+              "t": "Polje misclose omjera",
+              "src": "machine",
+              "h": "11013bdd3800"
+            },
+            "settingField_miscloseDistance": {
+              "t": "Polje misclose daljine",
+              "src": "machine",
+              "h": "d0af5d9cf27f"
+            },
+            "settingField_rotation": {
+              "t": "Rotacijsko polje",
+              "src": "machine",
+              "h": "29f935cdbec5"
+            },
+            "settingField_scale": {
+              "t": "Skalirano polje",
+              "src": "machine",
+              "h": "9c8854eaff5b"
+            },
+            "settingMisclose": {
+              "t": "Zamah i pucanje",
+              "src": "machine",
+              "h": "8391fb1995bf"
+            },
+            "settingSnapDistance": {
+              "t": "Misclose snap udaljenost",
+              "src": "machine",
+              "h": "529345cea33b"
+            },
+            "settingSnapDistanceUnit": {
+              "t": "Misclose snap jedinica daljine",
+              "src": "machine",
+              "h": "b86dd84b0d8f"
+            },
+            "settingRatioSnap": {
+              "t": "Omjer pogrešnog zatvaranja (1:n)",
+              "src": "machine",
+              "h": "d53d0edb849e"
+            },
+            "settingSnappingTolerance": {
+              "t": "Tolerancija snappinga (piksela)",
+              "src": "machine",
+              "h": "7cf6b7baf4d6"
+            },
+            "settingLabels": {
+              "t": "Naljepnice za noge",
+              "src": "machine",
+              "h": "3380487ab88b"
+            },
+            "settingLabelPlacement": {
+              "t": "Položaj oznake",
+              "src": "machine",
+              "h": "738531ae5b1b"
+            },
+            "settingLabelPlacementBeside": {
+              "t": "Pored linije",
+              "src": "machine",
+              "h": "e331c4fcce13"
+            },
+            "settingLabelPlacementOn": {
+              "t": "Na liniji",
+              "src": "machine",
+              "h": "faf9c7fbdac6"
+            },
+            "settingLabelOffset": {
+              "t": "Označi udaljenost od linije (točke)",
+              "src": "machine",
+              "h": "85b505f69e79"
+            },
+            "uSSurveyFeet": {
+              "t": "Stopala američkog nadzora",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "settingSelectMapTip": {
+              "t": "Mapa widget ovaj paket Drafter radi protiv",
+              "src": "machine",
+              "h": "24a5d8c08725"
+            },
+            "settingPointLayerTip": {
+              "t": "Uređivanje točka značajka sloj koji prima traverse start i kraj točke na spremanje",
+              "src": "machine",
+              "h": "7a3aa67ebc64"
+            },
+            "settingLineLayerTip": {
+              "t": "Uređivanje linija značajka sloj koji prima svaki traverse linije na spremanje, i pita se pri uređivanju postojeće traverse",
+              "src": "machine",
+              "h": "b54fac36780f"
+            },
+            "settingPolygonLayerTip": {
+              "t": "Uređivi poligonski sloj koji prima zatvorenu granicu parcele prilikom spremanja",
+              "src": "machine",
+              "h": "1ebff3c5fc89"
+            },
+            "settingField_bearing_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje ležaj kao decimalne stupnjeve sjeverne azimute",
+              "src": "machine",
+              "h": "b7f74bf0225c"
+            },
+            "settingField_distance_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje liniju ili akord udaljenost u metrima",
+              "src": "machine",
+              "h": "5fbe026219ef"
+            },
+            "settingField_radius_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje polumjer krivulje u metrima (prazno ili 0 za ravne linije)",
+              "src": "machine",
+              "h": "ac60ba4dcf5b"
+            },
+            "settingField_arcLength_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje duljinu luka u metrima za zakrivljene linije",
+              "src": "machine",
+              "h": "39fb5273180f"
+            },
+            "settingField_lineType_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje kod tipa linije (boundary vs connection)",
+              "src": "machine",
+              "h": "066d37c29e6c"
+            },
+            "settingField_name_tip": {
+              "t": "Polje poligonskog sloja za naziv plana uneseno prilikom spremanja",
+              "src": "machine",
+              "h": "cf16edf02753"
+            },
+            "settingField_description_tip": {
+              "t": "Polje poligonskog sloja za opis plana",
+              "src": "machine",
+              "h": "714daf2ec5df"
+            },
+            "settingField_statedArea_tip": {
+              "t": "Polje poligonskog sloja za navedeno (deed) područje",
+              "src": "machine",
+              "h": "608b4598657d"
+            },
+            "settingField_miscloseRatio_tip": {
+              "t": "Polje poligonskog sloja za izračunati misclose omjer (npr. 1:25000)",
+              "src": "machine",
+              "h": "8454ea4c26d5"
+            },
+            "settingField_miscloseDistance_tip": {
+              "t": "Polje poligonskog sloja za misclose udaljenost u metrima",
+              "src": "machine",
+              "h": "38479dab5196"
+            },
+            "settingField_rotation_tip": {
+              "t": "Polje poligonskog sloja za rotaciju nanesenu na traverzu",
+              "src": "machine",
+              "h": "8a3b338d409d"
+            },
+            "settingField_scale_tip": {
+              "t": "Polje poligonskog sloja za faktor skale koji se primjenjuje na traverzni",
+              "src": "machine",
+              "h": "8ac870d7694b"
+            },
+            "settingSnapDistanceTip": {
+              "t": "Ako je granica misclose udaljenost je na ili ispod ove vrijednosti, točke snap zatvoren i kompas pravilo se primjenjuje",
+              "src": "machine",
+              "h": "a6e91fdff39c"
+            },
+            "settingSnapDistanceUnitTip": {
+              "t": "Jedinica za misclose snap udaljenost",
+              "src": "machine",
+              "h": "83409bc242af"
+            },
+            "settingRatioSnapTip": {
+              "t": "Ako je misclose omjer (1:n) zadovoljava ili prelazi ovaj n, točke snap zatvoren i kompas pravilo se primjenjuje",
+              "src": "machine",
+              "h": "7a3330e45a60"
+            },
+            "settingSnappingToleranceTip": {
+              "t": "Tolerancija piksela se koristi pri odabiru postojećih linija paketa za uređivanje",
+              "src": "machine",
+              "h": "e81cf04f9000"
+            },
+            "settingLabelPlacementTip": {
+              "t": "Gdje ležaj i udaljenost sjede na svakoj nozi. Obje pozicije centriraju oznaku uz nogu; pored linije također ga gura jasno iz linije i ugao simbola",
+              "src": "machine",
+              "h": "80e79278c1e3"
+            },
+            "settingLabelOffsetTip": {
+              "t": "Koliko je oznaka udaljena od linije kada je pozicija pored linije. Koristi negativan broj za stavljanje oznaka na drugu stranu",
+              "src": "machine",
+              "h": "6eea2949accf"
+            },
+            "fieldMissingNote": {
+              "t": "Polja koja ne postoje na sloju su preskočena prilikom spremanja",
+              "src": "machine",
+              "h": "f23089aa517d"
+            },
+            "settingDefaultLineType": {
+              "t": "Uobičajeni tip linije",
+              "src": "machine",
+              "h": "f849a20b9fff"
+            },
+            "settingDefaultLineTypeTip": {
+              "t": "Tip linije unaprijed izabran za nove traverse noge (doc zadani je veza linija; mnogi radni tokovi preferiraju granična linija)",
+              "src": "machine",
+              "h": "f6ad2694b156"
+            },
+            "relatedLayersDetected": {
+              "t": "Povezani slojevi iz iste usluge su odabrani automatski - prilagoditi ako je potrebno",
+              "src": "machine",
+              "h": "1b84cc7b9eb2"
+            },
+            "settingAttributes": {
+              "t": "Postavke atributa",
+              "src": "machine",
+              "h": "fb36b4447292"
+            },
+            "settingAttributeMode": {
+              "t": "Polja atributa",
+              "src": "machine",
+              "h": "c757cf49074d"
+            },
+            "settingAttributeModeTip": {
+              "t": "Koji poligon atributi korisnici mogu unijeti u vrijeme pokretanja: fiksno ime/opis/stated-područje ulaza, polja iz sloja popup, ili prilagođeni popis",
+              "src": "machine",
+              "h": "e27807188b4d"
+            },
+            "attributeModeLegacy": {
+              "t": "Naziv, opis i navedeno područje",
+              "src": "machine",
+              "h": "1e1a98cb025d"
+            },
+            "attributeModePopup": {
+              "t": "Webmap skočne postavke",
+              "src": "machine",
+              "h": "a524d4a9ad3a"
+            },
+            "attributeModeCustom": {
+              "t": "Prilagođene postavke",
+              "src": "machine",
+              "h": "0923f615faf2"
+            },
+            "attributeFieldsHeader": {
+              "t": "Polja za prikaz i uređivanje u vrijeme pokretanja",
+              "src": "machine",
+              "h": "7a6f7c6f9f81"
+            },
+            "attributeAliasPlaceholder": {
+              "t": "Alias (nije obvezno)",
+              "src": "machine",
+              "h": "b985557d78f5"
+            },
+            "attributeNoPolygonLayer": {
+              "t": "Odaberite sloj poligona koji će prvo odabrati svoja polja",
+              "src": "machine",
+              "h": "b7257f5e512b"
+            },
+            "fieldPickerFreeText": {
+              "t": "Unesi naziv polja",
+              "src": "machine",
+              "h": "a63908c6f047"
+            },
+            "loadingFields": {
+              "t": "Učitavanje polja slojeva...",
+              "src": "machine",
+              "h": "e5f6873c0942"
+            },
+            "showHelpGuide": {
+              "t": "Prikaži vodič pomoći",
+              "src": "machine",
+              "h": "03e9f0b81336"
+            },
+            "showTheQuestionMarkButtonThat": {
+              "t": "Prikaži gumb s upitnikom koji otvara vodič za pomoć widgetu",
+              "src": "machine",
+              "h": "62c4e81a84ca"
+            }
+          }
         },
         "hu": {
           "file": "a3d44744e77f",
@@ -38924,18 +42094,359 @@
           }
         },
         "sr": {
-          "file": "74b3c3ca12ec",
+          "file": "11169e6afc88",
           "counts": {
             "esri": 4,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 68,
             "stale": 0,
-            "missing": 68
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "settingLayers": {
+              "t": "Ciljajte slojeve.",
+              "src": "machine",
+              "h": "61c8cf26c9c0"
+            },
+            "settingPointLayer": {
+              "t": "Tačkasti sloj (prelazne mere ishoda)",
+              "src": "machine",
+              "h": "2438917d7906"
+            },
+            "settingLineLayer": {
+              "t": "Linijski sloj (prolazne linije)",
+              "src": "machine",
+              "h": "0f0d1482c50f"
+            },
+            "settingPolygonLayer": {
+              "t": "Poligonski sloj (zatvoreni paketi)",
+              "src": "machine",
+              "h": "258f9b478575"
+            },
+            "settingLineFields": {
+              "t": "Line lay field name",
+              "src": "machine",
+              "h": "e13f6922ad80"
+            },
+            "settingPolygonFields": {
+              "t": "Imena polja poligonskog sloja",
+              "src": "machine",
+              "h": "b0693869b0b7"
+            },
+            "settingField_bearing": {
+              "t": "Polje kursa",
+              "src": "machine",
+              "h": "0dcb3bb512c9"
+            },
+            "settingField_distance": {
+              "t": "Polje za daljinu",
+              "src": "machine",
+              "h": "4176c03b38fe"
+            },
+            "settingField_radius": {
+              "t": "Polje polumjera",
+              "src": "machine",
+              "h": "0d44e40f8185"
+            },
+            "settingField_arcLength": {
+              "t": "Polje dužine luka",
+              "src": "machine",
+              "h": "95ab7c94d315"
+            },
+            "settingField_lineType": {
+              "t": "Polje tipa linije",
+              "src": "machine",
+              "h": "4d84da8ff1cc"
+            },
+            "settingField_name": {
+              "t": "Polje imena",
+              "src": "machine",
+              "h": "b737ba63a448"
+            },
+            "settingField_description": {
+              "t": "Polje opisa",
+              "src": "machine",
+              "h": "d211f7c77200"
+            },
+            "settingField_statedArea": {
+              "t": "Državno polje",
+              "src": "machine",
+              "h": "efdc9062e991"
+            },
+            "settingField_miscloseRatio": {
+              "t": "Polje pogrešnog omjera",
+              "src": "machine",
+              "h": "11013bdd3800"
+            },
+            "settingField_miscloseDistance": {
+              "t": "Polje misclose distance",
+              "src": "machine",
+              "h": "d0af5d9cf27f"
+            },
+            "settingField_rotation": {
+              "t": "Rotaciono polje",
+              "src": "machine",
+              "h": "29f935cdbec5"
+            },
+            "settingField_scale": {
+              "t": "Поље размереQShortcut",
+              "src": "machine",
+              "h": "9c8854eaff5b"
+            },
+            "settingMisclose": {
+              "t": "Zamajavanje i pucanje.",
+              "src": "machine",
+              "h": "8391fb1995bf"
+            },
+            "settingSnapDistance": {
+              "t": "Misclose snap distance",
+              "src": "machine",
+              "h": "529345cea33b"
+            },
+            "settingSnapDistanceUnit": {
+              "t": "Misclose snap jedinica daljine",
+              "src": "machine",
+              "h": "b86dd84b0d8f"
+            },
+            "settingRatioSnap": {
+              "t": "Снап погрешног односа (1:n)",
+              "src": "machine",
+              "h": "d53d0edb849e"
+            },
+            "settingSnappingTolerance": {
+              "t": "Tolerancija snappinga (piksela)",
+              "src": "machine",
+              "h": "7cf6b7baf4d6"
+            },
+            "settingLabels": {
+              "t": "Oznake nogu",
+              "src": "machine",
+              "h": "3380487ab88b"
+            },
+            "settingLabelPlacement": {
+              "t": "Pozicija oznake",
+              "src": "machine",
+              "h": "738531ae5b1b"
+            },
+            "settingLabelPlacementBeside": {
+              "t": "Pored linije",
+              "src": "machine",
+              "h": "e331c4fcce13"
+            },
+            "settingLabelPlacementOn": {
+              "t": "Na liniju.",
+              "src": "machine",
+              "h": "faf9c7fbdac6"
+            },
+            "settingLabelOffset": {
+              "t": "Označi udaljenost od linije (točke)",
+              "src": "machine",
+              "h": "85b505f69e79"
+            },
+            "uSSurveyFeet": {
+              "t": "Amerièka stopala za istraživanje.",
+              "src": "machine",
+              "h": "d98cd5a99cb7"
+            },
+            "settingSelectMapTip": {
+              "t": "Мапа виџета овај пакет Драфтер ради против",
+              "src": "machine",
+              "h": "24a5d8c08725"
+            },
+            "settingPointLayerTip": {
+              "t": "Uređivačka tačka karakterističan sloj koji prima traverzne startne i završne tačke prilikom spremanja",
+              "src": "machine",
+              "h": "7a3aa67ebc64"
+            },
+            "settingLineLayerTip": {
+              "t": "Uređivački linijski sloj koji prima svaku traverznu liniju prilikom spremanja, i upitan je prilikom uređivanja postojećeg traverznog",
+              "src": "machine",
+              "h": "b54fac36780f"
+            },
+            "settingPolygonLayerTip": {
+              "t": "Uređivi poligonski sloj koji prima zatvorenu granicu paketa prilikom spremanja",
+              "src": "machine",
+              "h": "1ebff3c5fc89"
+            },
+            "settingField_bearing_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje ležaj kao decimalne stepene sever-azimut.",
+              "src": "machine",
+              "h": "b7f74bf0225c"
+            },
+            "settingField_distance_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje liniju ili razdaljinu akorda u metrima",
+              "src": "machine",
+              "h": "5fbe026219ef"
+            },
+            "settingField_radius_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje poluprečnik krivine u metrima (prazno ili 0 za ravne linije)",
+              "src": "machine",
+              "h": "ac60ba4dcf5b"
+            },
+            "settingField_arcLength_tip": {
+              "t": "Polje linijskog sloja koje pohranjuje dužinu luka u metrima za zakrivljene linije",
+              "src": "machine",
+              "h": "39fb5273180f"
+            },
+            "settingField_lineType_tip": {
+              "t": "Polje linijskog sloja koje skladišti kod tipa linije (boundary vs connection)",
+              "src": "machine",
+              "h": "066d37c29e6c"
+            },
+            "settingField_name_tip": {
+              "t": "Polje poligonskog sloja za naziv plana uneseno prilikom spremanja",
+              "src": "machine",
+              "h": "cf16edf02753"
+            },
+            "settingField_description_tip": {
+              "t": "Polje poligonskog sloja za opis plana",
+              "src": "machine",
+              "h": "714daf2ec5df"
+            },
+            "settingField_statedArea_tip": {
+              "t": "Polje poligonskog sloja za navedeno (deed) područje",
+              "src": "machine",
+              "h": "608b4598657d"
+            },
+            "settingField_miscloseRatio_tip": {
+              "t": "Polje poligonskog sloja za izračunati misclose odnos (npr. 1:25000)",
+              "src": "machine",
+              "h": "8454ea4c26d5"
+            },
+            "settingField_miscloseDistance_tip": {
+              "t": "Polje poligonskog sloja za misclose udaljenost u metrima",
+              "src": "machine",
+              "h": "38479dab5196"
+            },
+            "settingField_rotation_tip": {
+              "t": "Polje poligonskog sloja za rotaciju primenjenu na traverzu",
+              "src": "machine",
+              "h": "8a3b338d409d"
+            },
+            "settingField_scale_tip": {
+              "t": "Polje poligonskog sloja za faktor skale primenjen na traverzni",
+              "src": "machine",
+              "h": "8ac870d7694b"
+            },
+            "settingSnapDistanceTip": {
+              "t": "Ako je granica na pogrešnoj udaljenosti ili ispod ove vrednosti, taèke se zatvaraju i primenjuju pravila kompasa.",
+              "src": "machine",
+              "h": "a6e91fdff39c"
+            },
+            "settingSnapDistanceUnitTip": {
+              "t": "Jedinica za misclase snap daljinu",
+              "src": "machine",
+              "h": "83409bc242af"
+            },
+            "settingRatioSnapTip": {
+              "t": "Ako se misclose odnos (1:n) susreće ili prelazi ovaj n, tačke se zatvaraju i primenjuju pravila kompasa",
+              "src": "machine",
+              "h": "7a3330e45a60"
+            },
+            "settingSnappingToleranceTip": {
+              "t": "Tolerancija piksela se koristi pri odabiru postojećih linija paketa za uređivanje",
+              "src": "machine",
+              "h": "e81cf04f9000"
+            },
+            "settingLabelPlacementTip": {
+              "t": "Ležaj i razdaljina sede na svakoj nozi. Obe pozicije su usmerene duž noge; pored linije se takođe istiskuju iz linije i simboli uglova.",
+              "src": "machine",
+              "h": "80e79278c1e3"
+            },
+            "settingLabelOffsetTip": {
+              "t": "Koliko daleko oznaka sedi od linije kada je pozicija pored linije. Koristite negativan broj da stavite oznake na drugu stranu",
+              "src": "machine",
+              "h": "6eea2949accf"
+            },
+            "fieldMissingNote": {
+              "t": "Polja koja ne postoje na sloju su preskočena prilikom spremanja",
+              "src": "machine",
+              "h": "f23089aa517d"
+            },
+            "settingDefaultLineType": {
+              "t": "Uobičajeni tip linije",
+              "src": "machine",
+              "h": "f849a20b9fff"
+            },
+            "settingDefaultLineTypeTip": {
+              "t": "Tip linije je predizabran za nove traverzne noge (doc default je Connection Line; mnogi radni tokovi preferiraju Boundary Line)",
+              "src": "machine",
+              "h": "f6ad2694b156"
+            },
+            "relatedLayersDetected": {
+              "t": "Povezani slojevi iz istog servisa su automatski izabrani - podesi ako je potrebno",
+              "src": "machine",
+              "h": "1b84cc7b9eb2"
+            },
+            "settingAttributes": {
+              "t": "Поставке атрибута",
+              "src": "machine",
+              "h": "fb36b4447292"
+            },
+            "settingAttributeMode": {
+              "t": "Polja atributa paketa",
+              "src": "machine",
+              "h": "c757cf49074d"
+            },
+            "settingAttributeModeTip": {
+              "t": "Koji poligon atributi korisnici mogu da uđu u runtime: fiksni naziv/opis/stated-area ulaza, polja sa skočnog sloja, ili prilagođeni spisak",
+              "src": "machine",
+              "h": "e27807188b4d"
+            },
+            "attributeModeLegacy": {
+              "t": "Ime, opis i navedeno podruèje",
+              "src": "machine",
+              "h": "1e1a98cb025d"
+            },
+            "attributeModePopup": {
+              "t": "Вебмап искачућих подешавањаQShortcut",
+              "src": "machine",
+              "h": "a524d4a9ad3a"
+            },
+            "attributeModeCustom": {
+              "t": "Посебне поставкеQShortcut",
+              "src": "machine",
+              "h": "0923f615faf2"
+            },
+            "attributeFieldsHeader": {
+              "t": "Polja za prikazivanje i uređivanje u vreme pokretanja",
+              "src": "machine",
+              "h": "7a6f7c6f9f81"
+            },
+            "attributeAliasPlaceholder": {
+              "t": "Alias (opcionalno)",
+              "src": "machine",
+              "h": "b985557d78f5"
+            },
+            "attributeNoPolygonLayer": {
+              "t": "Prvo izaberite poligonski sloj da izaberete njegova polja",
+              "src": "machine",
+              "h": "b7257f5e512b"
+            },
+            "fieldPickerFreeText": {
+              "t": "Унесите име пољаQShortcut",
+              "src": "machine",
+              "h": "a63908c6f047"
+            },
+            "loadingFields": {
+              "t": "Uèitavam polja slojeva...",
+              "src": "machine",
+              "h": "e5f6873c0942"
+            },
+            "showHelpGuide": {
+              "t": "Pokaži vodič za pomoć",
+              "src": "machine",
+              "h": "03e9f0b81336"
+            },
+            "showTheQuestionMarkButtonThat": {
+              "t": "Prikaži dugme sa znakom pitanja koje otvara vodič za pomoć grafičkom elementu",
+              "src": "machine",
+              "h": "62c4e81a84ca"
+            }
+          }
         },
         "sv": {
           "file": "83b1073fe7ba",
