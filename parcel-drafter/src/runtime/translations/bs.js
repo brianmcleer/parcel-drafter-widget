@@ -192,7 +192,7 @@ System.register([], function (e) {
         helpTroubleFields: "Snimljene vrijednosti se vraćaju prazne ili Izmjene traverse ne nalaze ništa: imena polja u postavkama grafičkog elementa ne postoje na sloju. Kapitalna slova nisu bitna, ali pravopis da, i sloj domaćina može koristiti različita imena od servisa mape iz kojeg je došao. Otvorite postavke grafičkog elementa i izaberite polja ponovo.",
         helpTroubleNoClicks: "Klikovi na karti dodajte ništa: Digitizacija je isključena ili još nema početne tačke. Postavi startnu tačku prvo, a zatim uključi Digitize.",
         helpTroubleContact: "Kontaktirajte odjel GIS-a i spomenite ime paketa Drofter i ovu aplikaciju.",
-        helpTipsTitle: "Dobro je znati.",
+        helpTipsTitle: "Dobro je znati",
         helpTips1: "Postavke plana mijenjaju smjerove, dužine i područja koja su pročitana i prikazana. Postavite ih da odgovaraju djelu prije tipkanja.",
         helpTips2: "Navedeno područje iz djela se čuva pored izračunatog područja, tako da razlike ostaju vidljive.",
         thenceValueValue2UnitWord: "tence {value}, {value2} {unitWord}",

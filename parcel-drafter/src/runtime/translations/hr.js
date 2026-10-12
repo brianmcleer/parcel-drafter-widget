@@ -192,7 +192,7 @@ System.register([], function (e) {
         helpTroubleFields: "Ušteđene vrijednosti se vraćaju prazne, ili Uredi traverse ne nalazi ništa: imena polja u postavkama widgeta ne postoje na sloju. Kapitalna slova nisu bitna, ali pravopis da, i hostes sloj može koristiti različita imena od servisa mape iz kojeg je došao. Otvorite postavke widgeta i ponovno odaberite polja.",
         helpTroubleNoClicks: "Klikovi mape dodajte ništa: Digitaliziranje je isključen ili još nema početne točke. Postavite početnu točku prvo, a zatim uključite Digitalize.",
         helpTroubleContact: "Još uvijek zaglavi? Kontaktirajte GIS Division i spomenuti ime paketa Drofter i ovu aplikaciju.",
-        helpTipsTitle: "Dobro je znati.",
+        helpTipsTitle: "Dobro je znati",
         helpTips1: "Postavke plana mijenjaju kako se ležajevi, duljine i područja čitaju i prikazuju. Postavite ih da odgovaraju djelu prije tipkanja.",
         helpTips2: "Navedeno područje iz djela čuva se pored izračunatog područja, tako da razlike ostaju vidljive.",
         thenceValueValue2UnitWord: "tence {value}, {value2} {unitWord}",

@@ -1804,14 +1804,14 @@
           }
         },
         "bs": {
-          "file": "d4350b72120e",
+          "file": "209b8066e171",
           "counts": {
-            "esri": 29,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 165,
+            "machine": 156,
             "stale": 0,
             "missing": 1
           },
@@ -2391,35 +2391,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ništa u vodiču ne odgovara toj riječi.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
-            "firstRunTitle": {
-              "t": "Novi ovdje?",
-              "src": "machine",
-              "h": "b81f2e17e001"
-            },
             "firstRunBody": {
               "t": "Kliknite New traverse, postavite startnu točku, zatim unesite ili iscrtajte svaku graničnu liniju i kliknite Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otvori vodič.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "firstRunDismiss": {
-              "t": "Otpust",
-              "src": "machine",
-              "h": "70afe9eff3f2"
-            },
-            "helpStartTitle": {
-              "t": "Počnite ovdje: tri koraka",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknite New traverse, zatim kliknite na kartu da postavite startnu točku ili unesite geografsku dužinu i širinu i kliknite Primijeni.",
@@ -2571,11 +2546,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ako nešto nije u redu",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nema poligona nakon snimanja: linije su snimljene kao linija za povezivanje. Postavi tip linije na graničnu liniju na svaku nogu paketa ili izaberi graničnu liniju u traci s alatima prije digitaliziranja, a zatim snimi ponovo.",
               "src": "machine",
@@ -2611,11 +2581,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobro je znati.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Postavke plana mijenjaju smjerove, dužine i područja koja su pročitana i prikazana. Postavite ih da odgovaraju djelu prije tipkanja.",
               "src": "machine",
@@ -2630,16 +2595,6 @@
               "t": "tence {value}, {value2} {unitWord}",
               "src": "machine",
               "h": "2e5325cc29c5"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -10699,14 +10654,14 @@
           }
         },
         "hr": {
-          "file": "116415d4d641",
+          "file": "ed8be2a70db0",
           "counts": {
-            "esri": 29,
+            "esri": 38,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 166,
+            "machine": 157,
             "stale": 0,
             "missing": 0
           },
@@ -11291,35 +11246,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ništa u vodiču ne odgovara toj riječi. Pokušajte drugi, ili otvorite dijelove iznad.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
-            "firstRunTitle": {
-              "t": "Novi ovdje?",
-              "src": "machine",
-              "h": "b81f2e17e001"
-            },
             "firstRunBody": {
               "t": "Kliknite New traverse, postavite startnu točku, zatim upišite ili nacrtajte svaku graničnu liniju i kliknite Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otvori vodič.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "firstRunDismiss": {
-              "t": "Otpust",
-              "src": "machine",
-              "h": "70afe9eff3f2"
-            },
-            "helpStartTitle": {
-              "t": "Počnite ovdje: tri koraka",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknite New traverse, a zatim kliknite na kartu postaviti startnu točku, ili utipkati geografsku dužinu i zemljopisnu širinu i kliknite Primijeniti.",
@@ -11471,11 +11401,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ako nešto izgleda loše",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nema poligona nakon spremanja: linije su spremljene kao linija povezivanja. Postavite tip linije na graničnu liniju na svaku nogu paketa, ili odaberite graničnu liniju u alatnoj traci prije digitalizacije, a zatim ponovno spremite.",
               "src": "machine",
@@ -11511,11 +11436,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobro je znati.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Postavke plana mijenjaju kako se ležajevi, duljine i područja čitaju i prikazuju. Postavite ih da odgovaraju djelu prije tipkanja.",
               "src": "machine",
@@ -11530,16 +11450,6 @@
               "t": "tence {value}, {value2} {unitWord}",
               "src": "machine",
               "h": "2e5325cc29c5"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -24389,14 +24299,14 @@
           }
         },
         "sr": {
-          "file": "a0e7f389aa4e",
+          "file": "495becb4c26e",
           "counts": {
-            "esri": 28,
+            "esri": 37,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 166,
+            "machine": 157,
             "stale": 0,
             "missing": 0
           },
@@ -24981,35 +24891,10 @@
               "src": "machine",
               "h": "d13d8bf95448"
             },
-            "helpNoMatches": {
-              "t": "Ništa u vodièu ne odgovara toj reèi.",
-              "src": "machine",
-              "h": "3fe179f75330"
-            },
-            "firstRunTitle": {
-              "t": "Novi ovde?",
-              "src": "machine",
-              "h": "b81f2e17e001"
-            },
             "firstRunBody": {
               "t": "Kliknite New traverse, postavite startnu tačku, zatim upišite ili nacrtajte svaku graničnu liniju i kliknite Save.",
               "src": "machine",
               "h": "100f0167edc4"
-            },
-            "firstRunHelpLink": {
-              "t": "Otvori vodiè.",
-              "src": "machine",
-              "h": "2447dd6134ea"
-            },
-            "firstRunDismiss": {
-              "t": "Otpust.",
-              "src": "machine",
-              "h": "70afe9eff3f2"
-            },
-            "helpStartTitle": {
-              "t": "Poènite ovde: tri koraka.",
-              "src": "machine",
-              "h": "789320b4831d"
             },
             "helpStart1": {
               "t": "Kliknite New traverse, zatim kliknite na mapu da postavite startnu tačku, ili ukucajte geografsku dužinu i geografsku širinu i kliknite Primenite.",
@@ -25161,11 +25046,6 @@
               "src": "machine",
               "h": "4234b630de0e"
             },
-            "helpTroubleTitle": {
-              "t": "Ako nešto nije u redu",
-              "src": "machine",
-              "h": "6f7fec3ff1e0"
-            },
             "helpTroubleNoPolygon": {
               "t": "Nema poligona nakon spremanja: linije su spremljene kao linija za povezivanje. Postavite tip linije na graničnu liniju na svaku nogu paketa, ili izaberite graničnu liniju u alatnoj traci pre digitalizacije, a zatim ponovo spremite.",
               "src": "machine",
@@ -25201,11 +25081,6 @@
               "src": "machine",
               "h": "c836a77c1872"
             },
-            "helpTipsTitle": {
-              "t": "Dobro je znati.",
-              "src": "machine",
-              "h": "79fc372dc790"
-            },
             "helpTips1": {
               "t": "Podešavanja plana menjaju kako su ležajevi, dužine i oblasti pročitane i prikazane. Postavite ih da odgovaraju delu pre kucanja.",
               "src": "machine",
@@ -25220,16 +25095,6 @@
               "t": "thence {value}, {value2} {unitWord}",
               "src": "machine",
               "h": "2e5325cc29c5"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -32411,12 +32276,12 @@
         "bs": {
           "file": "da3d01373eb8",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -32750,16 +32615,6 @@
               "t": "Učitavam polja slojeva...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Pokaži vodič za pomoć",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Pokaži dugme sa znakom pitanja koje otvara vodič za pomoć grafičkog elementa",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
@@ -36221,12 +36076,12 @@
         "hr": {
           "file": "4365af33c313",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -36560,16 +36415,6 @@
               "t": "Učitavanje polja slojeva...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Prikaži vodič pomoći",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Prikaži gumb s upitnikom koji otvara vodič za pomoć widgetu",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
@@ -42096,12 +41941,12 @@
         "sr": {
           "file": "11169e6afc88",
           "counts": {
-            "esri": 4,
+            "esri": 6,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 68,
+            "machine": 66,
             "stale": 0,
             "missing": 0
           },
@@ -42435,16 +42280,6 @@
               "t": "Uèitavam polja slojeva...",
               "src": "machine",
               "h": "e5f6873c0942"
-            },
-            "showHelpGuide": {
-              "t": "Pokaži vodič za pomoć",
-              "src": "machine",
-              "h": "03e9f0b81336"
-            },
-            "showTheQuestionMarkButtonThat": {
-              "t": "Prikaži dugme sa znakom pitanja koje otvara vodič za pomoć grafičkom elementu",
-              "src": "machine",
-              "h": "62c4e81a84ca"
             }
           }
         },
